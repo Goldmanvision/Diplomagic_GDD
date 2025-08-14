@@ -162,3 +162,18 @@ This log records narrative and GDD patch files and how to apply them.
 **Cross‑refs**
 - Trackers/SEC06_CH1_WorldLayouts.md
 - Trackers/SEC07_CH1_MEDSTAT_Notes_UI.md
+
+## 2025-08-14T12:52Z — SEC-03 add: 3.5 Chapter 1 synopsis
+
+**Files**
+- `Patches/SEC-03_3.5_CH1_SimpleCuriosity_ADD.md`
+- `Patches/MANIFEST_Addendum_SEC-03_CH1.md`
+
+**Apply**
+- Insert as §3.5 in SEC-03; bump minor; add MANIFEST note.
+
+**Scope / Rationale**
+- Locks CH1 narrative beats consistent with trackers and QA.
+
+**Cross-refs**
+- Trackers CH1 outline, beat→objective, assets, QA/telemetry.
