@@ -1,6 +1,6 @@
 # SEC-07 — CH1 MEDSTAT Notes UI ADD
 Version: v0.1
-Date: 2025-08-14 12:42Z
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 Paste under SEC‑07 UI (Devices → MEDSTAT).
@@ -13,7 +13,6 @@ Paste under SEC‑07 UI (Devices → MEDSTAT).
 - AX: AA contrast; scale 0.85–1.50; focus ring; high‑contrast skin.
 - Telemetry: medstat_upgrade_card_inserted; pin_auto_log_created; medstat_notes_opened (opt).
 
-## Flow
-1) Insert card → unlock Notes tab → toast.  
-2) Auto‑create CaseNote for Prologue pin (SYM‑001), read‑only.  
-3) Later chapters: enable edit and FieldPad sync.
+## Card/Hardware spec
+- PCMCIA Type II linear flash; Newton‑compatible; no camera or internet.
+- SENTINEL satellite hop links to other MEDSTATs only.

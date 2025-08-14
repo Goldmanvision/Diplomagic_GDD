@@ -1,11 +1,11 @@
-# SEC-04 — CH1 Integration ADD
-Version: v0.1
-Date: 2025-08-14 12:15Z
+# Inline Patch — SEC-04 CH1 Integration
+Version: v0.1 — 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
-Paste under Core Loops as new subheading.
+## BEGIN PATCH: SEC‑04 — CH1 Loops Integration
 
-## 4.Y Chapter 1 Integration (Clara/Avery)
+### 4.Y Chapter 1 Integration
+Map CH1 objectives to loops with gates and outputs.
 
 **IDs**
 - Clara: OBJ-CH1-CLA-SIGNIN, -FINDCARD, -INSERT, -FOLLOW, -AVOID, -CARE, -CALL
@@ -25,4 +25,6 @@ Paste under Core Loops as new subheading.
 - Avery: `custody_complete==true`.
 
 **Telemetry**
-Per `Trackers/QATelemetry_CH1.md`.
+Emit events per `Trackers/QATelemetry_CH1.md`.
+
+## END PATCH

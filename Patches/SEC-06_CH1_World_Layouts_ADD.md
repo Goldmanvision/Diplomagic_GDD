@@ -1,6 +1,6 @@
 # SEC-06 — CH1 World Layouts ADD
 Version: v0.1
-Date: 2025-08-14 12:42Z
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 Paste under SEC‑06 World (new CH1 subsection).

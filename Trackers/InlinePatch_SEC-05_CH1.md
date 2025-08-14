@@ -1,5 +1,5 @@
 # Inline Patch — SEC-05 CH1 Flags & Data
-Version: v0.1 — 2025-08-14 12:08Z
+Version: v0.1 — 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 ## BEGIN PATCH: SEC‑05 — CH1 Flags & Data

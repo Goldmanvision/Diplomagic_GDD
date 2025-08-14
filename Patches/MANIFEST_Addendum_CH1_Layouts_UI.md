@@ -1,5 +1,5 @@
 # MANIFEST addendum — CH1 layouts/UI
-Date: 2025-08-14 12:42Z
+Date: 2025-08-14 22:50:08 UTC
 
 Sections to update:
 - SEC-06: add CH1 Brightstar and roadside layouts using `Patches/SEC-06_CH1_World_Layouts_ADD.md`.

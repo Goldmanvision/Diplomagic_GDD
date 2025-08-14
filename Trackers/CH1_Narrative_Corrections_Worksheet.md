@@ -1,6 +1,6 @@
 # CH1 — “Simple Curiosity” Narrative Corrections Worksheet
-Version: v0.1
-Date: 2025-08-14 20:41:38 UTC
+Version: v0.2
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 Scope: Edit A1–A5, B1–B4 for accuracy. Keep 1994 period rules. Prompts ≤14 chars.
@@ -15,7 +15,6 @@ Scope: Edit A1–A5, B1–B4 for accuracy. Keep 1994 period rules. Prompts ≤14
 ## A1 — Intake (Clara)
 Intent: establish tone; sign‑in.  
 Beat: sign visitor ledger; staffer gives clipped welcome; locked doors noted.  
-Proposed text: “Clara signs the ledger. Staffer watches the clock. Doors stay locked.”  
 Edits:
 
 ## A2 — Note‑card (Clara)
@@ -25,7 +24,7 @@ Edits:
 
 ## A3 — Tour (Clara)
 Intent: ordinary spaces that feel controlled.  
-Beat: classroom → infirmary → storage; kid art; first‑aid posters; locked custodial door.  
+Beat: classroom → infirmary → storage; kid art; first‑aid posters; locked custodial door. Overhear “the stars are right tonight.”  
 Edits:
 
 ## A4 — Stealth + care task (Clara)
@@ -42,9 +41,8 @@ Edits:
 
 ## B1 — Brief (Avery)
 Intent: set lawful context.  
-Beat: deputy flags complaints near Brightstar; “by the book.”  
-Deputy name options: H. Collins / S. Alvarez / J. Whitaker / other: ____  
-Choice:
+Beat: deputy (**randomized from whitelist**) flags complaints near Brightstar; “by the book.”  
+Edits:
 
 ## B2 — ROE stop (Avery)
 Intent: challenge→cuff→search; no unjustified fire.  
@@ -63,14 +61,6 @@ Edits:
 
 ---
 
-## Coded phrase overheard (Clara A3/A4)
-Pick one or write alternate.  
-1) “the bright ones gather”  
-2) “stars are watching”  
-3) “aftercare at midnight”  
-4) other: ____________________  
-Choice:
-
 ## Hard constraints (do not break)
 - No FieldPad/TAPLINE in CH1; MEDSTAT Notes only.  
 - Symbol stays lore‑only; no WS change.  
@@ -78,4 +68,3 @@ Choice:
 
 ## Reviewer sign‑off
 Design ☐  Narrative ☐  QA ☐
-

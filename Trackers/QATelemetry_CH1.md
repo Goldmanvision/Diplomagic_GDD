@@ -1,6 +1,6 @@
 # CH1 — “Simple Curiosity” QA + Telemetry Matrix
-Version: v0.1
-Date: 2025-08-14 11:57:29 UTC
+Version: v0.2
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 Scope: Coverage for Clara Brightstar leg and Avery roadside stop.
 
@@ -24,6 +24,7 @@ Avery: `custody_complete==true`; `ch1_avery_complete`.
 Common fields: `ts`, `build_id`, `session_id`, `map`, `player_pov`, `diff`.
 
 Clara leg
+- `coded_phrase_heard` (text; expect "the stars are right tonight")  
 - `medstat_upgrade_card_found` (bool)  
 - `medstat_upgrade_card_inserted` (bool)  
 - `pin_auto_log_created` (bool)  
@@ -52,3 +53,5 @@ Avery leg
 - Screens: card insert toast, CaseNote UI, custody checklist.  
 - Videos: 20–30 s stealth pass; 20–30 s ROE stop.  
 - CSVs: perf med/95p for all spots.
+
+Note: Deputy name randomized per save from whitelist (H. Collins, S. Alvarez, J. Whitaker); log chosen name in session meta.

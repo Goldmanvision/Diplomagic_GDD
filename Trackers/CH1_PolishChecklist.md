@@ -1,6 +1,6 @@
 # CH1 — “Simple Curiosity” Polish Checklist
 Version: v0.1
-Date: 2025-08-14 12:25:18 UTC
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 Scope: Final pass items for Clara Brightstar leg and Avery roadside stop.

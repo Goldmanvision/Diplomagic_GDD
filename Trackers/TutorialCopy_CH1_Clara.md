@@ -1,6 +1,6 @@
 # CH1 — Clara Tutorial Copy (Brightstar)
 Version: v0.1
-Date: 2025-08-14 12:02Z
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 Scope: On-screen prompts (≤14 chars) and tooltips. Devices: MEDSTAT (+ note-card unlock).
 

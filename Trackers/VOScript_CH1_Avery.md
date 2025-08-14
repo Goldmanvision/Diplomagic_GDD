@@ -1,8 +1,8 @@
 # CH1 — Avery VO Temp Script (Roadside)
-Version: v0.1
-Date: 2025-08-14 12:02Z
+Version: v0.2
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
-Cast: Avery, Deputy, Adult
+Cast: Avery, Deputy (randomized from whitelist), Adult
 
 Scene A — Brief
 [Deputy] Complaint near Brightstar. Keep it by the book.

@@ -1,6 +1,6 @@
 # CH1 — “Simple Curiosity” Outline
 Version: v0.2
-Date: 2025-08-14 21:18:35 UTC
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 Canon
@@ -21,8 +21,8 @@ Leg A — Clara + Reddy at Brightstar (day → dusk)
 Beats
 1) Intake desk: sign‑in; ambient red flags (locked doors, odd signage).
 2) Find **MEDSTAT note‑card** in supply drawer; **insert → Notes unlock**; auto‑log prior pin note.
-3) Guided tour: classroom, infirmary, storage; light **stealth** to avoid staffer.
-4) Quiet incident: overhear coded phrase; optional **care task** for a child.
+3) Guided tour: classroom, infirmary, storage; light **stealth** to avoid staffer; overhear coded phrase — “the stars are right tonight.”
+4) Quiet incident: optional **care task** for a child; mark for follow‑up.
 5) Exit prompt: Reddy wants to leave; schedule return visit.
 
 Objectives
@@ -33,7 +33,7 @@ Objectives
 
 Leg B — Avery near Jackson (same day)
 Beats
-1) Briefing with local deputy; complaint about suspicious activity near Brightstar.
+1) Briefing with local deputy (**name randomized per save** from whitelist: H. Collins, S. Alvarez, J. Whitaker); complaint about suspicious activity near Brightstar.
 2) **ROE field stop**: challenge → cuff → search a belligerent adult; no shots on compliant.
 3) Analog custody: photo of contraband; bag → tag → log; handoff at mobile locker case.
 4) Debrief scorecard; hint that federal attention on Brightstar is increasing.
@@ -59,5 +59,4 @@ Dependencies
 - SEC‑11/14: perf spots and AX tests mirrored from prologues.
 
 Open Questions
-- Exact content of coded phrase (narrative draft needed).
-- Deputy character name and VO style.
+- Deputy VO style.

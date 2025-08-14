@@ -1,6 +1,6 @@
 # CH1 — Brightstar Capture Shotlist (Clara)
 Version: v0.1
-Date: 2025-08-14 12:08Z
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
 ## Conventions

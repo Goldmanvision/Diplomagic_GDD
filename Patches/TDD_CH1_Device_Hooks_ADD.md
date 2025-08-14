@@ -1,13 +1,14 @@
-# TDD — CH1 Device Hooks ADD
-Version: v0.1
-Date: 2025-08-14 12:15Z
+# Inline Patch — TDD CH1 Device Hooks
+Version: v0.1 — 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 
-Paste under device flows and save contracts.
+## BEGIN PATCH: TDD — CH1 Device Hooks
 
-## MEDSTAT Notes unlock
+### MEDSTAT Notes unlock
 - On card insert, enable Notes UI and call SEC‑05 CaseNote creation.
-- Toast: `toast.note_logged_from_chart`.
+- Toast string key: `toast.note_logged_from_chart`.
 
-## Roadside custody
+### Roadside custody
 - Use portable locker actor; same contract as 0A locker window.
+
+## END PATCH

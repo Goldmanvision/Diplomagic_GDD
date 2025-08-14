@@ -1,5 +1,5 @@
 # MANIFEST addendum — SEC-03 CH1 synopsis
-Date: 2025-08-14 12:52Z
+Date: 2025-08-14 22:50:08 UTC
 
 Section: SEC-03-NARRATIVE
 Change:

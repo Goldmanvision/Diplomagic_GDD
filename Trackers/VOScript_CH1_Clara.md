@@ -1,6 +1,6 @@
 # CH1 — Clara VO Temp Script (Brightstar)
-Version: v0.1
-Date: 2025-08-14 12:02Z
+Version: v0.2
+Date: 2025-08-14 22:50:08 UTC
 Owner: Nick Goldman
 Cast: Clara, Staffer, Reddy, Child
 
@@ -17,6 +17,7 @@ Scene C — Tour and Stealth
 [Staffer] This way, please.
 [Clara] Reddy, stay close.
 [Clara] Let’s give them space. (hushed)
+[Staffer] (whisper) The stars are right tonight.
 
 Scene D — Care Task
 [Clara] Hi there. Need a sip of water?

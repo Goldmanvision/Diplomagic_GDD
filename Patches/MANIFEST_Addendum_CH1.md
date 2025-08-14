@@ -1,5 +1,5 @@
 # MANIFEST addendum — CH1 integration
-Date: 2025-08-14 12:15Z
+Date: 2025-08-14 22:50:08 UTC
 
 Sections to update:
 - SEC-04: add “4.Y Chapter 1 Integration (Clara/Avery)” using `Patches/SEC-04_CH1_Integration_ADD.md`.
