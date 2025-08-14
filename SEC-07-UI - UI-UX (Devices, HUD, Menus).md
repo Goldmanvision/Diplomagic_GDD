@@ -1,14 +1,13 @@
 # [SEC-07-UI] UI/UX (Devices, HUD, Menus)
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-09-TECH` — Technology & Performance Targets
 
 ## **7.1 Goals & Principles**
 
@@ -16,7 +15,7 @@ Owner: Nick Goldman
 
 * 1994 constraints. Limited color, latency, coarse hit targets, period affordances.
 
-* Readability over spectacle. PS1‑era silhouettes \+ modern clarity.
+* Readability over spectacle. PS1‑era silhouettes + modern clarity.
 
 * Minimal HUD. Surface only actionable state.
 
@@ -24,20 +23,20 @@ Owner: Nick Goldman
 
 ## **7.2 Visual Language**
 
-**Palette.** HUD: 1 accent \+ neutrals. Devices: two‑tone skins (Green, Amber, Gray).
- **Type.** Bitmap sans for devices; clean sans for HUD. Minimum 12 px at 1080p equivalent.
- **Grid.** Virtual 320×240 device canvas, 8 px base unit; HUD uses 12‑pt safe margins.
+**Palette.** HUD: 1 accent + neutrals. Devices: two‑tone skins (Green, Amber, Gray).  
+ **Type.** Bitmap sans for devices; clean sans for HUD. Minimum 12 px at 1080p equivalent.  
+ **Grid.** Virtual 320×240 device canvas, 8 px base unit; HUD uses 12‑pt safe margins.  
  **Iconography.** Stroke icons, 1 px weight at 1080p, scale by step 1.25×.
 
 ## **7.3 Global HUD (contextual, minimal)**
 
-* **Top‑left:** Objective stub \+ sub‑task dot list.
+* **Top‑left:** Objective stub + sub‑task dot list.
 
-* **Bottom‑left:** Health bar \+ vitals pill. Clara shows **Stress**; Avery shows **Armor**.
+* **Bottom‑left:** Health bar + vitals pill. Clara shows **Stress**; Avery shows **Armor**.
 
 * **Bottom‑right:** Ammo/weapon or tool readout.
 
-* **Center‑low:** Interaction prompt with verb \+ hold meter where needed.
+* **Center‑low:** Interaction prompt with verb + hold meter where needed.
 
 * **Stealth:** eye glyph (visibility), waveform glyph (noise).
 
@@ -45,7 +44,7 @@ Owner: Nick Goldman
 
 Example HUD overlay (schematic):
 
-\[OBJ\] Kids Kamp: Extract Reddy
+[OBJ] Kids Kamp: Extract Reddy
 
   • Unlock north gate  ◻
 
@@ -53,7 +52,7 @@ Example HUD overlay (schematic):
 
 ꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏ (screen)
 
-\[HP ████▌\]  \[VIS ◐\]\[NOISE ≈≈\]                             \[9× .38 | ■■■■\]
+[HP ████▌]  [VIS ◐][NOISE ≈≈]                             [9× .38 | ■■■■]
 
       Clara: Stress ▒▒▒▒                                 Prompt: Hold E — Pick Lock ▓▓▓▒▒
 
@@ -71,17 +70,17 @@ Example HUD overlay (schematic):
 
 ### **7.4.1 FieldPad — Casework & Evidence**
 
-**Purpose.** Capture, tag, link, and warrant‑build.
- **Apps.** Home, Camera, Evidence, Caseboard, Warrant, Map, Contacts.
+**Purpose.** Capture, tag, link, and warrant‑build.  
+ **Apps.** Home, Camera, Evidence, Caseboard, Warrant, Map, Contacts.  
  **Flows.** Photo → Tag → Chain steps → Link to case → Warrant score.
 
 FieldPad — HOME
 
 ┌──────────────── FIELD•PAD ────────────────┐   ▂▃▅  ■■■□  ▮▮▮▯  14:32
 
-│ \[Camera\] \[Evidence\] \[Caseboard\]           │
+│ [Camera] [Evidence] [Caseboard]           │
 
-│ \[Warrant\] \[Map\]      \[Contacts\]           │
+│ [Warrant] [Map]      [Contacts]           │
 
 │                                            │
 
@@ -91,45 +90,45 @@ FieldPad — HOME
 
 FieldPad — EVIDENCE (item view)
 
-┌───────────── EVIDENCE: BAG \#A‑014 ─────────┐   ▂▃▅  ■■■■  ▮▮▮▮  14:41
+┌───────────── EVIDENCE: BAG #A‑014 ─────────┐   ▂▃▅  ■■■■  ▮▮▮▮  14:41
 
-│ Photo: IMG\_0142  \[View\]                    │
+│ Photo: IMG\_0142  [View]                    │
 
 │ Type: Fiber (A‑tier)                       │  Q: 78
 
 │ Chain: Photo → Collect → Bag → Tag → Log   │  Seal: ▣ Intact
 
-│ Links: Case \#82 • Victim \#2 • Locker 3     │
+│ Links: Case #82 • Victim #2 • Locker 3     │
 
 │ Notes:                                     │
 
 │  − Found under vent panel                  │
 
-└◀ BACK                   \[LINK\]   OK ▶──────┘
+└◀ BACK                   [LINK]   OK ▶──────┘
 
 FieldPad — WARRANT BUILDER
 
 ┌────────────── WARRANT BUILDER ─────────────┐   ▂▃▅  ■■□□  ▮▮▮▯  15:06
 
-│ Case: \#82  Judge: S. Hartford              │  Score: 62 (PASS)
+│ Case: #82  Judge: S. Hartford              │  Score: 62 (PASS)
 
 │ Probable Cause:                            │
 
-│  \[ \] Evidence A‑014 (fiber)                │
+│  [ ] Evidence A‑014 (fiber)                │
 
-│  \[ \] Intercepts TPL‑07                     │
+│  [ ] Intercepts TPL‑07                     │
 
-│  \[ \] Statement W‑03                        │
+│  [ ] Statement W‑03                        │
 
 │ Affidavit Text:                            │
 
 │  \> Suspect used south entrance…            │
 
-└◀ BACK                 \[SUBMIT\]   OK ▶──────┘
+└◀ BACK                 [SUBMIT]   OK ▶──────┘
 
 ### **7.4.2 TAPLINE — Signals**
 
-**Purpose.** Scan, record, triangulate, spoof, and decode era radios/phones.
+**Purpose.** Scan, record, triangulate, spoof, and decode era radios/phones.  
  **Modes.** Scan • Record • Triangulate • Decode • Spoof (Avery only).
 
 TAPLINE — SCAN
@@ -138,7 +137,7 @@ TAPLINE — SCAN
 
 │ Band: UHF  |  Freq: 462.6125 MHz           │  SNR: ▓▓▓▒▒
 
-│ \[◀\] 462.6000 ◁▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▷ 462.6500 \[▶\]
+│ [◀] 462.6000 ◁▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▷ 462.6500 [▶]
 
 │ Hold to lock: ████▒▒                       │
 
@@ -146,7 +145,7 @@ TAPLINE — SCAN
 
 │        19:35  DTMF: 4 1 2                  │
 
-└◀ BACK                 \[RECORD\]   OK ▶──────┘
+└◀ BACK                 [RECORD]   OK ▶──────┘
 
 TAPLINE — TRIANGULATE
 
@@ -156,15 +155,15 @@ TAPLINE — TRIANGULATE
 
 │ Bearings: A 062° • B 239° • C  —           │
 
-│ Map:  \[A───────╳────────B\]                  │
+│ Map:  [A───────╳────────B]                  │
 
-│        Clara route  \[ \]  Avery route \[x\]    │
+│        Clara route  [ ]  Avery route [x]    │
 
-└◀ BACK                  \[PING\]    OK ▶──────┘
+└◀ BACK                  [PING]    OK ▶──────┘
 
 ### **7.4.3 MEDSTAT — Vitals & Team**
 
-**Purpose.** Health, status effects, triage, and telemetry.
+**Purpose.** Health, status effects, triage, and telemetry.  
  **States.** Stable • Wounded • Critical • In Shock • Infected • Contaminated.
 
 MEDSTAT — VITALS
@@ -179,15 +178,15 @@ MEDSTAT — VITALS
 
 │ Status: Wounded (Bleeding)                  │
 
-│ Actions: \[Bandage\] \[Tourniquet\] \[Analgesic\] │
+│ Actions: [Bandage] [Tourniquet] [Analgesic] │
 
-└◀ BACK                 \[APPLY\]    OK ▶──────┘
+└◀ BACK                 [APPLY]    OK ▶──────┘
 
 ## **7.5 Menus & Screens**
 
 * **Pause.** Resume, Save, Load, Options, Accessibility, Quit.
 
-* **Inventory.** Slots \+ Weight hybrid; quick slots ×4.
+* **Inventory.** Slots + Weight hybrid; quick slots ×4.
 
 * **Caseboard.** Graph of nodes and links; filter by time, tier, POV.
 
@@ -197,7 +196,7 @@ Inventory (schematic)
 
 ┌──────────────── INVENTORY ────────────────┐
 
-│ Weight: 62%   Quick: \[1\]\[2\]\[3\]\[4\]         │
+│ Weight: 62%   Quick: [1][2][3][4]         │
 
 │ Backpack: MED                              │
 
@@ -209,17 +208,17 @@ Inventory (schematic)
 
 │  ▣ Evidence A‑014  ▣ Tape Recorder        │
 
-└◀ BACK                 \[ASSIGN\]   OK ▶─────┘
+└◀ BACK                 [ASSIGN]   OK ▶─────┘
 
 Caseboard (schematic)
 
-\[Case \#82\]
+[Case #82]
 
-  (Victim \#2)───(Fiber A‑014)───(Vent South)
+  (Victim #2)───(Fiber A‑014)───(Vent South)
 
         │              │               \\
 
-     (W‑03)         (TPL‑07)          (Locker 3\)
+     (W‑03)         (TPL‑07)          (Locker 3)
 
 ## **7.6 Input & Controls**
 
@@ -281,13 +280,13 @@ On approval: archive to MASTER as `[SEC-07-UI] v0.1` and update manifest. Next s
 
 # **Patch Instructions for Existing MASTER — SEC-08**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-08-ARTAUDIO |` and replace the entire line with:
 
 `| SEC-08-ARTAUDIO | Art direction and audio | v0.2 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
-\[\[PAGEBREAK\]\]
+
+> **Telephony note (1994):** Caller ID availability varies by carrier/market. Do not rely on it for puzzles; provide alternate clues.

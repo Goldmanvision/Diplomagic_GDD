@@ -4,17 +4,14 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-
-
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-09-TECH` — Technology & Performance Targets
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
 
 ## **8.1 Visual Pillars**
 
-* PS1‑era austerity \+ modern clarity (fog, lights, post).
+* PS1‑era austerity + modern clarity (fog, lights, post).
 
 * Readable silhouettes first. Texture thrift.
 
@@ -60,11 +57,11 @@ Owner: Nick Goldman
 
 ASCII swatches:
 
-████ Splinter Black \#0B0B0E   ████ Fog Gray \#8D9199   ████ Concrete \#5E666F
+████ Splinter Black #0B0B0E   ████ Fog Gray #8D9199   ████ Concrete #5E666F
 
-████ Steel Blue    \#3B5368   ████ Sodium Amber \#C48A1B ████ Emergency Red \#B21E2B
+████ Steel Blue    #3B5368   ████ Sodium Amber #C48A1B ████ Emergency Red #B21E2B
 
-████ FieldPad Green \#1C6B3C  ████ TAPLINE Amber \#D09A2A ████ MEDSTAT Gray \#C7C9CC
+████ FieldPad Green #1C6B3C  ████ TAPLINE Amber #D09A2A ████ MEDSTAT Gray #C7C9CC
 
 ### **8.3.1 Locale Palettes**
 
@@ -198,7 +195,7 @@ ASCII swatches:
 
 * **File naming:** `vo_<char>_<scene>_<lineID>_take##.wav`.
 
-* **Slate:** soft clap \+ verbal slate at start of each scene.
+* **Slate:** soft clap + verbal slate at start of each scene.
 
 * **Processing:** light HPF only; no FX baked.
 
@@ -327,7 +324,7 @@ Notes: tune with profiling; reserve headroom for VFX and AI.
 
 * VFX bible for Splinter.
 
-* Audio style guide \+ cue sheet template.
+* Audio style guide + cue sheet template.
 
 * Wwise project skeleton and routing.
 
@@ -336,3 +333,13 @@ Notes: tune with profiling; reserve headroom for VFX and AI.
 ## **8.25 Approvals**
 
 On approval: archive to MASTER as `[SEC-08-ARTAUDIO] v0.2` and update manifest. Next: **SEC‑09 Technology & Performance**.
+
+# **Patch Instructions for Existing MASTER — SEC-09**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-09-TECH |` and replace the entire line with:
+
+`| SEC-09-TECH | Tech spec | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**

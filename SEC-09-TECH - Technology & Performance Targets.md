@@ -4,11 +4,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
+- `SEC-11-QA` — QA, Localization, Accessibility
 
 ## **9.1 Tech Stack**
 
@@ -18,11 +17,11 @@ Owner: Nick Goldman
 
 * Middleware: **Wwise** (audio), Niagara (VFX).
 
-* UI: UMG \+ Slate; bitmap device fonts per SEC‑07.
+* UI: UMG + Slate; bitmap device fonts per SEC‑07.
 
 * Source control: **Perforce** recommended for binary assets; Git acceptable for code/tools if isolated.
 
-* Build automation: Unreal Automation Tool (UAT) \+ CI runner (local or hosted).
+* Build automation: Unreal Automation Tool (UAT) + CI runner (local or hosted).
 
 * Scripting: Blueprints for gameplay glue; C++ for systems.
 
@@ -59,7 +58,7 @@ Owner: Nick Goldman
 
 * GPU time: **≤ 14 ms** @ 1080p min‑spec.
 
-* CPU game \+ render: **≤ 16 ms** total @ 1080p.
+* CPU game + render: **≤ 16 ms** total @ 1080p.
 
 * Draw calls: **≤ 1,200** interior, **≤ 1,800** exterior.
 
@@ -97,7 +96,7 @@ Owner: Nick Goldman
 
 ## **9.8 Save/Load & Data**
 
-* Format: compressed JSON \+ binary blobs for maps; slots: **3 manual \+ autos**.
+* Format: compressed JSON + binary blobs for maps; slots: **3 manual + autos**.
 
 * Contents: caseboard graph, evidence chain states, heat/reputation, device unlock flags, AI snapshot.
 
@@ -188,3 +187,19 @@ Owner: Nick Goldman
 ## **9.19 Approvals**
 
 On approval: archive to MASTER as `[SEC-09-TECH] v0.1` and update manifest. Next: **SEC‑10 Production Plan & Milestones**.
+
+# **Patch Instructions for Existing MASTER — SEC-10**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-10-PRODUCTION |` and replace the entire line with:
+
+`| SEC-10-PRODUCTION | Production plan | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
+
+### **9.x Device I/O & Storage (1994 constraints)**
+- FieldPad storage via **PCMCIA Type‑II ATA/SRAM** or **CF Type‑I** using **CF→PC Card** adapter.
+- Practical throughput ≤ 1–2 MB/s; photo write/read operations are slow.
+- Photo caps aligned with TDD: ≤ 60 per mission, ~200 KB each.
+- Connectors: **RJ‑11** for modem cards, **RJ‑45** for 10Base‑T NICs, optional **RS‑232 DE‑9** on device/dock.

@@ -1,14 +1,13 @@
 # [SEC-10-PRODUCTION] Production Plan & Milestones
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
-- `SEC-13-APPENDICES — Appendices`
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-09-TECH` — Technology & Performance Targets
+- `SEC-11-QA` — QA, Localization, Accessibility
+- `SEC-12-RISKS` — Risks, Legal, Ratings
 
 ## **10.1 Scope & Assumptions**
 
@@ -29,7 +28,7 @@ Owner: Nick Goldman
 | Character Artist/Rigger | Contract | 8–12 wks across slice→beta |
 | Animator | Contract | 10–15 hrs/wk Jan’26–Nov’26 |
 | UI/UX Designer | Contract | 6–10 wks across SEC‑07 deliverables |
-| Technical Artist (Shaders/VFX) | Contract | 6–8 wks for Splinter VFX \+ perf |
+| Technical Artist (Shaders/VFX) | Contract | 6–8 wks for Splinter VFX + perf |
 | Sound Designer | Contract | 12–16 wks spread; Wwise impl |
 | Composer | Contract | 10–14 wks, stems system |
 | QA Lead (external) | Vendor | 2× passes: EA and pre‑gold |
@@ -48,35 +47,35 @@ Owner: Nick Goldman
 
 ## **10.4 Milestones — Entry/Exit & Deliverables**
 
-### **M1: Vertical Slice (due Nov 15, 2025\)**
+### **M1: Vertical Slice (due Nov 15, 2025)**
 
-**Entry:** SEC‑04/05 baseline implemented; device UI MVP; perf captures at target map.
- **Exit:** One Clara mission shippable; TAPLINE scan+triangulate; FieldPad photo→tag→warrant; MEDSTAT triage; HUD minimal; controller parity; demo branch tagged.
+**Entry:** SEC‑04/05 baseline implemented; device UI MVP; perf captures at target map.  
+ **Exit:** One Clara mission shippable; TAPLINE scan+triangulate; FieldPad photo→tag→warrant; MEDSTAT triage; HUD minimal; controller parity; demo branch tagged.  
  **Deliverables:** Steam demo build, trailer cut, press kit v0.
 
-### **M2: Early Access (due Jun 15, 2026\)**
+### **M2: Early Access (due Jun 15, 2026)**
 
-**Entry:** Ch1–3 playable end‑to‑end; caseboard saves; ROE loop stable.
- **Exit:** Telemetry online (opt‑in), difficulty presets, accessibility baseline, crash‑free P90 ≥99.0%.
- **Content:** \~7–9 missions; NYC tunnels preview; devices feature‑complete V1.
+**Entry:** Ch1–3 playable end‑to‑end; caseboard saves; ROE loop stable.  
+ **Exit:** Telemetry online (opt‑in), difficulty presets, accessibility baseline, crash‑free P90 ≥99.0%.  
+ **Content:** \~7–9 missions; NYC tunnels preview; devices feature‑complete V1.  
  **Deliverables:** EA build, roadmap, patch plan, community guidelines.
 
-### **M3: Content Expansion (Oct 31, 2026\)**
+### **M3: Content Expansion (Oct 31, 2026)**
 
-**Entry:** Stable EA; art perf budget holding.
- **Exit:** Add Ch4–5, hub re‑use loops, antagonist arcs Qi/Kent; arrest systems tuned; VO pass 1\.
+**Entry:** Stable EA; art perf budget holding.  
+ **Exit:** Add Ch4–5, hub re‑use loops, antagonist arcs Qi/Kent; arrest systems tuned; VO pass 1\.  
  **Deliverables:** Major content update, marketing beats, LQA plan.
 
-### **M4: Beta (Dec 15, 2026\)**
+### **M4: Beta (Dec 15, 2026)**
 
-**Entry:** Feature‑complete; all chapters implemented.
- **Exit:** Content‑complete; bug backlog triaged; crash‑free P90 ≥99.5%; perf budgets met; accessibility check pass.
+**Entry:** Feature‑complete; all chapters implemented.  
+ **Exit:** Content‑complete; bug backlog triaged; crash‑free P90 ≥99.5%; perf budgets met; accessibility check pass.  
  **Deliverables:** Beta candidate builds, test plan, known issues.
 
-### **M5: Gold (Mar 15, 2027\)**
+### **M5: Gold (Mar 15, 2027)**
 
-**Entry:** All Blocker/Critical fixed; audio mix final; balance locked.
- **Exit:** Gold master signed; store assets delivered; mod tools beta post‑EA finalized.
+**Entry:** All Blocker/Critical fixed; audio mix final; balance locked.  
+ **Exit:** Gold master signed; store assets delivered; mod tools beta post‑EA finalized.  
  **Deliverables:** Release build, soundtrack stems pack, press kit v1.0.
 
 ## **10.5 Content Quotas (targets)**
@@ -85,7 +84,7 @@ Owner: Nick Goldman
 | ----- | ----- | ----- | ----- |
 | Missions (playable) | 1 | 7–9 | 13–16 |
 | Unique locales | 1 | 4–5 | 7 |
-| Devices apps | 3 | 6 | 6 \+ polish |
+| Devices apps | 3 | 6 | 6 + polish |
 | Enemy archetypes | 2 | 4 | 6 |
 | Weapons/tools | 3 | 6 | 8 |
 | VO lines (approx) | 50 | 400 | 800 |
@@ -112,7 +111,7 @@ Owner: Nick Goldman
 
 * **Builds:** CI nightlies; slice/EA/beta/gold branches locked.
 
-* **Tasking:** 2‑week sprints; Definition of Done includes perf \+ accessibility checks.
+* **Tasking:** 2‑week sprints; Definition of Done includes perf + accessibility checks.
 
 * **Reviews:** Milestone gates require KPI dashboard and perf captures.
 
@@ -138,7 +137,7 @@ Owner: Nick Goldman
 
 ## **10.10 Marketing & Community**
 
-* Demo \+ EA beats, devlogs, controlled roadmap.
+* Demo + EA beats, devlogs, controlled roadmap.
 
 * Clear mod policy; community standards.
 
@@ -160,13 +159,10 @@ On approval: archive to MASTER as `[SEC-10-PRODUCTION] v0.1` and update manifest
 
 # **Patch Instructions for Existing MASTER — SEC-11**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-11-QA |` and replace the entire line with:
 
 `| SEC-11-QA | QA, loc, accessibility | v0.1 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
-
-\[\[PAGEBREAK\]\]
+## **2) Append this section to the end of MASTER (add a `` before it)**

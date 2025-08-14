@@ -4,9 +4,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
+- `SEC-03-NARRATIVE` — Narrative
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
 
 ## **5.1 Systems Overview**
 
@@ -96,17 +97,17 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 * BaseTier: A=50, B=30, C=15.
 
-* ChainBonus: \+0–20 if bag→tag→log completed in **FieldPad**.
+* ChainBonus: +0–20 if bag→tag→log completed in **FieldPad**.
 
 * ContamPenalty: −0–25 for mishandling or broken seals.
 
 * TimeDecay: −0–10 if perishable and delayed.
 
-* CrosslinkBonus: \+0–15 if connected to ≥2 corroborating items.
+* CrosslinkBonus: +0–15 if connected to ≥2 corroborating items.
 
 **Chain of Custody (Avery)**
 
-1. Photograph in place → 2\) Collect with gloves → 3\) Bag & seal → 4\) Tag ID → 5\) Log in FieldPad → 6\) Transfer receipt.  
+1. Photograph in place → 2) Collect with gloves → 3) Bag & seal → 4) Tag ID → 5) Log in FieldPad → 6) Transfer receipt.  
     Breaks invalidate A‑tier gates until remedied by supervisor sign‑off.
 
 ## **5.8 TAPLINE (Signals) — Mechanics**
@@ -123,7 +124,7 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 * Apps: Camera, Evidence, Caseboard, Warrant Builder, Map, Contacts.
 
-* Warrant Builder: template \+ probable cause fields; auto‑pulls linked evidence; judge approval simulated via score.
+* Warrant Builder: template + probable cause fields; auto‑pulls linked evidence; judge approval simulated via score.
 
 * Caseboard: nodes and threads; inference suggestions with uncertainty badges.
 
@@ -137,7 +138,7 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 ## **5.11 Inventory, Crafting, Economy**
 
-* **Slots \+ Weight** hybrid. Quick slots: 4\. Backpack tiers affect capacity.
+* **Slots + Weight** hybrid. Quick slots: 4\. Backpack tiers affect capacity.
 
 * **Crafting (Clara‑focused):** simple traps, lock tools, noise devices using found parts.
 
@@ -200,3 +201,9 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 ## **5.19 Approvals**
 
 On approval: archive to MASTER as `[SEC-05-SYSTEMS] v0.1` and update manifest. Next section: **SEC‑06 World, Levels, & Content**.
+
+
+### **5.x TAPLINE Legal Gates (1994)**
+- **Pen register / trap‑and‑trace**: logs dialed numbers only; lower standard order. UI must label as **No content capture**.
+- **Content interception (Title III)**: required for audio/content; block capture without active order; show **Title III order required** messaging.
+- Full audit trail: judge, order id, start/stop timestamps.

@@ -1,10 +1,10 @@
 # DIPLOMAGIC — Combined GDD Export
-Generated: 2025-08-14 06:48:34 UTC
+Generated: 2025-08-14 07:24:41 UTC
 
 ---
 
 ## Table of Contents
-- [SEC-01-FRONT — Front Matter & Executive Summary](#sec-01-front)- [SEC-02-PILLARS — Pillars & Audience](#sec-02-pillars)- [SEC-03-NARRATIVE — Narrative](#sec-03-narrative)- [SEC-04-LOOPS — Core Gameplay Loops](#sec-04-loops)- [SEC-05-SYSTEMS — Systems & Mechanics](#sec-05-systems)- [SEC-06-WORLD — World, Levels, & Content](#sec-06-world)- [SEC-07-UI — UI/UX (Devices, HUD, Menus)](#sec-07-ui)- [SEC-08-ARTAUDIO — Art Direction & Audio](#sec-08-artaudio)- [SEC-09-TECH — Technology & Performance Targets](#sec-09-tech)- [SEC-10-PRODUCTION — Production Plan & Milestones](#sec-10-production)- [SEC-11-QA — QA, Localization, Accessibility](#sec-11-qa)- [SEC-12-RISKS — Risks, Legal, Ratings](#sec-12-risks)- [SEC-13-APPENDICES — Appendices](#sec-13-appendices)- [SEC-14-QA — Quality Assurance Test Plan](#sec-14-qa)
+- [SEC-01-FRONT — Front Matter & Executive Summary](#sec-01-front)- [SEC-03-NARRATIVE — Narrative](#sec-03-narrative)- [SEC-04-LOOPS — Core Gameplay Loops](#sec-04-loops)- [SEC-05-SYSTEMS — Systems & Mechanics](#sec-05-systems)- [SEC-06-WORLD — World, Levels, & Content](#sec-06-world)- [SEC-07-UI — UI/UX (Devices, HUD, Menus)](#sec-07-ui)- [SEC-08-ARTAUDIO — Art Direction & Audio](#sec-08-artaudio)- [SEC-09-TECH — Technology & Performance Targets](#sec-09-tech)- [SEC-10-PRODUCTION — Production Plan & Milestones](#sec-10-production)- [SEC-11-QA — QA, Localization, Accessibility](#sec-11-qa)- [SEC-12-RISKS — Risks, Legal, Ratings](#sec-12-risks)- [SEC-13-APPENDICES — Appendices](#sec-13-appendices)- [SEC-14-QA — Quality Assurance Test Plan](#sec-14-qa)
 ---
 
 <a id="sec-01-front"></a>
@@ -14,9 +14,8 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-02-PILLARS — Pillars & Audience`
-- `SEC-03-NARRATIVE — Narrative`
-- `SEC-04-LOOPS — Core Gameplay Loops`
+- `SEC-03-NARRATIVE` — Narrative
+- `SEC-04-LOOPS` — Core Gameplay Loops
 
 ## **Title**
 
@@ -60,138 +59,121 @@ This GDD is structured for contractor and publisher use. Each section is self‑
 
 * Master copy: `[SEC-01-FRONT] v0.2`
 
----
+# Patch Instructions for Existing MASTER — SEC-02
 
-<a id="sec-02-pillars"></a>
-# [SEC-02-PILLARS] Pillars & Audience
-Version: v0.1 (no change to Master header)  
-Date: 2025-08-11  
-Owner: Nick Goldman
+## 1) Replace this single manifest row
 
-### Related sections
-- `SEC-01-FRONT — Front Matter & Executive Summary`
-- `SEC-03-NARRATIVE — Narrative`
-- `SEC-04-LOOPS — Core Gameplay Loops`
+Find the row that begins with \`| SEC-02-PILLARS |\` and replace the entire line with:
 
-\# Patch Instructions for Existing MASTER — SEC-02
+\`| SEC-02-PILLARS | Pillars + audience | v0.1 | 2025-08-11 | approved | archived to Master |\`
 
+## 2) Append this section to the end of MASTER (add a \`\` before it)
 
+\\[\\[PAGEBREAK]]
 
-\#\# 1\) Replace this single manifest row
+# **\\[SEC-02-PILLARS] Design Pillars & Target Audience**
 
-
-\`| SEC-02-PILLARS | Pillars \+ audience | v0.1 | 2025-08-11 | approved | archived to Master |\`
-
-\#\# 2\) Append this section to the end of MASTER (add a \`\[\[PAGEBREAK\]\]\` before it)
-
-\\\[\\\[PAGEBREAK\]\]
-
-\# \*\*\\\[SEC-02-PILLARS\] Design Pillars & Target Audience\*\*
-
-
-Owner: Nick Goldman
-
-\#\# \*\*2.1 Product Pillars\*\*
+## **2.1 Product Pillars**
 
 Each pillar includes guardrails and checks used in reviews and greenlight gates.
 
-\#\#\# \*\*P1. Dual‑Protagonist Parallax Narrative\*\*
+### **P1. Dual‑Protagonist Parallax Narrative**
 
-\*\*Definition.\*\* The story alternates between Avery (procedural, institutional) and Clara (survival, improvisational). They converge mid‑campaign and affect shared world state.
+**Definition.** The story alternates between Avery (procedural, institutional) and Clara (survival, improvisational). They converge mid‑campaign and affect shared world state.
 
-\*\*Why.\*\* Contrast keeps pacing fresh and reinforces theme: human systems vs the unknowable.
+**Why.** Contrast keeps pacing fresh and reinforces theme: human systems vs the unknowable.
 
-\*\*Design Rules.\*\*
+**Design Rules.**
 
-\* Do: Give each character exclusive mechanics, verbs, and UI affordances.
+* Do: Give each character exclusive mechanics, verbs, and UI affordances.
 
-\* Do: Mirror key events from different viewpoints.
+* Do: Mirror key events from different viewpoints.
 
-\* Don’t: Duplicate missions one‑to‑one or let skill trees collapse into sameness.
+* Don’t: Duplicate missions one‑to‑one or let skill trees collapse into sameness.
 
-  \*\*Checks.\*\* ≥30% missions feature explicit cross‑impact; shared state is reflected in dialog, evidence, and encounters.
+  **Checks.** ≥30% missions feature explicit cross‑impact; shared state is reflected in dialog, evidence, and encounters.
 
-\#\#\# \*\*P2. Procedural Realism (1994)\*\*
+### **P2. Procedural Realism (1994)**
 
-\*\*Definition.\*\* FBI‑accurate process for Avery; era‑correct civilian problem‑solving for Clara. Evidence handling, communications, and tactics reflect 1994 constraints.
+**Definition.** FBI‑accurate process for Avery; era‑correct civilian problem‑solving for Clara. Evidence handling, communications, and tactics reflect 1994 constraints.
 
-\*\*Why.\*\* Grounded realism amplifies dread and differentiates the game.
+**Why.** Grounded realism amplifies dread and differentiates the game.
 
-\*\*Design Rules.\*\*
+**Design Rules.**
 
-\* Do: Enforce chain‑of‑custody, warrants, ROE for Avery.
+* Do: Enforce chain‑of‑custody, warrants, ROE for Avery.
 
-\* Do: Prefer analog friction for Clara: paper trails, payphones, physical locks.
+* Do: Prefer analog friction for Clara: paper trails, payphones, physical locks.
 
-\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
 
-  \*\*Checks.\*\* Every Avery mission features at least one procedural gate; Clara scenarios require at least one analog workaround.
+  **Checks.** Every Avery mission features at least one procedural gate; Clara scenarios require at least one analog workaround.
 
-\#\#\# \*\*P3. Investigative Agency → Consequence\*\*
+### **P3. Investigative Agency → Consequence**
 
-\*\*Definition.\*\* Player‑led inquiry drives outcomes. Evidence unlocks dialog, access, and tactical options; poor prep increases risk.
+**Definition.** Player‑led inquiry drives outcomes. Evidence unlocks dialog, access, and tactical options; poor prep increases risk.
 
-\*\*Why.\*\* Investigation is core loop glue between exploration and combat.
+**Why.** Investigation is core loop glue between exploration and combat.
 
-\*\*Design Rules.\*\*
+**Design Rules.**
 
-\* Do: Score evidence quality; branch encounters by prep level.
+* Do: Score evidence quality; branch encounters by prep level.
 
-\* Do: Surface inference tools and uncertainty.
+* Do: Surface inference tools and uncertainty.
 
-\* Don’t: Solve with canned cutscene reveals after linear set pieces.
+* Don’t: Solve with canned cutscene reveals after linear set pieces.
 
-  \*\*Checks.\*\* Each mission supports ≥2 materially different resolutions tied to evidence tiers.
+  **Checks.** Each mission supports ≥2 materially different resolutions tied to evidence tiers.
 
-\#\#\# \*\*P4. Devices as Mechanics (FieldPad, TAPLINE, MEDSTAT)\*\*
+### **P4. Devices as Mechanics (FieldPad, TAPLINE, MEDSTAT)**
 
-\*\*Definition.\*\* Diegetic UIs modeled on IBM Simon/Palm/Apple Newton. They gate features and tutorialize through use.
+**Definition.** Diegetic UIs modeled on IBM Simon/Palm/Apple Newton. They gate features and tutorialize through use.
 
-\*\*Why.\*\* Cohesive UX and fiction alignment.
+**Why.** Cohesive UX and fiction alignment.
 
-\*\*Design Rules.\*\*
+**Design Rules.**
 
-\* Do: Keep screens two‑tone, large hit targets, latency modeled.
+* Do: Keep screens two‑tone, large hit targets, latency modeled.
 
-\* Do: Unlock apps through story beats; respect battery/connection constraints.
+* Do: Unlock apps through story beats; respect battery/connection constraints.
 
-\* Don’t: Add non‑diegetic overlays that duplicate device functions.
+* Don’t: Add non‑diegetic overlays that duplicate device functions.
 
-  \*\*Checks.\*\* ≥70% mission interactions route through device apps; device upgrades change play, not stats alone.
+  **Checks.** ≥70% mission interactions route through device apps; device upgrades change play, not stats alone.
 
-\#\#\# \*\*P5. Dread‑First Aesthetics, PS1‑era Readability\*\*
+### **P5. Dread‑First Aesthetics, PS1‑era Readability**
 
-\*\*Definition.\*\* Low‑poly silhouettes with modern lighting and post‑FX. Horror tone favors implication over gore.
+**Definition.** Low‑poly silhouettes with modern lighting and post‑FX. Horror tone favors implication over gore.
 
-\*\*Why.\*\* Distinct look with high performance and clear gameplay readability.
+**Why.** Distinct look with high performance and clear gameplay readability.
 
-\*\*Design Rules.\*\*
+**Design Rules.**
 
-\* Do: Prioritize silhouette, texture economy, fog volumes, limited palette.
+* Do: Prioritize silhouette, texture economy, fog volumes, limited palette.
 
-\* Don’t: Photoreal blood‑porn; avoid comedic gore.
+* Don’t: Photoreal blood‑porn; avoid comedic gore.
 
-  \*\*Checks.\*\* Heuristic readability pass per level; \<5% of playtest deaths attributed to visual ambiguity.
+  **Checks.** Heuristic readability pass per level; \<5% of playtest deaths attributed to visual ambiguity.
 
-\#\# \*\*2.2 Player Experience Goals (PXG)\*\*
+## **2.2 Player Experience Goals (PXG)**
 
-\* Feel competent assembling truth from scraps under time pressure.
+* Feel competent assembling truth from scraps under time pressure.
 
-\* Feel the weight of procedure versus urgency.
+* Feel the weight of procedure versus urgency.
 
-\* Fear the unknown without losing mechanical clarity.
+* Fear the unknown without losing mechanical clarity.
 
-\* See choices echoed later by changed spaces, NPCs, and evidence trails.
+* See choices echoed later by changed spaces, NPCs, and evidence trails.
 
-\#\# \*\*2.3 Target Audience\*\*
+## **2.3 Target Audience**
 
-\*\*Primary.\*\* PC players 18–45 who enjoy investigative horror, immersive sims, and tactical shooters.
+**Primary.** PC players 18–45 who enjoy investigative horror, immersive sims, and tactical shooters.
 
-\*\*Secondary.\*\* Narrative RPG and survival horror fans; mod‑curious PC communities.
+**Secondary.** Narrative RPG and survival horror fans; mod‑curious PC communities.
 
-\*\*Accessibility baseline.\*\* Subtitles, color‑blind safe palettes, remappable inputs, aim assist options, difficulty modifiers for information density.
+**Accessibility baseline.** Subtitles, color‑blind safe palettes, remappable inputs, aim assist options, difficulty modifiers for information density.
 
-\#\# \*\*2.4 Competitive Comps & Positioning\*\*
+## **2.4 Competitive Comps & Positioning**
 
 | Title/Ref               | Why it’s relevant              | Our differentiation                           |
 
@@ -201,57 +183,67 @@ Each pillar includes guardrails and checks used in reviews and greenlight gates.
 
 | Resident Evil (classic) | Survival horror pacing         | Investigation and procedure drive fights      |
 
-| Signalis                | Low‑poly austerity, dread      | Dual devices \+ institutional realism          |
+| Signalis                | Low‑poly austerity, dread      | Dual devices + institutional realism          |
 
 | Disco Elysium           | Evidence‑led narrative systems | First‑person, tactical risk, 1994 constraints |
 
-\*\*Positioning Statement.\*\* An investigative horror where dual protagonists use period‑authentic tools to expose a cosmic intrusion, delivering grounded tension and meaningful agency.
+**Positioning Statement.** An investigative horror where dual protagonists use period‑authentic tools to expose a cosmic intrusion, delivering grounded tension and meaningful agency.
 
-\#\# \*\*2.5 Platform & Input Assumptions\*\*
+## **2.5 Platform & Input Assumptions**
 
-\* PC first. Keyboard/mouse and gamepad parity targets.
+* PC first. Keyboard/mouse and gamepad parity targets.
 
-\* Haptics optional on supported controllers.
+* Haptics optional on supported controllers.
 
-\* No mandatory online features for core loop.
+* No mandatory online features for core loop.
 
-\#\# \*\*2.6 Content Rating Strategy\*\*
+## **2.6 Content Rating Strategy**
 
-Target: ESRB \*\*M\*\* / PEGI \*\*18\*\*. Violence, language, horror themes. Avoid sexual content and torture porn. Use content warnings for specific scenes.
+Target: ESRB **M** / PEGI **18**. Violence, language, horror themes. Avoid sexual content and torture porn. Use content warnings for specific scenes.
 
-\#\# \*\*2.7 Success Criteria\*\*
+## **2.7 Success Criteria**
 
-\*\*Qualitative.\*\* Playtesters describe “investigation mattered,” “devices felt real,” “deaths felt fair.”
+**Qualitative.** Playtesters describe “investigation mattered,” “devices felt real,” “deaths felt fair.”
 
-\*\*Quantitative.\*\*
+**Quantitative.**
 
-\* Evidence systems used in ≥80% of missions.
+* Evidence systems used in ≥80% of missions.
 
-\* Two or more valid mission resolutions logged in ≥60% of missions.
+* Two or more valid mission resolutions logged in ≥60% of missions.
 
-\* \<5% UI errors from discoverability in device apps by final beta.
+* \<5% UI errors from discoverability in device apps by final beta.
 
-\* Day‑1 crash‑free rate P90 ≥ 99.5% on min‑spec PC.
+* Day‑1 crash‑free rate P90 ≥ 99.5% on min‑spec PC.
 
-\#\# \*\*2.8 Risks & Mitigations\*\*
+## **2.8 Risks & Mitigations**
 
-\* \*\*Procedural friction\*\* may frustrate: provide optional briefs, tooltips, and case files.
+* **Procedural friction** may frustrate: provide optional briefs, tooltips, and case files.
 
-\* \*\*Dual‑protagonist scope\*\*: share assets via locations re‑used with altered objectives.
+* **Dual‑protagonist scope**: share assets via locations re‑used with altered objectives.
 
-\* \*\*Device UI overload\*\*: progressive disclosure; tutorialize via cases, not modal popups.
+* **Device UI overload**: progressive disclosure; tutorialize via cases, not modal popups.
 
-\#\# \*\*2.9 Terminology\*\*
+## **2.9 Terminology**
 
-\* \*\*FieldPad\*\*: evidence capture and casework.
+* **FieldPad**: evidence capture and casework.
 
-\* \*\*TAPLINE\*\*: communications interception and analysis.
+* **TAPLINE**: communications interception and analysis.
 
-\* \*\*MEDSTAT\*\*: biometrics, triage, and team status.
+* **MEDSTAT**: biometrics, triage, and team status.
 
-\#\# \*\*2.10 Approvals\*\*
+## **2.10 Approvals**
 
-On approval: archive to MASTER as \`\[SEC-02-PILLARS\] v0.1\` and add manifest row. Next section: \*\*SEC‑03 Narrative\*\*.
+On approval: archive to MASTER as \`[SEC-02-PILLARS] v0.1\` and add manifest row. Next section: **SEC‑03 Narrative**.
+
+# **Patch Instructions for Existing MASTER — SEC-03**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-03-NARRATIVE |` and replace the entire line with:
+
+`| SEC-03-NARRATIVE | Narrative | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
 ---
 
@@ -262,9 +254,9 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-02-PILLARS — Pillars & Audience`
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
+- `SEC-01-FRONT` — Front Matter & Executive Summary
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-05-SYSTEMS` — Systems & Mechanics
 
 ## **3.1 Structure & Tone**
 
@@ -318,6 +310,16 @@ Use these exact titles in all builds, docs, and UI.
 
 On approval: archive to MASTER as `[SEC-03-NARRATIVE] v0.1` and update manifest.
 
+# **Patch Instructions for Existing MASTER — SEC-04**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-04-LOOPS |` and replace the entire line with:
+
+`| SEC-04-LOOPS | Core loops | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
+
 ---
 
 <a id="sec-04-loops"></a>
@@ -327,9 +329,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-03-NARRATIVE — Narrative`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-06-WORLD — World, Levels, & Content`
+- `SEC-01-FRONT` — Front Matter & Executive Summary
+- `SEC-03-NARRATIVE` — Narrative
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-06-WORLD` — World, Levels, & Content
 
 ## **4.1 Overview**
 
@@ -339,11 +342,11 @@ Loops connect investigation, stealth/combat, and narrative progression. Avery \=
 
 Primary verbs: observe, collect, infer, act, record, move.
 
-\[Observe\] → \[Collect Evidence\] → \[Evaluate Risk\] → \[Act (Stealth/Combat/Dialogue)\]
+[Observe] → [Collect Evidence] → [Evaluate Risk] → [Act (Stealth/Combat/Dialogue)]
 
          ↘                                          ↗
 
-           \[Record in FieldPad\] ← \[Update World/AI State\] ← \[Relocate\]
+           [Record in FieldPad] ← [Update World/AI State] ← [Relocate]
 
 **Guardrails**
 
@@ -359,17 +362,17 @@ Primary verbs: observe, collect, infer, act, record, move.
 
 **Avery (FBI)**
 
-\[Brief/Case Intake\] → \[Legal Prep (warrant/ROE)\] → \[Travel/Loadout\]
+[Brief/Case Intake] → [Legal Prep (warrant/ROE)] → [Travel/Loadout]
 
-      → \[Recon\] → {Branch: Infiltrate | Knock/Breach} → \[Secure/Arrest\]
+      → [Recon] → {Branch: Infiltrate | Knock/Breach} → [Secure/Arrest]
 
-      → \[Scene Processing\] → \[Debrief/Casefile\]
+      → [Scene Processing] → [Debrief/Casefile]
 
 **Clara (Survival)**
 
-\[Immediate Need (Protect Reddy)\] → \[Scavenge/Route Plan\] → \[Infiltrate/Bypass\]
+[Immediate Need (Protect Reddy)] → [Scavenge/Route Plan] → [Infiltrate/Bypass]
 
-      → \[Avoid/Disable Threat\] → \[Extract\] → \[Recuperate/Journal\]
+      → [Avoid/Disable Threat] → [Extract] → [Recuperate/Journal]
 
 **Checkpoints**
 
@@ -401,9 +404,9 @@ Primary verbs: observe, collect, infer, act, record, move.
 
 **Stealth**
 
-\[Shadow/Noise Mgmt\] → \[Intel Peek\] → \[Path/Create Distraction\] → \[Bypass/Isolate\]
+[Shadow/Noise Mgmt] → [Intel Peek] → [Path/Create Distraction] → [Bypass/Isolate]
 
-        ↖——————————————————————\[Break LOS\]/\[Hide\]———————————————————————↗
+        ↖——————————————————————[Break LOS]/[Hide]———————————————————————↗
 
 **Avery Combat**: cover, decoupled aiming, arrests \> lethal. Suppression and team calls supported by MEDSTAT.  
  **Clara Combat**: last resort. Limited firearms, improvised traps, sprint windows. Fewer bullets, more routes.
@@ -472,6 +475,16 @@ Primary verbs: observe, collect, infer, act, record, move.
 
 On approval: archive to MASTER as `[SEC-04-LOOPS] v0.1` and update manifest. Next section: **SEC‑05 Systems & Mechanics**.
 
+# **Patch Instructions for Existing MASTER — SEC-05**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-05-SYSTEMS |` and replace the entire line with:
+
+`| SEC-05-SYSTEMS | Systems and mechanics | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
+
 ---
 
 <a id="sec-05-systems"></a>
@@ -481,9 +494,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
+- `SEC-03-NARRATIVE` — Narrative
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
 
 ## **5.1 Systems Overview**
 
@@ -573,17 +587,17 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 * BaseTier: A=50, B=30, C=15.
 
-* ChainBonus: \+0–20 if bag→tag→log completed in **FieldPad**.
+* ChainBonus: +0–20 if bag→tag→log completed in **FieldPad**.
 
 * ContamPenalty: −0–25 for mishandling or broken seals.
 
 * TimeDecay: −0–10 if perishable and delayed.
 
-* CrosslinkBonus: \+0–15 if connected to ≥2 corroborating items.
+* CrosslinkBonus: +0–15 if connected to ≥2 corroborating items.
 
 **Chain of Custody (Avery)**
 
-1. Photograph in place → 2\) Collect with gloves → 3\) Bag & seal → 4\) Tag ID → 5\) Log in FieldPad → 6\) Transfer receipt.  
+1. Photograph in place → 2) Collect with gloves → 3) Bag & seal → 4) Tag ID → 5) Log in FieldPad → 6) Transfer receipt.  
     Breaks invalidate A‑tier gates until remedied by supervisor sign‑off.
 
 ## **5.8 TAPLINE (Signals) — Mechanics**
@@ -600,7 +614,7 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 * Apps: Camera, Evidence, Caseboard, Warrant Builder, Map, Contacts.
 
-* Warrant Builder: template \+ probable cause fields; auto‑pulls linked evidence; judge approval simulated via score.
+* Warrant Builder: template + probable cause fields; auto‑pulls linked evidence; judge approval simulated via score.
 
 * Caseboard: nodes and threads; inference suggestions with uncertainty badges.
 
@@ -614,7 +628,7 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 ## **5.11 Inventory, Crafting, Economy**
 
-* **Slots \+ Weight** hybrid. Quick slots: 4\. Backpack tiers affect capacity.
+* **Slots + Weight** hybrid. Quick slots: 4\. Backpack tiers affect capacity.
 
 * **Crafting (Clara‑focused):** simple traps, lock tools, noise devices using found parts.
 
@@ -678,20 +692,25 @@ This section defines player-facing mechanics, underlying rules, tunables, and AI
 
 On approval: archive to MASTER as `[SEC-05-SYSTEMS] v0.1` and update manifest. Next section: **SEC‑06 World, Levels, & Content**.
 
+
+### **5.x TAPLINE Legal Gates (1994)**
+- **Pen register / trap‑and‑trace**: logs dialed numbers only; lower standard order. UI must label as **No content capture**.
+- **Content interception (Title III)**: required for audio/content; block capture without active order; show **Title III order required** messaging.
+- Full audit trail: judge, order id, start/stop timestamps.
+
 ---
 
 <a id="sec-06-world"></a>
 # [SEC-06-WORLD] World, Levels, & Content
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
 
 ## **6.1 World Overview**
 
@@ -727,7 +746,7 @@ Reality fractures into **New Kadath** (adjacent, navigable) and **Unknown Kadath
 
 ## **6.4 Level Design Tenets**
 
-* Readable austerity: PS1-era silhouettes \+ modern lighting.
+* Readable austerity: PS1-era silhouettes + modern lighting.
 
 * Two-pass geometry: Clara stealth first, Avery breach second.
 
@@ -775,8 +794,8 @@ Clara Winston, Avery Jordan, Reddy, Qin Xu Qi, Paul Kent, Richard Tack, Betsy Lu
 | Ch1 | Kids Kamp, Jackson SC | 2–3 | Clara escape; Avery check |
 | Ch2 | Backwoods, Substations | 2 | Route choice; TAPLINE |
 | Ch3 | Brightstar return, Unknown Kadath | 2 | Convergence, time dilation |
-| Ch4 | NYC Tunnels \+ surreal | 2 | Swap cadence tighter |
-| Ch5 | NYC hub \+ prior sites | 2–3 | Rogue Avery, open returns |
+| Ch4 | NYC Tunnels + surreal | 2 | Swap cadence tighter |
+| Ch5 | NYC hub + prior sites | 2–3 | Rogue Avery, open returns |
 | Ch6 | Transdimensional Complex | 2 | Ascent, escape |
 | Epilogue | Variable | 1 | Endings matrix |
 | Total missions: 13–16. |  |  |  |
@@ -803,35 +822,34 @@ Greybox plans, prop lists, re-entry specs, audio maps, optimization checklist.
 
 ## **6.15 Approvals**
 
-On approval: archive to MASTER as \[SEC-06-WORLD\] v0.1 and update manifest. Next: SEC-07 UI/UX.
+On approval: archive to MASTER as [SEC-06-WORLD] v0.1 and update manifest. Next: SEC-07 UI/UX.
 
 # **Patch Instructions for Existing MASTER — SEC-07**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-07-UI |` and replace the entire line with:
 
 `| SEC-07-UI | UI/UX | v0.1 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
-\[\[PAGEBREAK\]\]
+
+> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
 
 ---
 
 <a id="sec-07-ui"></a>
 # [SEC-07-UI] UI/UX (Devices, HUD, Menus)
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-09-TECH` — Technology & Performance Targets
 
 ## **7.1 Goals & Principles**
 
@@ -839,7 +857,7 @@ Owner: Nick Goldman
 
 * 1994 constraints. Limited color, latency, coarse hit targets, period affordances.
 
-* Readability over spectacle. PS1‑era silhouettes \+ modern clarity.
+* Readability over spectacle. PS1‑era silhouettes + modern clarity.
 
 * Minimal HUD. Surface only actionable state.
 
@@ -847,20 +865,20 @@ Owner: Nick Goldman
 
 ## **7.2 Visual Language**
 
-**Palette.** HUD: 1 accent \+ neutrals. Devices: two‑tone skins (Green, Amber, Gray).
- **Type.** Bitmap sans for devices; clean sans for HUD. Minimum 12 px at 1080p equivalent.
- **Grid.** Virtual 320×240 device canvas, 8 px base unit; HUD uses 12‑pt safe margins.
+**Palette.** HUD: 1 accent + neutrals. Devices: two‑tone skins (Green, Amber, Gray).  
+ **Type.** Bitmap sans for devices; clean sans for HUD. Minimum 12 px at 1080p equivalent.  
+ **Grid.** Virtual 320×240 device canvas, 8 px base unit; HUD uses 12‑pt safe margins.  
  **Iconography.** Stroke icons, 1 px weight at 1080p, scale by step 1.25×.
 
 ## **7.3 Global HUD (contextual, minimal)**
 
-* **Top‑left:** Objective stub \+ sub‑task dot list.
+* **Top‑left:** Objective stub + sub‑task dot list.
 
-* **Bottom‑left:** Health bar \+ vitals pill. Clara shows **Stress**; Avery shows **Armor**.
+* **Bottom‑left:** Health bar + vitals pill. Clara shows **Stress**; Avery shows **Armor**.
 
 * **Bottom‑right:** Ammo/weapon or tool readout.
 
-* **Center‑low:** Interaction prompt with verb \+ hold meter where needed.
+* **Center‑low:** Interaction prompt with verb + hold meter where needed.
 
 * **Stealth:** eye glyph (visibility), waveform glyph (noise).
 
@@ -868,7 +886,7 @@ Owner: Nick Goldman
 
 Example HUD overlay (schematic):
 
-\[OBJ\] Kids Kamp: Extract Reddy
+[OBJ] Kids Kamp: Extract Reddy
 
   • Unlock north gate  ◻
 
@@ -876,7 +894,7 @@ Example HUD overlay (schematic):
 
 ꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏꞏ (screen)
 
-\[HP ████▌\]  \[VIS ◐\]\[NOISE ≈≈\]                             \[9× .38 | ■■■■\]
+[HP ████▌]  [VIS ◐][NOISE ≈≈]                             [9× .38 | ■■■■]
 
       Clara: Stress ▒▒▒▒                                 Prompt: Hold E — Pick Lock ▓▓▓▒▒
 
@@ -894,17 +912,17 @@ Example HUD overlay (schematic):
 
 ### **7.4.1 FieldPad — Casework & Evidence**
 
-**Purpose.** Capture, tag, link, and warrant‑build.
- **Apps.** Home, Camera, Evidence, Caseboard, Warrant, Map, Contacts.
+**Purpose.** Capture, tag, link, and warrant‑build.  
+ **Apps.** Home, Camera, Evidence, Caseboard, Warrant, Map, Contacts.  
  **Flows.** Photo → Tag → Chain steps → Link to case → Warrant score.
 
 FieldPad — HOME
 
 ┌──────────────── FIELD•PAD ────────────────┐   ▂▃▅  ■■■□  ▮▮▮▯  14:32
 
-│ \[Camera\] \[Evidence\] \[Caseboard\]           │
+│ [Camera] [Evidence] [Caseboard]           │
 
-│ \[Warrant\] \[Map\]      \[Contacts\]           │
+│ [Warrant] [Map]      [Contacts]           │
 
 │                                            │
 
@@ -914,45 +932,45 @@ FieldPad — HOME
 
 FieldPad — EVIDENCE (item view)
 
-┌───────────── EVIDENCE: BAG \#A‑014 ─────────┐   ▂▃▅  ■■■■  ▮▮▮▮  14:41
+┌───────────── EVIDENCE: BAG #A‑014 ─────────┐   ▂▃▅  ■■■■  ▮▮▮▮  14:41
 
-│ Photo: IMG\_0142  \[View\]                    │
+│ Photo: IMG\_0142  [View]                    │
 
 │ Type: Fiber (A‑tier)                       │  Q: 78
 
 │ Chain: Photo → Collect → Bag → Tag → Log   │  Seal: ▣ Intact
 
-│ Links: Case \#82 • Victim \#2 • Locker 3     │
+│ Links: Case #82 • Victim #2 • Locker 3     │
 
 │ Notes:                                     │
 
 │  − Found under vent panel                  │
 
-└◀ BACK                   \[LINK\]   OK ▶──────┘
+└◀ BACK                   [LINK]   OK ▶──────┘
 
 FieldPad — WARRANT BUILDER
 
 ┌────────────── WARRANT BUILDER ─────────────┐   ▂▃▅  ■■□□  ▮▮▮▯  15:06
 
-│ Case: \#82  Judge: S. Hartford              │  Score: 62 (PASS)
+│ Case: #82  Judge: S. Hartford              │  Score: 62 (PASS)
 
 │ Probable Cause:                            │
 
-│  \[ \] Evidence A‑014 (fiber)                │
+│  [ ] Evidence A‑014 (fiber)                │
 
-│  \[ \] Intercepts TPL‑07                     │
+│  [ ] Intercepts TPL‑07                     │
 
-│  \[ \] Statement W‑03                        │
+│  [ ] Statement W‑03                        │
 
 │ Affidavit Text:                            │
 
 │  \> Suspect used south entrance…            │
 
-└◀ BACK                 \[SUBMIT\]   OK ▶──────┘
+└◀ BACK                 [SUBMIT]   OK ▶──────┘
 
 ### **7.4.2 TAPLINE — Signals**
 
-**Purpose.** Scan, record, triangulate, spoof, and decode era radios/phones.
+**Purpose.** Scan, record, triangulate, spoof, and decode era radios/phones.  
  **Modes.** Scan • Record • Triangulate • Decode • Spoof (Avery only).
 
 TAPLINE — SCAN
@@ -961,7 +979,7 @@ TAPLINE — SCAN
 
 │ Band: UHF  |  Freq: 462.6125 MHz           │  SNR: ▓▓▓▒▒
 
-│ \[◀\] 462.6000 ◁▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▷ 462.6500 \[▶\]
+│ [◀] 462.6000 ◁▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▷ 462.6500 [▶]
 
 │ Hold to lock: ████▒▒                       │
 
@@ -969,7 +987,7 @@ TAPLINE — SCAN
 
 │        19:35  DTMF: 4 1 2                  │
 
-└◀ BACK                 \[RECORD\]   OK ▶──────┘
+└◀ BACK                 [RECORD]   OK ▶──────┘
 
 TAPLINE — TRIANGULATE
 
@@ -979,15 +997,15 @@ TAPLINE — TRIANGULATE
 
 │ Bearings: A 062° • B 239° • C  —           │
 
-│ Map:  \[A───────╳────────B\]                  │
+│ Map:  [A───────╳────────B]                  │
 
-│        Clara route  \[ \]  Avery route \[x\]    │
+│        Clara route  [ ]  Avery route [x]    │
 
-└◀ BACK                  \[PING\]    OK ▶──────┘
+└◀ BACK                  [PING]    OK ▶──────┘
 
 ### **7.4.3 MEDSTAT — Vitals & Team**
 
-**Purpose.** Health, status effects, triage, and telemetry.
+**Purpose.** Health, status effects, triage, and telemetry.  
  **States.** Stable • Wounded • Critical • In Shock • Infected • Contaminated.
 
 MEDSTAT — VITALS
@@ -1002,15 +1020,15 @@ MEDSTAT — VITALS
 
 │ Status: Wounded (Bleeding)                  │
 
-│ Actions: \[Bandage\] \[Tourniquet\] \[Analgesic\] │
+│ Actions: [Bandage] [Tourniquet] [Analgesic] │
 
-└◀ BACK                 \[APPLY\]    OK ▶──────┘
+└◀ BACK                 [APPLY]    OK ▶──────┘
 
 ## **7.5 Menus & Screens**
 
 * **Pause.** Resume, Save, Load, Options, Accessibility, Quit.
 
-* **Inventory.** Slots \+ Weight hybrid; quick slots ×4.
+* **Inventory.** Slots + Weight hybrid; quick slots ×4.
 
 * **Caseboard.** Graph of nodes and links; filter by time, tier, POV.
 
@@ -1020,7 +1038,7 @@ Inventory (schematic)
 
 ┌──────────────── INVENTORY ────────────────┐
 
-│ Weight: 62%   Quick: \[1\]\[2\]\[3\]\[4\]         │
+│ Weight: 62%   Quick: [1][2][3][4]         │
 
 │ Backpack: MED                              │
 
@@ -1032,17 +1050,17 @@ Inventory (schematic)
 
 │  ▣ Evidence A‑014  ▣ Tape Recorder        │
 
-└◀ BACK                 \[ASSIGN\]   OK ▶─────┘
+└◀ BACK                 [ASSIGN]   OK ▶─────┘
 
 Caseboard (schematic)
 
-\[Case \#82\]
+[Case #82]
 
-  (Victim \#2)───(Fiber A‑014)───(Vent South)
+  (Victim #2)───(Fiber A‑014)───(Vent South)
 
         │              │               \\
 
-     (W‑03)         (TPL‑07)          (Locker 3\)
+     (W‑03)         (TPL‑07)          (Locker 3)
 
 ## **7.6 Input & Controls**
 
@@ -1104,16 +1122,16 @@ On approval: archive to MASTER as `[SEC-07-UI] v0.1` and update manifest. Next s
 
 # **Patch Instructions for Existing MASTER — SEC-08**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-08-ARTAUDIO |` and replace the entire line with:
 
 `| SEC-08-ARTAUDIO | Art direction and audio | v0.2 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
-\[\[PAGEBREAK\]\]
+
+> **Telephony note (1994):** Caller ID availability varies by carrier/market. Do not rely on it for puzzles; provide alternate clues.
 
 ---
 
@@ -1124,17 +1142,14 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-06-WORLD — World, Levels, & Content`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-
-
+- `SEC-06-WORLD` — World, Levels, & Content
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-09-TECH` — Technology & Performance Targets
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
 
 ## **8.1 Visual Pillars**
 
-* PS1‑era austerity \+ modern clarity (fog, lights, post).
+* PS1‑era austerity + modern clarity (fog, lights, post).
 
 * Readable silhouettes first. Texture thrift.
 
@@ -1180,11 +1195,11 @@ Owner: Nick Goldman
 
 ASCII swatches:
 
-████ Splinter Black \#0B0B0E   ████ Fog Gray \#8D9199   ████ Concrete \#5E666F
+████ Splinter Black #0B0B0E   ████ Fog Gray #8D9199   ████ Concrete #5E666F
 
-████ Steel Blue    \#3B5368   ████ Sodium Amber \#C48A1B ████ Emergency Red \#B21E2B
+████ Steel Blue    #3B5368   ████ Sodium Amber #C48A1B ████ Emergency Red #B21E2B
 
-████ FieldPad Green \#1C6B3C  ████ TAPLINE Amber \#D09A2A ████ MEDSTAT Gray \#C7C9CC
+████ FieldPad Green #1C6B3C  ████ TAPLINE Amber #D09A2A ████ MEDSTAT Gray #C7C9CC
 
 ### **8.3.1 Locale Palettes**
 
@@ -1318,7 +1333,7 @@ ASCII swatches:
 
 * **File naming:** `vo_<char>_<scene>_<lineID>_take##.wav`.
 
-* **Slate:** soft clap \+ verbal slate at start of each scene.
+* **Slate:** soft clap + verbal slate at start of each scene.
 
 * **Processing:** light HPF only; no FX baked.
 
@@ -1447,7 +1462,7 @@ Notes: tune with profiling; reserve headroom for VFX and AI.
 
 * VFX bible for Splinter.
 
-* Audio style guide \+ cue sheet template.
+* Audio style guide + cue sheet template.
 
 * Wwise project skeleton and routing.
 
@@ -1456,6 +1471,16 @@ Notes: tune with profiling; reserve headroom for VFX and AI.
 ## **8.25 Approvals**
 
 On approval: archive to MASTER as `[SEC-08-ARTAUDIO] v0.2` and update manifest. Next: **SEC‑09 Technology & Performance**.
+
+# **Patch Instructions for Existing MASTER — SEC-09**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-09-TECH |` and replace the entire line with:
+
+`| SEC-09-TECH | Tech spec | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
 ---
 
@@ -1466,11 +1491,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
+- `SEC-11-QA` — QA, Localization, Accessibility
 
 ## **9.1 Tech Stack**
 
@@ -1480,11 +1504,11 @@ Owner: Nick Goldman
 
 * Middleware: **Wwise** (audio), Niagara (VFX).
 
-* UI: UMG \+ Slate; bitmap device fonts per SEC‑07.
+* UI: UMG + Slate; bitmap device fonts per SEC‑07.
 
 * Source control: **Perforce** recommended for binary assets; Git acceptable for code/tools if isolated.
 
-* Build automation: Unreal Automation Tool (UAT) \+ CI runner (local or hosted).
+* Build automation: Unreal Automation Tool (UAT) + CI runner (local or hosted).
 
 * Scripting: Blueprints for gameplay glue; C++ for systems.
 
@@ -1521,7 +1545,7 @@ Owner: Nick Goldman
 
 * GPU time: **≤ 14 ms** @ 1080p min‑spec.
 
-* CPU game \+ render: **≤ 16 ms** total @ 1080p.
+* CPU game + render: **≤ 16 ms** total @ 1080p.
 
 * Draw calls: **≤ 1,200** interior, **≤ 1,800** exterior.
 
@@ -1559,7 +1583,7 @@ Owner: Nick Goldman
 
 ## **9.8 Save/Load & Data**
 
-* Format: compressed JSON \+ binary blobs for maps; slots: **3 manual \+ autos**.
+* Format: compressed JSON + binary blobs for maps; slots: **3 manual + autos**.
 
 * Contents: caseboard graph, evidence chain states, heat/reputation, device unlock flags, AI snapshot.
 
@@ -1651,20 +1675,35 @@ Owner: Nick Goldman
 
 On approval: archive to MASTER as `[SEC-09-TECH] v0.1` and update manifest. Next: **SEC‑10 Production Plan & Milestones**.
 
+# **Patch Instructions for Existing MASTER — SEC-10**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-10-PRODUCTION |` and replace the entire line with:
+
+`| SEC-10-PRODUCTION | Production plan | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
+
+### **9.x Device I/O & Storage (1994 constraints)**
+- FieldPad storage via **PCMCIA Type‑II ATA/SRAM** or **CF Type‑I** using **CF→PC Card** adapter.
+- Practical throughput ≤ 1–2 MB/s; photo write/read operations are slow.
+- Photo caps aligned with TDD: ≤ 60 per mission, ~200 KB each.
+- Connectors: **RJ‑11** for modem cards, **RJ‑45** for 10Base‑T NICs, optional **RS‑232 DE‑9** on device/dock.
+
 ---
 
 <a id="sec-10-production"></a>
 # [SEC-10-PRODUCTION] Production Plan & Milestones
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
-- `SEC-13-APPENDICES — Appendices`
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
+- `SEC-09-TECH` — Technology & Performance Targets
+- `SEC-11-QA` — QA, Localization, Accessibility
+- `SEC-12-RISKS` — Risks, Legal, Ratings
 
 ## **10.1 Scope & Assumptions**
 
@@ -1685,7 +1724,7 @@ Owner: Nick Goldman
 | Character Artist/Rigger | Contract | 8–12 wks across slice→beta |
 | Animator | Contract | 10–15 hrs/wk Jan’26–Nov’26 |
 | UI/UX Designer | Contract | 6–10 wks across SEC‑07 deliverables |
-| Technical Artist (Shaders/VFX) | Contract | 6–8 wks for Splinter VFX \+ perf |
+| Technical Artist (Shaders/VFX) | Contract | 6–8 wks for Splinter VFX + perf |
 | Sound Designer | Contract | 12–16 wks spread; Wwise impl |
 | Composer | Contract | 10–14 wks, stems system |
 | QA Lead (external) | Vendor | 2× passes: EA and pre‑gold |
@@ -1704,35 +1743,35 @@ Owner: Nick Goldman
 
 ## **10.4 Milestones — Entry/Exit & Deliverables**
 
-### **M1: Vertical Slice (due Nov 15, 2025\)**
+### **M1: Vertical Slice (due Nov 15, 2025)**
 
-**Entry:** SEC‑04/05 baseline implemented; device UI MVP; perf captures at target map.
- **Exit:** One Clara mission shippable; TAPLINE scan+triangulate; FieldPad photo→tag→warrant; MEDSTAT triage; HUD minimal; controller parity; demo branch tagged.
+**Entry:** SEC‑04/05 baseline implemented; device UI MVP; perf captures at target map.  
+ **Exit:** One Clara mission shippable; TAPLINE scan+triangulate; FieldPad photo→tag→warrant; MEDSTAT triage; HUD minimal; controller parity; demo branch tagged.  
  **Deliverables:** Steam demo build, trailer cut, press kit v0.
 
-### **M2: Early Access (due Jun 15, 2026\)**
+### **M2: Early Access (due Jun 15, 2026)**
 
-**Entry:** Ch1–3 playable end‑to‑end; caseboard saves; ROE loop stable.
- **Exit:** Telemetry online (opt‑in), difficulty presets, accessibility baseline, crash‑free P90 ≥99.0%.
- **Content:** \~7–9 missions; NYC tunnels preview; devices feature‑complete V1.
+**Entry:** Ch1–3 playable end‑to‑end; caseboard saves; ROE loop stable.  
+ **Exit:** Telemetry online (opt‑in), difficulty presets, accessibility baseline, crash‑free P90 ≥99.0%.  
+ **Content:** \~7–9 missions; NYC tunnels preview; devices feature‑complete V1.  
  **Deliverables:** EA build, roadmap, patch plan, community guidelines.
 
-### **M3: Content Expansion (Oct 31, 2026\)**
+### **M3: Content Expansion (Oct 31, 2026)**
 
-**Entry:** Stable EA; art perf budget holding.
- **Exit:** Add Ch4–5, hub re‑use loops, antagonist arcs Qi/Kent; arrest systems tuned; VO pass 1\.
+**Entry:** Stable EA; art perf budget holding.  
+ **Exit:** Add Ch4–5, hub re‑use loops, antagonist arcs Qi/Kent; arrest systems tuned; VO pass 1\.  
  **Deliverables:** Major content update, marketing beats, LQA plan.
 
-### **M4: Beta (Dec 15, 2026\)**
+### **M4: Beta (Dec 15, 2026)**
 
-**Entry:** Feature‑complete; all chapters implemented.
- **Exit:** Content‑complete; bug backlog triaged; crash‑free P90 ≥99.5%; perf budgets met; accessibility check pass.
+**Entry:** Feature‑complete; all chapters implemented.  
+ **Exit:** Content‑complete; bug backlog triaged; crash‑free P90 ≥99.5%; perf budgets met; accessibility check pass.  
  **Deliverables:** Beta candidate builds, test plan, known issues.
 
-### **M5: Gold (Mar 15, 2027\)**
+### **M5: Gold (Mar 15, 2027)**
 
-**Entry:** All Blocker/Critical fixed; audio mix final; balance locked.
- **Exit:** Gold master signed; store assets delivered; mod tools beta post‑EA finalized.
+**Entry:** All Blocker/Critical fixed; audio mix final; balance locked.  
+ **Exit:** Gold master signed; store assets delivered; mod tools beta post‑EA finalized.  
  **Deliverables:** Release build, soundtrack stems pack, press kit v1.0.
 
 ## **10.5 Content Quotas (targets)**
@@ -1741,7 +1780,7 @@ Owner: Nick Goldman
 | ----- | ----- | ----- | ----- |
 | Missions (playable) | 1 | 7–9 | 13–16 |
 | Unique locales | 1 | 4–5 | 7 |
-| Devices apps | 3 | 6 | 6 \+ polish |
+| Devices apps | 3 | 6 | 6 + polish |
 | Enemy archetypes | 2 | 4 | 6 |
 | Weapons/tools | 3 | 6 | 8 |
 | VO lines (approx) | 50 | 400 | 800 |
@@ -1768,7 +1807,7 @@ Owner: Nick Goldman
 
 * **Builds:** CI nightlies; slice/EA/beta/gold branches locked.
 
-* **Tasking:** 2‑week sprints; Definition of Done includes perf \+ accessibility checks.
+* **Tasking:** 2‑week sprints; Definition of Done includes perf + accessibility checks.
 
 * **Reviews:** Milestone gates require KPI dashboard and perf captures.
 
@@ -1794,7 +1833,7 @@ Owner: Nick Goldman
 
 ## **10.10 Marketing & Community**
 
-* Demo \+ EA beats, devlogs, controlled roadmap.
+* Demo + EA beats, devlogs, controlled roadmap.
 
 * Clear mod policy; community standards.
 
@@ -1816,16 +1855,13 @@ On approval: archive to MASTER as `[SEC-10-PRODUCTION] v0.1` and update manifest
 
 # **Patch Instructions for Existing MASTER — SEC-11**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-11-QA |` and replace the entire line with:
 
 `| SEC-11-QA | QA, loc, accessibility | v0.1 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
-
-\[\[PAGEBREAK\]\]
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
 ---
 
@@ -1836,139 +1872,174 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
-- `SEC-13-APPENDICES — Appendices`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
+- `SEC-09-TECH` — Technology & Performance Targets
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
+- `SEC-12-RISKS` — Risks, Legal, Ratings
+- `SEC-13-APPENDICES` — Appendices
 
 ## **11.1 QA Strategy**
 
-### Goals
-Ship a stable, readable, fair game that meets perf budgets and accessibility baselines.
+**Goals.** Ship a stable, readable, fair game that meets perf budgets and accessibility baselines.  
+ **Approach.** Risk‑based testing on core loops (SEC‑04), systems (SEC‑05), UI (SEC‑07), art/audio (SEC‑08), and tech (SEC‑09).
 
-### Approach
-Risk‑based testing on core loops (SEC‑04), systems (SEC‑05), UI (SEC‑07), art/audio (SEC‑08), and tech (SEC‑09).
+**Test types**
 
-### Test types
-- **Smoke (per build):** boot, load, start mission, exit.
-- **Functional:** devices, evidence chain, ROE, stealth, combat, save/load, caseboard.
-- **Systems:** AI perception, heat, reputation, telemetry events.
-- **Performance:** FPS, frametime, draw calls, VRAM, CPU/GPU budgets.
-- **Stability:** long‑session soak (2–3 h), repeated save/load, memory growth.
-- **Regression:** checklist per feature after fixes.
-- **Compatibility:** min/rec PC configs, gamepad parity.
+* **Smoke** (per build): boot, load, start mission, exit.
 
-### Entry/Exit gates
-Slice/EA/Beta builds require: crash‑free P90 ≥ target, KPI deltas reported, no Blockers/Criticals open.
+* **Functional**: devices, evidence chain, ROE, stealth, combat, save/load, caseboard.
+
+* **Systems**: AI perception, heat, reputation, telemetry events.
+
+* **Performance**: FPS, frametime, draw calls, VRAM, CPU/GPU budgets.
+
+* **Stability**: long‑session soak (2–3 h), repeated save/load, memory growth.
+
+* **Regression**: checklist per feature after fixes.
+
+* **Compatibility**: min/rec PC configs, gamepad parity.
+
+**Entry/Exit gates**
+
+* **Slice/EA/Beta** builds require: crash‑free P90 ≥ target, KPI deltas reported, no Blockers/Criticals open.
 
 ## **11.2 Bug Policy**
 
-### Severity & SLAs
-
 | Severity | Definition | SLA |
-|---|---|---|
+| ----- | ----- | ----- |
 | **Blocker** | Crash/data loss, progress stop | Fix/rollback same day |
 | **Critical** | Major system broken, mission cannot complete | 48–72 h |
 | **High** | Significant feature defect or perf miss | Within sprint |
 | **Medium** | Noticeable defect, workaround exists | As capacity allows |
 | **Low** | Cosmetic, minor text, non‑blocking | Backlog |
 
-### Status flow
-New → Triaged → In‑Progress → Fixed → Verified → Closed.
-
-### Repro format
-Build, map, steps, expected/actual, logs, attachments.
+Status flow: **New → Triaged → In‑Progress → Fixed → Verified → Closed**.  
+ Repro format: build, map, steps, expected/actual, logs, attachments.
 
 ## **11.3 Test Matrices (core)**
 
-### Devices
-- **FieldPad:** Photo → Tag → Chain, links, warrant score, judge pass/fail.
-- **TAPLINE:** Scan/Record/Triangulate/Decode/Spoof; warrant gating.
-- **MEDSTAT:** status effects, triage actions, team telemetry (Avery), self‑care (Clara).
+**Devices**
 
-### Loops
-- Investigate → Act → Record; evidence used before action ≥70%.
-- Clara stealth resolution ≥60%; Avery arrest:kill ≥ 2:1.
-- Save/Load persists caseboard, evidence chain, heat/reputation, device unlocks.
+* FieldPad: Photo→Tag→Chain, Links, Warrant score, Judge pass/fail.
 
-### Performance
-- Interior: ≤ 0.8 M tris, ≤ 1,200 draws, GPU ≤ 14 ms @1080p min‑spec.
-- Exterior: ≤ 1.5 M tris, ≤ 1,800 draws, GPU ≤ 14 ms @1080p.
-- Audio voices ≤ 48; VFX caps per SEC‑08.
+* TAPLINE: Scan/Record/Triangulate/Decode/Spoof; warrant gating.
+
+* MEDSTAT: status effects, triage actions, team telemetry (Avery), self‑care (Clara).
+
+**Loops**
+
+* Investigate→Act→Record; evidence used before action ≥70%.
+
+* Clara stealth resolution ≥60%; Avery arrest:kill ≥2:1.
+
+* Save/Load persists caseboard, evidence chain, heat/reputation, device unlocks.
+
+**Performance**
+
+* Interior: ≤ 0.8 M tris, ≤ 1,200 draws, GPU ≤ 14 ms @1080p min‑spec.
+
+* Exterior: ≤ 1.5 M tris, ≤ 1,800 draws, GPU ≤ 14 ms @1080p.
+
+* Audio voices ≤ 48; VFX caps per SEC‑08.
 
 ## **11.4 Telemetry & Crash**
 
-### Events
-Evidence logged, warrant pass/fail, arrest/kill, stealth resolves, mission time, deaths, crashes.
+* Events: evidence logged, warrant pass/fail, arrest/kill, stealth resolves, mission time, deaths, crashes.
 
-### Storage
-Local JSON logs; opt‑in upload; anonymized session ID.
+* Local JSON logs; opt‑in upload; anonymized session ID.
 
-### Crash reporter
-Enabled; symbols stored per build.
+* Crash Reporter enabled; symbols stored per build.
 
 ## **11.5 Accessibility (Checklist)**
 
-### Global
-- Subtitles on by default with speaker tags.
-- UI scale slider; minimum body size ≥ 12 px @1080p.
-- Color‑blind safe glyphs; high‑contrast device skin (Gray).
-- Toggle hold‑to‑press; remap all inputs.
-- Reduce camera shake/flash options.
-- Content warnings pre‑scene; skip with summary.
+**Global**
 
-### Devices/UI
-- Tap targets ≥ 32×32 px @1080p; focus ring visible.
-- WCAG AA text contrast per SEC‑08 pairs.
-- Latency modeled but input buffered for accessibility mode.
+* Subtitles on by default with speaker tags.
 
-### Audio
-- Dynamic range presets (Night/TV/Cinema).
-- SFX ducking under dialogue; subtitle timing aligned.
+* UI scale slider; minimum body size ≥ 12 px @1080p.
 
-### Difficulty
-- Aim assist, clue timers, device hinting, stealth forgiveness toggles.
-- No forced QTEs without remap/hold options.
+* Color‑blind safe glyphs; high‑contrast device skin (Gray).
 
-### QA acceptance
-Accessibility smoke on every milestone build; defects tracked like functional bugs.
+* Toggle hold‑to‑press; remap all inputs.
+
+* Reduce camera shake/flash options.
+
+* Content warnings pre‑scene; skip with summary.
+
+**Devices/UI**
+
+* Tap targets ≥ 32×32 px @1080p; focus ring visible.
+
+* WCAG AA text contrast per SEC‑08 pairs.
+
+* Latency modeled but input buffered for accessibility mode.
+
+**Audio**
+
+* Dynamic range presets (Night/TV/Cinema).
+
+* SFX ducking under dialogue; subtitle timing aligned.
+
+**Difficulty**
+
+* Aim assist, clue timers, device hinting, stealth forgiveness toggles.
+
+* No forced QTEs without remap/hold options.
+
+**QA acceptance**
+
+* Accessibility smoke on every milestone build; defects tracked like functional bugs.
 
 ## **11.6 Localization Plan**
 
-### Scope
-UI, HUD, device text, tutorials, subtitles, store copy.
+* **Scope:** UI, HUD, device text, tutorials, subtitles, store copy.
 
-### Pipeline
-UE Localization Dashboard → string tables; resource keys for device labels.
+* **Pipeline:** UE Localization Dashboard → string tables; resource keys for device labels.
 
-### Length constraints
-Device labels ≤ 14 chars; wrap at 24–28 chars.
+* **Length constraints:** device labels ≤ 14 chars; wrap at 24–28 chars.
 
-### Languages
-Start en‑US → add by demand (e.g., de, fr, es‑LA, ja, zh‑CN).
+* **Languages:** start en‑US → add by demand (e.g., de, fr, es‑LA, ja, zh‑CN).
 
-### Schedule
-String freeze at Beta; LQA before Gold.
+* **Schedule:** string freeze at **Beta**; LQA before **Gold**.
 
-### Deliverables
-- Master string table (CSV/PO).
-- Glossary + style guide.
-- Font fallback sets per SEC‑08.
-- LQA test cases: device flows, HUD truncation, right‑to‑left audit if added.
+**Deliverables**
+
+* Master string table (CSV/PO).
+
+* Glossary + style guide.
+
+* Font fallback sets per SEC‑08.
+
+* LQA test cases: device flows, HUD truncation, right‑to‑left audit if added.
 
 ## **11.7 Compliance & Ratings**
-- ESRB M / PEGI 18 content guidance in SEC‑02.
-- Privacy: clear telemetry consent; no PII logged.
-- Licenses: fonts and SFX licenses tracked in SEC‑08.
+
+* ESRB M / PEGI 18 content guidance in SEC‑02.
+
+* Privacy: clear telemetry consent; no PII logged.
+
+* Licenses: fonts and SFX licenses tracked in SEC‑08.
 
 ## **11.8 Milestone QA Passes**
-- **Pre‑EA:** full functional + perf + accessibility baseline.
-- **Pre‑Beta:** regression, content‑complete sweep, LQA round 1.
-- **Pre‑Gold:** stability soak, perf locks, LQA final, accessibility sign‑off.
+
+* **Pre‑EA:** full functional + perf + accessibility baseline.
+
+* **Pre‑Beta:** regression, content‑complete sweep, LQA round 1\.
+
+* **Pre‑Gold:** stability soak, perf locks, LQA final, accessibility sign‑off.
 
 ## **11.9 Approvals**
+
 On approval: archive to MASTER as `[SEC-11-QA] v0.1` and update manifest. Next: **SEC‑12 Risks, Legal, Ratings**.
+
+# **Patch Instructions for Existing MASTER — SEC-12**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-12-RISKS |` and replace the entire line with:
+
+`| SEC-12-RISKS | Risks, legal, ratings | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
 ---
 
@@ -1979,19 +2050,18 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-13-APPENDICES — Appendices`
-- `SEC-14-QA — Quality Assurance Test Plan`
+- `SEC-10-PRODUCTION` — Production Plan & Milestones
+- `SEC-11-QA` — QA, Localization, Accessibility
+- `SEC-13-APPENDICES` — Appendices
+- `SEC-14-QA` — Quality Assurance Test Plan
 
 ## **12.1 Key Risks Register**
 
 | ID | Risk | Cat. | Prob. | Impact | Owner | Triggers | Mitigations |
-|---|---|---|---|---|---|---|---|
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | R‑01 | Scope creep across dual‑POV + devices | Prod | M | H | Nick | New features added post‑slice | Lock pillars; change‑control; defer to post‑launch |
 | R‑02 | Performance misses on fog/VFX | Tech | M | H | Tech Art | GPU spikes; overdraw heatmaps | SEC‑08 caps; VFX budget gate; perf CI |
-| R‑03 | Device UI overload/confusion | UX | M | M | UI | Playtest misuse >5% | Progressive disclosure; tutorials via cases; accessibility mode |
+| R‑03 | Device UI overload/confusion | UX | M | M | UI | Playtest misuse \>5% | Progressive disclosure; tutorials via cases; accessibility mode |
 | R‑04 | Procedural realism frustrates | Design | M | M | Design | Negative playtest verbatims | Optional briefs; hint tiers; difficulty sliders |
 | R‑05 | Dual‑protagonist content debt | Prod | M | H | Nick | Slip on shared spaces re‑use | Shared locations; modular objectives; reuse kits |
 | R‑06 | Legal/ratings issue (minors in peril) | Legal | L | H | Legal | Platform flag; ratings query | No on‑screen harm to minors; implied peril only; content warnings |
@@ -2000,76 +2070,122 @@ Owner: Nick Goldman
 | R‑09 | Save corruption/state bugs | Tech | L | H | Eng | Crash on load; bad schema | Versioned schema; autosave validation; load tests |
 | R‑10 | Mod misuse (post‑EA) | Comm | L | M | PM | Offensive content shared | In‑menu warnings; disable online sharing; policy + moderation |
 | R‑11 | Libel/brand infringement | Legal | L | H | Legal | Real brand slips in | Fictional brands; art review checklist; legal pass |
-| R‑12 | Story/imagery controversy | PR | L | M | PM | Social media flare‑ups | Clear themes doc; content toggles; press kit Q&A |
+| R‑12 | Story/imagery controversy | PR | L | M | PM | Social media flare‑ups | Clear themes doc; content toggles; press kit Q\&A |
 
 ## **12.2 Legal & Compliance Checklist**
 
-### IP & Contracts
-- Wordmark **DIPLOMAGIC**: run clearance search; consider TM file (Nice Class 9, 41).
-- Work‑for‑hire + IP assignment for all contractors; NDAs as needed.
-- Model/voice releases for VO.
-- Avoid real organizations/brands; use fictional names (e.g., Brightstar).
+**IP & Contracts**
 
-### Licenses
-- **Fonts:** VT323, Inter, IBM Plex Sans, JetBrains Mono (open licenses) — see SEC‑08. Store license files in `/Docs/Licenses/`.
-- **SFX/Music:** track sources and rights; prefer custom or CC‑BY/royalty‑free with commercial allowance. No viral copyleft for shipped audio.
-- **Software:** comply with UE5/Marketplace EULAs; track any OSS (MIT/BSD/Apache) with NOTICE file.
+* Wordmark **DIPLOMAGIC**: run clearance search; consider TM file (Nice Class 9, 41).
 
-### Privacy & Telemetry
-- Opt‑in only. No PII. Random session IDs. Retention ≤ 180 days. Plain‑language consent screen.
-- Crash reports scrubbed of usernames/paths where possible.
+* Work‑for‑hire + IP assignment for all contractors; NDAs as needed.
 
-### Accessibility & Claims
-- Do not state compliance beyond tested features. Publish an accessibility features list matching SEC‑07/11.
+* Model/voice releases for VO.
 
-### Export/Regulatory
-- Standard US export compliance. No encryption beyond engine defaults.
+* Avoid real organizations/brands; use fictional names (e.g., Brightstar).
 
-### Platforms (PC)
-- Steam/Epic checklists: save path, controller prompts, crash reporter, quit to desktop, high‑DPI icon, privacy text.
+**Licenses**
+
+* Fonts: VT323, Inter, IBM Plex Sans, JetBrains Mono (open licenses) — see SEC‑08. Store license files in `/Docs/Licenses/`.
+
+* SFX/Music: track sources and rights; prefer custom or CC‑BY/royalty‑free with commercial allowance. No viral copyleft for shipped audio.
+
+* Software: comply with UE5/Marketplace EULAs; track any OSS (MIT/BSD/Apache) with NOTICE file.
+
+**Privacy & Telemetry**
+
+* Opt‑in only. No PII. Random session IDs. Retention ≤ 180 days. Plain‑language consent screen.
+
+* Crash reports scrubbed of usernames/paths where possible.
+
+**Accessibility & Claims**
+
+* Do not state compliance beyond tested features. Publish an accessibility features list matching SEC‑07/11.
+
+**Export/Regulatory**
+
+* Standard US export compliance. No encryption beyond engine defaults.
+
+**Platforms (PC)**
+
+* Steam/Epic checklists: save path, controller prompts, crash reporter, quit to desktop, high‑DPI icon, privacy text.
 
 ## **12.3 Ratings Strategy (Targets)**
 
-- **ESRB:** Mature 17+ expected. Likely content descriptors: Violence, Blood, Strong Language, Intense Violence (select scenes).
-- **PEGI:** 18 likely for violence/horror intensity.
+**ESRB:** **Mature 17+** expected. Likely content descriptors: *Violence*, *Blood*, *Strong Language*, *Intense Violence (select scenes)*.  
+ **PEGI:** **18** likely for violence/horror intensity.
 
-### Design guardrails
-- No sexual content. No torture‑porn.
-- **Minors:** no graphic harm on‑screen; peril implied or off‑screen only; fade/abstraction when needed.
-- Reduced‑gore toggle and content warnings (scene‑specific).
-- Language filtered to maintain target rating.
+**Design guardrails**
 
-### Submission kit
-- Unedited gameplay video of representative scenes (stealth, arrest, combat, Kadath).
-- Written content questionnaire aligned to above guardrails.
+* No sexual content. No torture‑porn.
+
+* **Minors:** no graphic harm on‑screen; peril implied or off‑screen only; fade/abstraction when needed.
+
+* Reduced‑gore toggle and content warnings (scene‑specific).
+
+* Language filtered to maintain target rating.
+
+**Submission kit**
+
+* Unedited gameplay video of representative scenes (stealth, arrest, combat, Kadath).
+
+* Written content questionnaire aligned to above guardrails.
 
 ## **12.4 Sensitive Content & Ethics**
-- Law enforcement portrayal: procedural focus without endorsing brutality; ROE enforced; arrests preferred.
-- Cult imagery: fictional symbols; avoid real‑world groups.
-- Real places/people: fictionalized locales; no real persons implied.
+
+* Law enforcement portrayal: procedural focus without endorsing brutality; ROE enforced; arrests preferred.
+
+* Cult imagery: fictional symbols; avoid real‑world groups.
+
+* Real places/people: fictionalized locales; no real persons implied.
 
 ## **12.5 Paperwork & Templates**
-- Contractor MSA + SOW templates.
-- VO agreement and rate card.
-- Music commission agreement with deliverables (stems, looping).
-- Asset ingestion checklist (naming, LODs, loudness, licenses).
-- OSS NOTICE and third‑party attributions file.
+
+* Contractor MSA + SOW templates.
+
+* VO agreement and rate card.
+
+* Music commission agreement with deliverables (stems, looping).
+
+* Asset ingestion checklist (naming, LODs, loudness, licenses).
+
+* OSS NOTICE and third‑party attributions file.
 
 ## **12.6 External Reviews (Pre‑Gold)**
-- Legal read‑through of narrative and UI text.
-- License audit for fonts/SFX/music.
-- Ratings pre‑submission check.
-- Accessibility review against published features list.
+
+* Legal read‑through of narrative and UI text.
+
+* License audit for fonts/SFX/music.
+
+* Ratings pre‑submission check.
+
+* Accessibility review against published features list.
 
 ## **12.7 Deliverables**
-- Risk register spreadsheet (live).
-- Legal/licenses binder.
-- Ratings submission pack.
-- Accessibility features list for store pages.
-- Press kit Q&A on themes and guardrails.
+
+* Risk register spreadsheet (live).
+
+* Legal/licenses binder.
+
+* Ratings submission pack.
+
+* Accessibility features list for store pages.
+
+* Press kit Q\&A on themes and guardrails.
 
 ## **12.8 Approvals**
+
 On approval: archive to MASTER as `[SEC-12-RISKS] v0.1` and update manifest. Next: **SEC‑13 Appendices**.
+
+# **Patch Instructions for Existing MASTER — SEC-13**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-13-APPENDICES |` and replace the entire line with:
+
+`| SEC-13-APPENDICES | Appendices | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
 ---
 
@@ -2080,24 +2196,27 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
-- `SEC-14-QA — Quality Assurance Test Plan`
-- `TDD-EVIDENCE+FIELDPAD — Technical Design Document`
+- `SEC-11-QA` — QA, Localization, Accessibility
+- `SEC-12-RISKS` — Risks, Legal, Ratings
+- `SEC-14-QA` — Quality Assurance Test Plan
+- `TDD-EVIDENCE+FIELDPAD` — Technical Design Document
 
 ## **13.1 Glossary**
 
 * **Caseboard**: Graph of evidence, persons, locations, threads.
+
 * **Chain‑of‑custody**: Steps that keep A‑tier evidence valid.
+
 * **Heat**: Systemic alert level from player actions.
+
 * **Kadath (New/Unknown)**: Liminal layers affecting space, rules.
+
 * **MEDSTAT / FieldPad / TAPLINE**: Devices for vitals, casework, signals.
 
 ## **13.2 Acronyms**
 
 | Term | Meaning |
-|---|---|
+| ----- | ----- |
 | AA | Anti‑Aliasing |
 | DDC | Derived Data Cache |
 | EA | Early Access |
@@ -2114,79 +2233,84 @@ Owner: Nick Goldman
 
 **Evidence Item (save/telemetry)**
 
-```json
 {
+
   "id": "A-014",
+
   "tier": "A|B|C",
+
   "quality": 78,
-  "chain": {
-    "photo": true,
-    "collect": true,
-    "bag": true,
-    "tag": true,
-    "log": true,
-    "sealIntact": true
-  },
+
+  "chain": {"photo": true, "collect": true, "bag": true, "tag": true, "log": true, "sealIntact": true},
+
   "links": ["case:82", "victim:2", "loc:locker3"],
+
   "contam": 0,
+
   "time": "1994-10-31T14:41:00Z"
+
 }
-```
 
 **Caseboard Node/Edge**
 
-```json
 {
-  "nodes": [
-    {"id": "victim:2", "type": "person"},
-    {"id": "evidence:A-014", "type": "evidence"}
-  ],
-  "edges": [
-    {"from": "victim:2", "to": "evidence:A-014", "rel": "linked"}
-  ]
+
+  "nodes": [{"id": "victim:2", "type": "person"}, {"id": "evidence:A-014", "type": "evidence"}],
+
+  "edges": [{"from": "victim:2", "to": "evidence:A-014", "rel": "linked"}]
+
 }
-```
 
 **Telemetry Event (subset)**
 
-```json
 [
-  {"evt": "evidence_logged", "id": "A-014", "mission": "CH1_KidsKamp"},
-  {"evt": "arrest", "npc": "guard_03", "nonlethal": true},
-  {"evt": "stealth_resolve", "mode": "bypass"}
+
+  {"evt": "evidence\_logged", "id": "A-014", "mission": "CH1\_KidsKamp"},
+
+  {"evt": "arrest", "npc": "guard\_03", "nonlethal": true},
+
+  {"evt": "stealth\_resolve", "mode": "bypass"}
+
 ]
-```
 
 ## **13.4 Checklists**
 
 **Level Readability**
 
 * Silhouettes readable at min spec.
+
 * Patrol lines and cover affordances obvious.
+
 * Fog volumes tuned; no glare hotspots.
 
 **Device UX**
 
 * Nav path discoverable within 6 s.
-* Tap targets ≥ 32×32 px @1080p.
+
+* Tap targets ≥32×32 px @1080p.
+
 * Error states readable; destructive ops confirmed.
 
 **Performance Pass**
 
 * Tris/DC within SEC‑08/09 caps.
-* GPU ≤ 14 ms @1080p min spec.
-* Audio voices ≤ 48; particle caps met.
+
+* GPU ≤14 ms @1080p min spec.
+
+* Audio voices ≤48; particle caps met.
 
 **Accessibility**
 
 * Subtitles on; UI scale works.
+
 * High‑contrast skin verified.
+
 * Camera shake/flash reduction toggles.
 
 ## **13.5 Tuning Tables (defaults)**
 
 | Parameter | Default | Notes |
-|---|---|---|
+| ----- | ----- | ----- |
 | Detection base | 0.35 | Stealth visibility curve start |
 | Noise budget walk/crouch/sprint | 5 / 2 / 12 | dB‑like units |
 | Arrest surrender base | 0.25 | Avery compliance check |
@@ -2194,28 +2318,34 @@ Owner: Nick Goldman
 
 ## **13.6 Input Reference**
 
-* **Keyboard/Mouse**: WASD move, Q/E lean, C crouch, Z prone, F interact, R reload, 1–4 quick slots, Tab device pane, M map, Esc pause.
-* **Gamepad**: LS move, RS look, LB/RB cycle, LT aim, RT fire/apply, Y device swap, X interact, A confirm, B back.
-* **Avery**: Hold T challenge, G cuff.
-* **Clara**: Hold G place trap, V whistle.
+**Keyboard/Mouse**: WASD move, Q/E lean, C crouch, Z prone, F interact, R reload, 1–4 quick slots, Tab device pane, M map, Esc pause.  
+ **Gamepad**: LS move, RS look, LB/RB cycle, LT aim, RT fire/apply, Y device swap, X interact, A confirm, B back.  
+ **Avery**: Hold T challenge, G cuff.  
+ **Clara**: Hold G place trap, V whistle.
 
 ## **13.7 Versioning & Build IDs**
 
 * Scheme: `vMAJOR.MINOR.PATCH_YYYY‑MM‑DD` (e.g., `v1.0.0_2025‑10‑31`).
-* Branch map: `Dev → Release/* → hotfix` tags.
+
+* Branch map: Dev → Release/* → hotfix tags.
+
 * Changelogs per section using IDs `[SEC‑NN‑TAG]`.
 
 ## **13.8 Repository & Paths (UE5)**
 
-```
 /Content/Diplomagic/
+
   Art/{Characters,Props,Environments,Materials}
+
   UI/
+
   VFX/
+
   Audio/{SFX,Music,VO}
+
   Design/Blueprints/
+
 /Docs/{GDD, Licenses, Style, Build}
-```
 
 ## **13.9 Store Page Content Warnings (template)**
 
@@ -2224,45 +2354,57 @@ Contains intense violence, blood, strong language, and horror themes. No on‑sc
 ## **13.10 Contractor Handoff Pack**
 
 * Current GDD sections.
+
 * References (SEC‑08).
+
 * Naming + folder rules.
+
 * Budgets and KPIs.
+
 * Sample assets and target captures.
 
 ## **13.11 Third‑Party & OSS Attributions**
 
 * Fonts: VT323 (SIL OFL), Inter (SIL OFL), IBM Plex Sans (SIL OFL), JetBrains Mono (Apache 2.0).
+
 * Engine and Marketplace items per their EULAs.
+
 * Maintain `/Docs/Licenses/NOTICE.md`.
 
 ## **13.12 UI String Keys**
 
 * Pattern: `ui.<area>.<screen>.<element>`
+
 * Example: `ui.fieldpad.evidence.link_button`
 
 ## **13.13 Milestone Manifest & Changelog**
 
 | Section | Version | Date | Summary |
-|---|---|---|---|
+| ----- | ----- | ----- | ----- |
 | SEC‑01‑FRONT | v0.2 | 2025‑08‑11 | Exec summary finalized |
 | SEC‑02‑PILLARS | v0.1 | 2025‑08‑11 | Pillars/audience |
 | … | … | … | … |
 
 ## **13.14 Contacts**
 
-* **Owner**: Nick Goldman — design, tech, approvals.
-* **External**: to be filled per contract.
+* Owner: Nick Goldman — design, tech, approvals.
+
+* External: to be filled per contract.
 
 ## **13.15 Figures & Diagrams**
 
-* UML: `Diplomagic_UML.drawio`, `Statlines_and_Environmental_Systems.drawio` → export PNG/PDF for inclusion.
+* **UML**: `Diplomagic_UML.drawio`, `Statlines_and_Environmental_Systems.drawio` → export **PNG/PDF** for inclusion.
+
 * Loop diagrams (SEC‑04), device flows (SEC‑07).
 
 ## **13.16 Templates (files to create)**
 
 * `Docs/Templates/bug_report.md`
+
 * `Docs/Templates/art_hand-off.md`
+
 * `Docs/Templates/audio_cue_sheet.csv`
+
 * `Docs/Templates/changelog.md`
 
 ## **13.17 Approvals**
@@ -2278,85 +2420,116 @@ Date: 2025-08-12
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-09-TECH — Technology & Performance Targets`
-- `SEC-10-PRODUCTION — Production Plan & Milestones`
-- `SEC-11-QA — QA, Localization, Accessibility`
-- `SEC-12-RISKS — Risks, Legal, Ratings`
-- `SEC-13-APPENDICES — Appendices`
+- `SEC-12-RISKS` — Risks, Legal, Ratings
+- `SEC-13-APPENDICES` — Appendices
+- `TDD-EVIDENCE+FIELDPAD` — Technical Design Document
 
-## **Scope**
-End‑to‑end QA for PC builds. Aligns with SEC‑06/07/08/09/11/13 and PKG‑BUILD‑SOP.
+Scope: end‑to‑end QA for PC builds. Aligns with SEC‑06/07/08/09/11/13 and PKG‑BUILD‑SOP.
 
 ## **14.0 Objectives**
 
 * Find and prevent regressions that block play, performance, or accessibility.
+
 * Keep shipping confidence high through automated and manual coverage.
+
 * Produce repeatable evidence for compliance and marketing capture.
 
 ## **14.1 Definitions**
 
 * **P1/P2/P3** severity; **Blocker/Major/Minor**.
+
 * **Golden Path**: curated story progression per level for perf capture.
+
 * **Perf Spot**: fixed coordinates/angles for comparable captures.
 
 ## **14.2 Test Types**
 
-* **Automation**: boot, menu flows, devices (FieldPad/TAPLINE/MEDSTAT), save/load, controller hot‑swap.
-* **Functional**: mission flows, evidence chain steps, warrants, TAPLINE, MEDSTAT.
-* **Compatibility**: min/mid/high PC configs; windowed/fullscreen; input devices.
-* **Performance**: frame time median/95p at perf spots; streaming boundaries.
-* **Stability**: long‑run soak; save/load loops.
-* **Localization/LQA**: layout, truncation, glyph coverage.
-* **Accessibility**: AX‑matrix from SEC‑11; subtitles, UI scale, reduced‑horror, color‑independent cues.
-* **Compliance**: CM‑matrix from SEC‑11.
+* **Automation:** boot, menu flows, devices (FieldPad/TAPLINE/MEDSTAT), save/load, controller hot‑swap.
+
+* **Functional:** mission flows, evidence chain steps, warrants, TAPLINE, MEDSTAT.
+
+* **Compatibility:** min/mid/high PC configs; windowed/fullscreen; input devices.
+
+* **Performance:** frame time med/95p at perf spots; streaming boundaries.
+
+* **Stability:** long‑run soak; save/load loops.
+
+* **Localization/LQA:** layout, truncation, glyph coverage.
+
+* **Accessibility:** AX‑matrix from SEC‑11; subtitles, UI scale, reduced‑horror, color‑independent cues.
+
+* **Compliance:** CM‑matrix from SEC‑11.
 
 ## **14.3 Environments**
 
-* **OS**: Windows 10/11.
-* **Hardware tiers**:
-  * **Min**: GTX 970 / RX 570, 8 GB RAM, HDD/SSD SATA.
-  * **Mid**: GTX 1660 / RX 6600, 16 GB RAM, SATA SSD.
-  * **High**: RTX 3060+ / RX 6700+, 16–32 GB, NVMe.
-* **Displays**: 1080p required; check 1440p/4K scaling.
-* **Input**: KBM, Xbox/PS controller; hot‑plug tests.
+* **OS:** Windows 10/11.
+
+* **Hardware tiers:**
+
+  * **Min:** GTX 970 / RX 570, 8 GB RAM, HDD/SSD SATA.
+
+  * **Mid:** GTX 1660 / RX 6600, 16 GB RAM, SATA SSD.
+
+  * **High:** RTX 3060+ / RX 6700+, 16–32 GB, NVMe.
+
+* **Displays:** 1080p required; check 1440p/4K scaling.
+
+* **Input:** KBM, Xbox/PS controller; hot‑plug tests.
 
 ## **14.4 Tools & Data**
 
 * UE automation framework; replay recorder; stat dumps; CSV exporters.
+
 * Crash reporter with symbols; minidumps stored.
+
 * Telemetry staging endpoint for canary events (SEC‑13).
+
 * Screenshot script for shotlist (press kit).
 
 ## **14.5 Bug Workflow**
 
-* **Tracker states**: New → Triaged → In‑Progress → Ready‑for‑QA → Verified/Failed → Closed.
-* **Required fields**: build ID, map, steps, expected, actual, severity, repro rate, attachments.
-* **SLA targets**: P1 fix attempt ≤ 48h; P2 within next sprint; P3 on backlog.
+* Tracker states: **New → Triaged → In‑Progress → Ready‑for‑QA → Verified/Failed → Closed**.
+
+* Required fields: build ID, map, steps, expected, actual, severity, repro rate, attachments.
+
+* SLA targets: P1 fix attempt ≤ 48h; P2 within next sprint; P3 on backlog.
 
 ## **14.6 Entry/Exit Criteria**
 
-* **Sprint Entry**: latest dev build boots; smoke tests pass.
-* **Sprint Exit**: P1=0, P2≤10, perf within budgets on mid tier, CM/AX reds=0.
-* **Milestone Exit**: all sprint exits + capture pack updated + SEC‑11 evidence archived.
+* **Sprint Entry:** latest dev build boots; smoke tests pass.
+
+* **Sprint Exit:** P1=0, P2≤10, perf within budgets on mid tier, CM/AX reds=0.
+
+* **Milestone Exit:** all sprint exits + capture pack updated + SEC‑11 evidence archived.
 
 ## **14.7 Test Suites (high level)**
 
-* **TS‑BOOT**: cold boot to menu; crash reporter check; save path permissions.
-* **TS‑UI**: HUD prompts, menus, options, remap, glyph swap.
-* **TS‑DEV‑FIELD**: FieldPad camera→Tag→Bag→Log; Caseboard; Warrant Builder WS.
-* **TS‑DEV‑TAPLINE**: ping→triangulate→seize; icon state changes; toasts.
-* **TS‑DEV‑MEDSTAT**: self‑care, Reddy check, stabilize.
-* **TS‑MISSIONS**: per‑level objective flow, stealth/breach alt paths, re‑entry states.
-* **TS‑SAVE**: slot create/load/delete; atomic write; backup restore.
-* **TS‑PERF**: perf spots captures; heatmap boundaries.
-* **TS‑AX**: subtitles, UI scale, high‑contrast skin, reduced‑horror, color‑independent cues.
-* **TS‑LOC**: pseudoloc, truncation, font fallback.
-* **TS‑COMPLIANCE**: CM matrix runs.
+* **TS‑BOOT:** cold boot to menu; crash reporter check; save path permissions.
+
+* **TS‑UI:** HUD prompts, menus, options, remap, glyph swap.
+
+* **TS‑DEV‑FIELD:** FieldPad camera→Tag→Bag→Log; Caseboard; Warrant Builder WS.
+
+* **TS‑DEV‑TAPLINE:** ping→triangulate→seize; icon state changes; toasts.
+
+* **TS‑DEV‑MEDSTAT:** self‑care, Reddy check, stabilize.
+
+* **TS‑MISSIONS:** per‑level objective flow, stealth/breach alt paths, re‑entry states.
+
+* **TS‑SAVE:** slot create/load/delete; atomic write; backup restore.
+
+* **TS‑PERF:** perf spots captures; heatmap boundaries.
+
+* **TS‑AX:** subtitles, UI scale, high‑contrast skin, reduced‑horror, color‑independent cues.
+
+* **TS‑LOC:** pseudoloc, truncation, font fallback.
+
+* **TS‑COMPLIANCE:** CM matrix runs.
 
 ## **14.8 Perf Spots (initial)**
 
 | ID | Map | Coords | Notes |
-|---|---|---|---|
+| ----- | ----- | ----- | ----- |
 | PS‑L01‑LOT | L‑01 Kids Kamp lot | (x,y,z) TBD | Exterior cones/fog check |
 | PS‑L03‑RD | Backwoods road bend | (x,y,z) TBD | Streaming boundary |
 | PS‑L06‑TUN | NYC steam tunnel hub | (x,y,z) TBD | Dynamic lights |
@@ -2364,20 +2537,28 @@ End‑to‑end QA for PC builds. Aligns with SEC‑06/07/08/09/11/13 and PKG‑B
 
 ## **14.9 Accessibility Tests (AX)**
 
-* **AX‑001**: Subtitles default ON; size slider works; speaker tags visible.
-* **AX‑002**: UI scale 0.85–1.50; no clipping at extremes.
-* **AX‑003**: High‑contrast device skin selectable; persists.
-* **AX‑004**: Status uses shapes/icons not color alone.
-* **AX‑005**: Reduced‑horror swaps audio/visual spikes; summary page on skip.
-* **AX‑006**: Hold→Press/Toggle available and functional.
-* **Evidence**: screenshots + short videos archived to `/Compliance/AX/`.
+* **AX‑001:** Subtitles default ON; size slider works; speaker tags visible.
+
+* **AX‑002:** UI scale 0.85–1.50; no clipping at extremes.
+
+* **AX‑003:** High‑contrast device skin selectable; persists.
+
+* **AX‑004:** Status uses shapes/icons not color alone.
+
+* **AX‑005:** Reduced‑horror swaps audio/visual spikes; summary page on skip.
+
+* **AX‑006:** Hold→Press/Toggle available and functional.
+
+* Evidence: screenshots + short videos archived to `/Compliance/AX/`.
 
 ## **14.10 Compliance Tests (CM)**
-Follow SEC‑11 CM‑001..010; evidence archived to `/Compliance/CM/` with build ID and date.
+
+* Follow SEC‑11 CM‑001..010; evidence archived to `/Compliance/CM/` with build ID and date.
 
 ## **14.11 Localization & LQA**
 
 * Pseudoloc pass before LQA.
+
 * LQA smoke on Beta: layout, truncation, context tags, cultural flags logged.
 
 ## **14.12 Soak & Stability**
@@ -2387,19 +2568,29 @@ Follow SEC‑11 CM‑001..010; evidence archived to `/Compliance/CM/` with build
 ## **14.13 Regression Strategy**
 
 * Tag failing tests; auto‑replay affected missions; compare perf spot CSVs.
+
 * Diff localization assets after string changes.
 
 ## **14.14 Reporting**
 
-* **Daily**: open bugs by severity, crash rate, perf median/95p deltas.
-* **Weekly**: CM/AX status, risk list, burn‑down chart.
+* Daily: open bugs by severity, crash rate, perf med/95p deltas.
+
+* Weekly: CM/AX status, risk list, burn‑down chart.
 
 ## **14.15 Deliverables**
 
 * Test plan DOCX, suites checklist CSV, perf capture CSV templates, evidence folder tree.
 
-## **Approvals**
-On approval: export DOCX (full + subsections) and ZIP with templates.
+* On approval: export DOCX (full + subsections) and ZIP with templates.
+
+# **Patch Instructions — Support Doc: TDD‑EVIDENCE+FIELDPAD**
+
+## **1) Archive as standalone support doc**
+
+Create/Update the **Support Docs** index and add this row:  
+ `| TDD-EVIDENCE+FIELDPAD | Technical Design — Evidence & FieldPad | v0.1 | 2025-08-11 | approved | archived |`
+
+## **2) Append the approved content (add a `` before it)**
 
 ---
 
@@ -2527,7 +2718,7 @@ Valid ↔ Invalid (break) ↔ Remediated (supervisor sign‑off)
 **Constraints**
 - `id` is unique within `case_id`.
 - `tier ∈ {A,B,C}`.
-- Photos stored as compressed PNG/JPEG with EXIF‑like header.
+- Photos stored as compressed PNG/JPEG with a device metadata block (timestamp, case, handler).
 
 ## **5) Formulas & Scoring**
 
@@ -2555,7 +2746,7 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 
 ### 6.1 Camera
 - Open → focus reticle → **CAPTURE** → store `IMG_####` with timestamp and location.
-- Auto‑suggest **Tag** if object outline detected (simple bounding box, no hard ML).
+- Edge/contrast aid suggests **Tag**; user confirms. No hard ML.
 
 ### 6.2 Evidence (List + Detail)
 - **List**: filter by tier, CoC state, linked/unlinked, locker.
@@ -2573,7 +2764,7 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 ### 6.4 Warrant Builder
 - Template fields: Location, PC summary, Linked Items, Requested Actions.
 - Live WS readout; reasons for failure listed.
-- **SUBMIT** → status Submitted; mock judge delay 10–30 s; result Approved/Denied with rationale.
+- **SUBMIT** → status Submitted; telephonic review occurs on minutes scale; responses are queued; sworn attestation recorded; result Approved/Denied with rationale and reasons for questions.
 
 ### 6.5 Map
 - Shows lockers, TAPLINE nodes, last photo locations.
@@ -2599,6 +2790,11 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 - Max photos per mission: 60; image size target ≤ 200 KB each (JPEG Q80).
 - Evidence items per mission target: 20–30 total; A‑tier ≤ 6.
 - FieldPad memory bar shows storage; archive oldest photos first after confirm.
+
+**Media & connectors (period)**
+- Storage via **PCMCIA Type‑II ATA/SRAM** or **CF Type‑I** cards using **CF→PC Card** adapter.
+- Throughput ~1–2 MB/s practical; file ops feel slow.
+- Modem cards expose **RJ‑11**; 10Base‑T NICs expose **RJ‑45**; optional **RS‑232 DE‑9** on device/dock.
 
 ## **10) Accessibility & Localization**
 - Device skins: Green/Amber/Gray; contrast pairs per SEC‑08.

@@ -4,9 +4,9 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-02-PILLARS — Pillars & Audience`
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
+- `SEC-01-FRONT` — Front Matter & Executive Summary
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-05-SYSTEMS` — Systems & Mechanics
 
 ## **3.1 Structure & Tone**
 
@@ -59,3 +59,13 @@ Use these exact titles in all builds, docs, and UI.
 ## **3.5 Approvals**
 
 On approval: archive to MASTER as `[SEC-03-NARRATIVE] v0.1` and update manifest.
+
+# **Patch Instructions for Existing MASTER — SEC-04**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-04-LOOPS |` and replace the entire line with:
+
+`| SEC-04-LOOPS | Core loops | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**

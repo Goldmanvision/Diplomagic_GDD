@@ -4,9 +4,10 @@ Date: 2025-08-11
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-03-NARRATIVE — Narrative`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-06-WORLD — World, Levels, & Content`
+- `SEC-01-FRONT` — Front Matter & Executive Summary
+- `SEC-03-NARRATIVE` — Narrative
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-06-WORLD` — World, Levels, & Content
 
 ## **4.1 Overview**
 
@@ -16,11 +17,11 @@ Loops connect investigation, stealth/combat, and narrative progression. Avery \=
 
 Primary verbs: observe, collect, infer, act, record, move.
 
-\[Observe\] → \[Collect Evidence\] → \[Evaluate Risk\] → \[Act (Stealth/Combat/Dialogue)\]
+[Observe] → [Collect Evidence] → [Evaluate Risk] → [Act (Stealth/Combat/Dialogue)]
 
          ↘                                          ↗
 
-           \[Record in FieldPad\] ← \[Update World/AI State\] ← \[Relocate\]
+           [Record in FieldPad] ← [Update World/AI State] ← [Relocate]
 
 **Guardrails**
 
@@ -36,17 +37,17 @@ Primary verbs: observe, collect, infer, act, record, move.
 
 **Avery (FBI)**
 
-\[Brief/Case Intake\] → \[Legal Prep (warrant/ROE)\] → \[Travel/Loadout\]
+[Brief/Case Intake] → [Legal Prep (warrant/ROE)] → [Travel/Loadout]
 
-      → \[Recon\] → {Branch: Infiltrate | Knock/Breach} → \[Secure/Arrest\]
+      → [Recon] → {Branch: Infiltrate | Knock/Breach} → [Secure/Arrest]
 
-      → \[Scene Processing\] → \[Debrief/Casefile\]
+      → [Scene Processing] → [Debrief/Casefile]
 
 **Clara (Survival)**
 
-\[Immediate Need (Protect Reddy)\] → \[Scavenge/Route Plan\] → \[Infiltrate/Bypass\]
+[Immediate Need (Protect Reddy)] → [Scavenge/Route Plan] → [Infiltrate/Bypass]
 
-      → \[Avoid/Disable Threat\] → \[Extract\] → \[Recuperate/Journal\]
+      → [Avoid/Disable Threat] → [Extract] → [Recuperate/Journal]
 
 **Checkpoints**
 
@@ -78,9 +79,9 @@ Primary verbs: observe, collect, infer, act, record, move.
 
 **Stealth**
 
-\[Shadow/Noise Mgmt\] → \[Intel Peek\] → \[Path/Create Distraction\] → \[Bypass/Isolate\]
+[Shadow/Noise Mgmt] → [Intel Peek] → [Path/Create Distraction] → [Bypass/Isolate]
 
-        ↖——————————————————————\[Break LOS\]/\[Hide\]———————————————————————↗
+        ↖——————————————————————[Break LOS]/[Hide]———————————————————————↗
 
 **Avery Combat**: cover, decoupled aiming, arrests \> lethal. Suppression and team calls supported by MEDSTAT.  
  **Clara Combat**: last resort. Limited firearms, improvised traps, sprint windows. Fewer bullets, more routes.
@@ -148,3 +149,13 @@ Primary verbs: observe, collect, infer, act, record, move.
 ## **4.14 Approvals**
 
 On approval: archive to MASTER as `[SEC-04-LOOPS] v0.1` and update manifest. Next section: **SEC‑05 Systems & Mechanics**.
+
+# **Patch Instructions for Existing MASTER — SEC-05**
+
+## **1) Replace this single manifest row**
+
+Find the row that begins with `| SEC-05-SYSTEMS |` and replace the entire line with:
+
+`| SEC-05-SYSTEMS | Systems and mechanics | v0.1 | 2025-08-11 | approved | archived to Master |`
+
+## **2) Append this section to the end of MASTER (add a `` before it)**

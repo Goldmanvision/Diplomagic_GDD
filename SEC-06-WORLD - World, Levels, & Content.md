@@ -1,14 +1,13 @@
 # [SEC-06-WORLD] World, Levels, & Content
-Version: v0.1 • 2025-08-11  
+Version: v0.1  
 Date: 2025-08-11  
 Owner: Nick Goldman
 
 ### Related sections
-- `SEC-04-LOOPS — Core Gameplay Loops`
-- `SEC-05-SYSTEMS — Systems & Mechanics`
-- `SEC-07-UI — UI/UX (Devices, HUD, Menus)`
-- `SEC-08-ARTAUDIO — Art Direction & Audio`
-- `SEC-09-TECH — Technology & Performance Targets`
+- `SEC-04-LOOPS` — Core Gameplay Loops
+- `SEC-05-SYSTEMS` — Systems & Mechanics
+- `SEC-07-UI` — UI/UX (Devices, HUD, Menus)
+- `SEC-08-ARTAUDIO` — Art Direction & Audio
 
 ## **6.1 World Overview**
 
@@ -44,7 +43,7 @@ Reality fractures into **New Kadath** (adjacent, navigable) and **Unknown Kadath
 
 ## **6.4 Level Design Tenets**
 
-* Readable austerity: PS1-era silhouettes \+ modern lighting.
+* Readable austerity: PS1-era silhouettes + modern lighting.
 
 * Two-pass geometry: Clara stealth first, Avery breach second.
 
@@ -92,8 +91,8 @@ Clara Winston, Avery Jordan, Reddy, Qin Xu Qi, Paul Kent, Richard Tack, Betsy Lu
 | Ch1 | Kids Kamp, Jackson SC | 2–3 | Clara escape; Avery check |
 | Ch2 | Backwoods, Substations | 2 | Route choice; TAPLINE |
 | Ch3 | Brightstar return, Unknown Kadath | 2 | Convergence, time dilation |
-| Ch4 | NYC Tunnels \+ surreal | 2 | Swap cadence tighter |
-| Ch5 | NYC hub \+ prior sites | 2–3 | Rogue Avery, open returns |
+| Ch4 | NYC Tunnels + surreal | 2 | Swap cadence tighter |
+| Ch5 | NYC hub + prior sites | 2–3 | Rogue Avery, open returns |
 | Ch6 | Transdimensional Complex | 2 | Ascent, escape |
 | Epilogue | Variable | 1 | Endings matrix |
 | Total missions: 13–16. |  |  |  |
@@ -120,17 +119,17 @@ Greybox plans, prop lists, re-entry specs, audio maps, optimization checklist.
 
 ## **6.15 Approvals**
 
-On approval: archive to MASTER as \[SEC-06-WORLD\] v0.1 and update manifest. Next: SEC-07 UI/UX.
+On approval: archive to MASTER as [SEC-06-WORLD] v0.1 and update manifest. Next: SEC-07 UI/UX.
 
 # **Patch Instructions for Existing MASTER — SEC-07**
 
-## **1\) Replace this single manifest row**
+## **1) Replace this single manifest row**
 
 Find the row that begins with `| SEC-07-UI |` and replace the entire line with:
 
 `| SEC-07-UI | UI/UX | v0.1 | 2025-08-11 | approved | archived to Master |`
 
-## **2\) Append this section to the end of MASTER (add a `
-` before it)**
+## **2) Append this section to the end of MASTER (add a `` before it)**
 
-\[\[PAGEBREAK\]\]
+
+> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.

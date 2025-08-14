@@ -121,7 +121,7 @@ Valid ↔ Invalid (break) ↔ Remediated (supervisor sign‑off)
 **Constraints**
 - `id` is unique within `case_id`.
 - `tier ∈ {A,B,C}`.
-- Photos stored as compressed PNG/JPEG with EXIF‑like header.
+- Photos stored as compressed PNG/JPEG with a device metadata block (timestamp, case, handler).
 
 ## **5) Formulas & Scoring**
 
@@ -149,7 +149,7 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 
 ### 6.1 Camera
 - Open → focus reticle → **CAPTURE** → store `IMG_####` with timestamp and location.
-- Auto‑suggest **Tag** if object outline detected (simple bounding box, no hard ML).
+- Edge/contrast aid suggests **Tag**; user confirms. No hard ML.
 
 ### 6.2 Evidence (List + Detail)
 - **List**: filter by tier, CoC state, linked/unlinked, locker.
@@ -167,7 +167,7 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 ### 6.4 Warrant Builder
 - Template fields: Location, PC summary, Linked Items, Requested Actions.
 - Live WS readout; reasons for failure listed.
-- **SUBMIT** → status Submitted; mock judge delay 10–30 s; result Approved/Denied with rationale.
+- **SUBMIT** → status Submitted; telephonic review occurs on minutes scale; responses are queued; sworn attestation recorded; result Approved/Denied with rationale and reasons for questions.
 
 ### 6.5 Map
 - Shows lockers, TAPLINE nodes, last photo locations.
@@ -193,6 +193,11 @@ Latency target per action ≤ 250 ms. All destructive ops require confirm.
 - Max photos per mission: 60; image size target ≤ 200 KB each (JPEG Q80).
 - Evidence items per mission target: 20–30 total; A‑tier ≤ 6.
 - FieldPad memory bar shows storage; archive oldest photos first after confirm.
+
+**Media & connectors (period)**
+- Storage via **PCMCIA Type‑II ATA/SRAM** or **CF Type‑I** cards using **CF→PC Card** adapter.
+- Throughput ~1–2 MB/s practical; file ops feel slow.
+- Modem cards expose **RJ‑11**; 10Base‑T NICs expose **RJ‑45**; optional **RS‑232 DE‑9** on device/dock.
 
 ## **10) Accessibility & Localization**
 - Device skins: Green/Amber/Gray; contrast pairs per SEC‑08.
