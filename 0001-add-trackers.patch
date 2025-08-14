@@ -1,0 +1,154 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Nick Goldman <noreply@example.com>
+Date: 2025-08-14 08:59:53 UTC
+Subject: [PATCH] Add Trackers directory with Prologues v0.3 and Playbook+Outline Sync v0.1
+
+diff --git a/Trackers/NARR-TRACKER_Prologues_v0.3.md b/Trackers/NARR-TRACKER_Prologues_v0.3.md
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/Trackers/NARR-TRACKER_Prologues_v0.3.md
+@@ -0,0 +1,78 @@
++# Narrative Tracker — Prologues v0.3 (Canonical)
++Version: v0.3
++Date: 2025-08-14 08:59:53 UTC
++Owner: Nick Goldman
++Status: Canonical. Replaces prior Prologue tracker.
++
++Linked: SEC-03-NARRATIVE, SEC-04-LOOPS, SEC-05-SYSTEMS, SEC-06-WORLD, SEC-07-UI, SEC-11-QA, PERIOD-ACCURACY-AUDIT_1994
++
++## Canon locks
++- Location: Brightstar Daycare, Jackson, SC.
++- Name: Brightstar Daycare (retire “Massapequa Kids Kamp” or use as in-world alias only).
++- POV: strict in-character only. Clara Prologue uses Reddy-POV for the face/knife beat.
++- Possession: event-driven; day/night only alters spawns.
++- Period: 1989 analog; 1994 uses FieldPad in later chapters with PCMCIA Type-II or CF Type-I via adapter. Caller ID not guaranteed.
++- Exception (0B only): Clara has no FieldPad or TAPLINE in her Prologue; MEDSTAT only.
++
++---
++
++## 0A — Avery Jordan (1989, Quantico — Hogan's Alley)
++Goal: Tutorialize ROE, challenge->cuff->search, analog custody; teach combat once for both characters.
++Tone: No danger; scored exercise by Eddie Paldino.
++Target duration: 15 min first-time critical path.
++
++Beats
++1) Orientation with Eddie Paldino: safety, ROE, objectives.
++2) Contact drill: challenge -> compliance check -> cuff -> search (mock contraband).
++3) Analog evidence: 35mm photo; bag->tag->log on paper; handoff at locker window.
++4) Range block: marksmanship + dual-wield intro + decoupled aim (look vs aim).
++5) Debrief: scoring on ROE and custody; Brightstar signifier among props (not the pin).
++
++Mechanics checklist
++- Arrest-first prompts; no lethal tutorial needed.
++- No FieldPad/PCMCIA/CF in 1989.
++- Telephonic warrant referenced as minutes-scale; not executed in-mission.
++
++Crosslinks: SEC-04 (Investigate->Act->Record), SEC-05 (ROE, Evidence), SEC-11 (AX subtitles default on).
++
++---
++
++## 0B — Clara Winston (1994, Home Visit — Betsy Lumbar)
++Goal: Tutorialize MEDSTAT vitals and caregiving. No FieldPad or TAPLINE in this scene.
++Tone: Supportive, no danger.
++Target duration: 15 min first-time critical path.
++
++Beats
++1) Arrival (buzzer/landline), small-talk; morning transitions to afternoon by scene end.
++2) MEDSTAT vitals: pulse-ox, BP cuff, temperature -> confirm -> log.
++3) Care tasks: tea, pill organizer, light tidy; optional brief hallway chat only.
++4) Devices: MEDSTAT handheld paired to RF wrist-band module; record visit notes on paper chart for later transcription when FieldPad is available.
++5) Reddy-POV beat shows Clara’s face while a knife is unsheathed behind Reddy.
++6) Discovery: Clara finds the Brightstar pin.
++7) Wrap: schedule follow-up via landline note; no digital scheduling.
++
++Mechanics checklist
++- MEDSTAT tutorial single-pass.
++- Devices present: MEDSTAT handheld + RF wrist-band; no FieldPad, no TAPLINE.
++- No outside walk test; if used later, failure -> Clara fired (narrative flag only).
++- Caller ID not guaranteed; do not rely on it for puzzles.
++
++Crosslinks: SEC-07 (MEDSTAT UI), SEC-11 (AX), SEC-05 (pin discovery flag stored later once FieldPad is introduced).
++
++---
++
++## QA/Telemetry flags
++- Events: prologue_avery_complete, prologue_clara_complete, brightstar_pin_found (true/false).
++- KPIs: tutorial completion <= 20 min P75; arrest:kill ratio >= 2:1 in Avery exercise.
++
++## Update actions
++- Mirror beats into SEC-03 Chapter List and Synopsis.
++- Add Avery range drill + dual-wield + decoupled aim to SEC-04 input/loop.
++- Add pin discovery boolean and custody notes to SEC-05/TDD (logged later).
++- Lock location/name in SEC-06 and VO barks.
++- Add AX checks to SEC-11/SEC-14 suites.
++
++## Status
++- 0A Avery: Pending
++- 0B Clara: Pending
++- Cross-section propagation: Pending
+
+diff --git a/Trackers/NARR-TRACKER_Playbook-Outline_Sync_v0.1.md b/Trackers/NARR-TRACKER_Playbook-Outline_Sync_v0.1.md
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/Trackers/NARR-TRACKER_Playbook-Outline_Sync_v0.1.md
+@@ -0,0 +1,55 @@
++# NARR-TRACKER — Playbook + Outline Sync v0.1
++Version: v0.1
++Date: 2025-08-14 08:59:53 UTC
++Owner: Nick Goldman
++Scope: Merge the “DIPLOMAGIC Narrative Playbook” and “Diplomagic Outline 2025” into the chapter-by-chapter review. Flag conflicts, lock canon, and list required edits across GDD sections.
++
++## Summary
++- Two Prologues: Clara (1994 tutorial) and Avery (1989 Hogan's Alley tutorial). Low stakes; teach character loops.
++- Choice hooks: finding Cultist Literature affects Ch.5 Betsy encounter; Avery range score unlock path for Hauser pistol.
++- Cinematic rules: diegetic-only; strict POV per character; device-driven scenes.
++- Chapter 6 includes UN HQ endgame plus SRS/D-LAMP connective thread.
++
++## Decisions — Locked Canon
++- Intake site: Brightstar Daycare, Jackson, SC (canon). Update SEC-06 locations; retire NY references.
++- Name: Brightstar Daycare (canon). Replace “Massapequa Kids Kamp” or keep only as in-world alias.
++- Cutscene POV: strict POV. For Clara’s prologue, jump to Reddy’s POV to show Clara’s face while hiding the knife behind Reddy.
++- Possession logic: event-driven; day/night only adjusts spawns.
++- Chapter 6 legs: Clara -> SRS; Avery -> UN HQ. Structure: single mission with interleaved legs (switchable to sequential if production requires).
++- Easter egg legality: Conan-style homage only if PD is clear in target regions; no trademarked name; no film look; no Schwarzenegger likeness/voice. Prepare alt concept.
++
++## Chapter deltas and actions
++- Prologue: align tutorials per canon; wire pin pickup -> Ch.5 branch.
++- Ch.1 “Simple Curiosity”: Clara stealth escape; Avery arrest-first scoring. Verify arrest-first UI and evidence gating.
++- Ch.2 “Passing Interest”: Clara survival in backwoods; optional Rolodex calls; Avery promotion and meeting Krill. Add Krill flags.
++- Ch.3 “Innocent Fascination”: Reddy playable; non-lethal rewarded; Avery suspended; spectral equipment gate; forced push to Unknown Kadath; Clara/Reddy rescue.
++- Ch.4 “Undying Obsession”: Swap-play traversal; spare cultists bonus; shared statlines.
++- Ch.5 “Renewed Purpose”: Avery rogue; seized-site revisits; car mini-base; day/night variants; Betsy confrontation or arrest based on Prologue pickup.
++- Ch.6 “Glorious Quest”: Interleaved UN HQ and SRS legs; device outcomes feed epilogue tags.
++- Epilogue “Reorientation”: Mixed endings based on Final Score; NG+ variants.
++
++## Required GDD updates
++- SEC-01 Front: executive summary reflects two-prologue structure.
++- SEC-02 Pillars: add POV/cutscene rule and choice->consequence hooks.
++- SEC-04 Loops: wire Prologue->Ch.5 branch; add Reddy telekinesis loop.
++- SEC-05 Systems: update Evidence/Warrant ties to Final Score; Krill moral flags; shared Clara/Avery statlines for Ch.4.
++- SEC-06 World: lock location canon; federally seized map variants; day/night spawn tables.
++- SEC-07 UI/UX: Reddy input context; arrest-first prompts; diegetic interactables catalog.
++- SEC-08 Art/Audio: audio layering; Mystical Heads VFX budget; spectral readability.
++- SEC-09 Tech: spectral-phase equipment; diegetic video playback; NG+ save flags.
++- SEC-11/14 QA: CM/AX tests for diegetic scenes; Prologue->Ch.5 branch tests; Ch.6 dual-leg perf spots.
++- SEC-12 Risks: IP risk management for homage; narrative-location mismatch risk until canon locked.
++
++## Data & flags
++- Score thresholds for endings and NG+ unlocks.
++- Prologue pickup boolean -> Betsy branch.
++- Krill moral-alignment flag.
++- Ch.4 no-harm-to-cultists bonus flag.
++- Ch.6 device outcome tags (Destroy vs Banish) -> epilogue variant.
++
++## Next actions
++- Approve and then patch SEC-01/02/04/05/06/07/08/09/11/12/14 with exact language in v-bumped docs.
++- Build a Choice & Consequence grid with IDs and owners.
++
++## Changelog
++- v0.1: Initial merge and decisions locked.
+
+-- 
+2.42.0
