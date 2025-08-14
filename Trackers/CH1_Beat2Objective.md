@@ -1,13 +1,13 @@
 # CH1 — “Simple Curiosity” Beat→Objective
-Version: v0.1
-Date: 2025-08-14 11:49Z
+Version: v0.2
+Date: 2025-08-14 21:18:35 UTC
 Owner: Nick Goldman
 
 Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+ note‑card unlocks Notes mid‑chapter). **Avery:** analog tools only.
 
 ## Leg A — Clara + Reddy (day → dusk)
 ### Flow
-1) Intake desk sign‑in → supply drawer → **MEDSTAT note‑card** found → insert → **Notes unlocked** (auto‑logs prior pin note).  
+1) Intake desk sign‑in → supply drawer → **MEDSTAT note‑card** found → **insert PCMCIA card** → **Notes unlocked** (auto‑logs prior pin note).  
 2) Guided tour (classroom → infirmary → storage).  
 3) Light **stealth** to avoid staffer; optional **care task** for a child.  
 4) Exit prompt; schedule return.
@@ -17,7 +17,7 @@ Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+
 |---|---|---|---|---|
 | Sign‑in | **SIGN IN** | Entry logged | Skip desk | Paper ledger |
 | Find card | **FIND CARD** | Card in hand | Missed | Drawer hotspot |
-| Insert card | **INSERT** | Notes enabled | Wrong slot | Toast: Note logged |
+| Insert card | **INSERT** | Notes enabled (PCMCIA Type II) | Wrong slot | Toast: Note logged |
 | Tour | **FOLLOW** | Rooms visited | Wander | Waypoints minimal |
 | Stealth | **AVOID** | No confront | Spotted | Soft admonish |
 | Care task | **CARE** | Task done | Skipped | Optional |
@@ -59,7 +59,7 @@ Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+
 - CP1 Brief done; CP2 Arrest; CP3 Custody; CP4 Debrief.
 
 ### Telemetry
-- `ch1_avery_complete`, `arrest_performed`, `custody_complete`, `roe_violations`, `range_score` (if referenced), `debrief_viewed`
+- `ch1_avery_complete`, `arrest_performed`, `custody_complete`, `roe_violations`, `debrief_viewed`
 
 ### AX/UX
 - Prompts ≤14 chars. Hold↔press works. Subtitles ON. High‑contrast prompts.
@@ -69,7 +69,7 @@ Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+
 ## Gates & Outcomes
 - Clara wrap requires: `medstat_upgrade_card_inserted==true`; stealth pass not hard‑gated.  
 - Avery wrap requires: `custody_complete==true`.  
-- Save flags: `medstat_upgrade_card_found=true`, CaseNote created for SYM‑001 on insert.
+- Save flags: set on insert and custody as above.
 
 ## Perf spots (initial)
 - Intake desk, classroom door, storage hallway; exterior exit.  

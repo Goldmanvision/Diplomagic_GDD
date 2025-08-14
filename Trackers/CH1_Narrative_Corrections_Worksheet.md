@@ -20,7 +20,7 @@ Edits:
 
 ## A2 — Note‑card (Clara)
 Intent: unlock Notes; auto‑log Prologue pin note.  
-Beat: find card in storage drawer; insert; toast “Note logged from earlier chart.”  
+Beat: find **PCMCIA Type II** linear‑flash **note‑card** (Newton‑compatible) in storage drawer; insert into MEDSTAT side slot; toast “Note logged from earlier chart.” MEDSTAT stays offline (no camera/internet); **SENTINEL** provides limited patient‑band breadcrumb only.  
 Edits:
 
 ## A3 — Tour (Clara)

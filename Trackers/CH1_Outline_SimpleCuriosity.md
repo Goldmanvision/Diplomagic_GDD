@@ -1,12 +1,12 @@
 # CH1 — “Simple Curiosity” Outline
-Version: v0.1
-Date: 2025-08-14 11:42:00 UTC
+Version: v0.2
+Date: 2025-08-14 21:18:35 UTC
 Owner: Nick Goldman
 
 Canon
 - Year: 1994. Location: **Brightstar Daycare, Jackson, SC**.
 - POV rule: strict in‑character. No omniscient cuts.
-- Devices: **Clara** MEDSTAT (+ note‑card upgrade enables Notes mid‑chapter). **No FieldPad/TAPLINE** yet. **Avery** operates analog (camera, paper forms, radio).
+- Devices: **Clara** MEDSTAT (+ PCMCIA Type II **note‑card** unlocks **Notes** mid‑chapter; Newton‑compatible; **no camera/internet**). **No FieldPad/TAPLINE** yet. **Avery** analog (camera, paper, radio). MEDSTAT links via **SENTINEL** to other MEDSTATs for patient‑band breadcrumb only.
 
 Goals
 - Introduce Brightstar space and tone without overt threat.
@@ -21,14 +21,14 @@ Leg A — Clara + Reddy at Brightstar (day → dusk)
 Beats
 1) Intake desk: sign‑in; ambient red flags (locked doors, odd signage).
 2) Find **MEDSTAT note‑card** in supply drawer; **insert → Notes unlock**; auto‑log prior pin note.
-3) Guided tour: classroom, infirmary, storage; light **stealth** to avoid staffer who wants them gone.
-4) Quiet incident: overhear coded phrase; optional **care task** for a child; mark for follow‑up.
+3) Guided tour: classroom, infirmary, storage; light **stealth** to avoid staffer.
+4) Quiet incident: overhear coded phrase; optional **care task** for a child.
 5) Exit prompt: Reddy wants to leave; schedule return visit.
 
 Objectives
 - Sign‑in completed.
 - Note‑card inserted; toast confirms “Note logged from earlier chart.”
-- Stealth pass without confrontation (soft fail: brief admonish, no hard fail).
+- Stealth pass without confrontation (soft fail: admonish).
 - Optional care task complete.
 
 Leg B — Avery near Jackson (same day)
@@ -44,12 +44,12 @@ Objectives
 - Debrief viewed.
 
 Fail/Reset
-- Clara: caught during stealth → admonish and reposition; no job loss here.
+- Clara: caught during stealth → admonish and reposition; no hard fail here.
 - Avery: unjustified shot → admonish + partial rewind; score penalty; continue.
 
 Devices & Data
 - MEDSTAT Notes enabled; CaseNote created for pin symbol (SYM‑001).
-- Save flags touched: `medstat_upgrade_card_found=true`.
+- Save flags touched: `medstat_upgrade_card_found=true`, `medstat_upgrade_card_inserted=true`, `pin_auto_log_created=true`.
 - No EvidenceItem yet unless later photographed.
 
 Dependencies
