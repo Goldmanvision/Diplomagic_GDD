@@ -1,6 +1,6 @@
 # CH1 — “Simple Curiosity” Beat→Objective
 Version: v0.2
-Date: 2025-08-14 22:50:08 UTC
+Date: 2025-08-14 23:10:43 UTC
 Owner: Nick Goldman
 
 Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+ note‑card unlocks Notes mid‑chapter). **Avery:** analog tools only.
@@ -23,19 +23,10 @@ Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+
 | Care task | **CARE** | Task done | Skipped | Optional |
 | Schedule | **CALL** | Date set | None | Landline note |
 
-### Checkpoints
-- CP1 Sign‑in done; CP2 Card inserted; CP3 Tour done; CP4 Stealth pass; CP5 Exit.
-
 ### Telemetry
 - `medstat_upgrade_card_found`, `medstat_upgrade_card_inserted`, `pin_auto_log_created`  
 - `coded_phrase_heard` ("the stars are right tonight")  
 - `stealth_pass_bool`, `care_task_done_bool`, `ch1_clara_complete`
-
-### AX/UX
-- Prompts ≤14 chars (SIGN IN, FIND CARD, INSERT, FOLLOW, AVOID, CARE, CALL).  
-- Subtitles ON; high‑contrast skin toggle persists.
-
----
 
 ## Leg B — Avery (same day)
 ### Flow
@@ -58,24 +49,3 @@ Canon: 1994, Brightstar Daycare (Jackson, SC). Strict POV. **Clara:** MEDSTAT (+
 
 ### Checkpoints
 - CP1 Brief done; CP2 Arrest; CP3 Custody; CP4 Debrief.
-
-### Telemetry
-- `ch1_avery_complete`, `arrest_performed`, `custody_complete`, `roe_violations`, `debrief_viewed`
-
-### AX/UX
-- Prompts ≤14 chars. Hold↔press works. Subtitles ON. High‑contrast prompts.
-
----
-
-## Gates & Outcomes
-- Clara wrap requires: `medstat_upgrade_card_inserted==true`; stealth pass not hard‑gated.  
-- Avery wrap requires: `custody_complete==true`.  
-- Save flags: set on insert and custody as above.
-
-## Perf spots (initial)
-- Intake desk, classroom door, storage hallway; exterior exit.  
-- Roadside stop, custody handoff.
-
-## Evidence & Capture
-- Screenshots: Notes unlock toast, custody checklist.  
-- CSV: perf med/95p at perf spots.
