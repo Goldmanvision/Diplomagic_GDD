@@ -125,3 +125,23 @@ This log records narrative and GDD patch files and how to apply them.
 
 **Notes**
 - Keep filenames stable. Version in headers.
+
+## 2025-08-14T12:15Z — CH1 integration addenda for SEC-04/05/TDD
+
+**Files**
+- `Patches/SEC-04_CH1_Integration_ADD.md`
+- `Patches/SEC-05_CH1_Flags_Data_ADD.md`
+- `Patches/TDD_CH1_Device_Hooks_ADD.md`
+- `Patches/MANIFEST_Addendum_CH1.md`
+
+**Apply**
+- Paste each addendum into the named sections; bump minor versions; link this entry in MANIFEST.
+
+**Scope / Rationale**
+- Integrates CH1 loops, save flags, and device hooks into core docs.
+
+**Cross-refs**
+- Trackers/CH1_Outline_SimpleCuriosity.md
+- Trackers/CH1_Beat2Objective.md
+- Trackers/AssetList_CH1_Brightstar.md
+- Trackers/QATelemetry_CH1.md
