@@ -145,3 +145,20 @@ This log records narrative and GDD patch files and how to apply them.
 - Trackers/CH1_Beat2Objective.md
 - Trackers/AssetList_CH1_Brightstar.md
 - Trackers/QATelemetry_CH1.md
+
+## 2025-08-14T12:42Z — CH1 SEC‑06/07 addenda
+
+**Files**
+- `Patches/SEC-06_CH1_World_Layouts_ADD.md`
+- `Patches/SEC-07_CH1_MEDSTAT_Notes_ADD.md`
+- `Patches/MANIFEST_Addendum_CH1_Layouts_UI.md`
+
+**Apply**
+- Paste into SEC‑06/07 as new CH1 subsections; bump minor versions; link this entry in MANIFEST.
+
+**Scope / Rationale**
+- Locks CH1 world blockouts and MEDSTAT Notes UI.
+
+**Cross‑refs**
+- Trackers/SEC06_CH1_WorldLayouts.md
+- Trackers/SEC07_CH1_MEDSTAT_Notes_UI.md
