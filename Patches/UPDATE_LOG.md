@@ -100,3 +100,28 @@ This log records narrative and GDD patch files and how to apply them.
 
 **Notes**
 - Keep filenames stable; version lives in headers.
+
+## 2025-08-14T12:08Z — CH1 trackers and inline patches
+
+**Files**
+- `Trackers/Shotlist_CH1_Brightstar.md`
+- `Trackers/Shotlist_CH1_Roadside.md`
+- `Trackers/InlinePatch_SEC-04_CH1.md`
+- `Trackers/InlinePatch_SEC-05_CH1.md`
+- `Trackers/InlinePatch_TDD_CH1.md`
+
+**Apply**
+- Paste inline patches into SEC‑04/05/TDD under CH1 sections.
+- Use shotlists for press/compliance capture planning.
+
+**Scope / Rationale**
+- Establish CH1 capture and integrate CH1 loops, flags, and device hooks.
+
+**Cross‑refs**
+- `Trackers/CH1_Outline_SimpleCuriosity.md`
+- `Trackers/CH1_Beat2Objective.md`
+- `Trackers/AssetList_CH1_Brightstar.md`
+- `Trackers/QATelemetry_CH1.md`
+
+**Notes**
+- Keep filenames stable. Version in headers.
