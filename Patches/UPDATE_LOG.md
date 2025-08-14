@@ -78,3 +78,25 @@ This log records narrative and GDD patch files and how to apply them.
 
 **Notes**
 - Keep file paths stable; track version in headers. Do not timestamp filenames.
+
+## 2025-08-14T11:24Z — SEC-03 finalize (3.2 replace, 3.4 prepend)
+
+**Files**
+- `Patches/SEC-03_3.2_Chapter_List_REPLACE.md`
+- `Patches/SEC-03_3.4_Synopsis_Prologues_ADD.md` (existing)
+- `Patches/MANIFEST_Addendum_SEC-03_Prologues.md`
+
+**Apply**
+- Replace §3.2 entirely.
+- Prepend §3.4 with the Prologues canonical block.
+- Bump SEC-03 minor version in MANIFEST; paste addendum block.
+
+**Scope / Rationale**
+- Locks Prologues beats and canon in SEC-03. Aligns with trackers and QA matrices.
+
+**Cross-refs**
+- Trackers/NARR-TRACKER_Prologues_v0.3.md
+- Trackers/QATelemetry_0A_Quantico.md, Trackers/QATelemetry_0B_BetsyApt.md
+
+**Notes**
+- Keep filenames stable; version lives in headers.
