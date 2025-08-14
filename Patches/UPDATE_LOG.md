@@ -50,3 +50,31 @@ This log records narrative and GDD patch files and how to apply them.
 
 **Notes**
 - Anything operational.
+
+## 2025-08-14T11:02Z — SEC-04/05/TDD Prologues propagation
+
+**Files**
+- `Trackers/InlinePatch_SEC-04_Prologues.md`
+- `Trackers/InlinePatch_SEC-05_Prologues.md`
+- `Trackers/InlinePatch_TDD_Prologues.md`
+
+**Apply**
+- Paste each block into its target doc:
+  - SEC-04: add subheading “4.X Prologues Integration (0A/0B)” under Core Loops.
+  - SEC-05: insert under Save/Data Schemas and Systems Flags.
+  - TDD: insert under device flows and save/load contracts.
+- After pasting, bump section versions in `MANIFEST.md` and record this log entry link.
+
+**Scope / Rationale**
+- Wires 0A/0B tutorials into loops, save flags, and device flows.
+- Adds award gate (C96) and CaseNote vs Evidence behavior for pin symbol.
+
+**Cross-refs**
+- `Trackers/NARR-TRACKER_Prologues_v0.3.md`
+- `Trackers/QATelemetry_0A_Quantico.md`, `Trackers/QATelemetry_0B_BetsyApt.md`
+
+**Telemetry/QA impacts**
+- Events/flags per QA matrices; `cult_symbol_link_active` derived when both pin+award are true.
+
+**Notes**
+- Keep file paths stable; track version in headers. Do not timestamp filenames.
