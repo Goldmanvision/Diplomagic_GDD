@@ -1,0 +1,16 @@
+# Anchors — SEC-07 UI-UX (Devices, HUD, Menus)
+Repo dir: /Patches
+
+# File: SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+
+# Prompts master table
+^##\s*Prompts\b
+
+# HUD bars (Health/Stamina/Mana/Ammo/Evidence/BlueOnBlue)
+^##\s*HUD\b
+
+# Context prompts for Valve/Charge/Evidence loops
+^##\s*Context Prompts\b|^##\s*Interactions\b
+
+# Spell equip slots (L/R) in HUD/Devices
+^##\s*Devices\b|^##\s*Spell Slots\b

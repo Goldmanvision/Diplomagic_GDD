@@ -1,0 +1,16 @@
+# Anchors — SEC-06 World, Levels, & Content
+Repo dir: /Patches
+
+# File: SEC-06-WORLD - World, Levels, & Content.md
+
+# Deep D-LAMP section insert
+^##\s*D-?LAMP (?:Deep )?Site\b
+
+# Transit tunnels / Iron Highway
+^##\s*Transit Tunnels\b|^##\s*Iron Highway\b
+
+# SRS Secret Annex node group
+^##\s*SRS Secret Annex\b|^##\s*Annex\b
+
+# ASCII map reference location
+^##\s*Maps\b|^##\s*References\b

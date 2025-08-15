@@ -1,0 +1,29 @@
+# Anchors — SEC-05 Systems & Mechanics
+Repo dir: /Patches
+
+# File: SEC-05-SYSTEMS - Systems & Mechanics.md
+# Use these regex anchors to locate insert points.
+
+# Phrases & Scrolls (after Spellcasting Overview)
+^##\s*Spellcasting Overview\b
+
+# FieldPad/MEDSTAT storage (after Field Devices)
+^##\s*Field Devices\b
+
+# Raid ROE (under Combat Rules)
+^##\s*Combat Rules\b
+
+# Cameras & Breakers (under Stealth & Surveillance)
+^##\s*Stealth\s*&\s*Surveillance\b
+
+# Boss & Mini-boss (Star Vampire)
+^##\s*Boss(?:es)?\s*&\s*Mini-boss(?:es)?\b
+
+# Endings & Outcomes (Splinter Vault)
+^##\s*Endings\s*&\s*Outcomes\b
+
+# Tuning & Balancing
+^##\s*Tuning\s*&\s*Balancing\b
+
+# Failure States (Blue-on-Blue)
+^##\s*Failure States\b
