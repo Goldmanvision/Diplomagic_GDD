@@ -1,0 +1,19 @@
+# CODEOWNERS — Snippet for CH5–CH6 Root Merge
+Repo dir: /Patches
+
+# Paste into .github/CODEOWNERS (adjust handles)
+# Narrative
+/SEC-03-NARRATIVE*    @narrative-owner @narrative-backup
+# Systems
+/SEC-05-SYSTEMS*      @systems-owner @systems-backup
+# World
+/SEC-06-WORLD*        @world-owner @world-backup
+# UI
+/SEC-07-UI*           @ui-owner @ui-backup
+# Audio
+/SEC-08-*             @audio-owner @audio-backup
+# Patches & Trackers (helpers)
+/Patches/*            @docs-owner
+/Trackers/*           @qa-owner
+
+# Constraints remain: 1994 period; prompts ≤14; ambient phrase only (“the stars are right tonight”); CH6 raid ROE with Blue‑on‑Blue fail; evidence cap 3.
