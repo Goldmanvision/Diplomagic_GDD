@@ -1,0 +1,17 @@
+# sed/ripgrep snippets — CH5–CH6 root merge
+Repo dir: /Patches
+
+# Preview CH5→ tail of narrative file
+rg -n "^## CH5|^## CH6|^## CH7" "SEC-03-NARRATIVE - Narrative.md"
+
+# BSD sed (macOS) in-place backup .bak — replace CH5..CH6 with patch file contents
+# Manual paste recommended, but for power users:
+# 1) Delete existing CH5 and CH6 blocks
+sed -i.bak -e '/^## CH5/ , /^## CH7/{/^## CH7/!d}' "SEC-03-NARRATIVE - Narrative.md"
+# 2) Append new content to end, then move it into place as needed
+cat "./Patches/ROOT_SEC-03_Narrative_CH5-CH6_Merge.md" >> "SEC-03-NARRATIVE - Narrative.md"
+
+# GNU sed variant (Linux) uses -i without suffix:
+# sed -i -e '/^## CH5/ , /^## CH7/{/^## CH7/!d}' "SEC-03-NARRATIVE - Narrative.md"
+
+# Verify constraints afterward (see validation file)
