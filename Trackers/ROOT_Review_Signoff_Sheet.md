@@ -1,27 +1,17 @@
-# Root Review & Sign‑off — CH5–CH6
+# Review Sign‑off Sheet — CH5–CH6 Root Merge
 Repo dir: /Trackers
+Date: 2025-08-15
 
-## Narrative
-- [ ] Rogue pivot, deep D‑LAMP, Iron Highway present
-- [ ] CH6 Annex raid + Splinter Vault endings documented
-- [ ] Ambient phrase only: “the stars are right tonight.”
+- [ ] Narrative Lead — name/date
+- [ ] Systems Lead — name/date
+- [ ] World Lead — name/date
+- [ ] UI Lead — name/date
+- [ ] Audio Lead — name/date
+- [ ] QA Lead — name/date
 
-## Systems
-- [ ] Phrases L/R + scrolls; Mana calm‑regen
-- [ ] Raid ROE; Blue‑on‑Blue fail; Evidence cap 3
-
-## World/UI
-- [ ] Nodes + ASCII map linked
-- [ ] Prompts ≤14 chars; valve/charge/evidence loops clear
-
-## 1994 Audit
-- [ ] MicroTAC not StarTAC; no smartphones/SMS/Wi‑Fi/Bluetooth/GPS
-
-## QA
-- [ ] Build verification checklist complete
-- [ ] Encounter tables and tuning reviewed
-
-**Signatures**
-- Narrative Lead: ___________  Date: _______
-- Systems Lead: ____________  Date: _______
-- QA Lead: _________________  Date: _______
+Confirm:
+- [ ] 1994 period lock
+- [ ] Prompts ≤14
+- [ ] Ambient phrase only (“the stars are right tonight”)
+- [ ] CH6 raid ROE with Blue‑on‑Blue fail
+- [ ] Evidence cap 3

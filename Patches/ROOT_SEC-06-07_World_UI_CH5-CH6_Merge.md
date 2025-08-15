@@ -1,25 +1,47 @@
-# ROOT MERGE — SEC-06 World + SEC-07 UI (CH5–CH6)
+# ROOT — SEC-06 & SEC-07 Merge Additions (CH5–CH6)
 Repo dir: /Patches
 
-> Paste into `SEC-06-WORLD - World, Levels, & Content.md` and `SEC-07-UI - UI-UX (Devices, HUD, Menus).md` in their respective sections.
+> Paste these blocks into the root docs.
 
-## World — CH5
-- **NYFO/Hotel:** Interview rooms; service corridors; stairwell cams.  
-- **Deep D‑LAMP:** Entry Gallery, Admin Archive, Pump Cavern (Star Vampire), Vehicle Bay, Route Control.  
-- **Iron Highway:** Ramp A, Switchbacks, IH‑12 marker, Spur JCT, Vault Hall, Bulkhead Layby.
+---
+## SEC-06 — World, Levels, & Content
 
-## World — CH6 (SRS Secret Annex)
-- **Bulkhead Gate** → **Man‑Door** → **Service Passage** (analog cams, breaker boxes, K‑9 routes).  
-- **Valve Row** (A/B/C) → **Dead Piping** (prep tables) → **Service Stair** → **Core Gallery** (Ignition) → **Splinter Vault** (final arena).  
-- ASCII reference map shipped in `/Patches/SEC-06-CH6_Ascii_Map.md`.
+### Deep D‑LAMP (WV Shaft → Pump Cavern → Vehicle Bay)
+- **Access:** Concealed kiosk on a WV river island; 1‑mile descent via elevator.
+- **Spaces:** Control Lobby, Pump Cavern (Star Vampire), Vehicle Bay, Maintenance Corridors.
+- **Loot:** Rover route card, fuel chits, Polaroids of occupation.
+- **Encounters:** Undead pockets, Night Gaunts in dark ceilings.
+- **Exit:** Iron Highway ramp.
 
-## Enemies (action/horror roster)
-Zombie, Night Gaunt, Cultist, Beast, Warden Shade. All lethal hostiles in CH6.
+### Iron Highway (D‑LAMP to SRS Layby)
+- **Route:** Utility roadway; checkpoints listed on route card.
+- **Events:** Ambushes, barrier clears, rover diagnostics.
+- **End:** **SRS bulkhead layby** with man‑door ingress.
 
-## UI — Prompts (≤14 chars)
-**Core:** Answer, Call Back, Inspect, Bag, Tag, Note, Map  
-**Rogue/Comms:** Pager, Payphone  
-**Traversal:** Elevator, Descend, Drive, Brake, Lights, Enter, Exit, Breach, Crouch, Hide, Dodge  
-**Combat:** Aim, Fire, Reload, Suppress, Frag, Shove  
-**Spells:** Equip L, Equip R, Cast L, Cast R, Shield, Ward Jam  
-**Annex tasks:** Valve A, Valve B, Valve C, Plant, Detonate, Photo, Sample, Bag, Tag
+### SRS Secret Annex (Raid Route)
+Bulkhead Gate → Man‑Door → Service Passage (cams/breakers) → Valve Row (A‑B‑C) → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress fence gap.
+
+**Cameras:** Service Passage only; breaker pull ≈90 s loop; K‑9 reroute.  
+**Vault:** No cameras. Ending paths: **Contain**, **Sever**, **Black File**.
+
+---
+## SEC-07 — UI-UX (Devices, HUD, Menus)
+
+### HUD
+Health | Stamina | Mana | Ammo | Evidence **0/3** | **BlueOnBlue**
+
+### Prompts (≤14 chars)
+Answer, Breach, Bag, Brake, Call Back, Cast L, Cast R, Crouch, Detonate, Drive, Dodge, Elevator, Enter, Equip L, Equip R, Fire, Frag, Headlights, Hide, Holster, Inspect, **Ward Jam**, Lawyer Up, Lights, Map, Note, Pager, Payphone, Photo, Plant, Reload, Sample, Shield, Shove, Suppress, Tag, Valve A, Valve B, Valve C, Exit, Descend, Aim
+
+### Context Loops
+- **Valve Loop (Contain):** Valve A → Valve B → Valve C → set gimbal **STABLE**.
+- **Charge Loop (Sever):** Plant×2 → interrupt chant → **Detonate** → sprint to egress.
+- **Evidence Loop (Black File):** **Photo**×2 + **Sample**×1; counter enforces cap 3.
+
+### Comms (Rogue)
+Pager → Payphone. Timed call ≤90 s.
+
+### Alerts
+Cap Reached, BlueOnBlue, STABLE.
+
+Constraints: 1994 period; deputy name randomized; ambient phrase only — “the stars are right tonight.”
