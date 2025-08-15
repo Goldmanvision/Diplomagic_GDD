@@ -16,10 +16,11 @@ Repo dir: /Trackers
 | Seal breach | +5 |
 | Sever link | +3 |
 | Black file | +5 evidence / −5 rep |
-| Non-lethal arrests | +3 each (cap +9) |
 | Evidence item (cap 3) | +2 each |
-| End at Alert High | −2 |
+| Blue-on-Blue | −10 and mission fail |
 
 ## Caps and Notes
 - `EvidenceCap_CH6=3` total items.  
 - Ambient phrase “the stars are right tonight” appears in chants; no dialogue input.
+
+- Hostile neutralization = 0 points (no penalty/bonus) under raid ROE.
