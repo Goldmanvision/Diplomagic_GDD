@@ -1,20 +1,28 @@
 # Tracker — CH6 Ending Scorecard
 Repo dir: /Trackers
 
-| Field | Value |
-|---|---|
-| Ending | Contain / Sever / Black File |
-| EvidenceCount | 0–3 |
-| EndingBonus | +5 / +3 / (+5 evidence, −5 rep) |
-| BlueOnBlue | 0/1 (fail if 1) |
-| FinalScoreDelta | compute from EvidenceCount + EndingBonus |
+## Run meta
+- Build: ______
+- Difficulty: ______
+- DeputyName: ______
+- Path: Contain / Sever / Black File
 
-## Compute
-```
-if BlueOnBlue==1: FinalScoreDelta = "FAIL"
-else:
-  if Ending=="Contain": base=5
-  elif Ending=="Sever": base=3
-  elif Ending=="Black File": base=0  # evidence handled separately, rep penalty external
-  FinalScoreDelta = base + (EvidenceCount*2)
-```
+## Counters
+- EvidenceCount (0–3): ____
+- BlueOnBlue (0/1): ____
+- Photos: ____
+- Samples: ____
+
+## Scores
+- Ending bonus:  +5 (Contain) | +3 (Sever) | +5 (Black File)
+- Evidence:      +2 × EvidenceCount  (cap 3)
+- Reputation:    −5 if Black File
+- Blue‑on‑Blue:  FAIL (−10, abort) if set
+
+## Computed
+- FinalScoreDelta: ______
+- RepDelta: ______
+
+## Notes
+- Neutralizations are score‑neutral under CH6 raid ROE.
+- Phrase remains ambient only: “the stars are right tonight.”
