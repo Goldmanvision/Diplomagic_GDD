@@ -1,27 +1,30 @@
-# Root Apply Instructions — CH5–CH6 Merge
+# Apply Instructions — CH5–CH6 Root Merge
 Repo dir: /Patches
 
-## Scope
-Manual merge of CH5–CH6 into root docs: Narrative, Systems, World, UI. No binaries. Safe op.
+Safe, text-only.
 
-## Files to paste
-1) `ROOT_SEC-03_Narrative_CH5-CH6_Merge.md` → `SEC-03-NARRATIVE - Narrative.md`
-2) `ROOT_SEC-05_Systems_Merge_Additions_CH5-CH6.md` → `SEC-05-SYSTEMS - Systems & Mechanics.md`
-3) `ROOT_SEC-06-07_World_UI_CH5-CH6_Merge.md` → (`SEC-06-WORLD - World, Levels, & Content.md`) and (`SEC-07-UI - UI-UX (Devices, HUD, Menus).md`)
+## Narrative (SEC-03)
+1) Open `SEC-03-NARRATIVE - Narrative.md`.
+2) Replace `## CH5` section using `/Patches/ROOT_SEC-03_CH5_Narrative_Paste.md`.
+3) Replace `## CH6` section using `/Patches/ROOT_SEC-03_CH6_Narrative_Paste.md`.
 
-## Steps
-1) Create a new branch, e.g., `feat/ch5-6-root-merge`.
-2) Open each root doc. Find anchors (see anchors file). Replace the CH5 and CH6 sections with the content from the root merge patches.
-3) Append Systems/World/UI sections as indicated.
-4) Verify constraints:
-   - 1994 period lock.
-   - Prompts ≤14 chars.
-   - Ambient phrase only: “the stars are right tonight.”
-   - CH6 ROE: raid, lethal authorized, BlueOnBlue fail.
-   - Evidence cap: CH6 total 3.
-5) Run QA checklist in `/Trackers/CH5-6_Build_Verification.md`.
-6) Commit with summary+description from this chat.
-7) Open PR using the template in this batch.
+## Systems (SEC-05)
+4) Open `SEC-05-SYSTEMS - Systems & Mechanics.md`.
+5) Insert Blocks A–F from `/Patches/ROOT_Systems_Snippet_Replacements.md`
+   at headings: Spellcasting, Field Devices, Combat Rules, Stealth & Surveillance,
+   Endings & Outcomes, Tuning & Balancing, Failure States.
 
-## Notes
-- Heavy-op warning: none. These are text edits only.
+## World/UI (SEC-06/07)
+6) Append world/UI from `/Patches/ROOT_SEC-06-07_World_UI_CH5-CH6_Merge.md`.
+7) Paste the prompts table from `/Patches/ROOT_SEC-07_UI_Prompts_Master.md`.
+
+## README/ToC
+8) Add bullets from `/Patches/ROOT_README_ToC_CH5-CH6_Insert.md`.
+
+## Validate
+9) Run `/Patches/ROOT_Validation_Grep_Patterns.md`.
+10) Tick `/Trackers/ROOT_Merge_Smoke_Checks.md` and
+    `/Trackers/ROOT_Review_Signoff_Sheet.md`.
+
+Constraints: 1994 lock; prompts ≤14; deputy randomized;
+ambient phrase only: “the stars are right tonight.”
