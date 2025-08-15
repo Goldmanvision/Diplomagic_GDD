@@ -1,29 +1,46 @@
-# SEC-09 — Period Audit: 1994 (CH5–CH6)
+# SEC-09 — Period Audit (1994) for CH5–CH6
 Repo dir: /Patches
+Date: 2025-08-15
 
-## Allowed (examples)
-- Phones: Motorola **MicroTAC**, pagers, payphones, fax machines.
-- Media: Polaroid photos, paper logs, dot-matrix printouts.
-- Firearms: SIG P226, S&W 13, .38 revolvers, pump shotguns; no weapon lights.
-- Security: analog CCTV on tape, keyed cylinders, padlocks, paper badges.
-- Vehicles: utility rovers (industrial), sedans; no GPS, no key fobs.
-- Comms: analog radios; **SENTINEL** only at NYFO terminals, not mobile.
+## Allowed tech (examples)
+MicroTAC phones, numeric pagers, payphones, Polaroids, analog CCTV, paper logs, teletype/BOLO/FD‑302.
 
-## Disallowed / replace
-- StarTAC (too new) → MicroTAC.
-- Smartphones, SMS, Wi‑Fi, Bluetooth → pagers + payphones.
-- NVGs and red dots (agency issue) → iron sights, flashlights only.
-- Digital pics → Polaroid refs only.
+## Disallowed tech (flag any occurrence)
+smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
 
-## Language
-- Keep “UC,” “FD‑302,” “teletype,” “BOLO,” “ASAC.”
-- Avoid 2000s jargon: “GPS ping,” “cell site,” “SIM.”
+## Doc targets
+- `SEC-03-NARRATIVE - Narrative.md` (CH5, CH6)
+- `SEC-05-SYSTEMS - Systems & Mechanics.md`
+- `SEC-06-WORLD - World, Levels, & Content.md`
+- `SEC-07-UI - UI-UX (Devices, HUD, Menus).md`
+- README/ToC
+- Patches/Trackers in this PR
 
-## Checks
-- UI prompts ≤14 chars.
-- Evidence cap: CH6 total 3.
-- Ambient phrase only: “the stars are right tonight.”
+## Commands (pick one family)
 
-## Known fixes applied
-- StarTAC → MicroTAC in CH4+.
-- No network access at hotel/field; NYFO terminals only.
+### ripgrep
+```
+rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+```
+
+### grep
+```
+grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+```
+
+### PowerShell
+```powershell
+Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+```
+
+## Results
+| File | Term | Line | Action |
+|---|---|---|---|
+|  |  |  |  |
+
+## Sign‑off
+- Narrative: ______  Date: ____
+- Systems:  ______  Date: ____
+- QA:       ______  Date: ____
+
+Ambient phrase only: “the stars are right tonight.”

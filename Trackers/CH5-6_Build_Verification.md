@@ -1,24 +1,25 @@
-# Tracker — Build Verification (CH5→CH6)
+# Tracker — CH5–CH6 Build Verification
 Repo dir: /Trackers
 
-## Files to confirm in repo
-- Patches: CH5/CH6 narrative, systems, world, UI, audio, raid ROE, vault mechanics, ASCII map, combat tuning, rogue comms, routebook, integration plan, flags matrix, period audit, deputy RNG.
-- Trackers: CH5/CH6 trackers, flags/endings, scoring, QA cases, playtest log, telemetry spec, handler log, build verification itself.
+## Pass/Fail table
+| Check | Pass |
+|---|:--:|
+| CH5 hotel escape path works | ☐ |
+| Krill clearance scene fires | ☐ |
+| WV shaft loads deep D‑LAMP | ☐ |
+| Star Vampire encounter gates rover | ☐ |
+| Iron Highway to SRS layby | ☐ |
+| CH6 Service Passage cameras loop | ☐ |
+| Breaker pull = ~90 s outage | ☐ |
+| Valve Row A→B→C readable | ☐ |
+| Vault endings Contain/Sever/BlackFile reachable | ☐ |
+| Evidence cap = 3 enforced | ☐ |
+| Blue‑on‑Blue fail triggers | ☐ |
+| HUD shows Evidence 0/3 + BlueOnBlue | ☐ |
+| Prompts ≤14 across UI | ☐ |
+| Ambient phrase ambient‑only | ☐ |
+| 1994 audit passed | ☐ |
 
-## Gates
-- [ ] Prompts ≤14 chars (see prompts check file)
-- [ ] Phrase ambient only: “the stars are right tonight”
-- [ ] 1994 audit passed
-- [ ] Evidence cap: CH6 total 3
-- [ ] Raid ROE: lethal neutralizations score-neutral
-- [ ] BlueOnBlue fail on any friendly hit
-- [ ] Deputy name randomized
-- [ ] Deep D-LAMP one-mile descent in CH5
-- [ ] Iron Highway vehicle route to SRS Annex
-- [ ] Splinter Vault endings A/B/C implemented
-
-## Sign-off
-- Narrative lead: _______
-- Systems lead: _______
-- QA lead: _______
-- Date: _______
+## Notes
+- CH6 ROE: raid; lethal authorized; neutralizations score‑neutral.
+- Phrase remains ambient only: “the stars are right tonight.”
