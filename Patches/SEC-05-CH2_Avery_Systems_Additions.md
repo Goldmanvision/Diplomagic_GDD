@@ -1,19 +1,21 @@
-### Inner Checkpoint Passphrase
-- Challenge requires exact verbal match: “the stars are right tonight.”  
-- Logic: `if input == exact_phrase → Clearance; else → Alert += 1`.  
-- One retry via “Badge+Warrant” bluff check; failure sets `Alert=High`.
+### Inner checkpoint passphrase
+Challenge requires exact match: "the stars are right tonight."  
+Logic: if input equals phrase then Clearance else Alert increments. One retry via Badge plus Warrant bluff. Failure sets Alert High.
 
-### Rules of Engagement (1994)
-- Non‑lethal arrests score higher; lethal or unjustified force applies IA penalties.  
-- Magazine scarcity; no weapon lights; period‑correct sidearms: SIG P226 or S&W 13.  
-- Scoring: +5 Arrest, +3 Evidence Bagged, +2 FD‑302, +2 Teletype; −5 Lethal, −3 Civilian Endangered, −2 Alert High end.
+### Rules of engagement
+Non-lethal arrests score higher. Lethal or unjustified force applies penalties. Exception: if an NPC initiates lethal force then any player lethal response in that encounter is score neutral.
 
-### Evidence Chain (Paper Era)
-- Bag+tag items; complete FD‑302; fax to field office; teletype BOLOs to regional partners.  
-- Variables: `EvidenceCount`, `FD302Filed`, `TeletypeSent`.
+### Evidence chain
+Bag and tag items. Complete FD-302. Fax to field office. Teletype BOLOs.  
+Vars: EvidenceCount, FD302Filed, TeletypeSent.
 
-### Shared Alert Hook
-- If Avery CH2 ends `Alert=High`, shorten Clara CH2 Call Intercept base window (Low→Med, Med→High thresholds).
+### Scoring
++5 Arrest. +3 Evidence Bagged. +2 FD-302. +2 Teletype.  
+-5 Lethal. -3 Civilian Endangered. -2 Alert High end.  
+Exception: NPC-initiated lethal force is score neutral. No bonus. No penalty.
 
-### UI Prompts (≤14 chars)
+### Shared alert hook
+If Avery CH2 ends Alert High then Clara CH2 Call Intercept base window shortens.
+
+### UI prompts (14 or fewer chars)
 Badge, Warrant, Say Phrase, Cuff, Arrest, Reload, Holster, Search, Bag, Tag, Evidence, Radio, Map, Fax 302, Teletype
