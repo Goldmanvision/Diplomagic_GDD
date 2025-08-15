@@ -1,0 +1,15 @@
+# Anchors — SEC-03 Narrative root doc
+# File: SEC-03-NARRATIVE - Narrative.md
+
+# Replace CH5 section: search for this header line
+^##\s*CH5\b.*$
+
+# Replace until (but not including) the next top-level chapter header
+^##\s*CH6\b.*$
+
+# Then replace CH6 from its header until the next '## ' or EOF
+^##\s*CH7\b.*$  (use as end marker if present)
+
+# Tip (sed in-place example; adjust paths):
+# sed -n '/^## CH5/,$p' "SEC-03-NARRATIVE - Narrative.md"  # preview tail
+# Use manual paste to avoid tooling differences.
