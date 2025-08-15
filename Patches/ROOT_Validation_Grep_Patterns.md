@@ -1,48 +1,46 @@
-# Root Validation — Grep/Ripgrep Patterns (CH5–CH6)
+# ROOT — Validation Grep/RG Patterns (CH5–CH6)
 Repo dir: /Patches
 
-Safe op. Text-only checks to verify constraints after merge.
+Use **one** tool family (rg or grep). Run at repo root.
 
-## 1994 audit
-- Find disallowed tech:
+## 1) Disallowed tech (should return NO matches)
+### ripgrep
 ```
-rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SIM|digital camera" -S
+rg -n -S "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera"
 ```
-- Ensure MicroTAC present when phones are referenced:
+### grep
 ```
-rg -n "MicroTAC"
-```
-
-## ROE and phrasing
-- Remove legacy non-lethal language:
-```
-rg -n "non-\s*lethal preferred|IA penalties" -S
-```
-- Ambient phrase only:
-```
-rg -n "the stars are right tonight"
+grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
 ```
 
-## Blue-on-Blue
-- Confirm rule present:
+## 2) Required ROE line
 ```
-rg -n "Blue[- ]on[- ]Blue|friendly[- ]fire.*fail" -S
-```
-
-## Evidence cap
-```
-rg -n "Evidence(Count| cap).*(3|three)"
+rg -n "CH6 is a .*raid.*Blue-?on-?Blue.*hard fail" -S SEC-03-*
 ```
 
-## Prompt length scan (quick heuristic)
-Prompts must be ≤14 chars. List suspect tokens >14:
+## 3) Evidence cap mention
 ```
-rg -No "\b[A-Za-z][A-Za-z ]{14,}\b" SEC-07-* | sort -u
+rg -n -S "evidence.*cap.*3|cap\s*3" SEC-05-* SEC-07-*
 ```
-Then manually verify in `/Patches/SEC-07-CH6_Prompts_Verification.md`.
 
-## Merge residue
+## 4) Prompts >14 chars (heuristic)
 ```
-rg -n "CH5|CH6" "SEC-03-NARRATIVE - Narrative.md" -n
-rg -n "TODO|TBD|<<<|>>>" -S
+rg -n "^[^`]*\b[A-Za-z][A-Za-z ]{15,}\b" SEC-07-*
 ```
+
+## 5) Ambient phrase usage (should be present, not in prompts)
+```
+rg -n -S "the stars are right tonight"
+```
+
+## 6) Node names consistency (should match set)
+```
+rg -n -S "Bulkhead Gate|Man-?Door|Service Passage|Valve Row|Dead Piping|Service Stair|Core Gallery|Splinter Vault" SEC-03-* SEC-06-*
+```
+
+## 7) Exceptions present (Shield/pellet)
+```
+rg -n -S "Shield.*absor[bp]|>\s*10\s*m.*pellet" SEC-05-*
+```
+
+If any command returns unexpected results, log in `/Trackers/PR_Crosscheck_Results_Log.md`.
