@@ -1,13 +1,14 @@
-# Chapter 1 Packaging
+# Chapter 2 Packaging
 
-Add CH1 patch and state tracker derived from canon.
+Adds CH2 patch and state tracker, aligned with the narrative outline.
 
 ## Files
-- `Patches/CH1.md`
-- `Trackers/CH1-state.md`
+- `Patches/CH2.md`
+- `Trackers/CH2-state.md`
 
 ## Notes
-- Two-thread structure: Clara escape, Avery infiltration.
-- Arrests vs kills economy for Avery; noise and Reddy care for Clara.
-- Gromley outcome is terminal and exclusive.
-- Thresholds marked TBD for follow-up balancing.
+- Clara: survival, stealth, and analog Rolodex rescue mechanic. Must keep Reddy’s stat lines balanced for points.
+- Avery: promoted with Level X clearance, meets Lewis Krill, tempted toward lethal methods. Player choice impacts alignment.
+- Score thresholds remain TBD for balancing.
+- 1994 tech fidelity enforced (Rolodex, payphone, fax, pager).
+
