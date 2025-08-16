@@ -35,6 +35,7 @@
 - CH6_QA_Test_Cases.md: # Tracker — CH6 QA Test Cases
 - CH6_Scoring_Raid.md: # Tracker — CH6 Scoring (Raid)
 - CH6_Tracker.md: # Tracker — CH6: Savannah River
+- CH7-state.md: # CH7 State Tracker — DIPLOMAGIC
 - Devices_Storage_1994.md: # Devices — Storage & Networking (1994 Audit)
 - Glossary_1994_Terms.md: # Tracker — 1994 Glossary (CH5–CH6)
 - InlinePatch_SEC-04_CH1.md: # Inline Patch — SEC-04 CH1 Integration
@@ -43,6 +44,7 @@
 - InlinePatch_SEC-05_Prologues.md: # Inline Patch — SEC-05 Systems: Prologue Flags & Data
 - InlinePatch_TDD_CH1.md: # Inline Patch — TDD CH1 Device Hooks
 - InlinePatch_TDD_Prologues.md: # Inline Patch — TDD: Evidence + FieldPad Hooks from Prologues
+- Milestone_v0.6-ch5-6-merge.md: # Milestone: v0.6-ch5-6-merge
 - NARR-TRACKER_Playbook-Outline_Sync_v0.1.md: # NARR-TRACKER — Playbook + Outline Sync v0.1
 - NARR-TRACKER_Prologues_v0.3.md: # Narrative Tracker — Prologues v0.3 (Canonical)
 - PROJECT_SUMMARY.md: # Project: DIPLOMAGIC — Narrative Review + GDD Patches
