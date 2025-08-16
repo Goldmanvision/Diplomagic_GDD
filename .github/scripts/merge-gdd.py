@@ -1,5 +1,4 @@
---- a/.github/scripts/merge_gdd.py
-+++ b/.github/scripts/merge_gdd.py
+
 @@
 -    # 1) Apply patches
 -    if PATCHES_DIR.exists():
