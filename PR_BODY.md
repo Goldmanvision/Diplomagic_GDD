@@ -1,15 +1,13 @@
-# Epilogue Packaging
+# Chapter 1 Packaging
 
-Add Epilogue patch and state tracker derived from canon. Implements ending branches driven by Final Score and Ch.5–6 choices. No new mechanics.
+Add CH1 patch and state tracker derived from canon.
 
 ## Files
-- `Patches/EPILOGUE.md`
-- `Trackers/EPILOGUE-state.md`
+- `Patches/CH1.md`
+- `Trackers/CH1-state.md`
 
 ## Notes
-- Diegetic delivery via 1994 media surfaces.
-- Mixed endings supported; NG+ and Meta variants gated by flags.
-- Thresholds marked TBD for balance; safe defaults to be set in follow-up.
-
-## Validation
-- CI: chapter gating, exclusivity of GOOD/BAD flags, and montage consistency.
+- Two-thread structure: Clara escape, Avery infiltration.
+- Arrests vs kills economy for Avery; noise and Reddy care for Clara.
+- Gromley outcome is terminal and exclusive.
+- Thresholds marked TBD for follow-up balancing.
