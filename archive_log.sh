@@ -20,7 +20,8 @@ PR_URL="${REPO_WEB}/compare/${BASE}...${BRANCH}"
 mkdir -p Archive
 
 STAMP="$(date +%Y%m%d-%H%M)"
-FILE="Archive/ARCHIVE_PACK_${STAMP}_${BRANCH}.md"
+SAFE_BRANCH="${BRANCH//\//_}"   # replace / with _ for filenames
+FILE="Archive/ARCHIVE_PACK_${STAMP}_${SAFE_BRANCH}.md"
 
 cat > "$FILE" <<EOF
 ARCHIVE PACK — Epilogue CI Assertions
