@@ -1,27 +1,46 @@
-# CH6 — SRS Secret Annex (Narrative Paste Block)
-Repo dir: /Patches
+# [SEC-03] Chapter 6 — Glorious Quest (Narrative Paste)
 
-## Objective
-Raid the Order’s annex beneath SRS. Reach the **Splinter Vault** and resolve one of three paths.
+> Source of truth: Narrative Playbook • Outline 2025. Period: 1994. Ambient phrase only: “the stars are right tonight.”
 
-## Route
-**Bulkhead Gate → Man‑Door → Service Passage (cams/breakers) → Valve Row (A‑B‑C) → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress fence gap**
+## Scope
+- Dual path operation against **Richard Tack** culminating at the **Savannah River Site (SRS)** with interlocks to **D‑LAMP (WV)**.
+- Player alternates between locations via open‑world travel unlocked in CH5.
+- New enemy type: **Mystical Heads**; spawn in distorted reactor chambers.
 
-## Systems & ROE
-- CH6 is a **raid**. **Lethal authorized.** Neutralizations are score‑neutral.  
-- **Blue‑on‑Blue = hard fail (−10)**. Exceptions: Shield‑absorbed hits ignored; >10 m single shotgun pellet ignored.  
-- **Cameras** only in Service Passage; breaker pull ≈90 s outage and K‑9 reroute. No CCTV in Vault.  
-- **Phrases** equip **L/R**; **scrolls** single‑use; **Mana** calm‑regen.  
-- **Evidence cap = 3** items total in CH6; attempts beyond cap do not score.
+## Core Objective
+Disable the **Transdimensional Complex Device** before Tack triggers cross‑dimensional brainwashing; overload leads to timed escape through collapsing, reality‑warped corridors.
 
-## Endings
-- **Contain (Seal):** Jam wards (**Ward Jam**), set gimbal **STABLE**, open **Valve A → B → C**. Score +5.  
-- **Sever (Escape):** **Plant** ×2, interrupt chant, **Detonate**, sprint to egress. Score +3.  
-- **Black File:** **Photo** ×2 + **Sample** ×1, exfil. Score +5, Rep −5.
+## Path Structure
+- **Clara — Stealth/Infiltration**
+  - Goals: disable security systems, avoid detection by cultists and possessed security personnel.
+  - Tools: ward jamming, valves, plant/detonate charges, photo/sample evidence.
+- **Avery — Assault/Fireteam**
+  - Goals: clear hostile forces, disable protective wards, cover Clara’s objectives.
+  - Tools: cast/equip phrases, breaching, K‑9 reroute triggers, valve operations.
 
-## UI prompts (≤14)
-Answer, Breach, Bag, Brake, Call Back, Cast L, Cast R, Crouch, Detonate, Drive, Dodge, Elevator, Enter, Equip L, Equip R, Fire, Frag, Headlights, Hide, Holster, Inspect, Ward Jam, Lawyer Up, Lights, Map, Note, Pager, Payphone, Photo, Plant, Reload, Sample, Shield, Shove, Suppress, Tag, Valve A, Valve B, Valve C, Exit, Descend, Aim
+## Raid Rules (live in helpers)
+- **CH6 = raid. Lethal authorized.** Neutralizations are **score‑neutral**.
+- **Blue‑on‑Blue = hard fail (−10).** Exceptions:
+  - **Shield‑absorbed** friendly hit.
+  - A **single shotgun pellet** striking a friendly from **>10 m**.
+- **Evidence cap in CH6 = 3 total.** HUD must show `Evidence 0/3` and `BlueOnBlue` flag.
+- **Cameras only** in **Service Passage**. **No CCTV in Vault**.
+- **Breaker ≈90 s** to cycle after trip. **K‑9 reroute** available via handler diversion or scent decoy.
 
-## Notes
-- Period: 1994. MicroTAC, pagers, payphones, Polaroids, analog CCTV.  
-- Ambient only: “the stars are right tonight.”
+## 1994 Constraints
+- No smartphone/Wi‑Fi/Bluetooth/GPS/SMS. Navigation via printed maps, posted site diagrams, radio freqs.
+- Comms over analog radios; logging on paper, Polaroids, and film camera; lab hand‑offs by courier.
+
+## Spell/Item System
+- **Phrases equip L/R**; **Scrolls single‑use**; **Mana calm‑regen**.
+- Only ambient phrase in VO/text: “the stars are right tonight.”
+- Deputy name randomized per session. Use `<DEPUTY_NAME>` placeholder where referenced.
+
+## Evidence & Cameras
+- Max three pieces of evidence total in CH6. Choice tension: tactical vs investigative.
+- Photographic evidence is permitted in **Service Passage** where cameras exist.
+- No photography in Vault due to zero CCTV and radiation protocols; rely on samples/logs.
+
+## Deliverables in SEC‑03
+- Replace CH6 narrative with this paste.
+- Ensure cross‑refs to SEC‑05/06/07 remain intact.
