@@ -1,20 +1,15 @@
-# CH7 Packaging Placeholder
+# Epilogue Packaging
 
-Purpose: add a non-content Chapter 7 placeholder so CI and narrative flow validate cleanly between **CH6: Glorious Quest** and **Epilogue: Reorientation**.
+Add Epilogue patch and state tracker derived from canon. Implements ending branches driven by Final Score and Ch.5–6 choices. No new mechanics.
 
-## Contents
-- `Patches/CH7-placeholder.md` — placeholder notes and constraints
-- `Trackers/CH7-state.md` — dependency flags to gate Epilogue
+## Files
+- `Patches/EPILOGUE.md`
+- `Trackers/EPILOGUE-state.md`
 
-## Constraints
-- No missions, beats, NPCs, or branching states are introduced.
-- Activation requires `CH6_COMPLETE == TRUE`.
-- Sets `EPILOGUE_ACTIVE == TRUE` and `EPILOGUE_READY == TRUE` when placeholder is active.
-- May only be expanded with explicit narrative approval.
-
-## Rationale
-Outline and Playbook contain no Chapter 7. This PR prevents dangling chapter references in tools and CI and keeps Epilogue gating explicit.
+## Notes
+- Diegetic delivery via 1994 media surfaces.
+- Mixed endings supported; NG+ and Meta variants gated by flags.
+- Thresholds marked TBD for balance; safe defaults to be set in follow-up.
 
 ## Validation
-- Lints: docs only
-- CI: should detect CH7 presence and pass placeholder checks
+- CI: chapter gating, exclusivity of GOOD/BAD flags, and montage consistency.
