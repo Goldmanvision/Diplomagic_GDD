@@ -39,6 +39,7 @@
 - CH6_Tracker.md: # Tracker — CH6: Savannah River
 - CH7-city-rules.md: # CH7 City Rules — State & Validation
 - CH7-state.md: # CH7 State Tracker — DIPLOMAGIC
+- Developer-Guides.md: ## Archive Process Guide — 2025-08-16
 - Devices_Storage_1994.md: # Devices — Storage & Networking (1994 Audit)
 - EPILOGUE-state.md: # EPILOGUE State Tracker — DIPLOMAGIC
 - EPILOGUE-validation.md: # EPILOGUE — Validation Invariants
@@ -110,4 +111,3 @@
 - VOScript_CH1_Avery.md: # CH1 — Avery VO Temp Script (Roadside)
 - VOScript_CH1_Clara.md: # CH1 — Clara VO Temp Script (Brightstar)
 - Validation_Run_Report_CH5-CH6.md: # Validation Run — CH5–CH6 (local patches/trackers)
-- archive_process_guide.md: # Archive Process Guide
