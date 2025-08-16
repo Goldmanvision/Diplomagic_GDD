@@ -1,0 +1,49 @@
+name: ch7-city-rules-validate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'Patches/**'
+      - 'Trackers/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enforce CH7 non-lethal city rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          FAIL=0
+          err() { echo "::error title=$1::$2"; FAIL=1; }
+
+          PATCH="Patches/CH7-placeholder.md"
+          TRACK="Trackers/CH7-city-rules.md"
+
+          for f in "$PATCH" "$TRACK"; do
+            if [[ ! -f "$f" ]]; then
+              err "Missing file" "$f not found"
+            fi
+          done
+
+          # Required invariants
+          for pat in "FF_KILL_FORBIDDEN" "FRIENDLY_HIT_NONLETHAL" "CIV_DEATH_COUNT"; do
+            if ! grep -q "$pat" "$PATCH" && ! grep -q "$pat" "$TRACK"; then
+              err "Missing invariant" "Pattern '$pat' not found in CH7 docs"
+            fi
+          done
+
+          # Disallow phrases that suggest lethal on civilians
+          if grep -Ei "lethal.+(civilian|friendly|bystander)" -R Patches/CH7-placeholder.md Trackers/CH7-city-rules.md; then
+            err "Prohibited text" "Found text implying lethal allowed on civilians/friendlies"
+          fi
+
+          if [[ $FAIL -ne 0 ]]; then
+            echo "CH7 city rules validation failed."
+            exit 1
+          fi
+          echo "CH7 city rules validation passed."
