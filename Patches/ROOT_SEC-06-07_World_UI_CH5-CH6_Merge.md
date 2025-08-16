@@ -1,47 +1,24 @@
-# ROOT — SEC-06 & SEC-07 Merge Additions (CH5–CH6)
-Repo dir: /Patches
+# ROOT_SEC-06-07_World_UI_CH5-CH6_Merge.md
+> Append to SEC-06 (World) and SEC-07 (UI). CH6 = raid; lethal authorized; neutralizations score-neutral.
 
-> Paste these blocks into the root docs.
+## SEC-06 — World Merge
+- Service Passage: only CCTV zone; allow Photo and Sample interactions.
+- Vault: no CCTV; photography disabled; rely on Sample and logs.
+- K-9 Reroute: scent decoy nodes + handler diversion radio event.
+- Breaker: ≈90 s recycle; lights and cameras restore in stages (30/60/90 s).
+- Signage: 1994 OSHA/DOE style; map boards near valves A/B/C.
+- Evidence: cap = 3 total across site.
 
----
-## SEC-06 — World, Levels, & Content
+## SEC-06 — Interactables
+- Valves: A, B, C. Each with Equip/Valve prompts; audible pressure shift.
+- Breach points: charge Plant → Detonate loop; jammer affects wards.
+- Service cameras: breaker trip blanks feeds, restores per cooldown.
 
-### Deep D‑LAMP (WV Shaft → Pump Cavern → Vehicle Bay)
-- **Access:** Concealed kiosk on a WV river island; 1‑mile descent via elevator.
-- **Spaces:** Control Lobby, Pump Cavern (Star Vampire), Vehicle Bay, Maintenance Corridors.
-- **Loot:** Rover route card, fuel chits, Polaroids of occupation.
-- **Encounters:** Undead pockets, Night Gaunts in dark ceilings.
-- **Exit:** Iron Highway ramp.
+## SEC-07 — UI Merge
+- HUD: `Evidence 0/3`, `BlueOnBlue`, health/mana, cast/equip L/R.
+- Prompt set must include: Ward Jam, Cast L, Cast R, Equip L, Equip R, Valve A, Valve B, Valve C, Plant, Detonate, Photo, Sample.
+- Failure states: show “BlueOnBlue” banner on friendly hit outside exceptions.
+- City rules (CH5): friendly/civilian hits fail; non-lethal favored.
 
-### Iron Highway (D‑LAMP to SRS Layby)
-- **Route:** Utility roadway; checkpoints listed on route card.
-- **Events:** Ambushes, barrier clears, rover diagnostics.
-- **End:** **SRS bulkhead layby** with man‑door ingress.
-
-### SRS Secret Annex (Raid Route)
-Bulkhead Gate → Man‑Door → Service Passage (cams/breakers) → Valve Row (A‑B‑C) → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress fence gap.
-
-**Cameras:** Service Passage only; breaker pull ≈90 s loop; K‑9 reroute.  
-**Vault:** No cameras. Ending paths: **Contain**, **Sever**, **Black File**.
-
----
-## SEC-07 — UI-UX (Devices, HUD, Menus)
-
-### HUD
-Health | Stamina | Mana | Ammo | Evidence **0/3** | **BlueOnBlue**
-
-### Prompts (≤14 chars)
-Answer, Breach, Bag, Brake, Call Back, Cast L, Cast R, Crouch, Detonate, Drive, Dodge, Elevator, Enter, Equip L, Equip R, Fire, Frag, Headlights, Hide, Holster, Inspect, **Ward Jam**, Lawyer Up, Lights, Map, Note, Pager, Payphone, Photo, Plant, Reload, Sample, Shield, Shove, Suppress, Tag, Valve A, Valve B, Valve C, Exit, Descend, Aim
-
-### Context Loops
-- **Valve Loop (Contain):** Valve A → Valve B → Valve C → set gimbal **STABLE**.
-- **Charge Loop (Sever):** Plant×2 → interrupt chant → **Detonate** → sprint to egress.
-- **Evidence Loop (Black File):** **Photo**×2 + **Sample**×1; counter enforces cap 3.
-
-### Comms (Rogue)
-Pager → Payphone. Timed call ≤90 s.
-
-### Alerts
-Cap Reached, BlueOnBlue, STABLE.
-
-Constraints: 1994 period; deputy name randomized; ambient phrase only — “the stars are right tonight.”
+## Notes
+- Keep all text period-accurate to 1994. No modern tech terms.

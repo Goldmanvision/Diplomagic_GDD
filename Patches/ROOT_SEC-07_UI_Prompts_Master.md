@@ -1,6 +1,52 @@
-# UI Prompts — Master List (≤14 chars)
-Repo dir: /Patches
+# ROOT_SEC-07_UI_Prompts_Master.md
+> All prompts ≤14 characters. Keep 1994 tone. No emoji.
 
-Use these exact labels across CH5–CH6 and CH7 city scenes.
+# Core
+- Ward Jam
+- Cast L
+- Cast R
+- Equip L
+- Equip R
+- Valve A
+- Valve B
+- Valve C
+- Plant
+- Detonate
+- Photo
+- Sample
 
-Answer • Aim • Bag • Brake • Breach • Call Back • Cast L • Cast R • Crouch • Descend • Detonate • Drive • Dodge • Elevator • Enter • Equip L • Equip R • Fire • Frag • Headlights • Hide • Holster • Inspect • Lawyer Up • Lights • Map • Note • Pager • Payphone • Photo • Plant • Reload • Sample • Shield • Shove • Suppress • Tag • Valve A • Valve B • Valve C • Exit • Ward Jam
+# Combat
+- Aim
+- Fire
+- Reload
+- Swap Mag
+- Melee
+- Sprint
+- Crouch
+- Peek
+- Dodge
+
+# Interact
+- Interact
+- Inspect
+- Open
+- Close
+- Lockpick
+- Pry
+- Breach
+- Climb
+- Jump
+
+# Tools
+- Radio
+- Pager
+- Map
+- Notes
+- FieldPad
+- MEDSTAT
+- Trunk
+
+# Vehicle
+- Start
+- Park
+- Exit

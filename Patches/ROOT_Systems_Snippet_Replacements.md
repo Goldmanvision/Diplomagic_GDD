@@ -1,50 +1,29 @@
-# ROOT — Systems Snippet Replacements (SEC-05)
-Repo dir: /Patches
+# ROOT_Systems_Snippet_Replacements.md
+> SEC-05 insertion blocks. 1994 period. Ambient phrase only: “the stars are right tonight.”
 
-Paste each block under the matching heading in `SEC-05-SYSTEMS - Systems & Mechanics.md`.
+[SNIP-SEC05-SPELLS-SYSTEM]
+Phrases equip L/R. Scrolls single-use. Mana calm-regen (no combat spike). Cast L/R available when bound. UI shows Cast L, Cast R.
 
----
-## Spellcasting Overview — INSERT
-**Phrases** are multi‑use spells stored on FieldPad/MEDSTAT. Equip to **Left/Right** and cast with **Cast L/R**. **Scrolls** are single‑use items in Inventory. **Mana** regenerates only during calm windows. Prompts ≤14: *Equip L, Equip R, Cast L, Cast R, Ward Jam, Shield*.
+[SNIP-SEC05-DEPUTY-RANDOM]
+Deputy name randomized per session. Use <DEPUTY_NAME> token in text. Seed from save GUID + clock drift. No fixed names in strings.
 
-Ambient phrase remains ambient: “the stars are right tonight.”
+[SNIP-SEC05-EVIDENCE-CAP-CH6]
+Evidence cap in CH6 = 3. HUD shows Evidence 0/3. Gating: deny fourth pickup with prompt “Evidence full”.
 
----
-## Field Devices — INSERT
-**FieldPad/MEDSTAT** cache only in the field. No network. **SENTINEL** access occurs at fixed terminals (NYFO, secured nodes). Photos use Polaroids. Evidence items track to a chapter‑scoped counter.
+[SNIP-SEC05-BLUE-ON-BLUE]
+Blue-on-Blue = hard fail (−10). Exceptions: Shield-absorbed friendly hit; single shotgun pellet >10 m. Log to BlueOnBlue flag for HUD.
 
-1994 lock: MicroTAC, pagers, payphones, Polaroids, analog CCTV.
+[SNIP-SEC05-CAMERA-RULES]
+Cameras only in Service Passage. No CCTV in Vault. Photo evidence allowed only where cameras exist. Radiation zones block photography.
 
----
-## Combat Rules — INSERT
-**CH6 is a raid. Lethal authorized.** Neutralizations are score‑neutral. **Blue‑on‑Blue = hard fail (−10)**.
-Exceptions:
-- Damage fully absorbed by **Shield** does not fail the chapter.
-- A single stray shotgun pellet at >10 m does not fail.
+[SNIP-SEC05-K9-REROUTE]
+K-9 reroute via handler diversion or scent decoy. Success opens 90 s patrol gap. Failure increases patrol density for 60 s.
 
-Urban scenes (CH5 hotel, CH7 city): non‑lethal favored; any civilian/agent harm fails.
+[SNIP-SEC05-BREAKER-COOLDOWN]
+Breaker ≈90 s to recycle after trip. Interact prompt disabled during cooldown; display “Breaker cooling”.
 
----
-## Stealth & Surveillance — INSERT
-Cameras appear **only** in Service Passage. **Breaker pull ≈90 s** powers a loop that drops cams and swaps K‑9 routes. No CCTV in the Vault. Use prompts: *Hide, Crouch, Breach, Lights*.
+[SNIP-SEC05-TECH-CONSTRAINTS-1994]
+No smartphone/Wi-Fi/Bluetooth/GPS/SMS. Use landlines, pagers, fax, film, Polaroid. FieldPad/MEDSTAT sync by cable or SENTINEL link only.
 
----
-## Endings & Outcomes — INSERT
-**Contain (Seal):** Jam wards (**Ward Jam**), set gimbal **STABLE**, open valves **A→B→C**. Score **+5**.  
-**Sever (Escape):** **Plant×2**, interrupt chant, **Detonate**, sprint to egress. Score **+3**.  
-**Black File:** **Photo×2** + **Sample×1**, exfiltrate. Score **+5**, Reputation **−5**.
-
-**Evidence cap in CH6 = 3 total**. Attempts beyond the cap do not score.
-
----
-## Tuning & Balancing — INSERT
-Spawn pacing targets: 15–20 s trickle; 60–90 s surge near Core. If **Ammo <25%** entering Vault, reduce next spawn chance by 20%. Fear spikes should not overlap Valve interactions. Mana calm‑regen windows follow fight lulls.
-
----
-## Failure States — INSERT
-- **Blue‑on‑Blue** set → immediate chapter fail (apply −10; abort).  
-- Exfil timeout on Sever if detonation too late.  
-- Evidence over‑cap ignored; do not penalize.  
-- Mind‑controlled ally hits count as Blue‑on‑Blue (CH7).
-
-Prompts remain ≤14; deputy name randomized; ambient phrase rule applies.
+[SNIP-SEC05-HUD]
+HUD must include: Evidence 0/3, BlueOnBlue flag, Cast L, Cast R, Equip L, Equip R. Prompts ≤14 characters.
