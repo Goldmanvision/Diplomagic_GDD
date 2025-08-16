@@ -38,6 +38,7 @@
 - CH7-state.md: # CH7 State Tracker — DIPLOMAGIC
 - Devices_Storage_1994.md: # Devices — Storage & Networking (1994 Audit)
 - EPILOGUE-state.md: # EPILOGUE State Tracker — DIPLOMAGIC
+- EPILOGUE-validation.md: # EPILOGUE — Validation Invariants
 - Glossary_1994_Terms.md: # Tracker — 1994 Glossary (CH5–CH6)
 - InlinePatch_SEC-04_CH1.md: # Inline Patch — SEC-04 CH1 Integration
 - InlinePatch_SEC-04_Prologues.md: # Inline Patch — SEC-04 Loops: Prologues Hook-in
