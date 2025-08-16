@@ -1,35 +1,26 @@
-# End-to-End Test Script — CH5→CH6
+# ROOT — End‑to‑End Test Script (CH5→CH6)
 Repo dir: /Patches
 
-## Goal
-Validate full flow: CH5 rogue pivot to CH6 raid endings. 1994 lock. Prompts ≤14. Ambient phrase only: “the stars are right tonight.”
+**Goal:** Validate narrative flow, ROE, evidence cap, and endings.
 
-## Setup
-- New save; seed any. DeputyName via randomizer.  
-- Difficulty: default. Ammo/tonic as tuning file.  
-- Tools: stopwatch, notebook.
+## Path A — Contain
+1) Start CH5 hotel. Escape with zero civilian harm.  
+2) WV shaft → deep D‑LAMP → defeat Star Vampire → acquire rover + route card.  
+3) Drive Iron Highway to SRS layby.  
+4) Annex route: Bulkhead → Man‑Door → Passage (pull breaker) → Valve Row.  
+5) **Contain:** Ward Jam → Valve **A→B→C** → confirm **STABLE**.  
+6) Exfil fence gap. **Score:** +5 ending; +2 evidence each (cap 3). **Check:** BlueOnBlue=0.
 
-## Path 1 — Contain (Seal)
-1) CH5: Hotel escape (no civilians harmed).  
-2) WV island shaft → Deep D‑LAMP → Star Vampire → Rover.  
-3) Iron Highway to Annex layby.  
-4) CH6: Breaker loop → Valve Row tag A/B/C.  
-5) Vault: Jam wards, turn A→B→C, lock gimbal.  
-6) Extract to fence gap with {DeputyName}.  
-7) Verify score: +5 ending, +2×EvidenceCount (≤3), no penalty.
+## Path B — Sever
+Repeat steps through Core. **Plant** ×2, interrupt chant, **Detonate**, sprint to egress. **Score:** +3.
 
-## Path 2 — Sever (Escape)
-Repeat 1–3. In Vault: plant 2 charges, interrupt chant, detonate, sprint. Verify +3 ending.
+## Path C — Black File
+Collect **Photo×2** and **Sample×1** across Vault/Core. Exfil. **Score:** +5; **Rep −5**.
 
-## Path 3 — Black File
-Repeat 1–3. Photo pylon controls, photo gimbal plate, sample reagent. Exfil. Verify evidence max, rep −5.
-
-## Must‑pass checks
-- CH6 hostiles lethal; arrests absent.  
-- Blue‑on‑Blue: any friendly hit → fail.  
-- Prompts: none >14 chars.  
-- SENTINEL unreachable in field; MicroTAC ok.  
-- Evidence cap enforced at 3.
-
-## Logs
-Record: ending, EvidenceCount, BlueOnBlue, deaths, ammo/tonic, timings.
+## Global Checks
+- Prompts ≤14 (Ward Jam present).  
+- Cameras only in Passage; breaker ≈90 s; K‑9 swap.  
+- Evidence cap **3** enforced.  
+- Lethal neutral; Blue‑on‑Blue fails.  
+- Period‑correct tech only.  
+- Ambient phrase appears only as ambient text.

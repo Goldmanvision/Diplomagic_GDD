@@ -1,35 +1,50 @@
-# Root — Systems Snippet Replacements (CH5–CH6)
+# ROOT — Systems Snippet Replacements (SEC-05)
 Repo dir: /Patches
 
-Paste these minimal blocks into `SEC-05-SYSTEMS - Systems & Mechanics.md` at the noted headings.
+Paste each block under the matching heading in `SEC-05-SYSTEMS - Systems & Mechanics.md`.
 
-## Block A — Phrases & Scrolls (insert after “Spellcasting Overview”)
-- **Phrases:** multi-use incantations stored in FieldPad/MEDSTAT. Equip **Left/Right**. Triggers **Cast L** / **Cast R**.
-- **Mana:** shared pool; **regen only in calm windows**.
-- **Scrolls:** single-use items in Inventory.
-- Example set through CH6: Fast Travel, Shield, Ward Jam.
-- Constraint: **prompts ≤14 chars**; **ambient phrase only** — “the stars are right tonight.”
+---
+## Spellcasting Overview — INSERT
+**Phrases** are multi‑use spells stored on FieldPad/MEDSTAT. Equip to **Left/Right** and cast with **Cast L/R**. **Scrolls** are single‑use items in Inventory. **Mana** regenerates only during calm windows. Prompts ≤14: *Equip L, Equip R, Cast L, Cast R, Ward Jam, Shield*.
 
-## Block B — Raid ROE (insert under “Combat Rules”)
-- **CH6 only:** target is hostile combatants (Sov. Nation of New Kadath / Order of the Splintered God).
-- **Lethal authorized.** Neutralizations are **score‑neutral**.
-- **Blue‑on‑Blue:** any friendly hit = hard fail (−10). Shield‑absorbed hits ignored; >10 m shotgun single‑pellet exception.
-- **No civilians** in AO by design.
+Ambient phrase remains ambient: “the stars are right tonight.”
 
-## Block C — Cameras & Breakers (insert under “Stealth & Surveillance”)
-- **Analog CCTV** in Service Passage only; **no Vault cameras**.
-- **Breaker fuse pull:** 90 s outage; K‑9 route swaps to lantern sweep; 60 s cooldown before reinsertion.
+---
+## Field Devices — INSERT
+**FieldPad/MEDSTAT** cache only in the field. No network. **SENTINEL** access occurs at fixed terminals (NYFO, secured nodes). Photos use Polaroids. Evidence items track to a chapter‑scoped counter.
 
-## Block D — Vault Endings (insert under “Endings & Outcomes”)
-- **Contain (Seal):** Jam wards → Valves **A→B→C** → set gimbal **STABLE**.
-- **Sever (Escape):** Plant×2 → interrupt chant → **Detonate** → sprint to egress.
-- **Black File:** **Photo** pylon controls + gimbal plate; **Sample** reagent; exfil. Evidence max, rep −5.
-- **Scoring:** Contain +5; Sever +3; Black File +5 evidence/−5 rep; **evidence +2 each (cap 3)**.
+1994 lock: MicroTAC, pagers, payphones, Polaroids, analog CCTV.
 
-## Block E — Tuning (insert under “Tuning & Balancing”)
-- Sidearm 30 body/100 head (zombie). Shotgun slug 80/120.
-- Vault waves every **35–45 s**; **Alert High −10 s** and **+1 Cultist**.
-- Ammo economy: pistol 60 start; shotgun 12; rifle 90.
+---
+## Combat Rules — INSERT
+**CH6 is a raid. Lethal authorized.** Neutralizations are score‑neutral. **Blue‑on‑Blue = hard fail (−10)**.
+Exceptions:
+- Damage fully absorbed by **Shield** does not fail the chapter.
+- A single stray shotgun pellet at >10 m does not fail.
 
-## Block F — Failure States (append end of section)
-- **Blue‑on‑Blue** detection as above. Any friendly hit fails chapter; log attacker/target/weapon/timecode.
+Urban scenes (CH5 hotel, CH7 city): non‑lethal favored; any civilian/agent harm fails.
+
+---
+## Stealth & Surveillance — INSERT
+Cameras appear **only** in Service Passage. **Breaker pull ≈90 s** powers a loop that drops cams and swaps K‑9 routes. No CCTV in the Vault. Use prompts: *Hide, Crouch, Breach, Lights*.
+
+---
+## Endings & Outcomes — INSERT
+**Contain (Seal):** Jam wards (**Ward Jam**), set gimbal **STABLE**, open valves **A→B→C**. Score **+5**.  
+**Sever (Escape):** **Plant×2**, interrupt chant, **Detonate**, sprint to egress. Score **+3**.  
+**Black File:** **Photo×2** + **Sample×1**, exfiltrate. Score **+5**, Reputation **−5**.
+
+**Evidence cap in CH6 = 3 total**. Attempts beyond the cap do not score.
+
+---
+## Tuning & Balancing — INSERT
+Spawn pacing targets: 15–20 s trickle; 60–90 s surge near Core. If **Ammo <25%** entering Vault, reduce next spawn chance by 20%. Fear spikes should not overlap Valve interactions. Mana calm‑regen windows follow fight lulls.
+
+---
+## Failure States — INSERT
+- **Blue‑on‑Blue** set → immediate chapter fail (apply −10; abort).  
+- Exfil timeout on Sever if detonation too late.  
+- Evidence over‑cap ignored; do not penalize.  
+- Mind‑controlled ally hits count as Blue‑on‑Blue (CH7).
+
+Prompts remain ≤14; deputy name randomized; ambient phrase rule applies.
