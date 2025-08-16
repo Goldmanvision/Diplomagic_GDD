@@ -1,15 +1,12 @@
-# Tracker — CH5–CH6 Root Merge Risk Register
+# Tracker — Merge Risk Register (CH5–CH6)
 Repo dir: /Trackers
+Date: 2025-08-16
 
-| ID | Risk | Impact | Prob. | Mitigation | Owner | Status |
+| ID | Risk | Likelihood | Impact | Mitigation | Owner | Status |
 |---|---|---|---|---|---|---|
-| R1 | Legacy non-lethal text persists | High | Med | Run validation grep; manual readthrough |  | Open |
-| R2 | Prompt >14 chars slips into UI | Med | Med | Use master list; prompts check file |  | Open |
-| R3 | Evidence cap not enforced | High | Low | QA test cases; scorecard tracker |  | Open |
-| R4 | Blue-on-Blue false positive | High | Med | Shield absorb + >10m pellet exception |  | Open |
-| R5 | 1994 period leak (tech terms) | Med | Med | rg/PS scans; period audit file |  | Open |
-| R6 | Node name mismatch vs ASCII map | Low | Med | Crosslink checklist |  | Open |
-| R7 | Deputy name overruns UI | Low | Low | Elide surname rule |  | Open |
-| R8 | Merge conflicts in root docs | Med | Med | Conflict guide; paste-point cues |  | Open |
-
-Notes: Ambient phrase only — “the stars are right tonight.”
+| R1 | Prompt labels >14 chars creep back | M | M | Apply conflict map; run prompts check | UI | Open |
+| R2 | Period leaks (tech terms) | M | H | Run SEC‑09 audit grep; replace terms | Narrative | Open |
+| R3 | Blue‑on‑Blue rule missing in one section | L | H | Verify with paste verification strings | Systems | Open |
+| R4 | Evidence cap not enforced | M | M | QA tests + pseudocode review | QA | Open |
+| R5 | Node names inconsistent | L | M | Crosslink checklist; ASCII map compare | World | Open |
+| R6 | Reviewer fatigue | M | M | Use one‑pager + diff guide; checklist box | PM | Open |
