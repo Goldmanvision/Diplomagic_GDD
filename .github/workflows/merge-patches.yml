@@ -1,29 +1,31 @@
+name: Merge patches and trackers
+on:
+  workflow_dispatch:
 
-@@
- jobs:
-   merge:
-     runs-on: ubuntu-latest
-     steps:
--      - uses: actions/checkout@v4
--      - name: Run merge
--        run: |
--          python .github/scripts/merge_gdd.py
-+      - uses: actions/checkout@v4
-+        with:
-+          fetch-depth: 0
-+      - uses: actions/setup-python@v5
-+        with:
-+          python-version: '3.x'
-+      - name: Run merge
-+        run: python .github/scripts/merge_gdd.py
-       - name: Create Pull Request
-         uses: peter-evans/create-pull-request@v6
-         with:
-           branch: auto/merge-patches
-           commit-message: "chore: auto-merge patches and trackers"
-           title: "Auto-merge: Patches + Trackers → Updated GDD"
--          body: |
--            This PR auto-applies changes from /Patches and /Trackers, updates section files,
--            rebuilds DIPLOMAGIC_GDD_Combined.md, and writes an AUTO_MERGE_REPORT.md and CHANGELOG_AUTO.md.
-+          body: "Automated merge from /Patches and /Trackers."
-           delete-branch: true
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run merge
+        run: |
+          python --version
+          ls -la .github/scripts || true
+          python .github/scripts/merge_gdd.py
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/merge-patches
+          commit-message: "chore: auto-merge patches and trackers"
+          title: "Auto-merge: Patches + Trackers → Updated GDD"
+          body: "Automated merge from /Patches and /Trackers, plus root *_REPLACE*.md."
+          delete-branch: true
