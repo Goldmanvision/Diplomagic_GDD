@@ -1,0 +1,75 @@
+./Backups/AUTO-20250816-080534Z/DIPLOMAGIC_GDD_Combined.md:108:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-080534Z/DIPLOMAGIC_GDD_Combined.md:838:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-080534Z/SEC-01-FRONT - Front Matter & Executive Summary.md:98:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-080534Z/SEC-02-PILLARS - Pillars & Audience.md:61:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-080534Z/SEC-06-WORLD - World, Levels, & Content.md:135:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:100:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:326:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:2432:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:3980:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:3994:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:3999:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-085119Z/DIPLOMAGIC_GDD_Combined.md:4004:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Backups/AUTO-20250816-085119Z/SEC-01-FRONT - Front Matter & Executive Summary.md:98:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-085119Z/SEC-02-PILLARS - Pillars & Audience.md:61:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-085119Z/SEC-06-WORLD - World, Levels, & Content.md:135:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md:215:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md:229:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md:234:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md:239:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:100:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:352:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:3843:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6084:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6098:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6103:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6108:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6131:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6145:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6150:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-102334Z/DIPLOMAGIC_GDD_Combined.md:6155:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Backups/AUTO-20250816-102334Z/SEC-01-FRONT - Front Matter & Executive Summary.md:98:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-102334Z/SEC-02-PILLARS - Pillars & Audience.md:61:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./Backups/AUTO-20250816-102334Z/SEC-06-WORLD - World, Levels, & Content.md:135:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:215:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:229:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:234:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:239:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:262:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:276:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:281:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md:286:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./DIPLOMAGIC_GDD_Combined.md:100:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./DIPLOMAGIC_GDD_Combined.md:378:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./DIPLOMAGIC_GDD_Combined.md:5254:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./DIPLOMAGIC_GDD_Combined.md:8204:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./DIPLOMAGIC_GDD_Combined.md:8218:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./DIPLOMAGIC_GDD_Combined.md:8223:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./DIPLOMAGIC_GDD_Combined.md:8228:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./DIPLOMAGIC_GDD_Combined.md:8251:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./DIPLOMAGIC_GDD_Combined.md:8265:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./DIPLOMAGIC_GDD_Combined.md:8270:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./DIPLOMAGIC_GDD_Combined.md:8275:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./DIPLOMAGIC_GDD_Combined.md:8298:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./DIPLOMAGIC_GDD_Combined.md:8312:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./DIPLOMAGIC_GDD_Combined.md:8317:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./DIPLOMAGIC_GDD_Combined.md:8322:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./Patches/SEC-09-Period_Audit_CH5-CH6_1994.md:9:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./Patches/SEC-09-Period_Audit_CH5-CH6_1994.md:23:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./Patches/SEC-09-Period_Audit_CH5-CH6_1994.md:28:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./Patches/SEC-09-Period_Audit_CH5-CH6_1994.md:33:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./SEC-01-FRONT - Front Matter & Executive Summary.md:98:* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./SEC-02-PILLARS - Pillars & Audience.md:61:\* Don’t: Add modern conveniences (GPS, smartphones, cloud saves in‑fiction).
+./SEC-06-WORLD - World, Levels, & Content.md:135:> **Era barks:** Prefer payphone and pager language; avoid smartphones, texting, USB, Wi‑Fi, and GPS turn‑by‑turn references.
+./SEC-09-TECH - Technology & Performance Targets.md:215:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./SEC-09-TECH - Technology & Performance Targets.md:229:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./SEC-09-TECH - Technology & Performance Targets.md:234:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./SEC-09-TECH - Technology & Performance Targets.md:239:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./SEC-09-TECH - Technology & Performance Targets.md:262:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./SEC-09-TECH - Technology & Performance Targets.md:276:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./SEC-09-TECH - Technology & Performance Targets.md:281:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./SEC-09-TECH - Technology & Performance Targets.md:286:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
+./SEC-09-TECH - Technology & Performance Targets.md:309:smartphone, Wi‑Fi, Bluetooth, GPS, SMS, SIM, StarTAC, digital camera, internet upload from field devices.
+./SEC-09-TECH - Technology & Performance Targets.md:323:rg -n "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" -S
+./SEC-09-TECH - Technology & Performance Targets.md:328:grep -RniE "StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera" .
+./SEC-09-TECH - Technology & Performance Targets.md:333:Get-ChildItem -Recurse -File | Select-String -Pattern 'StarTAC|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|SIM|digital camera'
