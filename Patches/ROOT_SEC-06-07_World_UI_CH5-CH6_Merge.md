@@ -22,3 +22,19 @@
 
 ## Notes
 - Keep all text period-accurate to 1994. No modern tech terms.
+
+## CH6 Raid ROE and Safety
+
+- CH6 = raid. Lethal authorized. Neutralizations are score-neutral.  
+- **Blue-on-Blue = hard fail (−10).** Exceptions: (1) Shield-absorbed friendly hits do not count. (2) A **single** shotgun pellet striking a friendly **>10 m** away does not count.  
+- Cameras only in Service Passage; **No CCTV in Vault**. Breaker cut ≈90 s. **K-9 reroute** available.  
+- **Evidence cap = 3** in CH6. HUD must show `Evidence 0/3` and a `BlueOnBlue` indicator.
+
+## CH6 Raid ROE and Safety
+
+- CH6 = raid. Lethal authorized. Neutralizations are score-neutral.
+- Blue-on-Blue = hard fail (-10). Exceptions:
+  (1) Shield-absorbed friendly hits do not count.
+  (2) A single shotgun pellet striking a friendly >10 m away does not count.
+- Cameras only in Service Passage; No CCTV in Vault. Breaker cut approx 90 s. K-9 reroute available.
+- Evidence cap = 3 in CH6. HUD must show "Evidence 0/3" and a "BlueOnBlue" indicator.
