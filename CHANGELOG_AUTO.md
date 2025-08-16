@@ -7,11 +7,13 @@
 - AssetList_CH1_Brightstar.md: # CH1 — “Simple Curiosity” Asset List
 - Assets_0A_Quantico_1989_20250814T1030Z.md: # 0A — Avery Prologue Asset List (Quantico, 1989, Night)
 - Assets_0B_BetsysApt_1994_20250814T1030Z.md: # 0B — Clara Prologue Asset List (Betsy’s Apt, 1994, Morning→Afternoon)
+- CH1-state.md: # CH1 State Tracker — DIPLOMAGIC
 - CH1_Beat2Objective.md: # CH1 — “Simple Curiosity” Beat→Objective
 - CH1_Narrative_Corrections_Worksheet.md: # CH1 — “Simple Curiosity” Narrative Corrections Worksheet
 - CH1_Outline_SimpleCuriosity.md: # CH1 — “Simple Curiosity” Outline
 - CH1_PolishChecklist.md: # CH1 — “Simple Curiosity” Polish Checklist
 - CH1_StringKeyManifest.md: # CH1 — String Key Manifest
+- CH2-state.md: # CH2 State Tracker — DIPLOMAGIC
 - CH2_Avery_Tracker.md: # Tracker — CH2 Avery: Inner Checkpoint
 - CH3_Scoring_Table.md: # Tracker — CH3 Scoring Table
 - CH3_Trackers.md: # Trackers — CH3 Clara & Avery
@@ -35,9 +37,12 @@
 - CH6_QA_Test_Cases.md: # Tracker — CH6 QA Test Cases
 - CH6_Scoring_Raid.md: # Tracker — CH6 Scoring (Raid)
 - CH6_Tracker.md: # Tracker — CH6: Savannah River
+- CH7-city-rules.md: # CH7 City Rules — State & Validation
 - CH7-state.md: # CH7 State Tracker — DIPLOMAGIC
 - Devices_Storage_1994.md: # Devices — Storage & Networking (1994 Audit)
 - EPILOGUE-state.md: # EPILOGUE State Tracker — DIPLOMAGIC
+- EPILOGUE-validation.md: # EPILOGUE — Validation Invariants
+- EVIDENCE-caps.md: # Evidence Caps — CH6 and CH7
 - Glossary_1994_Terms.md: # Tracker — 1994 Glossary (CH5–CH6)
 - InlinePatch_SEC-04_CH1.md: # Inline Patch — SEC-04 CH1 Integration
 - InlinePatch_SEC-04_Prologues.md: # Inline Patch — SEC-04 Loops: Prologues Hook-in
