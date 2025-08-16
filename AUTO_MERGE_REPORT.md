@@ -1,6 +1,6 @@
 AUTO MERGE REPORT
 =================
-UTC: 2025-08-16T08:05:34.438869Z
+UTC: 2025-08-16T08:51:20.003358Z
 Applied changes:
 - SAFE-APPEND: MANIFEST_Addendum_SEC-03_CH1.md → SEC-03-NARRATIVE - Narrative.md
 - SAFE-APPEND: MANIFEST_Addendum_SEC-03_Prologues.md → SEC-03-NARRATIVE - Narrative.md
@@ -25,7 +25,6 @@ Applied changes:
 - SAFE-APPEND: SEC-03-CH5_Rework_Narrative.md → SEC-03-NARRATIVE - Narrative.md
 - SAFE-APPEND: SEC-03-CH6_BeatSheet_Raid.md → SEC-03-NARRATIVE - Narrative.md
 - SAFE-APPEND: SEC-03-CH6_Epilogue.md → SEC-03-NARRATIVE - Narrative.md
-- FALLBACK-APPEND: SEC-03_3.2_Chapter_List_REPLACE.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
 - FALLBACK-APPEND: SEC-03_3.4_Synopsis_Prologues_ADD.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
 - FALLBACK-APPEND: SEC-03_3.5_CH1_SimpleCuriosity_ADD.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
 - SAFE-APPEND: SEC-04-CH6_Lore_Splinter_of_Azathoth.md → SEC-04-LOOPS - Core Gameplay Loops.md
