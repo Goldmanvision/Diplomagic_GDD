@@ -1,0 +1,85 @@
+AUTO MERGE REPORT
+=================
+UTC: 2025-08-16T08:05:34.438869Z
+Applied changes:
+- SAFE-APPEND: MANIFEST_Addendum_SEC-03_CH1.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: MANIFEST_Addendum_SEC-03_Prologues.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: ROOT_SEC-03_CH5_Narrative_Paste.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: ROOT_SEC-03_CH6_Narrative_Paste.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: ROOT_SEC-03_CH7_Narrative_Paste.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: ROOT_SEC-03_Narrative_CH5-CH6_Merge.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: ROOT_SEC-05_Insert_Points.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: ROOT_SEC-05_Systems_Merge_Additions_CH5-CH6.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: ROOT_SEC-06-07_World_UI_CH5-CH6_Merge.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: ROOT_SEC-06-07_World_UI_CH7_Merge.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: ROOT_SEC-07_UI_Prompts_CH7_Extensions.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: ROOT_SEC-07_UI_Prompts_Master.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-01-CH5-6_Integration_Plan.md → SEC-01-FRONT - Front Matter & Executive Summary.md
+- SAFE-APPEND: SEC-02-CH5-6_Master_Flags_Matrix.md → SEC-02-PILLARS - Pillars & Audience.md
+- SAFE-APPEND: SEC-03-CH2_Avery_Section.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH2_Clara_Kadath_Section.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH3_Narrative_Sections.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH4_Narrative.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH5-6_Narrative_DeepDLamp_Insert.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH5_DLamp_Betsy_Narrative.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH5_Rework_Narrative.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH6_BeatSheet_Raid.md → SEC-03-NARRATIVE - Narrative.md
+- SAFE-APPEND: SEC-03-CH6_Epilogue.md → SEC-03-NARRATIVE - Narrative.md
+- FALLBACK-APPEND: SEC-03_3.2_Chapter_List_REPLACE.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
+- FALLBACK-APPEND: SEC-03_3.4_Synopsis_Prologues_ADD.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
+- FALLBACK-APPEND: SEC-03_3.5_CH1_SimpleCuriosity_ADD.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
+- SAFE-APPEND: SEC-04-CH6_Lore_Splinter_of_Azathoth.md → SEC-04-LOOPS - Core Gameplay Loops.md
+- SAFE-APPEND: SEC-04_CH1_Integration_ADD.md → SEC-04-LOOPS - Core Gameplay Loops.md
+- SAFE-APPEND: SEC-05-CH2_Avery_Systems_Additions.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH2_Systems_Additions.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH3_Fear_Meter_Spec.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH3_Systems_Additions.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH4_Boss_Systems.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH4_Systems.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH5-6_Enemies_StarVampire.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH5-6_Rogue_Ops_Comms_SOP.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH5-6_Vehicle_O2_Fuel_Systems.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH5_DLamp_Betsy_Systems.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH5_Systems_Rework.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_AI_Behavior_FSM.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_AfterAction_Report_Spec.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_BlueOnBlue_Detection.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Combat_Tuning_Params.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Enemy_Resist_Interrupt_Table.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Loadout_Guide.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Raid_ROE.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Splinter_Vault_Mechanics.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-CH6_Systems.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05-Deputy_Name_Randomizer_Spec.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-05_CH1_Flags_Data_ADD.md → SEC-05-SYSTEMS - Systems & Mechanics.md
+- SAFE-APPEND: SEC-06-CH2_Avery_World_Content.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH3_World_Content.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH4_World_Content.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH5-6_Callsigns_and_Nodes.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH5-6_IronHighway_Routebook.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH5-6_World_DLamp_IronHighway.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH5_World_Content.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH6_Ascii_Map.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH6_Route_Encounter_Tables.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH6_SRS_Secret_Annex_World.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06-CH6_Stealth_Breaker_CameraLoops.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-06_CH1_World_Layouts_ADD.md → SEC-06-WORLD - World, Levels, & Content.md
+- SAFE-APPEND: SEC-07-CH2_Avery_UI_Prompts.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH3_UI_Prompts.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH4_UI_Spell_Equip.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH5-6_UI_Prompts_Consolidated.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH5_UI_Prompts.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH6_Prompts_Verification.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH6_Raid_UI_Prompts.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07-CH6_UI_Flow.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-07_CH1_MEDSTAT_Notes_ADD.md → SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- SAFE-APPEND: SEC-08-CH5-6_Audio_Soundscape.md → SEC-08-ARTAUDIO - Art Direction & Audio.md
+- SAFE-APPEND: SEC-09-Period_Audit_CH5-CH6_1994.md → SEC-09-TECH - Technology & Performance Targets.md
+- FALLBACK-APPEND: SEC-03_3.2_Chapter_List_REPLACE.md → SEC-03-NARRATIVE - Narrative.md (heading not found)
+
+Tracker items summarized in CHANGELOG_AUTO.md
+
+Artifacts:
+- DIPLOMAGIC_GDD_Combined.md (rebuilt)
+- CHANGELOG_AUTO.md
+- Backups/*
