@@ -27,3 +27,25 @@ No smartphone/Wi-Fi/Bluetooth/GPS/SMS. Use landlines, pagers, fax, film, Polaroi
 
 [SNIP-SEC05-HUD]
 HUD must include: Evidence 0/3, BlueOnBlue flag, Cast L, Cast R, Equip L, Equip R. Prompts ≤14 characters.
+
+### SEC-05 • CH6 Evidence Cap + Blue-on-Blue Guards
+
+```pseudo
+if Chapter == 6:
+  EVIDENCE_CAP = 3
+
+  onEvidenceInteract(item):
+    if EvidenceCount >= EVIDENCE_CAP:
+      HUD.flash("Evidence 3/3")
+      disableInteract(item)
+      return
+    EvidenceCount += 1
+    HUD.setEvidence(EvidenceCount, EVIDENCE_CAP)
+
+  # Blue-on-Blue hard fail with exceptions
+  onHit(event):
+    if isFriendly(event.target):
+      if event.absorbed_by_shield: return
+      if event.weapon == "shotgun" and event.pellets_hit == 1 and event.distance_m > 10: return
+      failMission(reason="Blue-on-Blue", penalty=-10)
+      HUD.flag("BlueOnBlue")
