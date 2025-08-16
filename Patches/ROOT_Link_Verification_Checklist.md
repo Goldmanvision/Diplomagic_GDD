@@ -1,28 +1,13 @@
-# Root Link Verification Checklist — CH5–CH6
+# ROOT — Link Verification Checklist (CH5–CH6)
 Repo dir: /Patches
 
-Verify all cross-file references after paste. Text-only.
+Verify cross‑references after paste.
 
-## Narrative ↔ Systems
-- [ ] CH5 Star Vampire section links to SEC-05 boss entry
-- [ ] CH6 Raid ROE in narrative matches SEC-05 Combat Rules
-- [ ] Vault endings A/B/C align with SEC-05 Endings & Outcomes
+- SEC‑03 references to **Deep D‑LAMP**, **Iron Highway**, **SRS Secret Annex**, **Splinter Vault** exist and match SEC‑06 wording.
+- SEC‑05 references to **Ward Jam**, **Shield**, **Blue‑on‑Blue**, **Evidence cap 3** exist in SEC‑07 UI.
+- SEC‑06 node names match exactly: Bulkhead Gate, Man‑Door, Service Passage, Valve Row, Dead Piping, Service Stair, Core Gallery, Splinter Vault.
+- SEC‑07 HUD shows **Evidence 0/3** and **BlueOnBlue** indicators.
+- README/ToC includes bullets from `/Patches/ROOT_README_ToC_CH5-CH6_Insert.md`.
+- ASCII map is linked from SEC‑06 under Maps/References.
 
-## Narrative ↔ World
-- [ ] Node names identical: Bulkhead Gate, Service Passage, Valve Row, Dead Piping, Service Stair, Core Gallery, Splinter Vault
-- [ ] ASCII map file path: `/Patches/SEC-06-CH6_Ascii_Map.md`
-
-## Narrative/UI
-- [ ] Prompts are in master list (≤14): `/Patches/ROOT_SEC-07_UI_Prompts_Master.md`
-- [ ] BlueOnBlue indicator described in UI
-
-## Systems/UI
-- [ ] Phrases L/R and scrolls appear in HUD section
-- [ ] Evidence counter 0/3 shown
-
-## Audio
-- [ ] Soundscape cues present for valves/charges/chants/Blue-on-Blue
-
-## Period/Constraints
-- [ ] 1994 lock, MicroTAC only
-- [ ] Ambient phrase only: “the stars are right tonight.”
+Constraints: 1994 lock; prompts ≤14; ambient phrase only — “the stars are right tonight.”

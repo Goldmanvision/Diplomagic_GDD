@@ -1,27 +1,46 @@
-# ROOT — SEC-03 CH6 Narrative (Paste Block)
-Repo dir: /Patches
+# [SEC-03] Chapter 6 — Glorious Quest (Narrative Paste)
 
-> Paste into `SEC-03-NARRATIVE - Narrative.md` replacing the CH6 section.
+> Source of truth: Narrative Playbook • Outline 2025. Period: 1994. Ambient phrase only: “the stars are right tonight.”
 
-## CH6 — SRS Secret Annex: Raid and Splinter Vault
-**Mode:** **Raid** vs hostile combatants (Sov. Nation of New Kadath / Order of the Splintered God). **Lethal authorized.** Neutralizations are score‑neutral. **Blue‑on‑blue** is a hard fail (−10, abort). **Evidence cap: 3.**
+## Scope
+- Dual path operation against **Richard Tack** culminating at the **Savannah River Site (SRS)** with interlocks to **D‑LAMP (WV)**.
+- Player alternates between locations via open‑world travel unlocked in CH5.
+- New enemy type: **Mystical Heads**; spawn in distorted reactor chambers.
 
-**Route**
-Bulkhead Gate → Man‑Door → Service Passage → Valve Row → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress Run.
+## Core Objective
+Disable the **Transdimensional Complex Device** before Tack triggers cross‑dimensional brainwashing; overload leads to timed escape through collapsing, reality‑warped corridors.
 
-**Core systems**
-- Spell phrases equip L/R; Mana regen only in calm windows; scrolls single‑use.  
-- Camera loops via breakers in Service Passage; K‑9 route swap. No Vault cameras.  
-- Enemy roster: Zombie (headshot bias), Night Gaunt (light stagger), Cultist (chant interrupts), Beast (charge tells), Warden Shade (Ward Jam vulnerability).
+## Path Structure
+- **Clara — Stealth/Infiltration**
+  - Goals: disable security systems, avoid detection by cultists and possessed security personnel.
+  - Tools: ward jamming, valves, plant/detonate charges, photo/sample evidence.
+- **Avery — Assault/Fireteam**
+  - Goals: clear hostile forces, disable protective wards, cover Clara’s objectives.
+  - Tools: cast/equip phrases, breaching, K‑9 reroute triggers, valve operations.
 
-**Vault mechanics**
-- **Contain (Seal):** Jam wards, cycle valves A→B→C, lock gimbal (`F_End_Contain`).  
-- **Sever (Escape):** Plant two charges, interrupt chant, detonate, sprint (`F_End_Escape`).  
-- **Black File:** Photo + sample + exfil; evidence max, rep penalty (`F_End_BlackFile`).
+## Raid Rules (live in helpers)
+- **CH6 = raid. Lethal authorized.** Neutralizations are **score‑neutral**.
+- **Blue‑on‑Blue = hard fail (−10).** Exceptions:
+  - **Shield‑absorbed** friendly hit.
+  - A **single shotgun pellet** striking a friendly from **>10 m**.
+- **Evidence cap in CH6 = 3 total.** HUD must show `Evidence 0/3` and `BlueOnBlue` flag.
+- **Cameras only** in **Service Passage**. **No CCTV in Vault**.
+- **Breaker ≈90 s** to cycle after trip. **K‑9 reroute** available via handler diversion or scent decoy.
 
-**Scoring**
-- Contain +5, Sever +3, Black File +5 evidence/−5 rep.  
-- +2 per evidence item (cap 3).  
-- Blue‑on‑blue −10 and fail.
+## 1994 Constraints
+- No smartphone/Wi‑Fi/Bluetooth/GPS/SMS. Navigation via printed maps, posted site diagrams, radio freqs.
+- Comms over analog radios; logging on paper, Polaroids, and film camera; lab hand‑offs by courier.
 
-**UI prompts ≤14** Aim, Fire, Reload, Suppress, Frag, Crouch, Hide, Dodge, Breach, Equip L, Equip R, Cast L, Cast R, Shield, Ward Jam, Valve A, Valve B, Valve C, Plant, Detonate, Photo, Sample, Bag, Tag, Map, Note
+## Spell/Item System
+- **Phrases equip L/R**; **Scrolls single‑use**; **Mana calm‑regen**.
+- Only ambient phrase in VO/text: “the stars are right tonight.”
+- Deputy name randomized per session. Use `<DEPUTY_NAME>` placeholder where referenced.
+
+## Evidence & Cameras
+- Max three pieces of evidence total in CH6. Choice tension: tactical vs investigative.
+- Photographic evidence is permitted in **Service Passage** where cameras exist.
+- No photography in Vault due to zero CCTV and radiation protocols; rely on samples/logs.
+
+## Deliverables in SEC‑03
+- Replace CH6 narrative with this paste.
+- Ensure cross‑refs to SEC‑05/06/07 remain intact.

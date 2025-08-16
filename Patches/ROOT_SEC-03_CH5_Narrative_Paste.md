@@ -1,29 +1,38 @@
-# ROOT — SEC-03 CH5 Narrative (Paste Block)
-Repo dir: /Patches
+# [SEC-03] Chapter 5 — Renewed Purpose (Narrative Paste)
 
-> Paste into `SEC-03-NARRATIVE - Narrative.md` replacing the CH5 section.
+> Source of truth: Narrative Playbook • Outline 2025. Period: 1994. No smartphone/Wi‑Fi/Bluetooth/GPS/SMS. Ambient phrase only: “the stars are right tonight.”
 
-## CH5 — NYFO Hotel → Deep D‑LAMP → Iron Highway
-**State:** `F_Rogue=1` (Avery off‑book). Krill is sole handler (`F_KrillHandler=1`). SENTINEL only at NYFO. Phrases equip L/R with Mana; scrolls single‑use. Ambient phrase only: “the stars are right tonight.”
+## Scope
+- Protagonists: Avery (primary), Clara (secondary thread).
+- Setting: New York City and surrounding tri‑state travel hub. Avery’s car acts as a mobile base.
+- Structure: Open‑world hub unlock + parallel Clara beat.
 
-**Beats**
-1) Hotel near NYFO. POI window. Avery debrief.  
-2) Krill hallway: raises clearance. “Buckle up.” (`F_ClearanceRaised=1`)  
-3) Night: Franklin murdered (`F_FranklinMurdered=1`).  
-4) Morning: agents attempt detention; stealth escape or non‑lethal takedowns (`F_EscapeHotel=1`).  
-5) Rogue pivot: FBI access limited; pager/payphone cadence.  
-6) WV river island: concealed elevator kiosk. Descend ~1 mile (`F_WV_IslandFound`, `F_ElevatorDown`, `F_DLampUnderground`).  
-7) Abandoned D‑LAMP: 1980s–90s cult occupation evidence; undead pockets.  
-8) Mini‑boss: **Star Vampire** in Pump Cavern (`F_StarVampireDefeated`, route key loot).  
-9) Vehicle bay: acquire D‑LAMP utility rover (`F_DLampRover=1`).  
-10) **Iron Highway** drive toward **SRS Secret Annex**; zombie/gaunt/cultist encounters (`F_IronHighwayEntered=1`).  
-11) Bulkhead layby reached (`F_SRS_SecretAnnexSeen=1`). Chapter handoff to CH6.
+## Avery Beats
+- Returns to NYC with Clara and Reddy; learns Fred Franklin has been murdered and is framed as a suspect.
+- Chooses to operate off‑book while clearing his name. Contacts use landlines, pagers, fax. Evidence is walked to drop sites.
+- World opens with **Federally Seized** variants of past locations. New enemy mixes appear only in seized sites.
+- Day/Night cycle alters spawns and civilians:
+  - Day: mind‑swapped civilians in public spaces; crowd‑control favored. Friendly hits fail states.
+  - Night: ghosts and abominations increase; patrol density reduced.
+- Vehicle loop: plan at trunk loadout, drive to site, park legally or risk tow, approach on foot. No GPS; rely on printed maps and signage.
 
-**Clara/Betsy branch**
-- If `F_HauserPistolLogged && F_BetsyPinSigilsLogged && F_WarrantSRS`: FBI raid bypass (`F_BetsyRaidBypass=1`).  
-- Else boss fight: **Wendigo Betsy** (`F_BetsyBossDefeated=1`).  
-Outcome: Clara + Reddy reunite and follow Avery (`F_ClaraFollowsAvery=1`).
+## Clara Beats
+- Tracks Betsy Lumbar and confirms allegiance to **Qin Xu Qi**.
+- Boss branch:
+  - If player found **Cultist Literature** in Prologue: Suzanne Cutlass intercepts; arrest sequence replaces fight.
+  - Else: Betsy transforms into a **wendigo**; combat boss with environmental hazards.
 
-**Evidence (cap aware)** Manifest/route card (+2 cap 1), occupation proofs (rota, PO copies), phone slips intersecting Brightstar.
+## Systems Hooks
+- FieldPad/MEDSTAT are cable‑synced or SENTINEL‑linked only; no internet.
+- Spells: **Phrases equip L/R**, **Scrolls single‑use**, **Mana calm‑regen** (no combat regen spike).
+- Deputy name must be randomized per session. Use placeholder `<DEPUTY_NAME>` in text.
+- Only ambient phrase permitted globally: “the stars are right tonight.”
 
-**UI prompts ≤14** Answer, Cooperate, Lawyer Up, Inspect, Bag, Tag, Note, Map, Pager, Payphone, Elevator, Descend, Drive, Brake, Lights, Enter, Exit
+## Fail/State Rules
+- City friendly/civilian hits = fail.
+- Maintain 1994 authenticity in UI prompts, signage, and comms.
+- Persist clues that set up Chapter 6 objectives without revealing SRS details.
+
+## Deliverables in SEC‑03
+- Replace CH5 narrative with this paste.
+- Preserve anchors used by SEC‑05/06/07 cross‑refs.

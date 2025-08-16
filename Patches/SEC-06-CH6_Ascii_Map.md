@@ -1,47 +1,46 @@
-# SEC-06 — CH6 ASCII Map (SRS Secret Annex)
-Repo dir: /Patches
-
+# SEC-06-CH6_Ascii_Map.md
+> SRS operation layout for Chapter 6. Cameras only in Service Passage. Vault has **no CCTV**.\n
 ```
-                [ FENCE / EGRESS ]
-                         ||
-                ===================
-                          ||
-                 ┌────────────────┐
-                 │  SPLINTER      │
-                 │    VAULT       │
-                 │ (Final Arena)  │
-                 └──────┬─────────┘
-                        │
-                ┌───────┴────────┐
-                │  CORE GALLERY   │
-                │   (Ignition)    │
-                └───────┬─────────┘
-                        │ Service Stair
-                ┌───────┴────────┐
-                │   DEAD PIPING  │  ← prep tables, charge crates
-                └───────┬────────┘
-                        │
-                ┌───────┴────────┐
-                │   VALVE ROW    │  [A]──[B]──[C]
-                └───────┬────────┘
-                        │
-                ┌───────┴────────┐
-                │ SERVICE PASSAGE│  cams + breaker boxes
-                └───────┬────────┘
-                        │
-                ┌───────┴────────┐
-                │    MAN-DOOR    │  side ingress
-                └───────┬────────┘
-                        │
-                ┌───────┴────────┐
-                │  BULKHEAD GATE │  rover layby
-                └────────┬───────┘
-                         │
-                  [IRON HIGHWAY]
+                       NORTH
+        ┌──────────────────────────────────────────┐
+        │   DELIVERY YARD                         │
+        │   [Parking][Trunk][Radio]               │
+        └───────┬───────────────────────┬─────────┘
+                │                       │
+        ┌───────▼───────────┐   ┌───────▼───────────┐
+        │  SERVICE PASSAGE  │   │     ADMIN WING    │
+        │  [CCTV ZONE]      │   │  Offices, Breakr │
+        │  [Photo/Sample]   │   │  Breaker Panel ◻ │
+        │  K‑9 Route ⇄      │   │                   │
+        └───┬─────────┬─────┘   └─────────┬────────┘
+            │         │                   │
+            │   ┌─────▼─────┐       ┌────▼─────┐
+            │   │ REACTOR A │       │ REACTOR B│
+            │   │ Valve A ● │       │ Valve B ●│
+            │   │ Ward ◇    │       │ Ward ◇   │
+            │   └─────┬─────┘       └────┬─────┘
+            │         │                   │
+        ┌───▼─────────▼──────┐      ┌────▼───────────┐
+        │  CONNECTOR TUNNEL  │      │  REACTOR C     │
+        │  Breach ✚  Jammer  │      │  Valve C ●     │
+        └───┬────────────────┘      │  Ward ◇        │
+            │                       └────┬───────────┘
+            │                            │
+        ┌───▼────────────────────────────▼───┐
+        │               VAULT                 │
+        │   [NO CCTV]   Core ◯   Device ▣    │
+        │   Photo: ✖    Sample: ✔            │
+        │   Escape Route ⇒ Collapsing Corr.  │
+        └────────────────────────────────────┘
+
+Legend:
+● Valve A/B/C      ◻ Breaker (≈90 s)    ◇ Ward Node
+✚ Breach Point     ▣ Device             ◯ Core
+✔ Allowed          ✖ Not allowed        ⇄ K‑9 reroute path
 ```
 
-Legend
-- Cameras only in **Service Passage**; breaker pull = ~90 s loop.
-- **Valve order** for Contain: A → B → C.
-- **Egress** runs back to fence gap from Core/Vault per ending.
-- No CCTV in **Vault**. K‑9 route swaps during breaker loop.
+## Notes
+- Cameras exist only in **Service Passage**. Photography restricted there.
+- Breaker recycle ≈ **90 s**. Staged restore at 30/60/90 s.
+- K‑9 reroute via handler diversion or scent decoy along marked path.
+- Vault enforces **no photography**; rely on samples/logs.

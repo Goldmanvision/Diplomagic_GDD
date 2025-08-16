@@ -1,34 +1,38 @@
-# PR: CH5–CH6 Root Merge (Narrative/Systems/World/UI)
+# CH5–CH6 root merge
+
+Integrate Chapter 5 and Chapter 6 narrative, systems, and world/UI into the root docs.
 
 ## Summary
-Integrates CH5–CH6 across root docs. CH6 reframed as a raid with lethal ROE and Blue‑on‑Blue fail; evidence cap 3; prompts ≤14; 1994 period. Ambient phrase retained: “the stars are right tonight.”
+- Replace SEC‑03 CH5 and CH6 with helper pastes.
+- Insert systems snippets in SEC‑05.
+- Append world + UI merges in SEC‑06/07.
+- Replace UI prompts with the SEC‑07 master.
+- Update README/ToC entries.
+- Link ASCII map in SEC‑06.
 
-## Changes
-- Replaced CH5 and CH6 in SEC-03.
-- Appended systems blocks (phrases/scrolls, ROE, cameras, endings, tuning, failure).
-- Added world nodes and UI prompts/flows; referenced ASCII map.
-- Updated README/ToC inserts.
+## Constraints
+- Period: **1994**. No smartphone/Wi‑Fi/Bluetooth/GPS/SMS.
+- Prompts ≤14 characters.
+- Ambient phrase only: “the stars are right tonight.”
+- Spells: **Phrases equip L/R**, **Scrolls single‑use**, **Mana calm‑regen**.
 
-## Files to paste (entry points)
-- Narrative: `/Patches/ROOT_SEC-03_Narrative_CH5-CH6_Merge.md` (or split CH5/CH6 paste blocks)
-- Systems: `/Patches/ROOT_Systems_Snippet_Replacements.md`
-- World+UI: `/Patches/ROOT_SEC-06-07_World_UI_CH5-CH6_Merge.md`
-- Prompts: `/Patches/ROOT_SEC-07_UI_Prompts_Master.md`
-- Helpers: see `/Patches/ROOT_Merge_Index_CH5-CH6.md`
+## CH6 Raid Rules (must appear in helpers and HUD)
+- CH6 = raid. Lethal authorized. Neutralizations score‑neutral.
+- Blue‑on‑Blue = hard fail (−10). Exceptions: Shield‑absorbed; >10 m single shotgun pellet.
+- Cameras only in Service Passage; **No CCTV in Vault**; breaker ≈90 s; **K‑9 reroute**.
+- Evidence cap in CH6 = **3**. HUD shows `Evidence 0/3` and `BlueOnBlue`.
 
-## Checks
-- [ ] 1994 audit passes (MicroTAC only; no Wi‑Fi/Bluetooth/GPS/SMS)
-- [ ] Prompts ≤14 chars
-- [ ] Ambient phrase is ambient-only
-- [ ] CH6 ROE: lethal authorized; Blue‑on‑Blue = fail
-- [ ] Evidence cap 3 enforced
-- [ ] Crosslinks validated
+## Validation
+Run:
+- `/Trackers/PR_Validation_Tasklist_CH5-CH6.md`
+- Record results in `/Trackers/PR_Validation_Results_Summary_CH5-CH6.md`
+- Grep per `/Patches/ROOT_Validation_Grep_Patterns.md`
+- Smoke per `/Trackers/ROOT_Merge_Smoke_Checks.md`
 
-## Test
-Follow `/Patches/ROOT_EndToEnd_Test_Script_CH5-CH6.md`.
+## Labels & Milestone
+Labels: `period-1994`, `prompt-≤14`, `roe-raid`, `blue-on-blue`, `evidence-cap-3`  
+Milestone: `v0.6-ch5-6-merge`
 
-## Risks/Mitigations
-See `/Trackers/ROOT_Merge_Risk_Register.md`.
-
-## Notes
-Text-only PR.
+## Attachments
+- Narrative pastes: `ROOT_SEC-03_CH5_Narrative_Paste.md`, `ROOT_SEC-03_CH6_Narrative_Paste.md`
+- To follow in next commits (kept ≤3 files per export): UI prompts master, systems snippets, world/UI merge, ASCII map, README/ToC bullets, PR attachments.

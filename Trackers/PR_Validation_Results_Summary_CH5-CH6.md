@@ -1,10 +1,10 @@
 # PR_Validation_Results_Summary_CH5-CH6.md
 
 Date: 2025-08-16
-PR: https://github.com/Goldmanvision/Diplomagic_GDD/pull/1
+PR: <paste PR URL>
 Branch: feat/ch5-6-root-merge
-Helpers commit (main): c5535f8bb1cedb02e9883259ae74ea9a6a586def
-Feature commit (branch): 9952d0e05e33992a01620047e47785cd2d3a003f
+Helpers commit (main): <hash>
+Feature commit (branch): <hash>
 
 ## Summary
 | Check | Result | Notes |
