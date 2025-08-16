@@ -1,0 +1,85 @@
+name: PR Comment — rules check
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'Patches/**'
+      - 'Trackers/**'
+      - 'SEC-*.md'
+      - 'README.md'
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect changed files and patches
+        id: files
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const number = context.payload.pull_request.number;
+            const files = await github.paginate(
+              github.rest.pulls.listFiles, {owner, repo, pull_number:number, per_page:100}
+            );
+            const lines = files.map(f => {
+              const patch = (f.patch || '').slice(0, 4000);
+              return [
+                `# ${f.filename}`,
+                `status: ${f.status} (+${f.additions}/-${f.deletions})`,
+                patch ? '--- PATCH START ---\n' + patch + '\n--- PATCH END ---' : '(no patch provided)'
+              ].join('\n');
+            });
+            core.setOutput('summary', lines.join('\n\n'));
+
+      - name: Summarize with OpenAI
+        id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          DIFF_SUMMARY: ${{ steps.files.outputs.summary }}
+        run: |
+          set -e
+          python - << 'PY'
+import os, json, sys, urllib.request
+
+api_key = os.environ.get("OPENAI_API_KEY","").strip()
+if not api_key:
+    print("Missing OPENAI_API_KEY", file=sys.stderr); sys.exit(1)
+
+title = os.environ.get("PR_TITLE","")
+url = os.environ.get("PR_URL","")
+diff = os.environ.get("DIFF_SUMMARY","")[:120000]
+
+req = {
+  "model":"gpt-4o-mini",
+  "temperature":0.2,
+  "messages":[
+    {"role":"system","content":"Summarize a GDD pull request. Check: 1994 period (no smartphone/Wi‑Fi/Bluetooth/GPS/SMS), prompts <=14 chars, CH6 raid rules (lethal ok; Blue‑on‑Blue hard fail with exceptions; evidence cap 3; HUD Evidence 0/3 + BlueOnBlue), CH7 city rules (evidence cap 2; non‑lethal; friendly/civilian hits fail). Respond as short markdown with PASS/FAIL bullets plus a brief note per item."},
+    {"role":"user","content":f"PR: {title} ({url})\n\nChanged files and patches (truncated):\n\n{diff}"}
+  ]
+}
+data = json.dumps(req).encode("utf-8")
+req = urllib.request.Request("https://api.openai.com/v1/chat/completions", data=data,
+  headers={"Authorization":f"Bearer {api_key}","Content-Type":"application/json"})
+with urllib.request.urlopen(req) as r:
+    out = json.loads(r.read().decode("utf-8"))
+text = out["choices"][0]["message"]["content"]
+open("comment.md","w",encoding="utf-8").write(text)
+print("Wrote comment.md")
+PY
+
+      - name: Post PR comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('comment.md','utf8');
+            const {owner, repo} = context.repo;
+            const number = context.payload.pull_request.number;
+            await github.rest.issues.createComment({owner, repo, issue_number:number, body});
