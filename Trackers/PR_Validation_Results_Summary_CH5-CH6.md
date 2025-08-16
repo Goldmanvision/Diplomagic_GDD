@@ -1,24 +1,49 @@
-# PR Validation Results — Summary (CH5–CH6)
-Repo dir: /Trackers
-Date: 2025-08-15
+# PR_Validation_Results_Summary_CH5-CH6.md
 
-## Scans
-- 1994 audit: __PASS__/__FAIL__ (notes: ______)
-- Prompts ≤14: __PASS__/__FAIL__ (notes: ______)
-- Ambient phrase ambient-only: __PASS__/__FAIL__
-- ROE raid + Blue‑on‑Blue fail present: __PASS__/__FAIL__
-- Evidence cap 3 present: __PASS__/__FAIL__
-- Crosslinks vs ASCII map: __PASS__/__FAIL__
+Date: 2025-08-16
+PR: https://github.com/Goldmanvision/Diplomagic_GDD/pull/1
+Branch: feat/ch5-6-root-merge
+Helpers commit (main): c5535f8bb1cedb02e9883259ae74ea9a6a586def
+Feature commit (branch): 9952d0e05e33992a01620047e47785cd2d3a003f
 
-## E2E
-- Contain path: __PASS__/__FAIL__
-- Sever path: __PASS__/__FAIL__
-- Black File path: __PASS__/__FAIL__
+## Summary
+| Check | Result | Notes |
+|---|---|---|
+| PR targets main; labels; milestone | PENDING |  |
+| SEC-03 CH5/CH6 replaced | PENDING |  |
+| SEC-05 snippets inserted | PENDING |  |
+| SEC-06/07 appended | PENDING |  |
+| SEC-07 prompts ≤14 | PENDING |  |
+| README/ToC bullets added | PENDING |  |
+| ASCII map linked | PENDING |  |
+| CH6 raid rules present | PENDING |  |
+| Blue-on-Blue rules + exceptions | PENDING |  |
+| Cameras rules (Service Passage only; no Vault CCTV) | PENDING |  |
+| Breaker ≈90 s | PENDING |  |
+| K‑9 reroute | PENDING |  |
+| Evidence cap = 3; HUD flags | PENDING |  |
+| Period sweep (no modern tech) | PENDING |  |
+| Grep suite clean | PENDING |  |
+| Smoke checks clean | PENDING |  |
 
-## Issues filed
-- Count: ____  (refs to `/Trackers/PR_Reviewer_Findings_Log_CH5-CH6.md`)
+## Prompt length counts
+- Long prompts (>14): `<count>`
+- Long prompts list: `<items>`
+
+## Grep findings
+```
+<paste key lines or “none”>
+```
+
+## Smoke notes
+- Anchors: <ok/issues>
+- Duplicates: <ok/issues>
+- CCTV zones: <ok/issues>
+- Vault photography: <ok/issues>
+
+## Attachments
+- Screenshots and logs attached to PR per CH5-6_Build_Verification.md.
 
 ## Sign-offs
-- Narrative: ______  Date: ____
-- Systems:  ______  Date: ____
-- QA:       ______  Date: ____
+- Owner: <name>  —  ✅/❌
+- Reviewer: <name>  —  ✅/❌
