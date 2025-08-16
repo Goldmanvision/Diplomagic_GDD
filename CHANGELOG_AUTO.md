@@ -1,0 +1,104 @@
+# Auto Changelog (Trackers)
+
+- 0A_Avery_Prologue_Beat2Objective_20250814T0941Z.md: # 0A — Avery Prologue Beat→Objective Walkthrough
+- 0B_Clara_Prologue_Beat2Objective_20250814T0941Z.md: # 0B — Clara Prologue Beat→Objective Walkthrough
+- AssetList_0A_Quantico.md: # 0A — Avery Prologue Asset List (Quantico, 1989)
+- AssetList_0B_BetsyApt.md: # 0B — Clara Prologue Asset List (Betsy’s Apt, 1994)
+- AssetList_CH1_Brightstar.md: # CH1 — “Simple Curiosity” Asset List
+- Assets_0A_Quantico_1989_20250814T1030Z.md: # 0A — Avery Prologue Asset List (Quantico, 1989, Night)
+- Assets_0B_BetsysApt_1994_20250814T1030Z.md: # 0B — Clara Prologue Asset List (Betsy’s Apt, 1994, Morning→Afternoon)
+- CH1_Beat2Objective.md: # CH1 — “Simple Curiosity” Beat→Objective
+- CH1_Narrative_Corrections_Worksheet.md: # CH1 — “Simple Curiosity” Narrative Corrections Worksheet
+- CH1_Outline_SimpleCuriosity.md: # CH1 — “Simple Curiosity” Outline
+- CH1_PolishChecklist.md: # CH1 — “Simple Curiosity” Polish Checklist
+- CH1_StringKeyManifest.md: # CH1 — String Key Manifest
+- CH2_Avery_Tracker.md: # Tracker — CH2 Avery: Inner Checkpoint
+- CH3_Scoring_Table.md: # Tracker — CH3 Scoring Table
+- CH3_Trackers.md: # Trackers — CH3 Clara & Avery
+- CH4_Convergence_Rework.md: # Patch: CH4 — “Toward the Walled City” (Convergence Rework)
+- CH4_Scoring_Table.md: # Tracker — CH4 Scoring Table
+- CH4_Tracker.md: # Tracker — CH4: Kadath City Convergence
+- CH5-6_Build_Verification.md: # CH5-6_Build_Verification.md
+- CH5-6_Combat_Evidence_Scoring.md: # Tracker — CH5–CH6 Combat/Evidence Scoring
+- CH5-6_DLamp_Evidence_Index.md: # Tracker — D‑LAMP Evidence Index (CH5→CH6)
+- CH5-6_DeepDLamp_Flags.md: # Tracker — CH5→CH6 Deep D‑LAMP & Iron Highway Flags
+- CH5-6_Krill_Handler_Log.md: # Tracker — Krill Handler Log (CH5→CH6)
+- CH5_Tracker.md: # Tracker — CH5: NYFO, D-LAMP, Betsy
+- CH6_Balance_Telemetry_Spec.md: # Tracker — CH6 Balance Telemetry Spec
+- CH6_BlueOnBlue_Test_Plan.md: # CH6 — Blue‑on‑Blue Test Plan
+- CH6_Bug_Triage_Template.md: # Tracker — CH6 Bug Triage Template
+- CH6_Ending_Scorecard.md: # Tracker — CH6 Ending Scorecard
+- CH6_Flags_Endings.md: # Tracker — CH6 Flags and Endings
+- CH6_Known_Issues.md: # Tracker — CH6 Known Issues & Risks
+- CH6_Operational_Checklist.md: # Tracker — CH6 Operational Checklist (Raid)
+- CH6_Playtest_Log_Sheet.md: # Tracker — CH6 Playtest Log Sheet
+- CH6_QA_Test_Cases.md: # Tracker — CH6 QA Test Cases
+- CH6_Scoring_Raid.md: # Tracker — CH6 Scoring (Raid)
+- CH6_Tracker.md: # Tracker — CH6: Savannah River
+- Devices_Storage_1994.md: # Devices — Storage & Networking (1994 Audit)
+- Glossary_1994_Terms.md: # Tracker — 1994 Glossary (CH5–CH6)
+- InlinePatch_SEC-04_CH1.md: # Inline Patch — SEC-04 CH1 Integration
+- InlinePatch_SEC-04_Prologues.md: # Inline Patch — SEC-04 Loops: Prologues Hook-in
+- InlinePatch_SEC-05_CH1.md: # Inline Patch — SEC-05 CH1 Flags & Data
+- InlinePatch_SEC-05_Prologues.md: # Inline Patch — SEC-05 Systems: Prologue Flags & Data
+- InlinePatch_TDD_CH1.md: # Inline Patch — TDD CH1 Device Hooks
+- InlinePatch_TDD_Prologues.md: # Inline Patch — TDD: Evidence + FieldPad Hooks from Prologues
+- NARR-TRACKER_Playbook-Outline_Sync_v0.1.md: # NARR-TRACKER — Playbook + Outline Sync v0.1
+- NARR-TRACKER_Prologues_v0.3.md: # Narrative Tracker — Prologues v0.3 (Canonical)
+- PROJECT_SUMMARY.md: # Project: DIPLOMAGIC — Narrative Review + GDD Patches
+- PR_Closeout_Checklist_CH5-CH6.md: # PR Closeout Checklist — CH5–CH6
+- PR_Crosscheck_Results_Log.md: # Tracker — PR Crosscheck Results Log (CH5–CH6)
+- PR_Reviewer_Assignment_Matrix.md: # PR Reviewer Assignment Matrix — CH5–CH6
+- PR_Reviewer_Findings_Log_CH5-CH6.md: # Tracker — PR Reviewer Findings Log (CH5–CH6)
+- PR_Run_Log_CH5-CH6.md: # Tracker — PR Run Log (CH5–CH6 Root Merge)
+- PR_Signoff_Form_CH5-CH6.md: # PR Sign‑off Form — CH5–CH6 Root Merge
+- PR_Status_Board_CH5-CH6.md: # PR_Status_Board_CH5-CH6.md
+- PR_Status_Board_CH7.md: # PR_Status_Board_CH7.md
+- PR_Triage_Template_CH5-CH6.md: # Tracker — PR Triage Template (CH5–CH6)
+- PR_Validation_Master_Checklist_CH5-CH6.md: # PR Validation — Master Checklist (CH5–CH6)
+- PR_Validation_Results_Summary_CH5-CH6.md: # PR_Validation_Results_Summary_CH5-CH6.md
+- PR_Validation_Results_Summary_CH7.md: # PR_Validation_Results_Summary_CH7.md
+- PR_Validation_Tasklist_CH5-CH6.md: # PR_Validation_Tasklist_CH5-CH6.md
+- PR_Validation_Tasklist_CH7.md: # PR_Validation_Tasklist_CH7.md
+- Prologues_PolishChecklist.md: # Prologues — Polish Checklist (0A/0B)
+- Prologues_StringKeyManifest.md: # Prologues — String Key Manifest (0A/0B)
+- Prop_SEC-04_Loops_Prologues.md: # Propagation — SEC-04 Loops: Prologues Hook-in
+- Prop_SEC-05_Systems_ProloguesFlags.md: # Propagation — SEC-05 Systems: Prologues Flags & Data
+- Prop_TDD_Evidence_FieldPad_ProloguesHooks.md: # Propagation — TDD: Evidence + FieldPad Hooks from Prologues
+- QATelemetry_0A_Quantico.md: # 0A — Avery Prologue QA + Telemetry Matrix (Quantico, 1989)
+- QATelemetry_0B_BetsyApt.md: # 0B — Clara Prologue QA + Telemetry Matrix (Betsy’s Apt, 1994)
+- QATelemetry_CH1.md: # CH1 — “Simple Curiosity” QA + Telemetry Matrix
+- ROOT_Cutlist_Removals_CH5-CH6.md: # Tracker — Cutlist Removals (CH5–CH6)
+- ROOT_File_Ownership_Matrix.md: # Tracker — File Ownership Matrix (CH5–CH6)
+- ROOT_Integration_Completion_Ticket.md: # Tracker — CH5–CH6 Integration Completion
+- ROOT_Issue_Template_CH5-CH6_Merge.md: # Issue Template — CH5–CH6 Root Merge
+- ROOT_Merge_Paste_Progress.md: # Tracker — Root Merge Paste Progress (CH5–CH6)
+- ROOT_Merge_Reviewer_Checklist.md: # Reviewer Checklist — CH5–CH6 Root Merge
+- ROOT_Merge_Risk_Register.md: # Tracker — Merge Risk Register (CH5–CH6)
+- ROOT_Merge_Smoke_Checks.md: # ROOT_Merge_Smoke_Checks.md
+- ROOT_Merge_Status_CH5-CH6.md: # Tracker — Root Merge Status (CH5–CH6)
+- ROOT_Metrics_Snapshot_Template.md: # Tracker — Metrics Snapshot Template (CH5–CH6)
+- ROOT_QA_Test_Cases_CH5-CH6.md: # Tracker — QA Test Cases (CH5–CH6)
+- ROOT_Regressions_Watchlist_CH5-CH6.md: # Tracker — Regressions Watchlist (CH5–CH6)
+- ROOT_Review_Signoff_Sheet.md: # Review Sign‑off Sheet — CH5–CH6 Root Merge
+- ROOT_Reviewer_Questions_CH5-CH6.md: # Reviewer Questions — CH5–CH6 Root Merge
+- ROOT_Seed_Test_Matrix_CH5-CH6.md: # Tracker — Seed Test Matrix (DeputyName & Outcomes)
+- SEC-03-CH4_Narrative.md: # SEC-03 — CH4 Narrative (Revised)
+- SEC-03-CH6_Raid_Addendum.md: # SEC-03 — CH6 Narrative Addendum: Raid ROE
+- SEC-05-CH4_Systems.md: # SEC-05 — CH4 Systems (Revised)
+- SEC-06-CH6_SRS_Secret_Annex_World.md: # SEC-06 — CH6 World: SRS Secret Annex
+- SEC06_CH1_WorldLayouts.md: # SEC-06 — CH1 World Layouts
+- SEC07_CH1_MEDSTAT_Notes_UI.md: # SEC-07 — MEDSTAT Notes UI (CH1)
+- Shotlist_0A_Quantico.md: # 0A — Avery Prologue Capture Shotlist (Quantico, 1989)
+- Shotlist_0B_BetsyApt.md: # 0B — Clara Prologue Capture Shotlist (Betsy’s Apt, 1994)
+- Shotlist_CH1_Brightstar.md: # CH1 — Brightstar Capture Shotlist (Clara)
+- Shotlist_CH1_Roadside.md: # CH1 — Roadside Capture Shotlist (Avery)
+- TutorialCopy_0A_Avery_20250814T0948Z.md: # 0A — Avery Prologue Tutorial Copy
+- TutorialCopy_0B_Clara_20250814T0948Z.md: # 0B — Clara Prologue Tutorial Copy
+- TutorialCopy_CH1_Avery.md: # CH1 — Avery Tutorial Copy (Roadside)
+- TutorialCopy_CH1_Clara.md: # CH1 — Clara Tutorial Copy (Brightstar)
+- VOScript_0A_Avery.md: # 0A — Avery Prologue VO Temp Script (Quantico, 1989)
+- VOScript_0B_Clara.md: # 0B — Clara Prologue VO Temp Script (Betsy’s Apt, 1994)
+- VOScript_CH1_Avery.md: # CH1 — Avery VO Temp Script (Roadside)
+- VOScript_CH1_Clara.md: # CH1 — Clara VO Temp Script (Brightstar)
+- Validation_Run_Report_CH5-CH6.md: # Validation Run — CH5–CH6 (local patches/trackers)
