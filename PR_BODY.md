@@ -1,6 +1,6 @@
 # Chapter 2 Packaging
 
-Adds CH2 patch and state tracker, aligned with narrative outline.
+Adds CH2 patch and state tracker, aligned with the narrative outline.
 
 ## Files
 - `Patches/CH2.md`
@@ -11,3 +11,4 @@ Adds CH2 patch and state tracker, aligned with narrative outline.
 - Avery: promoted with Level X clearance, meets Lewis Krill, tempted toward lethal methods. Player choice impacts alignment.
 - Score thresholds remain TBD for balancing.
 - 1994 tech fidelity enforced (Rolodex, payphone, fax, pager).
+
