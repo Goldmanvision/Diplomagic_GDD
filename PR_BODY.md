@@ -1,14 +1,11 @@
-# Chapter 2 Packaging
+Adds exported chat archives to /Archive for provenance and repo retention.
 
-Adds CH2 patch and state tracker, aligned with the narrative outline.
+Files:
+- Archive/GDD_Rebuild_2025-08-16_0809.md
+- Archive/GDD_Rebuild_2025-08-16_1347.md
+- Archive/GDD_Rebuild_2025-08-16_1700.md
 
-## Files
-- `Patches/CH2.md`
-- `Trackers/CH2-state.md`
-
-## Notes
-- Clara: survival, stealth, and analog Rolodex rescue mechanic. Must keep Reddy’s stat lines balanced for points.
-- Avery: promoted with Level X clearance, meets Lewis Krill, tempted toward lethal methods. Player choice impacts alignment.
-- Score thresholds remain TBD for balancing.
-- 1994 tech fidelity enforced (Rolodex, payphone, fax, pager).
-
+Checklist:
+- [ ] Verify archive filenames and frontmatter
+- [ ] Confirm no sensitive data included
+- [ ] Tag commit after merge: archive-2025-08-16
