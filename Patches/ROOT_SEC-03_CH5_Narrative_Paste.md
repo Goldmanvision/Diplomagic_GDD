@@ -1,29 +1,27 @@
-# ROOT — SEC-03 CH5 Narrative (Paste Block)
+# CH5 — Descent (Narrative Paste Block)
 Repo dir: /Patches
 
-> Paste into `SEC-03-NARRATIVE - Narrative.md` replacing the CH5 section.
+## Premise
+Avery goes rogue under Krill’s quiet cover to follow Fred Franklin’s leads to **D‑LAMP** and the **Iron Highway**, then toward **SRS**.
 
-## CH5 — NYFO Hotel → Deep D‑LAMP → Iron Highway
-**State:** `F_Rogue=1` (Avery off‑book). Krill is sole handler (`F_KrillHandler=1`). SENTINEL only at NYFO. Phrases equip L/R with Mana; scrolls single‑use. Ambient phrase only: “the stars are right tonight.”
+## Beats
+1) **Hotel escape (NYC):** evade detain team or non‑lethal takedowns. No civilian harm.  
+2) **WV River Island access:** elevator kiosk → one‑mile descent to **Deep D‑LAMP**.  
+3) **Deep D‑LAMP:** abandoned AEC/DOE site occupied by the Order in the 80s; **Star Vampire** mini‑boss in Pump Cavern gates rover access.  
+4) **Rover bay:** obtain D‑LAMP vehicle + route card + fuel chits.  
+5) **Iron Highway:** drive utility tunnel toward SRS layby; ambush pockets; diagnostics stops.  
+6) **Layby:** park at bulkhead; scout man‑door ingress to the secret annex (CH6).
 
-**Beats**
-1) Hotel near NYFO. POI window. Avery debrief.  
-2) Krill hallway: raises clearance. “Buckle up.” (`F_ClearanceRaised=1`)  
-3) Night: Franklin murdered (`F_FranklinMurdered=1`).  
-4) Morning: agents attempt detention; stealth escape or non‑lethal takedowns (`F_EscapeHotel=1`).  
-5) Rogue pivot: FBI access limited; pager/payphone cadence.  
-6) WV river island: concealed elevator kiosk. Descend ~1 mile (`F_WV_IslandFound`, `F_ElevatorDown`, `F_DLampUnderground`).  
-7) Abandoned D‑LAMP: 1980s–90s cult occupation evidence; undead pockets.  
-8) Mini‑boss: **Star Vampire** in Pump Cavern (`F_StarVampireDefeated`, route key loot).  
-9) Vehicle bay: acquire D‑LAMP utility rover (`F_DLampRover=1`).  
-10) **Iron Highway** drive toward **SRS Secret Annex**; zombie/gaunt/cultist encounters (`F_IronHighwayEntered=1`).  
-11) Bulkhead layby reached (`F_SRS_SecretAnnexSeen=1`). Chapter handoff to CH6.
+## ROE and Devices
+- Urban: non‑lethal favored; BlueOnBlue = fail.  
+- Deep sites: lethal on undead/beasts/cultists score‑neutral. BlueOnBlue always fail.  
+- **FieldPad/MEDSTAT** cache only; **SENTINEL** reachable at NYFO terminals.  
+- **Phrases** equip **L/R**; **scrolls** single‑use; **Mana** calm‑regen.
 
-**Clara/Betsy branch**
-- If `F_HauserPistolLogged && F_BetsyPinSigilsLogged && F_WarrantSRS`: FBI raid bypass (`F_BetsyRaidBypass=1`).  
-- Else boss fight: **Wendigo Betsy** (`F_BetsyBossDefeated=1`).  
-Outcome: Clara + Reddy reunite and follow Avery (`F_ClaraFollowsAvery=1`).
+## Evidence & Score
+- Optional finds in CH5: route card (+2), Star Vampire defeated (+3), hotel stealth (+1).  
+- BlueOnBlue = FAIL. Neutralizations score‑neutral outside civilians/agents.
 
-**Evidence (cap aware)** Manifest/route card (+2 cap 1), occupation proofs (rota, PO copies), phone slips intersecting Brightstar.
-
-**UI prompts ≤14** Answer, Cooperate, Lawyer Up, Inspect, Bag, Tag, Note, Map, Pager, Payphone, Elevator, Descend, Drive, Brake, Lights, Enter, Exit
+## Notes
+- Period: 1994. MicroTAC, pagers, payphones, Polaroids, analog CCTV.  
+- Ambient only: “the stars are right tonight.”

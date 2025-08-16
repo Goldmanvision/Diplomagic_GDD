@@ -1,27 +1,27 @@
-# ROOT — SEC-03 CH6 Narrative (Paste Block)
+# CH6 — SRS Secret Annex (Narrative Paste Block)
 Repo dir: /Patches
 
-> Paste into `SEC-03-NARRATIVE - Narrative.md` replacing the CH6 section.
+## Objective
+Raid the Order’s annex beneath SRS. Reach the **Splinter Vault** and resolve one of three paths.
 
-## CH6 — SRS Secret Annex: Raid and Splinter Vault
-**Mode:** **Raid** vs hostile combatants (Sov. Nation of New Kadath / Order of the Splintered God). **Lethal authorized.** Neutralizations are score‑neutral. **Blue‑on‑blue** is a hard fail (−10, abort). **Evidence cap: 3.**
+## Route
+**Bulkhead Gate → Man‑Door → Service Passage (cams/breakers) → Valve Row (A‑B‑C) → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress fence gap**
 
-**Route**
-Bulkhead Gate → Man‑Door → Service Passage → Valve Row → Dead Piping → Service Stair → Core Gallery (Ignition) → Splinter Vault → Egress Run.
+## Systems & ROE
+- CH6 is a **raid**. **Lethal authorized.** Neutralizations are score‑neutral.  
+- **Blue‑on‑Blue = hard fail (−10)**. Exceptions: Shield‑absorbed hits ignored; >10 m single shotgun pellet ignored.  
+- **Cameras** only in Service Passage; breaker pull ≈90 s outage and K‑9 reroute. No CCTV in Vault.  
+- **Phrases** equip **L/R**; **scrolls** single‑use; **Mana** calm‑regen.  
+- **Evidence cap = 3** items total in CH6; attempts beyond cap do not score.
 
-**Core systems**
-- Spell phrases equip L/R; Mana regen only in calm windows; scrolls single‑use.  
-- Camera loops via breakers in Service Passage; K‑9 route swap. No Vault cameras.  
-- Enemy roster: Zombie (headshot bias), Night Gaunt (light stagger), Cultist (chant interrupts), Beast (charge tells), Warden Shade (Ward Jam vulnerability).
+## Endings
+- **Contain (Seal):** Jam wards (**Ward Jam**), set gimbal **STABLE**, open **Valve A → B → C**. Score +5.  
+- **Sever (Escape):** **Plant** ×2, interrupt chant, **Detonate**, sprint to egress. Score +3.  
+- **Black File:** **Photo** ×2 + **Sample** ×1, exfil. Score +5, Rep −5.
 
-**Vault mechanics**
-- **Contain (Seal):** Jam wards, cycle valves A→B→C, lock gimbal (`F_End_Contain`).  
-- **Sever (Escape):** Plant two charges, interrupt chant, detonate, sprint (`F_End_Escape`).  
-- **Black File:** Photo + sample + exfil; evidence max, rep penalty (`F_End_BlackFile`).
+## UI prompts (≤14)
+Answer, Breach, Bag, Brake, Call Back, Cast L, Cast R, Crouch, Detonate, Drive, Dodge, Elevator, Enter, Equip L, Equip R, Fire, Frag, Headlights, Hide, Holster, Inspect, Ward Jam, Lawyer Up, Lights, Map, Note, Pager, Payphone, Photo, Plant, Reload, Sample, Shield, Shove, Suppress, Tag, Valve A, Valve B, Valve C, Exit, Descend, Aim
 
-**Scoring**
-- Contain +5, Sever +3, Black File +5 evidence/−5 rep.  
-- +2 per evidence item (cap 3).  
-- Blue‑on‑blue −10 and fail.
-
-**UI prompts ≤14** Aim, Fire, Reload, Suppress, Frag, Crouch, Hide, Dodge, Breach, Equip L, Equip R, Cast L, Cast R, Shield, Ward Jam, Valve A, Valve B, Valve C, Plant, Detonate, Photo, Sample, Bag, Tag, Map, Note
+## Notes
+- Period: 1994. MicroTAC, pagers, payphones, Polaroids, analog CCTV.  
+- Ambient only: “the stars are right tonight.”
