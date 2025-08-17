@@ -1,45 +1,39 @@
 ---
-Title: Steam Store Asset Checklist — Plan A
 Department: Steam Operations
 Codename: Stationmaster
-Owner: Stationmaster
-Reviewer: Postmaster
 Date: 2025-08-17
-Status: Draft
+Status: Active
 ---
 
-# Targets
-- OS: Windows 10/11 x64
-- Steam Deck: Proton (QA on beta branch with `proton-qa` tag)
-- Linux/macOS: deferred until post-freeze
+## Dimensions & Constraints — 2025-08-17
+Sources: Steamworks Documentation (Store Graphical Assets; Library Assets; Rules).
 
-# Asset spec matrix (confirm sizes in Steamworks before export)
-| Asset                          | Required | Target Size (CONFIRM) | Crop/Notes                                  | Owner | Status |
-|--------------------------------|:-------:|-----------------------|---------------------------------------------|:-----:|:------:|
-| Store capsule — main           |   Y     | TBC                   | No text near edges; safe title area         | Art   |   ☐    |
-| Store capsule — small          |   Y     | TBC                   | Legible at small scale                      | Art   |   ☐    |
-| Store capsule — micro          |   Y     | TBC                   | High contrast                               | Art   |   ☐    |
-| Library hero (store header)    |   Y     | TBC                   | Pan-safe top/bottom; no UI-critical text    | Art   |   ☐    |
-| Library logo                   |   Y     | TBC                   | Transparent PNG; centered silhouette        | Art   |   ☐    |
-| Library capsule                |   Y     | TBC                   | Matches main capsule design                 | Art   |   ☐    |
-| Screenshots (min 5)            |   Y     | 1920×1080+            | No debug UI; 1994/1989 accuracy             | Dev   |   ☐    |
-| Trailer (optional early)       |   N     | 1080p/4K              | No spoilers; music cleared                  | Mktg  |   ☐    |
-| Legal boilerplate              |   Y     | n/a                   | Copyright, trademarks, ratings notes        | Mail  |   ☐    |
-| Tags & features list           |   Y     | n/a                   | Justify per Playbook tone                   | Mail  |   ☐    |
+### Store capsules
+| Asset | Required | Dimensions | Notes |
+|---|---:|---|---|
+| Small Capsule | Yes | 462×174 | Two smaller sizes auto‑generated. Logo must be legible at smallest size. |
+| Header Capsule | Yes | 920×430 | No extra text beyond title. |
+| Main Capsule | Yes | 1232×706 | Use clean key art. |
+| Vertical Capsule | Yes | 748×896 | Used in some placements. |
 
-# Copy blocks
-- Short description: TBC
-- Long description: TBC
-- Key features: TBC
-- Supported input: Keyboard/Mouse; controller; DualSense features on PC (note: verify legal wording).
+### Library assets
+| Asset | Required | Dimensions | Notes |
+|---|---:|---|---|
+| Library Capsule | Yes | 600×900 | Focus on branding; no quotes. |
+| Library Hero | Yes | 3840×1240 | PNG; artwork only; logo overlaid by Library Logo. |
+| Library Logo | Yes | 1280px wide and/or 720px tall | PNG with transparency preferred; legible over Hero. |
+| Library Header Capsule | Yes | 920×430 | Align with Header Capsule branding. |
 
-# Deck verification checks
-- Controller glyph set present and consistent.
-- Default graphics preset stable on Deck.
-- Text legibility at 800p.
-- Cloud saves and suspend/resume smoke test.
+### Cropping and safe areas
+- Keep title/logo centered. Avoid upper‑left for demo tags or overlays.
+- Maintain 5–8% padding inside edges to prevent crop loss.
+- No review quotes, platform logos, or discount text per rules.
 
-# Actions
-1) Pull official dimensions from Steamworks (confirm all “TBC”).
-2) Lock template PSD/PNGs with 3–5% safe margins to avoid auto-crop.
-3) Route first pass to Mail for gate checks before upload.
+### File guidance
+- Formats: PNG preferred. JPG allowed where transparency is not needed.
+- Keep layered source files in `/art/source/steam_capsules/`.
+- Export final assets into `/art/final/steam_capsules/20250817/` and attach here.
+
+### Sign‑off
+Owner (Stationmaster): ___  Postmaster: ___  Date: ___
+
