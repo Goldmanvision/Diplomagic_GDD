@@ -47,3 +47,22 @@ Feature commit (branch): <hash>
 ## Sign-offs
 - Owner: <name>  —  ✅/❌
 - Reviewer: <name>  —  ✅/❌
+
+---
+PR CH5-CH6 validation re-run (2025-08-17 00:13 ET)
+
+Hits (>=1 expected):
+- Evidence 0/3 = 472
+- BlueOnBlue = 1834
+- CH6 = raid = 457
+- Blue-on-Blue = 882
+- No CCTV in Vault = 321
+- K-9 reroute = 321
+
+Zero-hits check (0 expected):
+- smartphone = 1213
+- Wi-Fi = 5
+- Bluetooth = 1121
+- GPS = 1351
+- SMS = 1124
+
