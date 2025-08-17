@@ -1,0 +1,83 @@
+name: Handoff Validate
+
+on:
+  pull_request:
+    paths: ['**/*.md']
+  push:
+    branches: [main]
+    paths: ['**/*.md']
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - name: Diff changed .md
+        id: diff
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE="$(git rev-parse HEAD~1)"; HEAD="$(git rev-parse HEAD)"
+          fi
+          git diff --name-only "$BASE" "$HEAD" | grep -E '\.md$' |           grep -Ev '^(Archive/|Backups/)' > changed.lst || true
+          echo "count=$(wc -l < changed.lst | tr -d ' ')" >> "$GITHUB_OUTPUT"
+
+      - name: Run Handoff gates (G1–G6)
+        if: steps.diff.outputs.count != '0'
+        id: gates
+        run: |
+          set -e
+          out="ops/reports/handoff_validation_$(date -u +%Y%m%dT%H%MZ).md"
+          mkdir -p ops/reports
+          echo "# Handoff Validation Report" > "$out"; echo >> "$out"
+          fail=0
+          while read -r f; do
+            [ -z "$f" ] && continue
+            g1=$(grep -Eq '^(Department|Codename|Date):' "$f" && echo PASS || echo FAIL)
+            g2=$(echo "$f" | grep -Eq '^[A-Za-z0-9_./-]+$' && echo PASS || echo FAIL)
+            g3=$(grep -qi '^#\? *Scope' "$f" && grep -qi 'Inputs\|Dependencies' "$f" && echo PASS || echo FAIL)
+            g4=$(grep -qi '^#\? *Blockers' "$f" && echo PASS || echo FAIL)
+            g6=$(grep -qi 'Sign[- ]off\|Owner' "$f" && echo PASS || echo FAIL)
+            if echo "$f" | grep -q '^narrative/'; then g5=$(grep -qi 'scene_id\|SG-20250817\|beats' "$f" && echo PASS || echo FAIL)
+            elif echo "$f" | grep -q '^ops/steam/'; then g5=$(grep -qi 'Depot\|Branch\|Asset' "$f" && echo PASS || echo FAIL)
+            elif echo "$f" | grep -q '^research/'; then g5=$(grep -qi 'Sources\|Citation\|URL' "$f" && echo PASS || echo FAIL)
+            elif echo "$f" | grep -q '^departments/qa-ux/'; then g5=$(grep -qi 'Template\|Severity\|Steps' "$f" && echo PASS || echo FAIL)
+            else g5=PASS; fi
+            echo "## $f" >> "$out"
+            echo "| Gate | Result |" >> "$out"
+            echo "|-----|--------|" >> "$out"
+            for k in 1 2 3 4 5 6; do v=$(eval echo \$g$k); echo "| G$k | $v |" >> "$out"; done
+            echo >> "$out"
+            if grep -q FAIL <<<"$g1 $g2 $g3 $g4 $g5 $g6"; then fail=1; fi
+          done < changed.lst
+          echo "report=$out" >> "$GITHUB_OUTPUT"
+          echo "status=$([ $fail -eq 0 ] && echo PASS || echo FAIL)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        if: steps.diff.outputs.count != '0'
+        with:
+          name: handoff_validation_report
+          path: ops/reports
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && steps.diff.outputs.count != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('${{ steps.gates.outputs.report }}','utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, body
+            });
