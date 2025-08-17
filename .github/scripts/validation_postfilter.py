@@ -29,42 +29,6 @@ def process(inpath, outpath, window=5):
     outpath.parent.mkdir(parents=True, exist_ok=True)
     kept = 0
     total = 0
-    with inpath.open('r', encoding='utf-8', errors='ignore') as inf, outpath.open('w', enc
-::contentReference[oaicite:0]{index=0}
-
-mkdir -p .github/scripts
-cat > .github/scripts/validation_postfilter.py <<'PY'
-#!/usr/bin/env python3
-"""validation_postfilter.py
-
-Usage:
-  python3 validation_postfilter.py <input_report> <output_report> [window]
-
-Reads input_report line by line. Writes only lines that contain configured keywords
-and are not negated within a window of N tokens before the keyword (default N=5).
-"""
-import sys
-import re
-from pathlib import Path
-
-NEG_TOKENS = re.compile(r"\b(no|none|without|don't|do not|remove|removed|absent|not|never|exclude|excluded)\b", re.I)
-KEYWORDS = re.compile(r"\b(Evidence|BlueOnBlue|CH6|Blue-on-Blue|CCTV|K-9|K9|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|raid)\b", re.I)
-
-def neg_within_n_tokens(line, keyword_span_start, n=5):
-    prefix = line[:keyword_span_start]
-    tokens = re.findall(r"\w+|[-']", prefix)
-    window = ' '.join(tokens[-n:]) if tokens else ''
-    return bool(NEG_TOKENS.search(window))
-
-def process(inpath, outpath, window=5):
-    inpath = Path(inpath)
-    outpath = Path(outpath)
-    if not inpath.exists():
-        print(f"Input report not found: {inpath}", file=sys.stderr)
-        return 2
-    outpath.parent.mkdir(parents=True, exist_ok=True)
-    kept = 0
-    total = 0
     with inpath.open('r', encoding='utf-8', errors='ignore') as inf, outpath.open('w', encoding='utf-8') as outf:
         for line in inf:
             total += 1
