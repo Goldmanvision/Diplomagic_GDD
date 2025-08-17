@@ -1,0 +1,530 @@
+scene_id,chapter,pov,date,location,npcs,props,seeds,payoffs,source_ids,file_id
+.release_pr_body-s01,,,,,,,,,,.release_pr_body
+000_diplomagic_next_task-s01,,,,,,,,,,000_diplomagic_next_task
+archive_index_diplomagic-s01,,,,,,,,,,archive_index_diplomagic
+auto_merge_report-s01,,,,,,,,,,auto_merge_report
+changelog-s01,,,,,,,,,,changelog
+changelog_auto-s01,,,,,,,,,,changelog_auto
+contributing-s01,,,,,,,,,,contributing
+corkboard — 2025-08-17 — canvas audit and chat alignment-s01,,,2025-08-17,,,,,,,corkboard — 2025-08-17 — canvas audit and chat alignment
+departments — roster-s01,,,2025-08-17,,,,,,,departments — roster
+diplomagic_gdd_automerge_runbook-s01,,,,,,,,,,diplomagic_gdd_automerge_runbook
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+mail — dashboard-s01,,,2025-08-17,,,,,,,mail — dashboard
+master_manifest-s01,,,,,,,,,,master_manifest
+merge-body-s01,,,,,,,,,,merge-body
+pr_body-s01,,,,,,,,,,pr_body
+readme-s01,,,,,,,,,,readme
+release-notes-s01,,,,,,,,,,release-notes
+release-s01,,,,,,,,,,release
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+sec-epilogue-s01,,,,,,,,,,sec-epilogue
+tdd-evidence+fieldpad - technical design document-s01,,,2025-08-11,,,,,,,tdd-evidence+fieldpad - technical design document
+readme_pr_commenter-s01,,,,,,,,,,readme_pr_commenter
+corkboard_department_ack_macro-s01,,,,,,,,,,corkboard_department_ack_macro
+department_charters_pack-s01,,,2025-08-16,,,,,,,department_charters_pack
+department_macros_guide-s01,,,,,,,,,,department_macros_guide
+mail_department_dashboard-s01,,,,,,,,,,mail_department_dashboard
+optimization_macro_departments_subcontractors-s01,,,,,,,,,,optimization_macro_departments_subcontractors
+org_notice_department_leads-s01,,,,,,,,,,org_notice_department_leads
+project_workspace_instructions-s01,,,,,,,,,,project_workspace_instructions
+repodirs-s01,,,,,,,,,,repodirs
+archive_pack_20250816-1022_ci_epilogue-asserts-s01,,,,,,,,,,archive_pack_20250816-1022_ci_epilogue-asserts
+archive_pack_gdd_rebuild_2025-08-16_0809et-s01,,,,,,,,,,archive_pack_gdd_rebuild_2025-08-16_0809et
+archive_pack_gdd_rebuild_2025-08-16_1831et-s01,,,2025-08-16T18:31:00-04:00,,,,,,,archive_pack_gdd_rebuild_2025-08-16_1831et
+archive_release_notes_v_0-s01,,,,,,,,,,archive_release_notes_v_0
+release_notes_v0.1-docs-structure-s01,,,,,,,,,,release_notes_v0.1-docs-structure
+repo_snapshot-s01,,,,,,,,,,repo_snapshot
+enemy systems department — notes (archived 2025-08-17)-s01,,,2025-08-17,,,,,,,enemy systems department — notes (archived 2025-08-17)
+statblocks & enemies department — charter (archived 2025-08-17)-s01,,,2025-08-17,,,,,,,statblocks & enemies department — charter (archived 2025-08-17)
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+diplomagic_gdd_combined-s01,,,2025-08-11,,,,,,,diplomagic_gdd_combined
+sec-01-front - front matter & executive summary-s01,,,2025-08-11,,,,,,,sec-01-front - front matter & executive summary
+sec-02-pillars - pillars & audience-s01,,,2025-08-11,,,,,,,sec-02-pillars - pillars & audience
+sec-03-narrative - narrative-s01,,,2025-08-11,,,,,,,sec-03-narrative - narrative
+sec-03_3.2_chapter_list_replace-s01,,,,,,,,,,sec-03_3.2_chapter_list_replace
+sec-04-loops - core gameplay loops-s01,,,2025-08-11,,,,,,,sec-04-loops - core gameplay loops
+sec-05-systems - systems & mechanics-s01,,,2025-08-11,,,,,,,sec-05-systems - systems & mechanics
+"sec-06-world - world, levels, & content-s01",,,2025-08-11,,,,,,,"sec-06-world - world, levels, & content"
+"sec-07-ui - ui-ux (devices, hud, menus)-s01",,,2025-08-11,,,,,,,"sec-07-ui - ui-ux (devices, hud, menus)"
+sec-08-artaudio - art direction & audio-s01,,,2025-08-11,,,,,,,sec-08-artaudio - art direction & audio
+sec-09-tech - technology & performance targets-s01,,,2025-08-11,,,,,,,sec-09-tech - technology & performance targets
+sec-10-production - production plan & milestones-s01,,,2025-08-11,,,,,,,sec-10-production - production plan & milestones
+"sec-11-qa - qa, localization, accessibility-s01",,,2025-08-11,,,,,,,"sec-11-qa - qa, localization, accessibility"
+"sec-12-risks - risks, legal, ratings-s01",,,2025-08-11,,,,,,,"sec-12-risks - risks, legal, ratings"
+sec-13-appendices - appendices-s01,,,2025-08-11,,,,,,,sec-13-appendices - appendices
+sec-14-qa - quality assurance test plan-s01,,,2025-08-12,,,,,,,sec-14-qa - quality assurance test plan
+spawn_tables_prologue_ch1-s01,,,2025-08-17,,,,,,,spawn_tables_prologue_ch1
+enemy_cultist-s01,,,2025-08-17,,,,,,,enemy_cultist
+enemy_mind_swapped_civilian-s01,,,2025-08-17,,,,,,,enemy_mind_swapped_civilian
+enemy_new_kadathi_cultist-s01,,,2025-08-17,,,,,,,enemy_new_kadathi_cultist
+enemy_spectral_entity-s01,,,2025-08-17,,,,,,,enemy_spectral_entity
+schema_statblock-s01,,,2025-08-17,,,,,,,schema_statblock
+adversary & npc systems — dashboard-s01,,,2025-08-17,,,,,,,adversary & npc systems — dashboard
+enemy systems department — notes.stub-s01,,,2025-08-17,,,,,,,enemy systems department — notes.stub
+statblocks & enemies department — charter.stub-s01,,,2025-08-17,,,,,,,statblocks & enemies department — charter.stub
+qa & ux — dashboard-s01,,,2025-08-17,,,,,,,qa & ux — dashboard
+archive_process_guide-s01,,,<YYYY-MM-DDTHH:MM:SS-04:00>,,,,,,,archive_process_guide
+outline_2025-s01,,,2025-08-17,,,,,,,outline_2025
+playbook-s01,,,2025-08-17,,,,,,,playbook
+steam_ops_charter_20250817-s01,,,2025-08-17,,,,,,,steam_ops_charter_20250817
+steam_ops_dashboard_20250817-s01,,,2025-08-17,,,,,,,steam_ops_dashboard_20250817
+ch1-s01,,,,,,,,,,ch1
+ch2-s01,,,,,,,,,,ch2
+ch2_avery_infiltration-s01,,,,,,,,,,ch2_avery_infiltration
+ch2_clara_kadath-s01,,,,,,,,,,ch2_clara_kadath
+ch3_avery_suspended_daycare_spectral-s01,,,,,,,,,,ch3_avery_suspended_daycare_spectral
+ch3_clara_reddy_kadath_scavengers-s01,,,,,,,,,,ch3_clara_reddy_kadath_scavengers
+ch4_convergence_rework-s01,,,,,,,,,,ch4_convergence_rework
+ch4_kadath_city_rework-s01,,,,,,,,,,ch4_kadath_city_rework
+ch5_dlamp_betsy_rework-s01,,,,,,,,,,ch5_dlamp_betsy_rework
+ch5_dlamp_ironhighway_underground-s01,,,,,,,,,,ch5_dlamp_ironhighway_underground
+ch5_rework_nyfo_warrant_betsy-s01,,,,,,,,,,ch5_rework_nyfo_warrant_betsy
+ch6_raid_summary_index-s01,,,,,,,,,,ch6_raid_summary_index
+ch6_srs_apocalypse_narrative-s01,,,,,,,,,,ch6_srs_apocalypse_narrative
+ch7-placeholder-s01,,,,,,,,,,ch7-placeholder
+codeowners_snippet_ch5-ch6-s01,,,,,,,,,,codeowners_snippet_ch5-ch6
+epilogue-s01,,,,,,,,,,epilogue
+manifest_addendum_ch1-s01,,,2025-08-14 22:50:08 UTC,,,,,,,manifest_addendum_ch1
+manifest_addendum_ch1_layouts_ui-s01,,,2025-08-14 22:50:08 UTC,,,,,,,manifest_addendum_ch1_layouts_ui
+manifest_addendum_sec-03_ch1-s01,,,2025-08-14 22:50:08 UTC,,,,,,,manifest_addendum_sec-03_ch1
+manifest_addendum_sec-03_prologues-s01,,,2025-08-14T11:24Z,,,,,,,manifest_addendum_sec-03_prologues
+pr_attachments_ch5-ch6-s01,,,,,,,,,,pr_attachments_ch5-ch6
+pr_ch5-ch6_root_merge-s01,,,,,,,,,,pr_ch5-ch6_root_merge
+pr_ch7_pack-s01,,,,,,,,,,pr_ch7_pack
+pr_change_impact_map_ch5-ch6-s01,,,,,,,,,,pr_change_impact_map_ch5-ch6
+pr_checklist_box_ch5-ch6-s01,,,,,,,,,,pr_checklist_box_ch5-ch6
+pr_cover_note_ch5-ch6-s01,,,,,,,,,,pr_cover_note_ch5-ch6
+pr_crosslinks_assertion_list-s01,,,,,,,,,,pr_crosslinks_assertion_list
+pr_diff_review_guide_ch5-ch6-s01,,,,,,,,,,pr_diff_review_guide_ch5-ch6
+pr_final_copy_blocks_ch5-ch6-s01,,,,,,,,,,pr_final_copy_blocks_ch5-ch6
+pr_followup_issue_bundle_template-s01,,,,,,,,,,pr_followup_issue_bundle_template
+pr_github_labels_and_milestones-s01,,,,,,,,,,pr_github_labels_and_milestones
+pr_onepager_ch5-ch6-s01,,,,,,,,,,pr_onepager_ch5-ch6
+pr_open_runbook_desktop_and_cli-s01,,,,,,,,,,pr_open_runbook_desktop_and_cli
+pr_release_notes_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_release_notes_ch5-ch6
+pr_reviewer_comment_templates-s01,,,,,,,,,,pr_reviewer_comment_templates
+pr_reviewer_package_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_reviewer_package_ch5-ch6
+pr_squash_merge_plan_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_squash_merge_plan_ch5-ch6
+pr_status_board_ch7-s01,,,,,,,,,,pr_status_board_ch7
+pr_template_github_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_template_github_ch5-ch6
+pr_term_glossary_ch5-ch6-s01,,,,,,,,,,pr_term_glossary_ch5-ch6
+root_apply_instructions_ch5-ch6-s01,,,,,,,,,,root_apply_instructions_ch5-ch6
+root_changelog_ch5-ch6-s01,,,2025-08-15,,,,,,,root_changelog_ch5-ch6
+root_crosslink_map_ch5-ch6-s01,,,,,,,,,,root_crosslink_map_ch5-ch6
+root_dependency_graph_ch5-ch6-s01,,,,,,,,,,root_dependency_graph_ch5-ch6
+root_diff_checklist_ch5-ch6-s01,,,,,,,,,,root_diff_checklist_ch5-ch6
+root_edge_case_decisions_ch5-ch6-s01,,,,,,,,,,root_edge_case_decisions_ch5-ch6
+root_endtoend_test_script_ch5-ch6-s01,,,,,,,,,,root_endtoend_test_script_ch5-ch6
+root_epilogue_seeds_ch7-s01,,,,,,,,,,root_epilogue_seeds_ch7
+root_faq_ch5-ch6_merge-s01,,,,,,,,,,root_faq_ch5-ch6_merge
+root_github_desktop_guide_ch5-ch6-s01,,,,,,,,,,root_github_desktop_guide_ch5-ch6
+root_internal_playtest_notes_ch5-ch6-s01,,,2025-08-15,,,,,,,root_internal_playtest_notes_ch5-ch6
+root_known_good_lines_ch5-ch6-s01,,,,,,,,,,root_known_good_lines_ch5-ch6
+root_link_verification_checklist-s01,,,,,,,,,,root_link_verification_checklist
+root_merge_commit_messages-s01,,,,,,,,,,root_merge_commit_messages
+root_merge_conflict_resolution_guide-s01,,,,,,,,,,root_merge_conflict_resolution_guide
+root_merge_done_checklist-s01,,,,,,,,,,root_merge_done_checklist
+root_merge_index_ch5-ch6-s01,,,,,,,,,,root_merge_index_ch5-ch6
+root_merge_risk_register-s01,,,2025-08-16,,,,,,,root_merge_risk_register
+root_merge_smoke_checks-s01,,,,,,,,,,root_merge_smoke_checks
+root_migration_log_stub-s01,,,,,,,,,,root_migration_log_stub
+root_narrative_delta_summary_ch5-ch6-s01,,,,,,,,,,root_narrative_delta_summary_ch5-ch6
+root_narrative_tone_style_guide_1994-s01,,,,,,,,,,root_narrative_tone_style_guide_1994
+root_pastepoint_cues_ch5-ch6-s01,,,,,,,,,,root_pastepoint_cues_ch5-ch6
+root_paste_verification_strings-s01,,,,,,,,,,root_paste_verification_strings
+root_postmerge_tasks-s01,,,,,,,,,,root_postmerge_tasks
+root_practical_paste_steps-s01,,,,,,,,,,root_practical_paste_steps
+root_prompts_conflict_map-s01,,,,,,,,,,root_prompts_conflict_map
+root_prompts_validation_report_ch5-ch6-s01,,,,,,,,,,root_prompts_validation_report_ch5-ch6
+root_pr_template_ch5-ch6_merge-s01,,,,,,,,,,root_pr_template_ch5-ch6_merge
+root_readme_badge_block-s01,,,,,,,,,,root_readme_badge_block
+root_readme_toc_ch5-ch6_insert-s01,,,,,,,,,,root_readme_toc_ch5-ch6_insert
+root_readme_toc_ch7_insert-s01,,,,,,,,,,root_readme_toc_ch7_insert
+root_readthrough_script_ch5-ch6-s01,,,~25–35 min. Text-only.,,,,,,,root_readthrough_script_ch5-ch6
+root_redlines_before_after_ch5-ch6-s01,,,,,,,,,,root_redlines_before_after_ch5-ch6
+root_rollback_plan_ch5-ch6-s01,,,,,,,,,,root_rollback_plan_ch5-ch6
+root_rollout_plan_ch5-ch6-s01,,,,,,,,,,root_rollout_plan_ch5-ch6
+root_sample_pr_body_ch5-ch6-s01,,,,,,,,,,root_sample_pr_body_ch5-ch6
+root_scoring_tables_ch5-ch6-s01,,,,,,,,,,root_scoring_tables_ch5-ch6
+root_scripting_pseudocode_ch6_endings-s01,,,,,,,,,,root_scripting_pseudocode_ch6_endings
+root_sec-03_ch5-ch6_anchors-s01,,,,,,,,,,root_sec-03_ch5-ch6_anchors
+root_sec-03_ch5_narrative_paste-s01,,,,,,,,,,root_sec-03_ch5_narrative_paste
+root_sec-03_ch6_narrative_paste-s01,,,,,,,,,,root_sec-03_ch6_narrative_paste
+root_sec-03_ch7_narrative_paste-s01,,,,,,,,,,root_sec-03_ch7_narrative_paste
+root_sec-03_narrative_ch5-ch6_merge-s01,,,,,,,,,,root_sec-03_narrative_ch5-ch6_merge
+root_sec-05_anchors-s01,,,,,,,,,,root_sec-05_anchors
+root_sec-05_insert_points-s01,,,,,,,,,,root_sec-05_insert_points
+root_sec-05_systems_merge_additions_ch5-ch6-s01,,,,,,,,,,root_sec-05_systems_merge_additions_ch5-ch6
+root_sec-06-07_world_ui_ch5-ch6_merge-s01,,,,,,,,,,root_sec-06-07_world_ui_ch5-ch6_merge
+root_sec-06-07_world_ui_ch7_merge-s01,,,,,,,,,,root_sec-06-07_world_ui_ch7_merge
+root_sec-06_anchors-s01,,,,,,,,,,root_sec-06_anchors
+root_sec-07_anchors-s01,,,,,,,,,,root_sec-07_anchors
+root_sec-07_ui_prompts_ch7_extensions-s01,,,,,,,,,,root_sec-07_ui_prompts_ch7_extensions
+root_sec-07_ui_prompts_master-s01,,,,,,,,,,root_sec-07_ui_prompts_master
+root_sed_snippets_ch5-ch6-s01,,,,,,,,,,root_sed_snippets_ch5-ch6
+root_systems_snippet_replacements-s01,,,,,,,,,,root_systems_snippet_replacements
+root_timeline_continuity_ch4-ch6-s01,,,,,,,,,,root_timeline_continuity_ch4-ch6
+root_toc_inserts_ch5-ch6-s01,,,,,,,,,,root_toc_inserts_ch5-ch6
+root_ui_copy_snippets_ch5-ch6-s01,,,,,,,,,,root_ui_copy_snippets_ch5-ch6
+root_ui_wireflows_text_ch6-s01,,,,,,,,,,root_ui_wireflows_text_ch6
+root_validation_grep_patterns-s01,,,,,,,,,,root_validation_grep_patterns
+root_windows_ps_findreplace_snippets_ch5-ch6-s01,,,,,,,,,,root_windows_ps_findreplace_snippets_ch5-ch6
+sec-01-ch5-6_integration_plan-s01,,,,,,,,,,sec-01-ch5-6_integration_plan
+sec-02-ch5-6_master_flags_matrix-s01,,,,,,,,,,sec-02-ch5-6_master_flags_matrix
+sec-03-ch2_avery_section-s01,,,,,,,,,,sec-03-ch2_avery_section
+sec-03-ch2_clara_kadath_section-s01,,,,,,,,,,sec-03-ch2_clara_kadath_section
+sec-03-ch3_narrative_sections-s01,,,,,,,,,,sec-03-ch3_narrative_sections
+sec-03-ch4_narrative-s01,,,,,,,,,,sec-03-ch4_narrative
+sec-03-ch5-6_narrative_deepdlamp_insert-s01,,,,,,,,,,sec-03-ch5-6_narrative_deepdlamp_insert
+sec-03-ch5_dlamp_betsy_narrative-s01,,,,,,,,,,sec-03-ch5_dlamp_betsy_narrative
+sec-03-ch5_rework_narrative-s01,,,,,,,,,,sec-03-ch5_rework_narrative
+sec-03-ch6_beatsheet_raid-s01,,,,,,,,,,sec-03-ch6_beatsheet_raid
+sec-03-ch6_epilogue-s01,,,,,,,,,,sec-03-ch6_epilogue
+sec-03_3.4_synopsis_prologues_add-s01,,,,,,,,,,sec-03_3.4_synopsis_prologues_add
+sec-03_3.5_ch1_simplecuriosity_add-s01,,,2025-08-14 23:10:43 UTC,,,,,,,sec-03_3.5_ch1_simplecuriosity_add
+sec-04-ch6_lore_splinter_of_azathoth-s01,,,,,,,,,,sec-04-ch6_lore_splinter_of_azathoth
+sec-04_ch1_integration_add-s01,,,,,,,,,,sec-04_ch1_integration_add
+sec-05-ch2_avery_systems_additions-s01,,,,,,,,,,sec-05-ch2_avery_systems_additions
+sec-05-ch2_systems_additions-s01,,,,,,,,,,sec-05-ch2_systems_additions
+sec-05-ch3_fear_meter_spec-s01,,,,,,,,,,sec-05-ch3_fear_meter_spec
+sec-05-ch3_systems_additions-s01,,,,,,,,,,sec-05-ch3_systems_additions
+sec-05-ch4_boss_systems-s01,,,,,,,,,,sec-05-ch4_boss_systems
+sec-05-ch4_systems-s01,,,,,,,,,,sec-05-ch4_systems
+sec-05-ch5-6_enemies_starvampire-s01,,,,,,,,,,sec-05-ch5-6_enemies_starvampire
+sec-05-ch5-6_rogue_ops_comms_sop-s01,,,,,,,,,,sec-05-ch5-6_rogue_ops_comms_sop
+sec-05-ch5-6_vehicle_o2_fuel_systems-s01,,,,,,,,,,sec-05-ch5-6_vehicle_o2_fuel_systems
+sec-05-ch5_dlamp_betsy_systems-s01,,,,,,,,,,sec-05-ch5_dlamp_betsy_systems
+sec-05-ch5_systems_rework-s01,,,,,,,,,,sec-05-ch5_systems_rework
+sec-05-ch6_afteraction_report_spec-s01,,,,,,,,,,sec-05-ch6_afteraction_report_spec
+sec-05-ch6_ai_behavior_fsm-s01,,,,,,,,,,sec-05-ch6_ai_behavior_fsm
+sec-05-ch6_blueonblue_detection-s01,,,,,,,,,,sec-05-ch6_blueonblue_detection
+sec-05-ch6_combat_tuning_params-s01,,,,,,,,,,sec-05-ch6_combat_tuning_params
+sec-05-ch6_enemy_resist_interrupt_table-s01,,,,,,,,,,sec-05-ch6_enemy_resist_interrupt_table
+sec-05-ch6_loadout_guide-s01,,,,,,,,,,sec-05-ch6_loadout_guide
+sec-05-ch6_raid_roe-s01,,,,,,,,,,sec-05-ch6_raid_roe
+sec-05-ch6_splinter_vault_mechanics-s01,,,,,,,,,,sec-05-ch6_splinter_vault_mechanics
+sec-05-ch6_systems-s01,,,,,,,,,,sec-05-ch6_systems
+sec-05-deputy_name_randomizer_spec-s01,,,,,,,,,,sec-05-deputy_name_randomizer_spec
+sec-05_ch1_flags_data_add-s01,,,,,,,,,,sec-05_ch1_flags_data_add
+sec-06-ch2_avery_world_content-s01,,,,,,,,,,sec-06-ch2_avery_world_content
+sec-06-ch3_world_content-s01,,,,,,,,,,sec-06-ch3_world_content
+sec-06-ch4_world_content-s01,,,,,,,,,,sec-06-ch4_world_content
+sec-06-ch5-6_callsigns_and_nodes-s01,,,,,,,,,,sec-06-ch5-6_callsigns_and_nodes
+sec-06-ch5-6_ironhighway_routebook-s01,,,,,,,,,,sec-06-ch5-6_ironhighway_routebook
+sec-06-ch5-6_world_dlamp_ironhighway-s01,,,,,,,,,,sec-06-ch5-6_world_dlamp_ironhighway
+sec-06-ch5_world_content-s01,,,,,,,,,,sec-06-ch5_world_content
+sec-06-ch6_ascii_map-s01,,,,,,,,,,sec-06-ch6_ascii_map
+sec-06-ch6_route_encounter_tables-s01,,,,,,,,,,sec-06-ch6_route_encounter_tables
+sec-06-ch6_srs_secret_annex_world-s01,,,,,,,,,,sec-06-ch6_srs_secret_annex_world
+sec-06-ch6_stealth_breaker_cameraloops-s01,,,,,,,,,,sec-06-ch6_stealth_breaker_cameraloops
+sec-06_ch1_world_layouts_add-s01,,,2025-08-14 22:50:08 UTC,,,,,,,sec-06_ch1_world_layouts_add
+sec-07-ch2_avery_ui_prompts-s01,,,,,,,,,,sec-07-ch2_avery_ui_prompts
+sec-07-ch3_ui_prompts-s01,,,,,,,,,,sec-07-ch3_ui_prompts
+sec-07-ch4_ui_spell_equip-s01,,,,,,,,,,sec-07-ch4_ui_spell_equip
+sec-07-ch5-6_ui_prompts_consolidated-s01,,,,,,,,,,sec-07-ch5-6_ui_prompts_consolidated
+sec-07-ch5_ui_prompts-s01,,,,,,,,,,sec-07-ch5_ui_prompts
+sec-07-ch6_prompts_verification-s01,,,,,,,,,,sec-07-ch6_prompts_verification
+sec-07-ch6_raid_ui_prompts-s01,,,,,,,,,,sec-07-ch6_raid_ui_prompts
+sec-07-ch6_ui_flow-s01,,,,,,,,,,sec-07-ch6_ui_flow
+sec-07_ch1_medstat_notes_add-s01,,,2025-08-14 22:50:08 UTC,,,,,,,sec-07_ch1_medstat_notes_add
+sec-08-ch5-6_audio_soundscape-s01,,,,,,,,,,sec-08-ch5-6_audio_soundscape
+ch6-1994,,,2025-08-15,,,,,,,sec-09-period_audit_ch5-ch6_1994
+tdd_ch1_device_hooks_add-s01,,,,,,,,,,tdd_ch1_device_hooks_add
+update_log-s01,,,2025-08-14 09:31:00 UTC,,,,,,,update_log
+glossary_1994-s01,,,2025-08-17,,,,,,,glossary_1994
+period_check_core_terms_1994-s01,,,2025-08-17,,,,,,,period_check_core_terms_1994
+refs_seed_1994-s01,,,2025-08-17,,,,,,,refs_seed_1994
+ch6-raid-rules-s01,,,,,,,,,,ch6-raid-rules
+app_checklist-s01,,,,,,,,,,app_checklist
+branding-s01,,,,,,,,,,branding
+store_copy-s01,,,,,,,,,,store_copy
+1994_replacements_guide-s01,,,,,,,,,,1994_replacements_guide
+milestone_template-s01,,,,,,,,,,milestone_template
+0a_avery_prologue_beat2objective_20250814t0941z-s01,,,20250814T0941Z,,,,,,,0a_avery_prologue_beat2objective_20250814t0941z
+0b_clara_prologue_beat2objective_20250814t0941z-s01,,,20250814T0941Z,,,,,,,0b_clara_prologue_beat2objective_20250814t0941z
+assetlist_0a_quantico-s01,,,2025-08-14 10:36:14 UTC,,,,,,,assetlist_0a_quantico
+assetlist_0b_betsyapt-s01,,,2025-08-14 10:36:14 UTC,,,,,,,assetlist_0b_betsyapt
+assetlist_ch1_brightstar-s01,,,2025-08-14 22:50:08 UTC,,,,,,,assetlist_ch1_brightstar
+assets_0a_quantico_1989_20250814t1030z-s01,,,20250814T1030Z,,,,,,,assets_0a_quantico_1989_20250814t1030z
+assets_0b_betsysapt_1994_20250814t1030z-s01,,,20250814T1030Z,,,,,,,assets_0b_betsysapt_1994_20250814t1030z
+ch1-state-s01,,,,,,,,,,ch1-state
+ch1_beat2objective-s01,,,2025-08-14 23:10:43 UTC,,,,,,,ch1_beat2objective
+ch1_narrative_corrections_worksheet-s01,,,2025-08-14 22:50:08 UTC,,,,,,,ch1_narrative_corrections_worksheet
+ch1_outline_simplecuriosity-s01,,,2025-08-14 23:10:43 UTC,,,,,,,ch1_outline_simplecuriosity
+ch1_polishchecklist-s01,,,2025-08-14 22:50:08 UTC,,,,,,,ch1_polishchecklist
+ch1_stringkeymanifest-s01,,,2025-08-14 22:50:08 UTC,,,,,,,ch1_stringkeymanifest
+ch2-state-s01,,,,,,,,,,ch2-state
+ch2_avery_tracker-s01,,,,,,,,,,ch2_avery_tracker
+ch3_scoring_table-s01,,,,,,,,,,ch3_scoring_table
+ch3_trackers-s01,,,,,,,,,,ch3_trackers
+ch4_convergence_rework-s01,,,,,,,,,,ch4_convergence_rework
+ch4_scoring_table-s01,,,,,,,,,,ch4_scoring_table
+ch4_tracker-s01,,,,,,,,,,ch4_tracker
+ch5-6_build_verification-s01,,,,,,,,,,ch5-6_build_verification
+ch5-6_combat_evidence_scoring-s01,,,,,,,,,,ch5-6_combat_evidence_scoring
+ch5-6_deepdlamp_flags-s01,,,,,,,,,,ch5-6_deepdlamp_flags
+ch5-6_dlamp_evidence_index-s01,,,,,,,,,,ch5-6_dlamp_evidence_index
+ch5-6_krill_handler_log-s01,,,,,,,,,,ch5-6_krill_handler_log
+ch5_tracker-s01,,,,,,,,,,ch5_tracker
+ch6_balance_telemetry_spec-s01,,,,,,,,,,ch6_balance_telemetry_spec
+ch6_blueonblue_test_plan-s01,,,,,,,,,,ch6_blueonblue_test_plan
+ch6_bug_triage_template-s01,,,,,,,,,,ch6_bug_triage_template
+ch6_ending_scorecard-s01,,,,,,,,,,ch6_ending_scorecard
+ch6_flags_endings-s01,,,,,,,,,,ch6_flags_endings
+ch6_known_issues-s01,,,,,,,,,,ch6_known_issues
+ch6_operational_checklist-s01,,,,,,,,,,ch6_operational_checklist
+ch6_playtest_log_sheet-s01,,,,,,,,,,ch6_playtest_log_sheet
+ch6_qa_test_cases-s01,,,,,,,,,,ch6_qa_test_cases
+ch6_scoring_raid-s01,,,,,,,,,,ch6_scoring_raid
+ch6_tracker-s01,,,,,,,,,,ch6_tracker
+ch7-city-rules-s01,,,,,,,,,,ch7-city-rules
+ch7-state-s01,,,,,,,,,,ch7-state
+developer-guides-s01,,,,,,,,,,developer-guides
+devices_storage_1994-s01,,,2025-08-14 22:50:08 UTC,,,,,,,devices_storage_1994
+epilogue-state-s01,,,,,,,,,,epilogue-state
+epilogue-validation-s01,,,,,,,,,,epilogue-validation
+evidence-caps-s01,,,,,,,,,,evidence-caps
+glossary_1994_terms-s01,,,,,,,,,,glossary_1994_terms
+inlinepatch_sec-04_ch1-s01,,,,,,,,,,inlinepatch_sec-04_ch1
+inlinepatch_sec-04_prologues-s01,,,,,,,,,,inlinepatch_sec-04_prologues
+inlinepatch_sec-05_ch1-s01,,,,,,,,,,inlinepatch_sec-05_ch1
+inlinepatch_sec-05_prologues-s01,,,,,,,,,,inlinepatch_sec-05_prologues
+inlinepatch_tdd_ch1-s01,,,,,,,,,,inlinepatch_tdd_ch1
+inlinepatch_tdd_prologues-s01,,,,,,,,,,inlinepatch_tdd_prologues
+microtac_feature_pairs-s01,,,,,,,,,,microtac_feature_pairs
+ch5-6,,,,,,,,,,milestone_v0.6-ch5-6-merge
+narr-tracker_playbook-outline_sync_v0.1-s01,,,2025-08-14 09:09:00 UTC,,,,,,,narr-tracker_playbook-outline_sync_v0.1
+narr-tracker_prologues_v0.3-s01,,,2025-08-14 10:05:06 UTC,,,,,,,narr-tracker_prologues_v0.3
+period_sweep_violations_ch5-ch6-s01,,,,,,,,,,period_sweep_violations_ch5-ch6
+project_summary-s01,,,2025-08-14 09:27:32 UTC,,,,,,,project_summary
+prologues_polishchecklist-s01,,,2025-08-14 11:30:45 UTC,,,,,,,prologues_polishchecklist
+prologues_stringkeymanifest-s01,,,2025-08-14 11:30:45 UTC,,,,,,,prologues_stringkeymanifest
+prop_sec-04_loops_prologues-s01,,,2025-08-14 10:49:18 UTC,,,,,,,prop_sec-04_loops_prologues
+prop_sec-05_systems_prologuesflags-s01,,,2025-08-14 10:49:18 UTC,,,,,,,prop_sec-05_systems_prologuesflags
+prop_tdd_evidence_fieldpad_prologueshooks-s01,,,2025-08-14 10:49:18 UTC,,,,,,,prop_tdd_evidence_fieldpad_prologueshooks
+pr_closeout_checklist_ch5-ch6-s01,,,,,,,,,,pr_closeout_checklist_ch5-ch6
+pr_crosscheck_results_log-s01,,,2025-08-15,,,,,,,pr_crosscheck_results_log
+pr_reviewer_assignment_matrix-s01,,,,,,,,,,pr_reviewer_assignment_matrix
+pr_reviewer_findings_log_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_reviewer_findings_log_ch5-ch6
+pr_run_log_ch5-ch6-s01,,,,,,,,,,pr_run_log_ch5-ch6
+pr_signoff_form_ch5-ch6-s01,,,,,,,,,,pr_signoff_form_ch5-ch6
+pr_status_board_ch5-ch6-s01,,,,,,,,,,pr_status_board_ch5-ch6
+pr_status_board_ch7-s01,,,,,,,,,,pr_status_board_ch7
+pr_triage_template_ch5-ch6-s01,,,2025-08-15,,,,,,,pr_triage_template_ch5-ch6
+pr_validation_master_checklist_ch5-ch6-s01,,,,,,,,,,pr_validation_master_checklist_ch5-ch6
+pr_validation_results_summary_ch5-ch6-s01,,,2025-08-16,,,,,,,pr_validation_results_summary_ch5-ch6
+pr_validation_results_summary_ch7-s01,,,2025-08-16,,,,,,,pr_validation_results_summary_ch7
+pr_validation_tasklist_ch5-ch6-s01,,,,,,,,,,pr_validation_tasklist_ch5-ch6
+pr_validation_tasklist_ch7-s01,,,,,,,,,,pr_validation_tasklist_ch7
+qatelemetry_0a_quantico-s01,,,2025-08-14 10:41:59 UTC,,,,,,,qatelemetry_0a_quantico
+qatelemetry_0b_betsyapt-s01,,,2025-08-14 10:41:59 UTC,,,,,,,qatelemetry_0b_betsyapt
+qatelemetry_ch1-s01,,,2025-08-14 22:50:08 UTC,,,,,,,qatelemetry_ch1
+root_cutlist_removals_ch5-ch6-s01,,,,,,,,,,root_cutlist_removals_ch5-ch6
+root_file_ownership_matrix-s01,,,,,,,,,,root_file_ownership_matrix
+root_integration_completion_ticket-s01,,,,,,,,,,root_integration_completion_ticket
+root_issue_template_ch5-ch6_merge-s01,,,,,,,,,,root_issue_template_ch5-ch6_merge
+root_merge_paste_progress-s01,,,,,,,,,,root_merge_paste_progress
+root_merge_reviewer_checklist-s01,,,,,,,,,,root_merge_reviewer_checklist
+root_merge_risk_register-s01,,,2025-08-16,,,,,,,root_merge_risk_register
+root_merge_smoke_checks-s01,,,,,,,,,,root_merge_smoke_checks
+root_merge_status_ch5-ch6-s01,,,,,,,,,,root_merge_status_ch5-ch6
+root_metrics_snapshot_template-s01,,,2025-08-15,,,,,,,root_metrics_snapshot_template
+root_qa_test_cases_ch5-ch6-s01,,,,,,,,,,root_qa_test_cases_ch5-ch6
+root_regressions_watchlist_ch5-ch6-s01,,,,,,,,,,root_regressions_watchlist_ch5-ch6
+root_reviewer_questions_ch5-ch6-s01,,,,,,,,,,root_reviewer_questions_ch5-ch6
+root_review_signoff_sheet-s01,,,2025-08-15,,,,,,,root_review_signoff_sheet
+root_seed_test_matrix_ch5-ch6-s01,,,2025-08-15,,,,,,,root_seed_test_matrix_ch5-ch6
+sec-03-ch4_narrative-s01,,,,,,,,,,sec-03-ch4_narrative
+sec-03-ch6_raid_addendum-s01,,,,,,,,,,sec-03-ch6_raid_addendum
+sec-05-ch4_systems-s01,,,,,,,,,,sec-05-ch4_systems
+sec-06-ch6_srs_secret_annex_world-s01,,,,,,,,,,sec-06-ch6_srs_secret_annex_world
+sec06_ch1_worldlayouts-s01,,,2025-08-14 22:50:08 UTC,,,,,,,sec06_ch1_worldlayouts
+sec07_ch1_medstat_notes_ui-s01,,,2025-08-14 22:50:08 UTC,,,,,,,sec07_ch1_medstat_notes_ui
+shotlist_0a_quantico-s01,,,2025-08-14 11:12:45 UTC,,,,,,,shotlist_0a_quantico
+shotlist_0b_betsyapt-s01,,,2025-08-14 11:12:45 UTC,,,,,,,shotlist_0b_betsyapt
+shotlist_ch1_brightstar-s01,,,2025-08-14 22:50:08 UTC,,,,,,,shotlist_ch1_brightstar
+shotlist_ch1_roadside-s01,,,2025-08-14 22:50:08 UTC,,,,,,,shotlist_ch1_roadside
+startac_hits-s01,,,,,,,,,,startac_hits
+tutorialcopy_0a_avery_20250814t0948z-s01,,,20250814T0948Z,,,,,,,tutorialcopy_0a_avery_20250814t0948z
+tutorialcopy_0b_clara_20250814t0948z-s01,,,20250814T0948Z,,,,,,,tutorialcopy_0b_clara_20250814t0948z
+tutorialcopy_ch1_avery-s01,,,2025-08-14 22:50:08 UTC,,,,,,,tutorialcopy_ch1_avery
+tutorialcopy_ch1_clara-s01,,,2025-08-14 22:50:08 UTC,,,,,,,tutorialcopy_ch1_clara
+validation_run_report_ch5-ch6-s01,,,2025-08-15,,,,,,,validation_run_report_ch5-ch6
+voscript_0a_avery-s01,,,2025-08-14 11:19Z,,"Eddie Paldino (instructor), Avery Jordan, Trainee, Range Officer",,,,,voscript_0a_avery
+voscript_0b_clara-s01,,,2025-08-14 11:19Z,,"Clara Winston, Betsy Lumbar, Reddy (POV only)",,,,,voscript_0b_clara
+voscript_ch1_avery-s01,,,2025-08-14 22:50:08 UTC,,"Avery, Deputy (randomized from whitelist), Adult",,,,,voscript_ch1_avery
+voscript_ch1_clara-s01,,,2025-08-14 22:50:08 UTC,,"Clara, Staffer, Reddy, Child",,,,,voscript_ch1_clara
