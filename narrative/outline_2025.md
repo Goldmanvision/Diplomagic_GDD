@@ -15,9 +15,9 @@ Edit Policy: Do not edit. Update the source PDF.
 Canonical source stored as PDF. This mirror tracks metadata, placement, and cross-links only.
 
 ## Cross-links
-- Authenticity & Research: research/refs/refs-seed-1994\.md
-- Authenticity & Research: research/checks/period-check-core-terms-1994\.md
-- Authenticity & Research: research/glossary-1994\.md
+- Authenticity & Research: research/refs/refs-seed-1994.md
+- Authenticity & Research: research/checks/period-check-core-terms-1994.md
+- Authenticity & Research: research/glossary-1994.md
 
 ## Change log
 - 2025-08-17: Metadata refresh.

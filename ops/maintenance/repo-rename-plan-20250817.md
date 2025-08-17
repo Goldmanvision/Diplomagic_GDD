@@ -1,4 +1,4 @@
-# Repo Rename Plan — ASCII-safe rollout (20250817)
+# Repo Rename Plan — ascii-safe rollout (20250817)
 
 ## Preconditions
 1. Extract `ascii-safe-20250817.zip` at repo root. This creates `ascii-safe/` with duplicates.
@@ -16,6 +16,6 @@ powershell -ExecutionPolicy Bypass -File scripts/apply-ascii-safe-renames.ps1 op
 
 ## Notes
 - Script prefers `git mv`/`git rm` and falls back to OS moves.
-- ascii-safe non-ASCII files are removed after moving the ASCII-safe duplicates.
+- ascii-safe non-ASCII files are removed after moving the ascii-safe duplicates.
 - Mapping is kept at `ops/maintenance/`. ZIP can be stored at `ops/artifacts/`.
 - Run `git status` and review before commit.
