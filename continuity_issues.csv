@@ -1,0 +1,1082 @@
+severity,type,id,detail,files
+High,DuplicateSceneID,"sec-11-qa - qa, localization, accessibility-s01",SceneID appears 12 times,"sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility;sec-11-qa - qa, localization, accessibility"
+High,DuplicateSceneID,sec-03-narrative - narrative-s01,SceneID appears 12 times,sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative;sec-03-narrative - narrative
+High,DuplicateSceneID,sec-01-front - front matter & executive summary-s01,SceneID appears 12 times,sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary;sec-01-front - front matter & executive summary
+High,DuplicateSceneID,sec-03_3.2_chapter_list_replace-s01,SceneID appears 12 times,sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace;sec-03_3.2_chapter_list_replace
+High,DuplicateSceneID,sec-04-loops - core gameplay loops-s01,SceneID appears 12 times,sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops;sec-04-loops - core gameplay loops
+High,DuplicateSceneID,sec-05-systems - systems & mechanics-s01,SceneID appears 12 times,sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics;sec-05-systems - systems & mechanics
+High,DuplicateSceneID,"sec-06-world - world, levels, & content-s01",SceneID appears 12 times,"sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content;sec-06-world - world, levels, & content"
+High,DuplicateSceneID,"sec-07-ui - ui-ux (devices, hud, menus)-s01",SceneID appears 12 times,"sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus);sec-07-ui - ui-ux (devices, hud, menus)"
+High,DuplicateSceneID,sec-08-artaudio - art direction & audio-s01,SceneID appears 12 times,sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio;sec-08-artaudio - art direction & audio
+High,DuplicateSceneID,sec-09-tech - technology & performance targets-s01,SceneID appears 12 times,sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets;sec-09-tech - technology & performance targets
+High,DuplicateSceneID,diplomagic_gdd_combined-s01,SceneID appears 12 times,diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined;diplomagic_gdd_combined
+High,DuplicateSceneID,sec-10-production - production plan & milestones-s01,SceneID appears 12 times,sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones;sec-10-production - production plan & milestones
+High,DuplicateSceneID,"sec-12-risks - risks, legal, ratings-s01",SceneID appears 12 times,"sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings;sec-12-risks - risks, legal, ratings"
+High,DuplicateSceneID,sec-13-appendices - appendices-s01,SceneID appears 12 times,sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices;sec-13-appendices - appendices
+High,DuplicateSceneID,sec-14-qa - quality assurance test plan-s01,SceneID appears 12 times,sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan;sec-14-qa - quality assurance test plan
+High,DuplicateSceneID,sec-02-pillars - pillars & audience-s01,SceneID appears 12 times,sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience;sec-02-pillars - pillars & audience
+High,DuplicateSceneID,root_merge_risk_register-s01,SceneID appears 2 times,root_merge_risk_register;root_merge_risk_register
+High,DuplicateSceneID,root_merge_smoke_checks-s01,SceneID appears 2 times,root_merge_smoke_checks;root_merge_smoke_checks
+High,DuplicateSceneID,ch4_convergence_rework-s01,SceneID appears 2 times,ch4_convergence_rework;ch4_convergence_rework
+High,DuplicateSceneID,sec-06-ch6_srs_secret_annex_world-s01,SceneID appears 2 times,sec-06-ch6_srs_secret_annex_world;sec-06-ch6_srs_secret_annex_world
+High,DuplicateSceneID,sec-03-ch4_narrative-s01,SceneID appears 2 times,sec-03-ch4_narrative;sec-03-ch4_narrative
+High,DuplicateSceneID,sec-05-ch4_systems-s01,SceneID appears 2 times,sec-05-ch4_systems;sec-05-ch4_systems
+High,DuplicateSceneID,pr_status_board_ch7-s01,SceneID appears 2 times,pr_status_board_ch7;pr_status_board_ch7
+High,MissingFields,.release_pr_body-s01,"Missing: chapter, pov, date, location",.release_pr_body
+High,MissingFields,000_diplomagic_next_task-s01,"Missing: chapter, pov, date, location",000_diplomagic_next_task
+High,MissingFields,archive_index_diplomagic-s01,"Missing: chapter, pov, date, location",archive_index_diplomagic
+High,MissingFields,auto_merge_report-s01,"Missing: chapter, pov, date, location",auto_merge_report
+High,MissingFields,changelog-s01,"Missing: chapter, pov, date, location",changelog
+High,MissingFields,changelog_auto-s01,"Missing: chapter, pov, date, location",changelog_auto
+High,MissingFields,contributing-s01,"Missing: chapter, pov, date, location",contributing
+High,MissingFields,corkboard — 2025-08-17 — canvas audit and chat alignment-s01,"Missing: chapter, pov, location",corkboard — 2025-08-17 — canvas audit and chat alignment
+High,MissingFields,departments — roster-s01,"Missing: chapter, pov, location",departments — roster
+High,MissingFields,diplomagic_gdd_automerge_runbook-s01,"Missing: chapter, pov, date, location",diplomagic_gdd_automerge_runbook
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,mail — dashboard-s01,"Missing: chapter, pov, location",mail — dashboard
+High,MissingFields,master_manifest-s01,"Missing: chapter, pov, date, location",master_manifest
+High,MissingFields,merge-body-s01,"Missing: chapter, pov, date, location",merge-body
+High,MissingFields,pr_body-s01,"Missing: chapter, pov, date, location",pr_body
+High,MissingFields,readme-s01,"Missing: chapter, pov, date, location",readme
+High,MissingFields,release-notes-s01,"Missing: chapter, pov, date, location",release-notes
+High,MissingFields,release-s01,"Missing: chapter, pov, date, location",release
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,sec-epilogue-s01,"Missing: chapter, pov, date, location",sec-epilogue
+High,MissingFields,tdd-evidence+fieldpad - technical design document-s01,"Missing: chapter, pov, location",tdd-evidence+fieldpad - technical design document
+High,MissingFields,readme_pr_commenter-s01,"Missing: chapter, pov, date, location",readme_pr_commenter
+High,MissingFields,corkboard_department_ack_macro-s01,"Missing: chapter, pov, date, location",corkboard_department_ack_macro
+High,MissingFields,department_charters_pack-s01,"Missing: chapter, pov, location",department_charters_pack
+High,MissingFields,department_macros_guide-s01,"Missing: chapter, pov, date, location",department_macros_guide
+High,MissingFields,mail_department_dashboard-s01,"Missing: chapter, pov, date, location",mail_department_dashboard
+High,MissingFields,optimization_macro_departments_subcontractors-s01,"Missing: chapter, pov, date, location",optimization_macro_departments_subcontractors
+High,MissingFields,org_notice_department_leads-s01,"Missing: chapter, pov, date, location",org_notice_department_leads
+High,MissingFields,project_workspace_instructions-s01,"Missing: chapter, pov, date, location",project_workspace_instructions
+High,MissingFields,repodirs-s01,"Missing: chapter, pov, date, location",repodirs
+High,MissingFields,archive_pack_20250816-1022_ci_epilogue-asserts-s01,"Missing: chapter, pov, date, location",archive_pack_20250816-1022_ci_epilogue-asserts
+High,MissingFields,archive_pack_gdd_rebuild_2025-08-16_0809et-s01,"Missing: chapter, pov, date, location",archive_pack_gdd_rebuild_2025-08-16_0809et
+High,MissingFields,archive_pack_gdd_rebuild_2025-08-16_1831et-s01,"Missing: chapter, pov, location",archive_pack_gdd_rebuild_2025-08-16_1831et
+High,MissingFields,archive_release_notes_v_0-s01,"Missing: chapter, pov, date, location",archive_release_notes_v_0
+High,MissingFields,release_notes_v0.1-docs-structure-s01,"Missing: chapter, pov, date, location",release_notes_v0.1-docs-structure
+High,MissingFields,repo_snapshot-s01,"Missing: chapter, pov, date, location",repo_snapshot
+High,MissingFields,enemy systems department — notes (archived 2025-08-17)-s01,"Missing: chapter, pov, location",enemy systems department — notes (archived 2025-08-17)
+High,MissingFields,statblocks & enemies department — charter (archived 2025-08-17)-s01,"Missing: chapter, pov, location",statblocks & enemies department — charter (archived 2025-08-17)
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,diplomagic_gdd_combined-s01,"Missing: chapter, pov, location",diplomagic_gdd_combined
+High,MissingFields,sec-01-front - front matter & executive summary-s01,"Missing: chapter, pov, location",sec-01-front - front matter & executive summary
+High,MissingFields,sec-02-pillars - pillars & audience-s01,"Missing: chapter, pov, location",sec-02-pillars - pillars & audience
+High,MissingFields,sec-03-narrative - narrative-s01,"Missing: chapter, pov, location",sec-03-narrative - narrative
+High,MissingFields,sec-03_3.2_chapter_list_replace-s01,"Missing: chapter, pov, date, location",sec-03_3.2_chapter_list_replace
+High,MissingFields,sec-04-loops - core gameplay loops-s01,"Missing: chapter, pov, location",sec-04-loops - core gameplay loops
+High,MissingFields,sec-05-systems - systems & mechanics-s01,"Missing: chapter, pov, location",sec-05-systems - systems & mechanics
+High,MissingFields,"sec-06-world - world, levels, & content-s01","Missing: chapter, pov, location","sec-06-world - world, levels, & content"
+High,MissingFields,"sec-07-ui - ui-ux (devices, hud, menus)-s01","Missing: chapter, pov, location","sec-07-ui - ui-ux (devices, hud, menus)"
+High,MissingFields,sec-08-artaudio - art direction & audio-s01,"Missing: chapter, pov, location",sec-08-artaudio - art direction & audio
+High,MissingFields,sec-09-tech - technology & performance targets-s01,"Missing: chapter, pov, location",sec-09-tech - technology & performance targets
+High,MissingFields,sec-10-production - production plan & milestones-s01,"Missing: chapter, pov, location",sec-10-production - production plan & milestones
+High,MissingFields,"sec-11-qa - qa, localization, accessibility-s01","Missing: chapter, pov, location","sec-11-qa - qa, localization, accessibility"
+High,MissingFields,"sec-12-risks - risks, legal, ratings-s01","Missing: chapter, pov, location","sec-12-risks - risks, legal, ratings"
+High,MissingFields,sec-13-appendices - appendices-s01,"Missing: chapter, pov, location",sec-13-appendices - appendices
+High,MissingFields,sec-14-qa - quality assurance test plan-s01,"Missing: chapter, pov, location",sec-14-qa - quality assurance test plan
+High,MissingFields,spawn_tables_prologue_ch1-s01,"Missing: chapter, pov, location",spawn_tables_prologue_ch1
+High,MissingFields,enemy_cultist-s01,"Missing: chapter, pov, location",enemy_cultist
+High,MissingFields,enemy_mind_swapped_civilian-s01,"Missing: chapter, pov, location",enemy_mind_swapped_civilian
+High,MissingFields,enemy_new_kadathi_cultist-s01,"Missing: chapter, pov, location",enemy_new_kadathi_cultist
+High,MissingFields,enemy_spectral_entity-s01,"Missing: chapter, pov, location",enemy_spectral_entity
+High,MissingFields,schema_statblock-s01,"Missing: chapter, pov, location",schema_statblock
+High,MissingFields,adversary & npc systems — dashboard-s01,"Missing: chapter, pov, location",adversary & npc systems — dashboard
+High,MissingFields,enemy systems department — notes.stub-s01,"Missing: chapter, pov, location",enemy systems department — notes.stub
+High,MissingFields,statblocks & enemies department — charter.stub-s01,"Missing: chapter, pov, location",statblocks & enemies department — charter.stub
+High,MissingFields,qa & ux — dashboard-s01,"Missing: chapter, pov, location",qa & ux — dashboard
+High,MissingFields,archive_process_guide-s01,"Missing: chapter, pov, location",archive_process_guide
+High,MissingFields,outline_2025-s01,"Missing: chapter, pov, location",outline_2025
+High,MissingFields,playbook-s01,"Missing: chapter, pov, location",playbook
+High,MissingFields,steam_ops_charter_20250817-s01,"Missing: chapter, pov, location",steam_ops_charter_20250817
+High,MissingFields,steam_ops_dashboard_20250817-s01,"Missing: chapter, pov, location",steam_ops_dashboard_20250817
+High,MissingFields,ch1-s01,"Missing: chapter, pov, date, location",ch1
+High,MissingFields,ch2-s01,"Missing: chapter, pov, date, location",ch2
+High,MissingFields,ch2_avery_infiltration-s01,"Missing: chapter, pov, date, location",ch2_avery_infiltration
+High,MissingFields,ch2_clara_kadath-s01,"Missing: chapter, pov, date, location",ch2_clara_kadath
+High,MissingFields,ch3_avery_suspended_daycare_spectral-s01,"Missing: chapter, pov, date, location",ch3_avery_suspended_daycare_spectral
+High,MissingFields,ch3_clara_reddy_kadath_scavengers-s01,"Missing: chapter, pov, date, location",ch3_clara_reddy_kadath_scavengers
+High,MissingFields,ch4_convergence_rework-s01,"Missing: chapter, pov, date, location",ch4_convergence_rework
+High,MissingFields,ch4_kadath_city_rework-s01,"Missing: chapter, pov, date, location",ch4_kadath_city_rework
+High,MissingFields,ch5_dlamp_betsy_rework-s01,"Missing: chapter, pov, date, location",ch5_dlamp_betsy_rework
+High,MissingFields,ch5_dlamp_ironhighway_underground-s01,"Missing: chapter, pov, date, location",ch5_dlamp_ironhighway_underground
+High,MissingFields,ch5_rework_nyfo_warrant_betsy-s01,"Missing: chapter, pov, date, location",ch5_rework_nyfo_warrant_betsy
+High,MissingFields,ch6_raid_summary_index-s01,"Missing: chapter, pov, date, location",ch6_raid_summary_index
+High,MissingFields,ch6_srs_apocalypse_narrative-s01,"Missing: chapter, pov, date, location",ch6_srs_apocalypse_narrative
+High,MissingFields,ch7-placeholder-s01,"Missing: chapter, pov, date, location",ch7-placeholder
+High,MissingFields,codeowners_snippet_ch5-ch6-s01,"Missing: chapter, pov, date, location",codeowners_snippet_ch5-ch6
+High,MissingFields,epilogue-s01,"Missing: chapter, pov, date, location",epilogue
+High,MissingFields,manifest_addendum_ch1-s01,"Missing: chapter, pov, location",manifest_addendum_ch1
+High,MissingFields,manifest_addendum_ch1_layouts_ui-s01,"Missing: chapter, pov, location",manifest_addendum_ch1_layouts_ui
+High,MissingFields,manifest_addendum_sec-03_ch1-s01,"Missing: chapter, pov, location",manifest_addendum_sec-03_ch1
+High,MissingFields,manifest_addendum_sec-03_prologues-s01,"Missing: chapter, pov, location",manifest_addendum_sec-03_prologues
+High,MissingFields,pr_attachments_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_attachments_ch5-ch6
+High,MissingFields,pr_ch5-ch6_root_merge-s01,"Missing: chapter, pov, date, location",pr_ch5-ch6_root_merge
+High,MissingFields,pr_ch7_pack-s01,"Missing: chapter, pov, date, location",pr_ch7_pack
+High,MissingFields,pr_change_impact_map_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_change_impact_map_ch5-ch6
+High,MissingFields,pr_checklist_box_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_checklist_box_ch5-ch6
+High,MissingFields,pr_cover_note_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_cover_note_ch5-ch6
+High,MissingFields,pr_crosslinks_assertion_list-s01,"Missing: chapter, pov, date, location",pr_crosslinks_assertion_list
+High,MissingFields,pr_diff_review_guide_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_diff_review_guide_ch5-ch6
+High,MissingFields,pr_final_copy_blocks_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_final_copy_blocks_ch5-ch6
+High,MissingFields,pr_followup_issue_bundle_template-s01,"Missing: chapter, pov, date, location",pr_followup_issue_bundle_template
+High,MissingFields,pr_github_labels_and_milestones-s01,"Missing: chapter, pov, date, location",pr_github_labels_and_milestones
+High,MissingFields,pr_onepager_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_onepager_ch5-ch6
+High,MissingFields,pr_open_runbook_desktop_and_cli-s01,"Missing: chapter, pov, date, location",pr_open_runbook_desktop_and_cli
+High,MissingFields,pr_release_notes_ch5-ch6-s01,"Missing: chapter, pov, location",pr_release_notes_ch5-ch6
+High,MissingFields,pr_reviewer_comment_templates-s01,"Missing: chapter, pov, date, location",pr_reviewer_comment_templates
+High,MissingFields,pr_reviewer_package_ch5-ch6-s01,"Missing: chapter, pov, location",pr_reviewer_package_ch5-ch6
+High,MissingFields,pr_squash_merge_plan_ch5-ch6-s01,"Missing: chapter, pov, location",pr_squash_merge_plan_ch5-ch6
+High,MissingFields,pr_status_board_ch7-s01,"Missing: chapter, pov, date, location",pr_status_board_ch7
+High,MissingFields,pr_template_github_ch5-ch6-s01,"Missing: chapter, pov, location",pr_template_github_ch5-ch6
+High,MissingFields,pr_term_glossary_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_term_glossary_ch5-ch6
+High,MissingFields,root_apply_instructions_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_apply_instructions_ch5-ch6
+High,MissingFields,root_changelog_ch5-ch6-s01,"Missing: chapter, pov, location",root_changelog_ch5-ch6
+High,MissingFields,root_crosslink_map_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_crosslink_map_ch5-ch6
+High,MissingFields,root_dependency_graph_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_dependency_graph_ch5-ch6
+High,MissingFields,root_diff_checklist_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_diff_checklist_ch5-ch6
+High,MissingFields,root_edge_case_decisions_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_edge_case_decisions_ch5-ch6
+High,MissingFields,root_endtoend_test_script_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_endtoend_test_script_ch5-ch6
+High,MissingFields,root_epilogue_seeds_ch7-s01,"Missing: chapter, pov, date, location",root_epilogue_seeds_ch7
+High,MissingFields,root_faq_ch5-ch6_merge-s01,"Missing: chapter, pov, date, location",root_faq_ch5-ch6_merge
+High,MissingFields,root_github_desktop_guide_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_github_desktop_guide_ch5-ch6
+High,MissingFields,root_internal_playtest_notes_ch5-ch6-s01,"Missing: chapter, pov, location",root_internal_playtest_notes_ch5-ch6
+High,MissingFields,root_known_good_lines_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_known_good_lines_ch5-ch6
+High,MissingFields,root_link_verification_checklist-s01,"Missing: chapter, pov, date, location",root_link_verification_checklist
+High,MissingFields,root_merge_commit_messages-s01,"Missing: chapter, pov, date, location",root_merge_commit_messages
+High,MissingFields,root_merge_conflict_resolution_guide-s01,"Missing: chapter, pov, date, location",root_merge_conflict_resolution_guide
+High,MissingFields,root_merge_done_checklist-s01,"Missing: chapter, pov, date, location",root_merge_done_checklist
+High,MissingFields,root_merge_index_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_merge_index_ch5-ch6
+High,MissingFields,root_merge_risk_register-s01,"Missing: chapter, pov, location",root_merge_risk_register
+High,MissingFields,root_merge_smoke_checks-s01,"Missing: chapter, pov, date, location",root_merge_smoke_checks
+High,MissingFields,root_migration_log_stub-s01,"Missing: chapter, pov, date, location",root_migration_log_stub
+High,MissingFields,root_narrative_delta_summary_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_narrative_delta_summary_ch5-ch6
+High,MissingFields,root_narrative_tone_style_guide_1994-s01,"Missing: chapter, pov, date, location",root_narrative_tone_style_guide_1994
+High,MissingFields,root_pastepoint_cues_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_pastepoint_cues_ch5-ch6
+High,MissingFields,root_paste_verification_strings-s01,"Missing: chapter, pov, date, location",root_paste_verification_strings
+High,MissingFields,root_postmerge_tasks-s01,"Missing: chapter, pov, date, location",root_postmerge_tasks
+High,MissingFields,root_practical_paste_steps-s01,"Missing: chapter, pov, date, location",root_practical_paste_steps
+High,MissingFields,root_prompts_conflict_map-s01,"Missing: chapter, pov, date, location",root_prompts_conflict_map
+High,MissingFields,root_prompts_validation_report_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_prompts_validation_report_ch5-ch6
+High,MissingFields,root_pr_template_ch5-ch6_merge-s01,"Missing: chapter, pov, date, location",root_pr_template_ch5-ch6_merge
+High,MissingFields,root_readme_badge_block-s01,"Missing: chapter, pov, date, location",root_readme_badge_block
+High,MissingFields,root_readme_toc_ch5-ch6_insert-s01,"Missing: chapter, pov, date, location",root_readme_toc_ch5-ch6_insert
+High,MissingFields,root_readme_toc_ch7_insert-s01,"Missing: chapter, pov, date, location",root_readme_toc_ch7_insert
+High,MissingFields,root_readthrough_script_ch5-ch6-s01,"Missing: chapter, pov, location",root_readthrough_script_ch5-ch6
+High,MissingFields,root_redlines_before_after_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_redlines_before_after_ch5-ch6
+High,MissingFields,root_rollback_plan_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_rollback_plan_ch5-ch6
+High,MissingFields,root_rollout_plan_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_rollout_plan_ch5-ch6
+High,MissingFields,root_sample_pr_body_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_sample_pr_body_ch5-ch6
+High,MissingFields,root_scoring_tables_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_scoring_tables_ch5-ch6
+High,MissingFields,root_scripting_pseudocode_ch6_endings-s01,"Missing: chapter, pov, date, location",root_scripting_pseudocode_ch6_endings
+High,MissingFields,root_sec-03_ch5-ch6_anchors-s01,"Missing: chapter, pov, date, location",root_sec-03_ch5-ch6_anchors
+High,MissingFields,root_sec-03_ch5_narrative_paste-s01,"Missing: chapter, pov, date, location",root_sec-03_ch5_narrative_paste
+High,MissingFields,root_sec-03_ch6_narrative_paste-s01,"Missing: chapter, pov, date, location",root_sec-03_ch6_narrative_paste
+High,MissingFields,root_sec-03_ch7_narrative_paste-s01,"Missing: chapter, pov, date, location",root_sec-03_ch7_narrative_paste
+High,MissingFields,root_sec-03_narrative_ch5-ch6_merge-s01,"Missing: chapter, pov, date, location",root_sec-03_narrative_ch5-ch6_merge
+High,MissingFields,root_sec-05_anchors-s01,"Missing: chapter, pov, date, location",root_sec-05_anchors
+High,MissingFields,root_sec-05_insert_points-s01,"Missing: chapter, pov, date, location",root_sec-05_insert_points
+High,MissingFields,root_sec-05_systems_merge_additions_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_sec-05_systems_merge_additions_ch5-ch6
+High,MissingFields,root_sec-06-07_world_ui_ch5-ch6_merge-s01,"Missing: chapter, pov, date, location",root_sec-06-07_world_ui_ch5-ch6_merge
+High,MissingFields,root_sec-06-07_world_ui_ch7_merge-s01,"Missing: chapter, pov, date, location",root_sec-06-07_world_ui_ch7_merge
+High,MissingFields,root_sec-06_anchors-s01,"Missing: chapter, pov, date, location",root_sec-06_anchors
+High,MissingFields,root_sec-07_anchors-s01,"Missing: chapter, pov, date, location",root_sec-07_anchors
+High,MissingFields,root_sec-07_ui_prompts_ch7_extensions-s01,"Missing: chapter, pov, date, location",root_sec-07_ui_prompts_ch7_extensions
+High,MissingFields,root_sec-07_ui_prompts_master-s01,"Missing: chapter, pov, date, location",root_sec-07_ui_prompts_master
+High,MissingFields,root_sed_snippets_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_sed_snippets_ch5-ch6
+High,MissingFields,root_systems_snippet_replacements-s01,"Missing: chapter, pov, date, location",root_systems_snippet_replacements
+High,MissingFields,root_timeline_continuity_ch4-ch6-s01,"Missing: chapter, pov, date, location",root_timeline_continuity_ch4-ch6
+High,MissingFields,root_toc_inserts_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_toc_inserts_ch5-ch6
+High,MissingFields,root_ui_copy_snippets_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_ui_copy_snippets_ch5-ch6
+High,MissingFields,root_ui_wireflows_text_ch6-s01,"Missing: chapter, pov, date, location",root_ui_wireflows_text_ch6
+High,MissingFields,root_validation_grep_patterns-s01,"Missing: chapter, pov, date, location",root_validation_grep_patterns
+High,MissingFields,root_windows_ps_findreplace_snippets_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_windows_ps_findreplace_snippets_ch5-ch6
+High,MissingFields,sec-01-ch5-6_integration_plan-s01,"Missing: chapter, pov, date, location",sec-01-ch5-6_integration_plan
+High,MissingFields,sec-02-ch5-6_master_flags_matrix-s01,"Missing: chapter, pov, date, location",sec-02-ch5-6_master_flags_matrix
+High,MissingFields,sec-03-ch2_avery_section-s01,"Missing: chapter, pov, date, location",sec-03-ch2_avery_section
+High,MissingFields,sec-03-ch2_clara_kadath_section-s01,"Missing: chapter, pov, date, location",sec-03-ch2_clara_kadath_section
+High,MissingFields,sec-03-ch3_narrative_sections-s01,"Missing: chapter, pov, date, location",sec-03-ch3_narrative_sections
+High,MissingFields,sec-03-ch4_narrative-s01,"Missing: chapter, pov, date, location",sec-03-ch4_narrative
+High,MissingFields,sec-03-ch5-6_narrative_deepdlamp_insert-s01,"Missing: chapter, pov, date, location",sec-03-ch5-6_narrative_deepdlamp_insert
+High,MissingFields,sec-03-ch5_dlamp_betsy_narrative-s01,"Missing: chapter, pov, date, location",sec-03-ch5_dlamp_betsy_narrative
+High,MissingFields,sec-03-ch5_rework_narrative-s01,"Missing: chapter, pov, date, location",sec-03-ch5_rework_narrative
+High,MissingFields,sec-03-ch6_beatsheet_raid-s01,"Missing: chapter, pov, date, location",sec-03-ch6_beatsheet_raid
+High,MissingFields,sec-03-ch6_epilogue-s01,"Missing: chapter, pov, date, location",sec-03-ch6_epilogue
+High,MissingFields,sec-03_3.4_synopsis_prologues_add-s01,"Missing: chapter, pov, date, location",sec-03_3.4_synopsis_prologues_add
+High,MissingFields,sec-03_3.5_ch1_simplecuriosity_add-s01,"Missing: chapter, pov, location",sec-03_3.5_ch1_simplecuriosity_add
+High,MissingFields,sec-04-ch6_lore_splinter_of_azathoth-s01,"Missing: chapter, pov, date, location",sec-04-ch6_lore_splinter_of_azathoth
+High,MissingFields,sec-04_ch1_integration_add-s01,"Missing: chapter, pov, date, location",sec-04_ch1_integration_add
+High,MissingFields,sec-05-ch2_avery_systems_additions-s01,"Missing: chapter, pov, date, location",sec-05-ch2_avery_systems_additions
+High,MissingFields,sec-05-ch2_systems_additions-s01,"Missing: chapter, pov, date, location",sec-05-ch2_systems_additions
+High,MissingFields,sec-05-ch3_fear_meter_spec-s01,"Missing: chapter, pov, date, location",sec-05-ch3_fear_meter_spec
+High,MissingFields,sec-05-ch3_systems_additions-s01,"Missing: chapter, pov, date, location",sec-05-ch3_systems_additions
+High,MissingFields,sec-05-ch4_boss_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch4_boss_systems
+High,MissingFields,sec-05-ch4_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch4_systems
+High,MissingFields,sec-05-ch5-6_enemies_starvampire-s01,"Missing: chapter, pov, date, location",sec-05-ch5-6_enemies_starvampire
+High,MissingFields,sec-05-ch5-6_rogue_ops_comms_sop-s01,"Missing: chapter, pov, date, location",sec-05-ch5-6_rogue_ops_comms_sop
+High,MissingFields,sec-05-ch5-6_vehicle_o2_fuel_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch5-6_vehicle_o2_fuel_systems
+High,MissingFields,sec-05-ch5_dlamp_betsy_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch5_dlamp_betsy_systems
+High,MissingFields,sec-05-ch5_systems_rework-s01,"Missing: chapter, pov, date, location",sec-05-ch5_systems_rework
+High,MissingFields,sec-05-ch6_afteraction_report_spec-s01,"Missing: chapter, pov, date, location",sec-05-ch6_afteraction_report_spec
+High,MissingFields,sec-05-ch6_ai_behavior_fsm-s01,"Missing: chapter, pov, date, location",sec-05-ch6_ai_behavior_fsm
+High,MissingFields,sec-05-ch6_blueonblue_detection-s01,"Missing: chapter, pov, date, location",sec-05-ch6_blueonblue_detection
+High,MissingFields,sec-05-ch6_combat_tuning_params-s01,"Missing: chapter, pov, date, location",sec-05-ch6_combat_tuning_params
+High,MissingFields,sec-05-ch6_enemy_resist_interrupt_table-s01,"Missing: chapter, pov, date, location",sec-05-ch6_enemy_resist_interrupt_table
+High,MissingFields,sec-05-ch6_loadout_guide-s01,"Missing: chapter, pov, date, location",sec-05-ch6_loadout_guide
+High,MissingFields,sec-05-ch6_raid_roe-s01,"Missing: chapter, pov, date, location",sec-05-ch6_raid_roe
+High,MissingFields,sec-05-ch6_splinter_vault_mechanics-s01,"Missing: chapter, pov, date, location",sec-05-ch6_splinter_vault_mechanics
+High,MissingFields,sec-05-ch6_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch6_systems
+High,MissingFields,sec-05-deputy_name_randomizer_spec-s01,"Missing: chapter, pov, date, location",sec-05-deputy_name_randomizer_spec
+High,MissingFields,sec-05_ch1_flags_data_add-s01,"Missing: chapter, pov, date, location",sec-05_ch1_flags_data_add
+High,MissingFields,sec-06-ch2_avery_world_content-s01,"Missing: chapter, pov, date, location",sec-06-ch2_avery_world_content
+High,MissingFields,sec-06-ch3_world_content-s01,"Missing: chapter, pov, date, location",sec-06-ch3_world_content
+High,MissingFields,sec-06-ch4_world_content-s01,"Missing: chapter, pov, date, location",sec-06-ch4_world_content
+High,MissingFields,sec-06-ch5-6_callsigns_and_nodes-s01,"Missing: chapter, pov, date, location",sec-06-ch5-6_callsigns_and_nodes
+High,MissingFields,sec-06-ch5-6_ironhighway_routebook-s01,"Missing: chapter, pov, date, location",sec-06-ch5-6_ironhighway_routebook
+High,MissingFields,sec-06-ch5-6_world_dlamp_ironhighway-s01,"Missing: chapter, pov, date, location",sec-06-ch5-6_world_dlamp_ironhighway
+High,MissingFields,sec-06-ch5_world_content-s01,"Missing: chapter, pov, date, location",sec-06-ch5_world_content
+High,MissingFields,sec-06-ch6_ascii_map-s01,"Missing: chapter, pov, date, location",sec-06-ch6_ascii_map
+High,MissingFields,sec-06-ch6_route_encounter_tables-s01,"Missing: chapter, pov, date, location",sec-06-ch6_route_encounter_tables
+High,MissingFields,sec-06-ch6_srs_secret_annex_world-s01,"Missing: chapter, pov, date, location",sec-06-ch6_srs_secret_annex_world
+High,MissingFields,sec-06-ch6_stealth_breaker_cameraloops-s01,"Missing: chapter, pov, date, location",sec-06-ch6_stealth_breaker_cameraloops
+High,MissingFields,sec-06_ch1_world_layouts_add-s01,"Missing: chapter, pov, location",sec-06_ch1_world_layouts_add
+High,MissingFields,sec-07-ch2_avery_ui_prompts-s01,"Missing: chapter, pov, date, location",sec-07-ch2_avery_ui_prompts
+High,MissingFields,sec-07-ch3_ui_prompts-s01,"Missing: chapter, pov, date, location",sec-07-ch3_ui_prompts
+High,MissingFields,sec-07-ch4_ui_spell_equip-s01,"Missing: chapter, pov, date, location",sec-07-ch4_ui_spell_equip
+High,MissingFields,sec-07-ch5-6_ui_prompts_consolidated-s01,"Missing: chapter, pov, date, location",sec-07-ch5-6_ui_prompts_consolidated
+High,MissingFields,sec-07-ch5_ui_prompts-s01,"Missing: chapter, pov, date, location",sec-07-ch5_ui_prompts
+High,MissingFields,sec-07-ch6_prompts_verification-s01,"Missing: chapter, pov, date, location",sec-07-ch6_prompts_verification
+High,MissingFields,sec-07-ch6_raid_ui_prompts-s01,"Missing: chapter, pov, date, location",sec-07-ch6_raid_ui_prompts
+High,MissingFields,sec-07-ch6_ui_flow-s01,"Missing: chapter, pov, date, location",sec-07-ch6_ui_flow
+High,MissingFields,sec-07_ch1_medstat_notes_add-s01,"Missing: chapter, pov, location",sec-07_ch1_medstat_notes_add
+High,MissingFields,sec-08-ch5-6_audio_soundscape-s01,"Missing: chapter, pov, date, location",sec-08-ch5-6_audio_soundscape
+High,MissingFields,ch6-1994,"Missing: chapter, pov, location",sec-09-period_audit_ch5-ch6_1994
+High,MissingFields,tdd_ch1_device_hooks_add-s01,"Missing: chapter, pov, date, location",tdd_ch1_device_hooks_add
+High,MissingFields,update_log-s01,"Missing: chapter, pov, location",update_log
+High,MissingFields,glossary_1994-s01,"Missing: chapter, pov, location",glossary_1994
+High,MissingFields,period_check_core_terms_1994-s01,"Missing: chapter, pov, location",period_check_core_terms_1994
+High,MissingFields,refs_seed_1994-s01,"Missing: chapter, pov, location",refs_seed_1994
+High,MissingFields,ch6-raid-rules-s01,"Missing: chapter, pov, date, location",ch6-raid-rules
+High,MissingFields,app_checklist-s01,"Missing: chapter, pov, date, location",app_checklist
+High,MissingFields,branding-s01,"Missing: chapter, pov, date, location",branding
+High,MissingFields,store_copy-s01,"Missing: chapter, pov, date, location",store_copy
+High,MissingFields,1994_replacements_guide-s01,"Missing: chapter, pov, date, location",1994_replacements_guide
+High,MissingFields,milestone_template-s01,"Missing: chapter, pov, date, location",milestone_template
+High,MissingFields,0a_avery_prologue_beat2objective_20250814t0941z-s01,"Missing: chapter, pov, location",0a_avery_prologue_beat2objective_20250814t0941z
+High,MissingFields,0b_clara_prologue_beat2objective_20250814t0941z-s01,"Missing: chapter, pov, location",0b_clara_prologue_beat2objective_20250814t0941z
+High,MissingFields,assetlist_0a_quantico-s01,"Missing: chapter, pov, location",assetlist_0a_quantico
+High,MissingFields,assetlist_0b_betsyapt-s01,"Missing: chapter, pov, location",assetlist_0b_betsyapt
+High,MissingFields,assetlist_ch1_brightstar-s01,"Missing: chapter, pov, location",assetlist_ch1_brightstar
+High,MissingFields,assets_0a_quantico_1989_20250814t1030z-s01,"Missing: chapter, pov, location",assets_0a_quantico_1989_20250814t1030z
+High,MissingFields,assets_0b_betsysapt_1994_20250814t1030z-s01,"Missing: chapter, pov, location",assets_0b_betsysapt_1994_20250814t1030z
+High,MissingFields,ch1-state-s01,"Missing: chapter, pov, date, location",ch1-state
+High,MissingFields,ch1_beat2objective-s01,"Missing: chapter, pov, location",ch1_beat2objective
+High,MissingFields,ch1_narrative_corrections_worksheet-s01,"Missing: chapter, pov, location",ch1_narrative_corrections_worksheet
+High,MissingFields,ch1_outline_simplecuriosity-s01,"Missing: chapter, pov, location",ch1_outline_simplecuriosity
+High,MissingFields,ch1_polishchecklist-s01,"Missing: chapter, pov, location",ch1_polishchecklist
+High,MissingFields,ch1_stringkeymanifest-s01,"Missing: chapter, pov, location",ch1_stringkeymanifest
+High,MissingFields,ch2-state-s01,"Missing: chapter, pov, date, location",ch2-state
+High,MissingFields,ch2_avery_tracker-s01,"Missing: chapter, pov, date, location",ch2_avery_tracker
+High,MissingFields,ch3_scoring_table-s01,"Missing: chapter, pov, date, location",ch3_scoring_table
+High,MissingFields,ch3_trackers-s01,"Missing: chapter, pov, date, location",ch3_trackers
+High,MissingFields,ch4_convergence_rework-s01,"Missing: chapter, pov, date, location",ch4_convergence_rework
+High,MissingFields,ch4_scoring_table-s01,"Missing: chapter, pov, date, location",ch4_scoring_table
+High,MissingFields,ch4_tracker-s01,"Missing: chapter, pov, date, location",ch4_tracker
+High,MissingFields,ch5-6_build_verification-s01,"Missing: chapter, pov, date, location",ch5-6_build_verification
+High,MissingFields,ch5-6_combat_evidence_scoring-s01,"Missing: chapter, pov, date, location",ch5-6_combat_evidence_scoring
+High,MissingFields,ch5-6_deepdlamp_flags-s01,"Missing: chapter, pov, date, location",ch5-6_deepdlamp_flags
+High,MissingFields,ch5-6_dlamp_evidence_index-s01,"Missing: chapter, pov, date, location",ch5-6_dlamp_evidence_index
+High,MissingFields,ch5-6_krill_handler_log-s01,"Missing: chapter, pov, date, location",ch5-6_krill_handler_log
+High,MissingFields,ch5_tracker-s01,"Missing: chapter, pov, date, location",ch5_tracker
+High,MissingFields,ch6_balance_telemetry_spec-s01,"Missing: chapter, pov, date, location",ch6_balance_telemetry_spec
+High,MissingFields,ch6_blueonblue_test_plan-s01,"Missing: chapter, pov, date, location",ch6_blueonblue_test_plan
+High,MissingFields,ch6_bug_triage_template-s01,"Missing: chapter, pov, date, location",ch6_bug_triage_template
+High,MissingFields,ch6_ending_scorecard-s01,"Missing: chapter, pov, date, location",ch6_ending_scorecard
+High,MissingFields,ch6_flags_endings-s01,"Missing: chapter, pov, date, location",ch6_flags_endings
+High,MissingFields,ch6_known_issues-s01,"Missing: chapter, pov, date, location",ch6_known_issues
+High,MissingFields,ch6_operational_checklist-s01,"Missing: chapter, pov, date, location",ch6_operational_checklist
+High,MissingFields,ch6_playtest_log_sheet-s01,"Missing: chapter, pov, date, location",ch6_playtest_log_sheet
+High,MissingFields,ch6_qa_test_cases-s01,"Missing: chapter, pov, date, location",ch6_qa_test_cases
+High,MissingFields,ch6_scoring_raid-s01,"Missing: chapter, pov, date, location",ch6_scoring_raid
+High,MissingFields,ch6_tracker-s01,"Missing: chapter, pov, date, location",ch6_tracker
+High,MissingFields,ch7-city-rules-s01,"Missing: chapter, pov, date, location",ch7-city-rules
+High,MissingFields,ch7-state-s01,"Missing: chapter, pov, date, location",ch7-state
+High,MissingFields,developer-guides-s01,"Missing: chapter, pov, date, location",developer-guides
+High,MissingFields,devices_storage_1994-s01,"Missing: chapter, pov, location",devices_storage_1994
+High,MissingFields,epilogue-state-s01,"Missing: chapter, pov, date, location",epilogue-state
+High,MissingFields,epilogue-validation-s01,"Missing: chapter, pov, date, location",epilogue-validation
+High,MissingFields,evidence-caps-s01,"Missing: chapter, pov, date, location",evidence-caps
+High,MissingFields,glossary_1994_terms-s01,"Missing: chapter, pov, date, location",glossary_1994_terms
+High,MissingFields,inlinepatch_sec-04_ch1-s01,"Missing: chapter, pov, date, location",inlinepatch_sec-04_ch1
+High,MissingFields,inlinepatch_sec-04_prologues-s01,"Missing: chapter, pov, date, location",inlinepatch_sec-04_prologues
+High,MissingFields,inlinepatch_sec-05_ch1-s01,"Missing: chapter, pov, date, location",inlinepatch_sec-05_ch1
+High,MissingFields,inlinepatch_sec-05_prologues-s01,"Missing: chapter, pov, date, location",inlinepatch_sec-05_prologues
+High,MissingFields,inlinepatch_tdd_ch1-s01,"Missing: chapter, pov, date, location",inlinepatch_tdd_ch1
+High,MissingFields,inlinepatch_tdd_prologues-s01,"Missing: chapter, pov, date, location",inlinepatch_tdd_prologues
+High,MissingFields,microtac_feature_pairs-s01,"Missing: chapter, pov, date, location",microtac_feature_pairs
+High,MissingFields,ch5-6,"Missing: chapter, pov, date, location",milestone_v0.6-ch5-6-merge
+High,MissingFields,narr-tracker_playbook-outline_sync_v0.1-s01,"Missing: chapter, pov, location",narr-tracker_playbook-outline_sync_v0.1
+High,MissingFields,narr-tracker_prologues_v0.3-s01,"Missing: chapter, pov, location",narr-tracker_prologues_v0.3
+High,MissingFields,period_sweep_violations_ch5-ch6-s01,"Missing: chapter, pov, date, location",period_sweep_violations_ch5-ch6
+High,MissingFields,project_summary-s01,"Missing: chapter, pov, location",project_summary
+High,MissingFields,prologues_polishchecklist-s01,"Missing: chapter, pov, location",prologues_polishchecklist
+High,MissingFields,prologues_stringkeymanifest-s01,"Missing: chapter, pov, location",prologues_stringkeymanifest
+High,MissingFields,prop_sec-04_loops_prologues-s01,"Missing: chapter, pov, location",prop_sec-04_loops_prologues
+High,MissingFields,prop_sec-05_systems_prologuesflags-s01,"Missing: chapter, pov, location",prop_sec-05_systems_prologuesflags
+High,MissingFields,prop_tdd_evidence_fieldpad_prologueshooks-s01,"Missing: chapter, pov, location",prop_tdd_evidence_fieldpad_prologueshooks
+High,MissingFields,pr_closeout_checklist_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_closeout_checklist_ch5-ch6
+High,MissingFields,pr_crosscheck_results_log-s01,"Missing: chapter, pov, location",pr_crosscheck_results_log
+High,MissingFields,pr_reviewer_assignment_matrix-s01,"Missing: chapter, pov, date, location",pr_reviewer_assignment_matrix
+High,MissingFields,pr_reviewer_findings_log_ch5-ch6-s01,"Missing: chapter, pov, location",pr_reviewer_findings_log_ch5-ch6
+High,MissingFields,pr_run_log_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_run_log_ch5-ch6
+High,MissingFields,pr_signoff_form_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_signoff_form_ch5-ch6
+High,MissingFields,pr_status_board_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_status_board_ch5-ch6
+High,MissingFields,pr_status_board_ch7-s01,"Missing: chapter, pov, date, location",pr_status_board_ch7
+High,MissingFields,pr_triage_template_ch5-ch6-s01,"Missing: chapter, pov, location",pr_triage_template_ch5-ch6
+High,MissingFields,pr_validation_master_checklist_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_validation_master_checklist_ch5-ch6
+High,MissingFields,pr_validation_results_summary_ch5-ch6-s01,"Missing: chapter, pov, location",pr_validation_results_summary_ch5-ch6
+High,MissingFields,pr_validation_results_summary_ch7-s01,"Missing: chapter, pov, location",pr_validation_results_summary_ch7
+High,MissingFields,pr_validation_tasklist_ch5-ch6-s01,"Missing: chapter, pov, date, location",pr_validation_tasklist_ch5-ch6
+High,MissingFields,pr_validation_tasklist_ch7-s01,"Missing: chapter, pov, date, location",pr_validation_tasklist_ch7
+High,MissingFields,qatelemetry_0a_quantico-s01,"Missing: chapter, pov, location",qatelemetry_0a_quantico
+High,MissingFields,qatelemetry_0b_betsyapt-s01,"Missing: chapter, pov, location",qatelemetry_0b_betsyapt
+High,MissingFields,qatelemetry_ch1-s01,"Missing: chapter, pov, location",qatelemetry_ch1
+High,MissingFields,root_cutlist_removals_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_cutlist_removals_ch5-ch6
+High,MissingFields,root_file_ownership_matrix-s01,"Missing: chapter, pov, date, location",root_file_ownership_matrix
+High,MissingFields,root_integration_completion_ticket-s01,"Missing: chapter, pov, date, location",root_integration_completion_ticket
+High,MissingFields,root_issue_template_ch5-ch6_merge-s01,"Missing: chapter, pov, date, location",root_issue_template_ch5-ch6_merge
+High,MissingFields,root_merge_paste_progress-s01,"Missing: chapter, pov, date, location",root_merge_paste_progress
+High,MissingFields,root_merge_reviewer_checklist-s01,"Missing: chapter, pov, date, location",root_merge_reviewer_checklist
+High,MissingFields,root_merge_risk_register-s01,"Missing: chapter, pov, location",root_merge_risk_register
+High,MissingFields,root_merge_smoke_checks-s01,"Missing: chapter, pov, date, location",root_merge_smoke_checks
+High,MissingFields,root_merge_status_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_merge_status_ch5-ch6
+High,MissingFields,root_metrics_snapshot_template-s01,"Missing: chapter, pov, location",root_metrics_snapshot_template
+High,MissingFields,root_qa_test_cases_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_qa_test_cases_ch5-ch6
+High,MissingFields,root_regressions_watchlist_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_regressions_watchlist_ch5-ch6
+High,MissingFields,root_reviewer_questions_ch5-ch6-s01,"Missing: chapter, pov, date, location",root_reviewer_questions_ch5-ch6
+High,MissingFields,root_review_signoff_sheet-s01,"Missing: chapter, pov, location",root_review_signoff_sheet
+High,MissingFields,root_seed_test_matrix_ch5-ch6-s01,"Missing: chapter, pov, location",root_seed_test_matrix_ch5-ch6
+High,MissingFields,sec-03-ch4_narrative-s01,"Missing: chapter, pov, date, location",sec-03-ch4_narrative
+High,MissingFields,sec-03-ch6_raid_addendum-s01,"Missing: chapter, pov, date, location",sec-03-ch6_raid_addendum
+High,MissingFields,sec-05-ch4_systems-s01,"Missing: chapter, pov, date, location",sec-05-ch4_systems
+High,MissingFields,sec-06-ch6_srs_secret_annex_world-s01,"Missing: chapter, pov, date, location",sec-06-ch6_srs_secret_annex_world
+High,MissingFields,sec06_ch1_worldlayouts-s01,"Missing: chapter, pov, location",sec06_ch1_worldlayouts
+High,MissingFields,sec07_ch1_medstat_notes_ui-s01,"Missing: chapter, pov, location",sec07_ch1_medstat_notes_ui
+High,MissingFields,shotlist_0a_quantico-s01,"Missing: chapter, pov, location",shotlist_0a_quantico
+High,MissingFields,shotlist_0b_betsyapt-s01,"Missing: chapter, pov, location",shotlist_0b_betsyapt
+High,MissingFields,shotlist_ch1_brightstar-s01,"Missing: chapter, pov, location",shotlist_ch1_brightstar
+High,MissingFields,shotlist_ch1_roadside-s01,"Missing: chapter, pov, location",shotlist_ch1_roadside
+High,MissingFields,startac_hits-s01,"Missing: chapter, pov, date, location",startac_hits
+High,MissingFields,tutorialcopy_0a_avery_20250814t0948z-s01,"Missing: chapter, pov, location",tutorialcopy_0a_avery_20250814t0948z
+High,MissingFields,tutorialcopy_0b_clara_20250814t0948z-s01,"Missing: chapter, pov, location",tutorialcopy_0b_clara_20250814t0948z
+High,MissingFields,tutorialcopy_ch1_avery-s01,"Missing: chapter, pov, location",tutorialcopy_ch1_avery
+High,MissingFields,tutorialcopy_ch1_clara-s01,"Missing: chapter, pov, location",tutorialcopy_ch1_clara
+High,MissingFields,validation_run_report_ch5-ch6-s01,"Missing: chapter, pov, location",validation_run_report_ch5-ch6
+High,MissingFields,voscript_0a_avery-s01,"Missing: chapter, pov, location",voscript_0a_avery
+High,MissingFields,voscript_0b_clara-s01,"Missing: chapter, pov, location",voscript_0b_clara
+High,MissingFields,voscript_ch1_avery-s01,"Missing: chapter, pov, location",voscript_ch1_avery
+High,MissingFields,voscript_ch1_clara-s01,"Missing: chapter, pov, location",voscript_ch1_clara
+Low,POVUnknown,.release_pr_body-s01,POV 'nan' is not Clara or Avery,.release_pr_body
+Low,POVUnknown,000_diplomagic_next_task-s01,POV 'nan' is not Clara or Avery,000_diplomagic_next_task
+Low,POVUnknown,archive_index_diplomagic-s01,POV 'nan' is not Clara or Avery,archive_index_diplomagic
+Low,POVUnknown,auto_merge_report-s01,POV 'nan' is not Clara or Avery,auto_merge_report
+Low,POVUnknown,changelog-s01,POV 'nan' is not Clara or Avery,changelog
+Low,POVUnknown,changelog_auto-s01,POV 'nan' is not Clara or Avery,changelog_auto
+Low,POVUnknown,contributing-s01,POV 'nan' is not Clara or Avery,contributing
+Low,POVUnknown,corkboard — 2025-08-17 — canvas audit and chat alignment-s01,POV 'nan' is not Clara or Avery,corkboard — 2025-08-17 — canvas audit and chat alignment
+Low,POVUnknown,departments — roster-s01,POV 'nan' is not Clara or Avery,departments — roster
+Low,POVUnknown,diplomagic_gdd_automerge_runbook-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_automerge_runbook
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,mail — dashboard-s01,POV 'nan' is not Clara or Avery,mail — dashboard
+Low,POVUnknown,master_manifest-s01,POV 'nan' is not Clara or Avery,master_manifest
+Low,POVUnknown,merge-body-s01,POV 'nan' is not Clara or Avery,merge-body
+Low,POVUnknown,pr_body-s01,POV 'nan' is not Clara or Avery,pr_body
+Low,POVUnknown,readme-s01,POV 'nan' is not Clara or Avery,readme
+Low,POVUnknown,release-notes-s01,POV 'nan' is not Clara or Avery,release-notes
+Low,POVUnknown,release-s01,POV 'nan' is not Clara or Avery,release
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,sec-epilogue-s01,POV 'nan' is not Clara or Avery,sec-epilogue
+Low,POVUnknown,tdd-evidence+fieldpad - technical design document-s01,POV 'nan' is not Clara or Avery,tdd-evidence+fieldpad - technical design document
+Low,POVUnknown,readme_pr_commenter-s01,POV 'nan' is not Clara or Avery,readme_pr_commenter
+Low,POVUnknown,corkboard_department_ack_macro-s01,POV 'nan' is not Clara or Avery,corkboard_department_ack_macro
+Low,POVUnknown,department_charters_pack-s01,POV 'nan' is not Clara or Avery,department_charters_pack
+Low,POVUnknown,department_macros_guide-s01,POV 'nan' is not Clara or Avery,department_macros_guide
+Low,POVUnknown,mail_department_dashboard-s01,POV 'nan' is not Clara or Avery,mail_department_dashboard
+Low,POVUnknown,optimization_macro_departments_subcontractors-s01,POV 'nan' is not Clara or Avery,optimization_macro_departments_subcontractors
+Low,POVUnknown,org_notice_department_leads-s01,POV 'nan' is not Clara or Avery,org_notice_department_leads
+Low,POVUnknown,project_workspace_instructions-s01,POV 'nan' is not Clara or Avery,project_workspace_instructions
+Low,POVUnknown,repodirs-s01,POV 'nan' is not Clara or Avery,repodirs
+Low,POVUnknown,archive_pack_20250816-1022_ci_epilogue-asserts-s01,POV 'nan' is not Clara or Avery,archive_pack_20250816-1022_ci_epilogue-asserts
+Low,POVUnknown,archive_pack_gdd_rebuild_2025-08-16_0809et-s01,POV 'nan' is not Clara or Avery,archive_pack_gdd_rebuild_2025-08-16_0809et
+Low,POVUnknown,archive_pack_gdd_rebuild_2025-08-16_1831et-s01,POV 'nan' is not Clara or Avery,archive_pack_gdd_rebuild_2025-08-16_1831et
+Low,POVUnknown,archive_release_notes_v_0-s01,POV 'nan' is not Clara or Avery,archive_release_notes_v_0
+Low,POVUnknown,release_notes_v0.1-docs-structure-s01,POV 'nan' is not Clara or Avery,release_notes_v0.1-docs-structure
+Low,POVUnknown,repo_snapshot-s01,POV 'nan' is not Clara or Avery,repo_snapshot
+Low,POVUnknown,enemy systems department — notes (archived 2025-08-17)-s01,POV 'nan' is not Clara or Avery,enemy systems department — notes (archived 2025-08-17)
+Low,POVUnknown,statblocks & enemies department — charter (archived 2025-08-17)-s01,POV 'nan' is not Clara or Avery,statblocks & enemies department — charter (archived 2025-08-17)
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,diplomagic_gdd_combined-s01,POV 'nan' is not Clara or Avery,diplomagic_gdd_combined
+Low,POVUnknown,sec-01-front - front matter & executive summary-s01,POV 'nan' is not Clara or Avery,sec-01-front - front matter & executive summary
+Low,POVUnknown,sec-02-pillars - pillars & audience-s01,POV 'nan' is not Clara or Avery,sec-02-pillars - pillars & audience
+Low,POVUnknown,sec-03-narrative - narrative-s01,POV 'nan' is not Clara or Avery,sec-03-narrative - narrative
+Low,POVUnknown,sec-03_3.2_chapter_list_replace-s01,POV 'nan' is not Clara or Avery,sec-03_3.2_chapter_list_replace
+Low,POVUnknown,sec-04-loops - core gameplay loops-s01,POV 'nan' is not Clara or Avery,sec-04-loops - core gameplay loops
+Low,POVUnknown,sec-05-systems - systems & mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-systems - systems & mechanics
+Low,POVUnknown,"sec-06-world - world, levels, & content-s01",POV 'nan' is not Clara or Avery,"sec-06-world - world, levels, & content"
+Low,POVUnknown,"sec-07-ui - ui-ux (devices, hud, menus)-s01",POV 'nan' is not Clara or Avery,"sec-07-ui - ui-ux (devices, hud, menus)"
+Low,POVUnknown,sec-08-artaudio - art direction & audio-s01,POV 'nan' is not Clara or Avery,sec-08-artaudio - art direction & audio
+Low,POVUnknown,sec-09-tech - technology & performance targets-s01,POV 'nan' is not Clara or Avery,sec-09-tech - technology & performance targets
+Low,POVUnknown,sec-10-production - production plan & milestones-s01,POV 'nan' is not Clara or Avery,sec-10-production - production plan & milestones
+Low,POVUnknown,"sec-11-qa - qa, localization, accessibility-s01",POV 'nan' is not Clara or Avery,"sec-11-qa - qa, localization, accessibility"
+Low,POVUnknown,"sec-12-risks - risks, legal, ratings-s01",POV 'nan' is not Clara or Avery,"sec-12-risks - risks, legal, ratings"
+Low,POVUnknown,sec-13-appendices - appendices-s01,POV 'nan' is not Clara or Avery,sec-13-appendices - appendices
+Low,POVUnknown,sec-14-qa - quality assurance test plan-s01,POV 'nan' is not Clara or Avery,sec-14-qa - quality assurance test plan
+Low,POVUnknown,spawn_tables_prologue_ch1-s01,POV 'nan' is not Clara or Avery,spawn_tables_prologue_ch1
+Low,POVUnknown,enemy_cultist-s01,POV 'nan' is not Clara or Avery,enemy_cultist
+Low,POVUnknown,enemy_mind_swapped_civilian-s01,POV 'nan' is not Clara or Avery,enemy_mind_swapped_civilian
+Low,POVUnknown,enemy_new_kadathi_cultist-s01,POV 'nan' is not Clara or Avery,enemy_new_kadathi_cultist
+Low,POVUnknown,enemy_spectral_entity-s01,POV 'nan' is not Clara or Avery,enemy_spectral_entity
+Low,POVUnknown,schema_statblock-s01,POV 'nan' is not Clara or Avery,schema_statblock
+Low,POVUnknown,adversary & npc systems — dashboard-s01,POV 'nan' is not Clara or Avery,adversary & npc systems — dashboard
+Low,POVUnknown,enemy systems department — notes.stub-s01,POV 'nan' is not Clara or Avery,enemy systems department — notes.stub
+Low,POVUnknown,statblocks & enemies department — charter.stub-s01,POV 'nan' is not Clara or Avery,statblocks & enemies department — charter.stub
+Low,POVUnknown,qa & ux — dashboard-s01,POV 'nan' is not Clara or Avery,qa & ux — dashboard
+Low,POVUnknown,archive_process_guide-s01,POV 'nan' is not Clara or Avery,archive_process_guide
+Low,POVUnknown,outline_2025-s01,POV 'nan' is not Clara or Avery,outline_2025
+Low,POVUnknown,playbook-s01,POV 'nan' is not Clara or Avery,playbook
+Low,POVUnknown,steam_ops_charter_20250817-s01,POV 'nan' is not Clara or Avery,steam_ops_charter_20250817
+Low,POVUnknown,steam_ops_dashboard_20250817-s01,POV 'nan' is not Clara or Avery,steam_ops_dashboard_20250817
+Low,POVUnknown,ch1-s01,POV 'nan' is not Clara or Avery,ch1
+Low,POVUnknown,ch2-s01,POV 'nan' is not Clara or Avery,ch2
+Low,POVUnknown,ch2_avery_infiltration-s01,POV 'nan' is not Clara or Avery,ch2_avery_infiltration
+Low,POVUnknown,ch2_clara_kadath-s01,POV 'nan' is not Clara or Avery,ch2_clara_kadath
+Low,POVUnknown,ch3_avery_suspended_daycare_spectral-s01,POV 'nan' is not Clara or Avery,ch3_avery_suspended_daycare_spectral
+Low,POVUnknown,ch3_clara_reddy_kadath_scavengers-s01,POV 'nan' is not Clara or Avery,ch3_clara_reddy_kadath_scavengers
+Low,POVUnknown,ch4_convergence_rework-s01,POV 'nan' is not Clara or Avery,ch4_convergence_rework
+Low,POVUnknown,ch4_kadath_city_rework-s01,POV 'nan' is not Clara or Avery,ch4_kadath_city_rework
+Low,POVUnknown,ch5_dlamp_betsy_rework-s01,POV 'nan' is not Clara or Avery,ch5_dlamp_betsy_rework
+Low,POVUnknown,ch5_dlamp_ironhighway_underground-s01,POV 'nan' is not Clara or Avery,ch5_dlamp_ironhighway_underground
+Low,POVUnknown,ch5_rework_nyfo_warrant_betsy-s01,POV 'nan' is not Clara or Avery,ch5_rework_nyfo_warrant_betsy
+Low,POVUnknown,ch6_raid_summary_index-s01,POV 'nan' is not Clara or Avery,ch6_raid_summary_index
+Low,POVUnknown,ch6_srs_apocalypse_narrative-s01,POV 'nan' is not Clara or Avery,ch6_srs_apocalypse_narrative
+Low,POVUnknown,ch7-placeholder-s01,POV 'nan' is not Clara or Avery,ch7-placeholder
+Low,POVUnknown,codeowners_snippet_ch5-ch6-s01,POV 'nan' is not Clara or Avery,codeowners_snippet_ch5-ch6
+Low,POVUnknown,epilogue-s01,POV 'nan' is not Clara or Avery,epilogue
+Low,POVUnknown,manifest_addendum_ch1-s01,POV 'nan' is not Clara or Avery,manifest_addendum_ch1
+Low,POVUnknown,manifest_addendum_ch1_layouts_ui-s01,POV 'nan' is not Clara or Avery,manifest_addendum_ch1_layouts_ui
+Low,POVUnknown,manifest_addendum_sec-03_ch1-s01,POV 'nan' is not Clara or Avery,manifest_addendum_sec-03_ch1
+Low,POVUnknown,manifest_addendum_sec-03_prologues-s01,POV 'nan' is not Clara or Avery,manifest_addendum_sec-03_prologues
+Low,POVUnknown,pr_attachments_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_attachments_ch5-ch6
+Low,POVUnknown,pr_ch5-ch6_root_merge-s01,POV 'nan' is not Clara or Avery,pr_ch5-ch6_root_merge
+Low,POVUnknown,pr_ch7_pack-s01,POV 'nan' is not Clara or Avery,pr_ch7_pack
+Low,POVUnknown,pr_change_impact_map_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_change_impact_map_ch5-ch6
+Low,POVUnknown,pr_checklist_box_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_checklist_box_ch5-ch6
+Low,POVUnknown,pr_cover_note_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_cover_note_ch5-ch6
+Low,POVUnknown,pr_crosslinks_assertion_list-s01,POV 'nan' is not Clara or Avery,pr_crosslinks_assertion_list
+Low,POVUnknown,pr_diff_review_guide_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_diff_review_guide_ch5-ch6
+Low,POVUnknown,pr_final_copy_blocks_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_final_copy_blocks_ch5-ch6
+Low,POVUnknown,pr_followup_issue_bundle_template-s01,POV 'nan' is not Clara or Avery,pr_followup_issue_bundle_template
+Low,POVUnknown,pr_github_labels_and_milestones-s01,POV 'nan' is not Clara or Avery,pr_github_labels_and_milestones
+Low,POVUnknown,pr_onepager_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_onepager_ch5-ch6
+Low,POVUnknown,pr_open_runbook_desktop_and_cli-s01,POV 'nan' is not Clara or Avery,pr_open_runbook_desktop_and_cli
+Low,POVUnknown,pr_release_notes_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_release_notes_ch5-ch6
+Low,POVUnknown,pr_reviewer_comment_templates-s01,POV 'nan' is not Clara or Avery,pr_reviewer_comment_templates
+Low,POVUnknown,pr_reviewer_package_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_reviewer_package_ch5-ch6
+Low,POVUnknown,pr_squash_merge_plan_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_squash_merge_plan_ch5-ch6
+Low,POVUnknown,pr_status_board_ch7-s01,POV 'nan' is not Clara or Avery,pr_status_board_ch7
+Low,POVUnknown,pr_template_github_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_template_github_ch5-ch6
+Low,POVUnknown,pr_term_glossary_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_term_glossary_ch5-ch6
+Low,POVUnknown,root_apply_instructions_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_apply_instructions_ch5-ch6
+Low,POVUnknown,root_changelog_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_changelog_ch5-ch6
+Low,POVUnknown,root_crosslink_map_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_crosslink_map_ch5-ch6
+Low,POVUnknown,root_dependency_graph_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_dependency_graph_ch5-ch6
+Low,POVUnknown,root_diff_checklist_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_diff_checklist_ch5-ch6
+Low,POVUnknown,root_edge_case_decisions_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_edge_case_decisions_ch5-ch6
+Low,POVUnknown,root_endtoend_test_script_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_endtoend_test_script_ch5-ch6
+Low,POVUnknown,root_epilogue_seeds_ch7-s01,POV 'nan' is not Clara or Avery,root_epilogue_seeds_ch7
+Low,POVUnknown,root_faq_ch5-ch6_merge-s01,POV 'nan' is not Clara or Avery,root_faq_ch5-ch6_merge
+Low,POVUnknown,root_github_desktop_guide_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_github_desktop_guide_ch5-ch6
+Low,POVUnknown,root_internal_playtest_notes_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_internal_playtest_notes_ch5-ch6
+Low,POVUnknown,root_known_good_lines_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_known_good_lines_ch5-ch6
+Low,POVUnknown,root_link_verification_checklist-s01,POV 'nan' is not Clara or Avery,root_link_verification_checklist
+Low,POVUnknown,root_merge_commit_messages-s01,POV 'nan' is not Clara or Avery,root_merge_commit_messages
+Low,POVUnknown,root_merge_conflict_resolution_guide-s01,POV 'nan' is not Clara or Avery,root_merge_conflict_resolution_guide
+Low,POVUnknown,root_merge_done_checklist-s01,POV 'nan' is not Clara or Avery,root_merge_done_checklist
+Low,POVUnknown,root_merge_index_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_merge_index_ch5-ch6
+Low,POVUnknown,root_merge_risk_register-s01,POV 'nan' is not Clara or Avery,root_merge_risk_register
+Low,POVUnknown,root_merge_smoke_checks-s01,POV 'nan' is not Clara or Avery,root_merge_smoke_checks
+Low,POVUnknown,root_migration_log_stub-s01,POV 'nan' is not Clara or Avery,root_migration_log_stub
+Low,POVUnknown,root_narrative_delta_summary_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_narrative_delta_summary_ch5-ch6
+Low,POVUnknown,root_narrative_tone_style_guide_1994-s01,POV 'nan' is not Clara or Avery,root_narrative_tone_style_guide_1994
+Low,POVUnknown,root_pastepoint_cues_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_pastepoint_cues_ch5-ch6
+Low,POVUnknown,root_paste_verification_strings-s01,POV 'nan' is not Clara or Avery,root_paste_verification_strings
+Low,POVUnknown,root_postmerge_tasks-s01,POV 'nan' is not Clara or Avery,root_postmerge_tasks
+Low,POVUnknown,root_practical_paste_steps-s01,POV 'nan' is not Clara or Avery,root_practical_paste_steps
+Low,POVUnknown,root_prompts_conflict_map-s01,POV 'nan' is not Clara or Avery,root_prompts_conflict_map
+Low,POVUnknown,root_prompts_validation_report_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_prompts_validation_report_ch5-ch6
+Low,POVUnknown,root_pr_template_ch5-ch6_merge-s01,POV 'nan' is not Clara or Avery,root_pr_template_ch5-ch6_merge
+Low,POVUnknown,root_readme_badge_block-s01,POV 'nan' is not Clara or Avery,root_readme_badge_block
+Low,POVUnknown,root_readme_toc_ch5-ch6_insert-s01,POV 'nan' is not Clara or Avery,root_readme_toc_ch5-ch6_insert
+Low,POVUnknown,root_readme_toc_ch7_insert-s01,POV 'nan' is not Clara or Avery,root_readme_toc_ch7_insert
+Low,POVUnknown,root_readthrough_script_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_readthrough_script_ch5-ch6
+Low,POVUnknown,root_redlines_before_after_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_redlines_before_after_ch5-ch6
+Low,POVUnknown,root_rollback_plan_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_rollback_plan_ch5-ch6
+Low,POVUnknown,root_rollout_plan_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_rollout_plan_ch5-ch6
+Low,POVUnknown,root_sample_pr_body_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_sample_pr_body_ch5-ch6
+Low,POVUnknown,root_scoring_tables_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_scoring_tables_ch5-ch6
+Low,POVUnknown,root_scripting_pseudocode_ch6_endings-s01,POV 'nan' is not Clara or Avery,root_scripting_pseudocode_ch6_endings
+Low,POVUnknown,root_sec-03_ch5-ch6_anchors-s01,POV 'nan' is not Clara or Avery,root_sec-03_ch5-ch6_anchors
+Low,POVUnknown,root_sec-03_ch5_narrative_paste-s01,POV 'nan' is not Clara or Avery,root_sec-03_ch5_narrative_paste
+Low,POVUnknown,root_sec-03_ch6_narrative_paste-s01,POV 'nan' is not Clara or Avery,root_sec-03_ch6_narrative_paste
+Low,POVUnknown,root_sec-03_ch7_narrative_paste-s01,POV 'nan' is not Clara or Avery,root_sec-03_ch7_narrative_paste
+Low,POVUnknown,root_sec-03_narrative_ch5-ch6_merge-s01,POV 'nan' is not Clara or Avery,root_sec-03_narrative_ch5-ch6_merge
+Low,POVUnknown,root_sec-05_anchors-s01,POV 'nan' is not Clara or Avery,root_sec-05_anchors
+Low,POVUnknown,root_sec-05_insert_points-s01,POV 'nan' is not Clara or Avery,root_sec-05_insert_points
+Low,POVUnknown,root_sec-05_systems_merge_additions_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_sec-05_systems_merge_additions_ch5-ch6
+Low,POVUnknown,root_sec-06-07_world_ui_ch5-ch6_merge-s01,POV 'nan' is not Clara or Avery,root_sec-06-07_world_ui_ch5-ch6_merge
+Low,POVUnknown,root_sec-06-07_world_ui_ch7_merge-s01,POV 'nan' is not Clara or Avery,root_sec-06-07_world_ui_ch7_merge
+Low,POVUnknown,root_sec-06_anchors-s01,POV 'nan' is not Clara or Avery,root_sec-06_anchors
+Low,POVUnknown,root_sec-07_anchors-s01,POV 'nan' is not Clara or Avery,root_sec-07_anchors
+Low,POVUnknown,root_sec-07_ui_prompts_ch7_extensions-s01,POV 'nan' is not Clara or Avery,root_sec-07_ui_prompts_ch7_extensions
+Low,POVUnknown,root_sec-07_ui_prompts_master-s01,POV 'nan' is not Clara or Avery,root_sec-07_ui_prompts_master
+Low,POVUnknown,root_sed_snippets_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_sed_snippets_ch5-ch6
+Low,POVUnknown,root_systems_snippet_replacements-s01,POV 'nan' is not Clara or Avery,root_systems_snippet_replacements
+Low,POVUnknown,root_timeline_continuity_ch4-ch6-s01,POV 'nan' is not Clara or Avery,root_timeline_continuity_ch4-ch6
+Low,POVUnknown,root_toc_inserts_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_toc_inserts_ch5-ch6
+Low,POVUnknown,root_ui_copy_snippets_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_ui_copy_snippets_ch5-ch6
+Low,POVUnknown,root_ui_wireflows_text_ch6-s01,POV 'nan' is not Clara or Avery,root_ui_wireflows_text_ch6
+Low,POVUnknown,root_validation_grep_patterns-s01,POV 'nan' is not Clara or Avery,root_validation_grep_patterns
+Low,POVUnknown,root_windows_ps_findreplace_snippets_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_windows_ps_findreplace_snippets_ch5-ch6
+Low,POVUnknown,sec-01-ch5-6_integration_plan-s01,POV 'nan' is not Clara or Avery,sec-01-ch5-6_integration_plan
+Low,POVUnknown,sec-02-ch5-6_master_flags_matrix-s01,POV 'nan' is not Clara or Avery,sec-02-ch5-6_master_flags_matrix
+Low,POVUnknown,sec-03-ch2_avery_section-s01,POV 'nan' is not Clara or Avery,sec-03-ch2_avery_section
+Low,POVUnknown,sec-03-ch2_clara_kadath_section-s01,POV 'nan' is not Clara or Avery,sec-03-ch2_clara_kadath_section
+Low,POVUnknown,sec-03-ch3_narrative_sections-s01,POV 'nan' is not Clara or Avery,sec-03-ch3_narrative_sections
+Low,POVUnknown,sec-03-ch4_narrative-s01,POV 'nan' is not Clara or Avery,sec-03-ch4_narrative
+Low,POVUnknown,sec-03-ch5-6_narrative_deepdlamp_insert-s01,POV 'nan' is not Clara or Avery,sec-03-ch5-6_narrative_deepdlamp_insert
+Low,POVUnknown,sec-03-ch5_dlamp_betsy_narrative-s01,POV 'nan' is not Clara or Avery,sec-03-ch5_dlamp_betsy_narrative
+Low,POVUnknown,sec-03-ch5_rework_narrative-s01,POV 'nan' is not Clara or Avery,sec-03-ch5_rework_narrative
+Low,POVUnknown,sec-03-ch6_beatsheet_raid-s01,POV 'nan' is not Clara or Avery,sec-03-ch6_beatsheet_raid
+Low,POVUnknown,sec-03-ch6_epilogue-s01,POV 'nan' is not Clara or Avery,sec-03-ch6_epilogue
+Low,POVUnknown,sec-03_3.4_synopsis_prologues_add-s01,POV 'nan' is not Clara or Avery,sec-03_3.4_synopsis_prologues_add
+Low,POVUnknown,sec-03_3.5_ch1_simplecuriosity_add-s01,POV 'nan' is not Clara or Avery,sec-03_3.5_ch1_simplecuriosity_add
+Low,POVUnknown,sec-04-ch6_lore_splinter_of_azathoth-s01,POV 'nan' is not Clara or Avery,sec-04-ch6_lore_splinter_of_azathoth
+Low,POVUnknown,sec-04_ch1_integration_add-s01,POV 'nan' is not Clara or Avery,sec-04_ch1_integration_add
+Low,POVUnknown,sec-05-ch2_avery_systems_additions-s01,POV 'nan' is not Clara or Avery,sec-05-ch2_avery_systems_additions
+Low,POVUnknown,sec-05-ch2_systems_additions-s01,POV 'nan' is not Clara or Avery,sec-05-ch2_systems_additions
+Low,POVUnknown,sec-05-ch3_fear_meter_spec-s01,POV 'nan' is not Clara or Avery,sec-05-ch3_fear_meter_spec
+Low,POVUnknown,sec-05-ch3_systems_additions-s01,POV 'nan' is not Clara or Avery,sec-05-ch3_systems_additions
+Low,POVUnknown,sec-05-ch4_boss_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch4_boss_systems
+Low,POVUnknown,sec-05-ch4_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch4_systems
+Low,POVUnknown,sec-05-ch5-6_enemies_starvampire-s01,POV 'nan' is not Clara or Avery,sec-05-ch5-6_enemies_starvampire
+Low,POVUnknown,sec-05-ch5-6_rogue_ops_comms_sop-s01,POV 'nan' is not Clara or Avery,sec-05-ch5-6_rogue_ops_comms_sop
+Low,POVUnknown,sec-05-ch5-6_vehicle_o2_fuel_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch5-6_vehicle_o2_fuel_systems
+Low,POVUnknown,sec-05-ch5_dlamp_betsy_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch5_dlamp_betsy_systems
+Low,POVUnknown,sec-05-ch5_systems_rework-s01,POV 'nan' is not Clara or Avery,sec-05-ch5_systems_rework
+Low,POVUnknown,sec-05-ch6_afteraction_report_spec-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_afteraction_report_spec
+Low,POVUnknown,sec-05-ch6_ai_behavior_fsm-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_ai_behavior_fsm
+Low,POVUnknown,sec-05-ch6_blueonblue_detection-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_blueonblue_detection
+Low,POVUnknown,sec-05-ch6_combat_tuning_params-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_combat_tuning_params
+Low,POVUnknown,sec-05-ch6_enemy_resist_interrupt_table-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_enemy_resist_interrupt_table
+Low,POVUnknown,sec-05-ch6_loadout_guide-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_loadout_guide
+Low,POVUnknown,sec-05-ch6_raid_roe-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_raid_roe
+Low,POVUnknown,sec-05-ch6_splinter_vault_mechanics-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_splinter_vault_mechanics
+Low,POVUnknown,sec-05-ch6_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch6_systems
+Low,POVUnknown,sec-05-deputy_name_randomizer_spec-s01,POV 'nan' is not Clara or Avery,sec-05-deputy_name_randomizer_spec
+Low,POVUnknown,sec-05_ch1_flags_data_add-s01,POV 'nan' is not Clara or Avery,sec-05_ch1_flags_data_add
+Low,POVUnknown,sec-06-ch2_avery_world_content-s01,POV 'nan' is not Clara or Avery,sec-06-ch2_avery_world_content
+Low,POVUnknown,sec-06-ch3_world_content-s01,POV 'nan' is not Clara or Avery,sec-06-ch3_world_content
+Low,POVUnknown,sec-06-ch4_world_content-s01,POV 'nan' is not Clara or Avery,sec-06-ch4_world_content
+Low,POVUnknown,sec-06-ch5-6_callsigns_and_nodes-s01,POV 'nan' is not Clara or Avery,sec-06-ch5-6_callsigns_and_nodes
+Low,POVUnknown,sec-06-ch5-6_ironhighway_routebook-s01,POV 'nan' is not Clara or Avery,sec-06-ch5-6_ironhighway_routebook
+Low,POVUnknown,sec-06-ch5-6_world_dlamp_ironhighway-s01,POV 'nan' is not Clara or Avery,sec-06-ch5-6_world_dlamp_ironhighway
+Low,POVUnknown,sec-06-ch5_world_content-s01,POV 'nan' is not Clara or Avery,sec-06-ch5_world_content
+Low,POVUnknown,sec-06-ch6_ascii_map-s01,POV 'nan' is not Clara or Avery,sec-06-ch6_ascii_map
+Low,POVUnknown,sec-06-ch6_route_encounter_tables-s01,POV 'nan' is not Clara or Avery,sec-06-ch6_route_encounter_tables
+Low,POVUnknown,sec-06-ch6_srs_secret_annex_world-s01,POV 'nan' is not Clara or Avery,sec-06-ch6_srs_secret_annex_world
+Low,POVUnknown,sec-06-ch6_stealth_breaker_cameraloops-s01,POV 'nan' is not Clara or Avery,sec-06-ch6_stealth_breaker_cameraloops
+Low,POVUnknown,sec-06_ch1_world_layouts_add-s01,POV 'nan' is not Clara or Avery,sec-06_ch1_world_layouts_add
+Low,POVUnknown,sec-07-ch2_avery_ui_prompts-s01,POV 'nan' is not Clara or Avery,sec-07-ch2_avery_ui_prompts
+Low,POVUnknown,sec-07-ch3_ui_prompts-s01,POV 'nan' is not Clara or Avery,sec-07-ch3_ui_prompts
+Low,POVUnknown,sec-07-ch4_ui_spell_equip-s01,POV 'nan' is not Clara or Avery,sec-07-ch4_ui_spell_equip
+Low,POVUnknown,sec-07-ch5-6_ui_prompts_consolidated-s01,POV 'nan' is not Clara or Avery,sec-07-ch5-6_ui_prompts_consolidated
+Low,POVUnknown,sec-07-ch5_ui_prompts-s01,POV 'nan' is not Clara or Avery,sec-07-ch5_ui_prompts
+Low,POVUnknown,sec-07-ch6_prompts_verification-s01,POV 'nan' is not Clara or Avery,sec-07-ch6_prompts_verification
+Low,POVUnknown,sec-07-ch6_raid_ui_prompts-s01,POV 'nan' is not Clara or Avery,sec-07-ch6_raid_ui_prompts
+Low,POVUnknown,sec-07-ch6_ui_flow-s01,POV 'nan' is not Clara or Avery,sec-07-ch6_ui_flow
+Low,POVUnknown,sec-07_ch1_medstat_notes_add-s01,POV 'nan' is not Clara or Avery,sec-07_ch1_medstat_notes_add
+Low,POVUnknown,sec-08-ch5-6_audio_soundscape-s01,POV 'nan' is not Clara or Avery,sec-08-ch5-6_audio_soundscape
+Low,POVUnknown,ch6-1994,POV 'nan' is not Clara or Avery,sec-09-period_audit_ch5-ch6_1994
+Low,POVUnknown,tdd_ch1_device_hooks_add-s01,POV 'nan' is not Clara or Avery,tdd_ch1_device_hooks_add
+Low,POVUnknown,update_log-s01,POV 'nan' is not Clara or Avery,update_log
+Low,POVUnknown,glossary_1994-s01,POV 'nan' is not Clara or Avery,glossary_1994
+Low,POVUnknown,period_check_core_terms_1994-s01,POV 'nan' is not Clara or Avery,period_check_core_terms_1994
+Low,POVUnknown,refs_seed_1994-s01,POV 'nan' is not Clara or Avery,refs_seed_1994
+Low,POVUnknown,ch6-raid-rules-s01,POV 'nan' is not Clara or Avery,ch6-raid-rules
+Low,POVUnknown,app_checklist-s01,POV 'nan' is not Clara or Avery,app_checklist
+Low,POVUnknown,branding-s01,POV 'nan' is not Clara or Avery,branding
+Low,POVUnknown,store_copy-s01,POV 'nan' is not Clara or Avery,store_copy
+Low,POVUnknown,1994_replacements_guide-s01,POV 'nan' is not Clara or Avery,1994_replacements_guide
+Low,POVUnknown,milestone_template-s01,POV 'nan' is not Clara or Avery,milestone_template
+Low,POVUnknown,0a_avery_prologue_beat2objective_20250814t0941z-s01,POV 'nan' is not Clara or Avery,0a_avery_prologue_beat2objective_20250814t0941z
+Low,POVUnknown,0b_clara_prologue_beat2objective_20250814t0941z-s01,POV 'nan' is not Clara or Avery,0b_clara_prologue_beat2objective_20250814t0941z
+Low,POVUnknown,assetlist_0a_quantico-s01,POV 'nan' is not Clara or Avery,assetlist_0a_quantico
+Low,POVUnknown,assetlist_0b_betsyapt-s01,POV 'nan' is not Clara or Avery,assetlist_0b_betsyapt
+Low,POVUnknown,assetlist_ch1_brightstar-s01,POV 'nan' is not Clara or Avery,assetlist_ch1_brightstar
+Low,POVUnknown,assets_0a_quantico_1989_20250814t1030z-s01,POV 'nan' is not Clara or Avery,assets_0a_quantico_1989_20250814t1030z
+Low,POVUnknown,assets_0b_betsysapt_1994_20250814t1030z-s01,POV 'nan' is not Clara or Avery,assets_0b_betsysapt_1994_20250814t1030z
+Low,POVUnknown,ch1-state-s01,POV 'nan' is not Clara or Avery,ch1-state
+Low,POVUnknown,ch1_beat2objective-s01,POV 'nan' is not Clara or Avery,ch1_beat2objective
+Low,POVUnknown,ch1_narrative_corrections_worksheet-s01,POV 'nan' is not Clara or Avery,ch1_narrative_corrections_worksheet
+Low,POVUnknown,ch1_outline_simplecuriosity-s01,POV 'nan' is not Clara or Avery,ch1_outline_simplecuriosity
+Low,POVUnknown,ch1_polishchecklist-s01,POV 'nan' is not Clara or Avery,ch1_polishchecklist
+Low,POVUnknown,ch1_stringkeymanifest-s01,POV 'nan' is not Clara or Avery,ch1_stringkeymanifest
+Low,POVUnknown,ch2-state-s01,POV 'nan' is not Clara or Avery,ch2-state
+Low,POVUnknown,ch2_avery_tracker-s01,POV 'nan' is not Clara or Avery,ch2_avery_tracker
+Low,POVUnknown,ch3_scoring_table-s01,POV 'nan' is not Clara or Avery,ch3_scoring_table
+Low,POVUnknown,ch3_trackers-s01,POV 'nan' is not Clara or Avery,ch3_trackers
+Low,POVUnknown,ch4_convergence_rework-s01,POV 'nan' is not Clara or Avery,ch4_convergence_rework
+Low,POVUnknown,ch4_scoring_table-s01,POV 'nan' is not Clara or Avery,ch4_scoring_table
+Low,POVUnknown,ch4_tracker-s01,POV 'nan' is not Clara or Avery,ch4_tracker
+Low,POVUnknown,ch5-6_build_verification-s01,POV 'nan' is not Clara or Avery,ch5-6_build_verification
+Low,POVUnknown,ch5-6_combat_evidence_scoring-s01,POV 'nan' is not Clara or Avery,ch5-6_combat_evidence_scoring
+Low,POVUnknown,ch5-6_deepdlamp_flags-s01,POV 'nan' is not Clara or Avery,ch5-6_deepdlamp_flags
+Low,POVUnknown,ch5-6_dlamp_evidence_index-s01,POV 'nan' is not Clara or Avery,ch5-6_dlamp_evidence_index
+Low,POVUnknown,ch5-6_krill_handler_log-s01,POV 'nan' is not Clara or Avery,ch5-6_krill_handler_log
+Low,POVUnknown,ch5_tracker-s01,POV 'nan' is not Clara or Avery,ch5_tracker
+Low,POVUnknown,ch6_balance_telemetry_spec-s01,POV 'nan' is not Clara or Avery,ch6_balance_telemetry_spec
+Low,POVUnknown,ch6_blueonblue_test_plan-s01,POV 'nan' is not Clara or Avery,ch6_blueonblue_test_plan
+Low,POVUnknown,ch6_bug_triage_template-s01,POV 'nan' is not Clara or Avery,ch6_bug_triage_template
+Low,POVUnknown,ch6_ending_scorecard-s01,POV 'nan' is not Clara or Avery,ch6_ending_scorecard
+Low,POVUnknown,ch6_flags_endings-s01,POV 'nan' is not Clara or Avery,ch6_flags_endings
+Low,POVUnknown,ch6_known_issues-s01,POV 'nan' is not Clara or Avery,ch6_known_issues
+Low,POVUnknown,ch6_operational_checklist-s01,POV 'nan' is not Clara or Avery,ch6_operational_checklist
+Low,POVUnknown,ch6_playtest_log_sheet-s01,POV 'nan' is not Clara or Avery,ch6_playtest_log_sheet
+Low,POVUnknown,ch6_qa_test_cases-s01,POV 'nan' is not Clara or Avery,ch6_qa_test_cases
+Low,POVUnknown,ch6_scoring_raid-s01,POV 'nan' is not Clara or Avery,ch6_scoring_raid
+Low,POVUnknown,ch6_tracker-s01,POV 'nan' is not Clara or Avery,ch6_tracker
+Low,POVUnknown,ch7-city-rules-s01,POV 'nan' is not Clara or Avery,ch7-city-rules
+Low,POVUnknown,ch7-state-s01,POV 'nan' is not Clara or Avery,ch7-state
+Low,POVUnknown,developer-guides-s01,POV 'nan' is not Clara or Avery,developer-guides
+Low,POVUnknown,devices_storage_1994-s01,POV 'nan' is not Clara or Avery,devices_storage_1994
+Low,POVUnknown,epilogue-state-s01,POV 'nan' is not Clara or Avery,epilogue-state
+Low,POVUnknown,epilogue-validation-s01,POV 'nan' is not Clara or Avery,epilogue-validation
+Low,POVUnknown,evidence-caps-s01,POV 'nan' is not Clara or Avery,evidence-caps
+Low,POVUnknown,glossary_1994_terms-s01,POV 'nan' is not Clara or Avery,glossary_1994_terms
+Low,POVUnknown,inlinepatch_sec-04_ch1-s01,POV 'nan' is not Clara or Avery,inlinepatch_sec-04_ch1
+Low,POVUnknown,inlinepatch_sec-04_prologues-s01,POV 'nan' is not Clara or Avery,inlinepatch_sec-04_prologues
+Low,POVUnknown,inlinepatch_sec-05_ch1-s01,POV 'nan' is not Clara or Avery,inlinepatch_sec-05_ch1
+Low,POVUnknown,inlinepatch_sec-05_prologues-s01,POV 'nan' is not Clara or Avery,inlinepatch_sec-05_prologues
+Low,POVUnknown,inlinepatch_tdd_ch1-s01,POV 'nan' is not Clara or Avery,inlinepatch_tdd_ch1
+Low,POVUnknown,inlinepatch_tdd_prologues-s01,POV 'nan' is not Clara or Avery,inlinepatch_tdd_prologues
+Low,POVUnknown,microtac_feature_pairs-s01,POV 'nan' is not Clara or Avery,microtac_feature_pairs
+Low,POVUnknown,ch5-6,POV 'nan' is not Clara or Avery,milestone_v0.6-ch5-6-merge
+Low,POVUnknown,narr-tracker_playbook-outline_sync_v0.1-s01,POV 'nan' is not Clara or Avery,narr-tracker_playbook-outline_sync_v0.1
+Low,POVUnknown,narr-tracker_prologues_v0.3-s01,POV 'nan' is not Clara or Avery,narr-tracker_prologues_v0.3
+Low,POVUnknown,period_sweep_violations_ch5-ch6-s01,POV 'nan' is not Clara or Avery,period_sweep_violations_ch5-ch6
+Low,POVUnknown,project_summary-s01,POV 'nan' is not Clara or Avery,project_summary
+Low,POVUnknown,prologues_polishchecklist-s01,POV 'nan' is not Clara or Avery,prologues_polishchecklist
+Low,POVUnknown,prologues_stringkeymanifest-s01,POV 'nan' is not Clara or Avery,prologues_stringkeymanifest
+Low,POVUnknown,prop_sec-04_loops_prologues-s01,POV 'nan' is not Clara or Avery,prop_sec-04_loops_prologues
+Low,POVUnknown,prop_sec-05_systems_prologuesflags-s01,POV 'nan' is not Clara or Avery,prop_sec-05_systems_prologuesflags
+Low,POVUnknown,prop_tdd_evidence_fieldpad_prologueshooks-s01,POV 'nan' is not Clara or Avery,prop_tdd_evidence_fieldpad_prologueshooks
+Low,POVUnknown,pr_closeout_checklist_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_closeout_checklist_ch5-ch6
+Low,POVUnknown,pr_crosscheck_results_log-s01,POV 'nan' is not Clara or Avery,pr_crosscheck_results_log
+Low,POVUnknown,pr_reviewer_assignment_matrix-s01,POV 'nan' is not Clara or Avery,pr_reviewer_assignment_matrix
+Low,POVUnknown,pr_reviewer_findings_log_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_reviewer_findings_log_ch5-ch6
+Low,POVUnknown,pr_run_log_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_run_log_ch5-ch6
+Low,POVUnknown,pr_signoff_form_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_signoff_form_ch5-ch6
+Low,POVUnknown,pr_status_board_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_status_board_ch5-ch6
+Low,POVUnknown,pr_status_board_ch7-s01,POV 'nan' is not Clara or Avery,pr_status_board_ch7
+Low,POVUnknown,pr_triage_template_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_triage_template_ch5-ch6
+Low,POVUnknown,pr_validation_master_checklist_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_validation_master_checklist_ch5-ch6
+Low,POVUnknown,pr_validation_results_summary_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_validation_results_summary_ch5-ch6
+Low,POVUnknown,pr_validation_results_summary_ch7-s01,POV 'nan' is not Clara or Avery,pr_validation_results_summary_ch7
+Low,POVUnknown,pr_validation_tasklist_ch5-ch6-s01,POV 'nan' is not Clara or Avery,pr_validation_tasklist_ch5-ch6
+Low,POVUnknown,pr_validation_tasklist_ch7-s01,POV 'nan' is not Clara or Avery,pr_validation_tasklist_ch7
+Low,POVUnknown,qatelemetry_0a_quantico-s01,POV 'nan' is not Clara or Avery,qatelemetry_0a_quantico
+Low,POVUnknown,qatelemetry_0b_betsyapt-s01,POV 'nan' is not Clara or Avery,qatelemetry_0b_betsyapt
+Low,POVUnknown,qatelemetry_ch1-s01,POV 'nan' is not Clara or Avery,qatelemetry_ch1
+Low,POVUnknown,root_cutlist_removals_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_cutlist_removals_ch5-ch6
+Low,POVUnknown,root_file_ownership_matrix-s01,POV 'nan' is not Clara or Avery,root_file_ownership_matrix
+Low,POVUnknown,root_integration_completion_ticket-s01,POV 'nan' is not Clara or Avery,root_integration_completion_ticket
+Low,POVUnknown,root_issue_template_ch5-ch6_merge-s01,POV 'nan' is not Clara or Avery,root_issue_template_ch5-ch6_merge
+Low,POVUnknown,root_merge_paste_progress-s01,POV 'nan' is not Clara or Avery,root_merge_paste_progress
+Low,POVUnknown,root_merge_reviewer_checklist-s01,POV 'nan' is not Clara or Avery,root_merge_reviewer_checklist
+Low,POVUnknown,root_merge_risk_register-s01,POV 'nan' is not Clara or Avery,root_merge_risk_register
+Low,POVUnknown,root_merge_smoke_checks-s01,POV 'nan' is not Clara or Avery,root_merge_smoke_checks
+Low,POVUnknown,root_merge_status_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_merge_status_ch5-ch6
+Low,POVUnknown,root_metrics_snapshot_template-s01,POV 'nan' is not Clara or Avery,root_metrics_snapshot_template
+Low,POVUnknown,root_qa_test_cases_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_qa_test_cases_ch5-ch6
+Low,POVUnknown,root_regressions_watchlist_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_regressions_watchlist_ch5-ch6
+Low,POVUnknown,root_reviewer_questions_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_reviewer_questions_ch5-ch6
+Low,POVUnknown,root_review_signoff_sheet-s01,POV 'nan' is not Clara or Avery,root_review_signoff_sheet
+Low,POVUnknown,root_seed_test_matrix_ch5-ch6-s01,POV 'nan' is not Clara or Avery,root_seed_test_matrix_ch5-ch6
+Low,POVUnknown,sec-03-ch4_narrative-s01,POV 'nan' is not Clara or Avery,sec-03-ch4_narrative
+Low,POVUnknown,sec-03-ch6_raid_addendum-s01,POV 'nan' is not Clara or Avery,sec-03-ch6_raid_addendum
+Low,POVUnknown,sec-05-ch4_systems-s01,POV 'nan' is not Clara or Avery,sec-05-ch4_systems
+Low,POVUnknown,sec-06-ch6_srs_secret_annex_world-s01,POV 'nan' is not Clara or Avery,sec-06-ch6_srs_secret_annex_world
+Low,POVUnknown,sec06_ch1_worldlayouts-s01,POV 'nan' is not Clara or Avery,sec06_ch1_worldlayouts
+Low,POVUnknown,sec07_ch1_medstat_notes_ui-s01,POV 'nan' is not Clara or Avery,sec07_ch1_medstat_notes_ui
+Low,POVUnknown,shotlist_0a_quantico-s01,POV 'nan' is not Clara or Avery,shotlist_0a_quantico
+Low,POVUnknown,shotlist_0b_betsyapt-s01,POV 'nan' is not Clara or Avery,shotlist_0b_betsyapt
+Low,POVUnknown,shotlist_ch1_brightstar-s01,POV 'nan' is not Clara or Avery,shotlist_ch1_brightstar
+Low,POVUnknown,shotlist_ch1_roadside-s01,POV 'nan' is not Clara or Avery,shotlist_ch1_roadside
+Low,POVUnknown,startac_hits-s01,POV 'nan' is not Clara or Avery,startac_hits
+Low,POVUnknown,tutorialcopy_0a_avery_20250814t0948z-s01,POV 'nan' is not Clara or Avery,tutorialcopy_0a_avery_20250814t0948z
+Low,POVUnknown,tutorialcopy_0b_clara_20250814t0948z-s01,POV 'nan' is not Clara or Avery,tutorialcopy_0b_clara_20250814t0948z
+Low,POVUnknown,tutorialcopy_ch1_avery-s01,POV 'nan' is not Clara or Avery,tutorialcopy_ch1_avery
+Low,POVUnknown,tutorialcopy_ch1_clara-s01,POV 'nan' is not Clara or Avery,tutorialcopy_ch1_clara
+Low,POVUnknown,validation_run_report_ch5-ch6-s01,POV 'nan' is not Clara or Avery,validation_run_report_ch5-ch6
+Low,POVUnknown,voscript_0a_avery-s01,POV 'nan' is not Clara or Avery,voscript_0a_avery
+Low,POVUnknown,voscript_0b_clara-s01,POV 'nan' is not Clara or Avery,voscript_0b_clara
+Low,POVUnknown,voscript_ch1_avery-s01,POV 'nan' is not Clara or Avery,voscript_ch1_avery
+Low,POVUnknown,voscript_ch1_clara-s01,POV 'nan' is not Clara or Avery,voscript_ch1_clara

@@ -27,27 +27,3 @@ Publisher: Apple Computer, Inc.
 Year: 1994  
 Relevance: Stylus UI, handwriting recognition workflows, and PDA interaction patterns contemporaneous with 1994 setting.  
 Added: 2025-08-17
-
-
-## Primary Source 3
-Title: AT&T EO Personal Communicator — Owner’s Manual
-Publisher: AT&T
-Year: 1993
-Relevance: Early pen-based PDA precedents for gestures, notepad UI, and mobile workflows immediately preceding 1994.
-Added: 2025-08-17
-
-
-## Primary Source 4
-Title: FIPS PUB 185 — Escrowed Encryption Standard (EES)
-Publisher: NIST
-Year: 1994
-Relevance: Defines 1994 U.S. crypto policy context (Clipper/LEAF) affecting communications, devices, and law-enforcement procedures in-setting.
-Added: 2025-08-17
-
-
-## Primary Source 5
-Title: Radio Shack 1994 Annual Catalog
-Publisher: Tandy Corporation
-Year: 1994
-Relevance: Consumer electronics specs and pricing for PDAs, modems, phones, and peripherals used in 1994 worldbuilding.
-Added: 2025-08-17
