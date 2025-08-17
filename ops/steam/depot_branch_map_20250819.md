@@ -1,30 +1,32 @@
 ---
-Title: Depot & Branch Map
 Department: Steam Operations
 Codename: Stationmaster
-Owner: Stationmaster
-Reviewer: Postmaster
 Date: 2025-08-17
-Type: Ops Map
-Status: Draft
+Status: Active
 ---
 
-
-## Revision — 2025-08-17
-**OS Targets (Plan A):** Windows 10/11 x64. Steam Deck via Proton.  
-Linux/macOS deferred until post-freeze.
-
-### Depots (launch)
-| DepotID | OS/Type   | Content                      | Notes           |
-|--------:|-----------|------------------------------|-----------------|
-| TBA001  | windows   | base game + content          | launch          |
-| TBA100  | lang-pack | localized text/vo assets     | optional        |
-| TBA900  | tools     | dedicated server/tools       | optional        |
+## Plan A Confirmation — 2025-08-17
+- OS targets: Windows 10/11 x64. Steam Deck via Proton.
+- Tags: add `proton-qa` to beta branch.
 
 ### Branches
-- public, default, beta, preview, dev (unchanged)
-- Add **proton-qa** tag on beta builds for Deck validation.
+| Branch | Purpose | Notes |
+|---|---|---|
+| main | release‑ready | CI build; content lock near freeze |
+| beta | public test | tagged `proton-qa` when Deck testable |
+| dev | internal | daily integration |
+| review | marketing/review | content‑locked snapshots |
 
-### Actions
-- Confirm Proton QA matrix and controller glyphs.
-- Remove non-Windows depots from initial CI upload.
+### Depots
+| Depot ID | Platform | Content | Notes |
+|---|---|---|---|
+| TBD-AppID | Windows x64 | binaries + content | compile with `/MD` runtime, x64 |
+| TBD-Data  | cross‑platform | content only | shared assets |
+
+### Packaging
+- Use LFS or split archives for assets if size requires.
+- Confirm runtime redistributables bundled or Steamworks redist set.
+
+### Sign‑off
+Owner (Stationmaster): ___  Postmaster: ___  Date: ___
+
