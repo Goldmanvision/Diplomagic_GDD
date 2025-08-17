@@ -1,4 +1,4 @@
-> Mirror path: /process/mail-department-dashboard\.md
+> Mirror path: /process/mail-department-dashboard.md
 > Source chat: GDD Rebuild 2025-08-17 0012 ET — Mail Department
 > Last mirrored: 2025-08-17
 
