@@ -71,3 +71,21 @@ jobs:
             exit 1
           fi
           echo "Epilogue validation checks passed (advisory mode if thresholds are TBD)."
+
+
+# --- inserted by ci/add-validation-filter (post-process + upload) ---
+- name: Post-process validation report
+  if: always()
+  run: |
+    python3 .github/scripts/validation_postfilter.py reports/validation-rerun.log reports/validation-clean.log 5 || true
+
+- name: Upload cleaned validation report
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: validation-report-clean
+    path: |
+      reports/validation-clean.log
+      reports/*.txt
+      artifacts/**
+# --- end insert ---
