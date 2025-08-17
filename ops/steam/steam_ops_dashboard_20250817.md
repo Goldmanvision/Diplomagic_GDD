@@ -1,15 +1,27 @@
----
-Department: Steam Operations
-Codename: Stationmaster
-Date: 2025-08-17
-Type: Dashboard
-Status: Active
----
 
-# Steam Operations — Dashboard (2025-08-17)
-Keep
-- TBD
+## Keep
+- steam_ops_charter_20250817.md
+- steam_ops_dashboard_20250817.md
 
-Next actions
-- Create app capsule checklist
-- Build upload pipeline
+## Milestones
+- Store page draft — TBD
+- First build upload — TBD
+- Coming soon publish — TBD
+
+## Today
+- Collect asset inventory and owners.
+
+## Next 7 days
+- Define depot/branch map.
+- Draft store assets checklist.
+
+## Risks
+- Missing asset resolutions or sizes.
+- Build pipeline undefined.
+
+## Links
+- research/refs/refs_seed_1994.md
+- narrative/playbook.md
+- narrative/outline_2025.md
+
+Last updated: 2025-08-17
