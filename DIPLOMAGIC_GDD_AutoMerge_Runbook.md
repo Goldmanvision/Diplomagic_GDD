@@ -355,7 +355,7 @@ PR output includes:
 - `DIPLOMAGIC_GDD_Combined.md` rebuilt
 - `CHANGELOG_AUTO.md` updated from trackers
 - `AUTO_MERGE_REPORT.md` detailing applied changes
-- `Backups/AUTO-*` snapshot of originals
+- `Backups/AUTO-*` snapshot of ascii-safes
 
 ---
 

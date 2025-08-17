@@ -58,5 +58,5 @@ Title III wiretap | Court‑authorized interception of communications | Narrowly
 Pen register / trap and trace | Outgoing / incoming dialing record capture | Lower legal threshold than wiretap | Phone numbers only, not content
 Teletype (LE) | Inter‑agency typed message network | BOLOs, confirmations | Fax/teletype coexist
 Microcassette recorder | Compact audio recorder | Interviews, notes | Chain‑of‑custody for tapes
-Polaroid instant camera | Self‑developing film camera | Crime‑scene and lineup photos | Retain originals with labels
+Polaroid instant camera | Self‑developing film camera | Crime‑scene and lineup photos | Retain ascii-safes with labels
 Photo lineup (“six‑pack”) | Array of subject photos for ID | Paper sheets or photo boards | Follow period admonitions

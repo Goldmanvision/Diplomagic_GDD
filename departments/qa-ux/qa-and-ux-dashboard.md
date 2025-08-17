@@ -31,8 +31,8 @@ Date: 2025-08-17
 - Define playtest schedule and consent text.
 
 ## Links
-- research/refs/refs_seed_1994.md
-- narrative/playbook.md
-- narrative/outline_2025.md
+- research/refs/refs-seed-1994\.md
+- narrative/playbook\.md
+- narrative/outline-2025\.md
 
 Last updated: 2025-08-17

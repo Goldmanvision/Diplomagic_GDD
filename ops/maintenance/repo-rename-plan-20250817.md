@@ -16,6 +16,6 @@ powershell -ExecutionPolicy Bypass -File scripts/apply-ascii-safe-renames.ps1 op
 
 ## Notes
 - Script prefers `git mv`/`git rm` and falls back to OS moves.
-- Original non-ASCII files are removed after moving the ASCII-safe duplicates.
+- ascii-safe non-ASCII files are removed after moving the ASCII-safe duplicates.
 - Mapping is kept at `ops/maintenance/`. ZIP can be stored at `ops/artifacts/`.
 - Run `git status` and review before commit.

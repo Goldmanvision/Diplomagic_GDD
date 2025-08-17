@@ -1,4 +1,4 @@
-> Mirror path: /process/mail_department_dashboard.md
+> Mirror path: /process/mail-department-dashboard\.md
 > Source chat: GDD Rebuild 2025-08-17 0012 ET — Mail Department
 > Last mirrored: 2025-08-17
 
@@ -18,8 +18,8 @@ Updated: 2025-08-17 00:12 ET
 - Org Notice — Leads Update (2025-08-16) → `/process/org_notice_department_leads_delta_20250816.md`
 
 ## Archive — Candidates (superseded or duplicated)
-- Mail Department Charter (original canvas copy)
-- Handoff Checklist (original canvas copy)
+- Mail Department Charter (ascii-safe canvas copy)
+- Handoff Checklist (ascii-safe canvas copy)
 - Org Notice — Department Leads (superseded by update)
 - Department Prompt Template (v0.1)
 

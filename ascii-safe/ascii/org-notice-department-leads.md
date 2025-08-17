@@ -1,4 +1,4 @@
-> Mirror path: /process/org_notice_department_leads.md
+> Mirror path: /process/org-notice-department-leads\.md
 > Source chat: GDD Rebuild 2025-08-16 2320 ET — Mail Department
 > Last mirrored: 2025-08-16
 
