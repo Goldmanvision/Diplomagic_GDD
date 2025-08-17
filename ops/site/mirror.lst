@@ -1,5 +1,5 @@
 # One path per line, relative to repo root. Blank lines and lines starting with # are ignored.
-narrative/scenes/scene_ids_prologue_ch1.md
+narrative/scenes/narrative_scene_ids_prologue_ch1.md
 narrative/reports/ch1_pacing_vs_spawns_20250819.md
 data/spawn/spawn_tables_prologue_ch1.md
 departments/qa-ux/qa-ux-dashboard.md
