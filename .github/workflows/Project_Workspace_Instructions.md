@@ -1,77 +1,120 @@
-Project Workspace Instructions
+# Project Workspace Instructions
 
-This guide describes the structure of the Diplomagic GDD repository and provides guidelines for collaborators. The directory map below is the source of truth for navigating the project; use the links and paths to locate and organize files consistently.
+**Last updated:** August 16, 2025 (America/New_York)  
+**Source of truth for directory paths:**  
+<https://github.com/Goldmanvision/Diplomagic_GDD/blob/main/.github/workflows/repoDirs.md>
 
-Directory Map (source of truth)
+> Always consult the repoDirs list for authoritative locations. If paths differ anywhere else, **repoDirs.md wins**.
 
-main/ – Top-level project directory containing the full Diplomagic GDD source. Local path: F:\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git. GitHub: [Diplomagic_GDD repo root]
-raw.githubusercontent.com
-.
+---
 
-.github/ – Contains GitHub configuration and workflows. Local: F:\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\.github. GitHub: [/.github]
-raw.githubusercontent.com
-.
+## 1) Branch & PR flow (CI-ready)
 
-.github/scripts/ – Supports workflows with scripts (e.g., validation filters). Place CI-related scripts here. Local: F:\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\.github\scripts. GitHub: [/.github/scripts]
-raw.githubusercontent.com
-.
+1. Create or update your working branch off `main`.
+2. Commit changes; keep messages scoped and conventional (e.g., `ci:`, `docs:`, `feat:`).
+3. Push and open a PR against `main`.
+4. CI runs on PR open/sync; artifacts are attached to the run.
 
-.github/workflows/ – Houses GitHub Actions workflows (CI/CD pipelines). Local: F:\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\.github\workflows. GitHub: [/.github/workflows]
-raw.githubusercontent.com
-.
+**Tip:** If a workflow run **cannot be retried**, push a trivial commit (e.g., update README) or use `workflow_dispatch` (see §6).
 
-.idea/ – IDE configuration files; generally not edited by collaborators. Local: F:\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\.idea. GitHub: [/.idea]
-raw.githubusercontent.com
-.
+---
 
-Archive/ – Stores archival packs and record snapshots for context and reference. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Archive. GitHub: [/Archive]
-raw.githubusercontent.com
-.
+## 2) Validation (CH5–CH7 quick rules)
 
-Backups/ – Auto-generated backups created by scripts and CI runs. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Backups. GitHub: [/Backups]
-raw.githubusercontent.com
-.
+- **1994 period tech guardrails:** target **zero** hits for `smartphone`, `Wi‑Fi`, `Bluetooth`, `GPS`, `SMS`.
+- **CH6 (Raid)**  
+  - **Blue‑on‑Blue:** any friendly/civilian hits = **hard FAIL**.  
+  - **Evidence cap:** 3 total (HUD shows `Evidence 0/3 + BlueOnBlue`).  
+  - Lethal force allowed against hostiles per CH6 design; keep friendly fire at **0**.
+- **CH7 (City)**  
+  - **Evidence cap:** 2.  
+  - **Non‑lethal compliance:** no friendly/civilian hits.
+- Keep prompts/strings ≤ 14 chars where specified by design trackers.
+- Use the tracker docs in `Trackers/` for gating details; repoDirs.md points to the exact files.
 
-Patches/ – Contains patches to narrative and documentation. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Patches. GitHub: [/Patches]
-raw.githubusercontent.com
-.
+---
 
-Rules/ – Holds game rules, mechanics specifications, and compliance checks. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Rules. GitHub: [/Rules]
-raw.githubusercontent.com
-.
+## 3) Re‑running the CH6 validator locally (example)
 
-Scripts/ – General scripts used in the game and development. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Scripts. GitHub: [/Scripts]
-raw.githubusercontent.com
-.
+```bash
+# From repo root; write full output
+mkdir -p reports artifacts
+./scripts/ch6_validation_rerun.sh > reports/validation-main.log 2>&1 || true
 
-Steam/ – Steam deployment and packaging configuration. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Steam. GitHub: [/Steam]
-raw.githubusercontent.com
-.
+# Post-filter (window=5 by default)
+python3 .github/scripts/validation_postfilter.py reports/validation-main.log reports/validation-clean.log 5
 
-Trackers/ – Tracker files for tasks, validation results, and epilogue state. Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\Trackers. GitHub: [/Trackers]
-raw.githubusercontent.com
-.
+# Inspect
+nl -ba reports/validation-clean.log | sed -n '1,200p'
+```
 
-developer_guides/ – Developer and contributor guides (e.g., how to set up the environment). Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\developer_guides. GitHub: [/developer_guides]
-raw.githubusercontent.com
-.
+**Post‑filter behavior:** keeps lines with keywords while dropping lines negated within N tokens (default **5**).  
+Update `NEG_TOKENS` or the window only if false positives persist; commit changes and re‑run CI (see §6).
 
-reports/ – Generated reports (e.g., validation results, analyses). Local: F\Diplomagic_GDD_MASTER\Updated_GDD\Diplomagic_GDD_git\reports. GitHub: [/reports]
-raw.githubusercontent.com
-.
+---
 
-Guidelines
+## 4) CI artifact you should see
 
-Follow the narrative and period constraints: The game is set in 1994 (with Avery’s prologue in 1989), so all technology, media references, and procedures must be period-appropriate.
+- **Name:** `validation-report-clean`  
+- **Contents:** `reports/validation-clean.log` (+ any `reports/*.txt`, `artifacts/**` configured in the workflow).
 
-Use the directory map: When editing or adding content, refer to the directory map to determine the proper location. Do not create new top-level directories without approval.
+If missing, confirm the workflow’s post‑process and upload steps are present and paths match the log you generate (see §5).
 
-Ask for clarification: If you’re unsure where a file belongs or how to proceed, ask a targeted question (yes/no or 1–3 options) rather than guessing. This avoids misplaced files and ensures compliance with guidelines.
+---
 
-Prioritize source material: Use uploaded documents, the narrative playbook, and the outline as primary sources for content; avoid inventing story elements without explicit approval.
+## 5) Where the workflow logic lives
 
-File exports: All text-based exports (reports, instructions) should be Markdown (.md) unless otherwise specified. Keep tables narrow and concise; avoid long sentences within tables.
+- CI workflow: `.github/workflows/epilogue-validate.yml`
+- Post‑filter: `.github/scripts/validation_postfilter.py`
 
-CI practices: Place scripts used by CI in .github/scripts. Workflows reside in .github/workflows. Use validation-rerun.sh as a wrapper to ensure CI artifacts are produced. When adding new scripts, update the directory map and follow established naming conventions.
+Cross‑check paths against **repoDirs.md** (source of truth).
 
-These instructions streamline collaboration and maintain consistency across the Diplomagic GDD project. Use the links above as your definitive reference for navigating and updating the repository.
+---
+
+## 6) GitHub CLI: list runs, rerun, and download artifacts
+
+```bash
+# Latest runs for the branch
+gh run list --repo Goldmanvision/Diplomagic_GDD --branch ci/add-validation-filter   --limit 5 --json databaseId,conclusion,createdAt,headBranch   --jq '.[] | "\(.databaseId)\t\(.conclusion)\t\(.headBranch)\t\(.createdAt)"'
+
+# If a run cannot be retried, make a tiny commit to trigger CI:
+git checkout ci/add-validation-filter
+echo "# trigger CI run" >> README.md
+git add README.md
+git commit -m "ci: trigger run to test validation filter"
+git push origin ci/add-validation-filter
+
+# After the new run starts, capture its ID
+RUN_ID=$(gh run list --repo Goldmanvision/Diplomagic_GDD --branch ci/add-validation-filter   --limit 1 --json databaseId --jq '.[0].databaseId')
+
+# Download artifacts (after run completes)
+gh run download "$RUN_ID" --repo Goldmanvision/Diplomagic_GDD --dir ./ci-artifacts || echo "no artifacts"
+ls -la ./ci-artifacts || echo "no artifacts"
+```
+
+**Note:** If the UI/CLI says “This workflow run cannot be retried,” prefer the small “trigger commit” above.
+
+---
+
+## 7) Troubleshooting quick hits
+
+- **No `validation-clean.log` in artifacts:** Verify the post‑filter step points to the same input your validator writes
+  (e.g., `reports/validation-rerun.log` vs `reports/validation-main.log`) and that upload paths include the output file.
+- **Zero filtering effect:** Confirm the keywords and negation tokens in `validation_postfilter.py`. Increase the window to `7–9` only if needed.
+- **PR comment summary missing:** Ensure the summarizer job has required secrets, or disable it temporarily to unblock validation.
+
+---
+
+## 8) Ground rules when editing content
+
+- Stay period‑accurate (1994). Avoid disallowed modern tech terms; if present in quotes, annotate and justify.
+- Maintain **POV‑only** cutscene rule and diegetic media (VHS, TV, camcorder) where applicable.
+- Respect CH6/CH7 gating and evidence caps; **no** friendly/civilian harm in city content.
+
+---
+
+## 9) Single source of truth reminder
+
+- For every path, directory, or file location, **consult repoDirs.md first**:  
+  <https://github.com/Goldmanvision/Diplomagic_GDD/blob/main/.github/workflows/repoDirs.md>
+- If another doc conflicts, update that doc to match repoDirs.md or fix repoDirs.md—do not diverge silently.
