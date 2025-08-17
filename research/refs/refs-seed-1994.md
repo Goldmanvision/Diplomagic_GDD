@@ -2,89 +2,57 @@
 Department: Authenticity & Research
 Codename: Archivist
 Date: 2025-08-17
-Type: References
-Status: Seed
+Status: Active
 ---
 
-# Seed References — 1994
-Add authoritative sources only. Prefer primary sources and contemporaneous publications.
+# Seed References — 1994 focus (with citations)
 
-## Primary Source 1
-Title: Simon Says “Here’s How!” — User’s Manual  
-Publisher: IBM Corp.  
-Year: 1994  
-Relevance: Baseline for PDA/phone UI and interactions used in DIPLOMAGIC.  
-Added: 2025-08-17
+## Mobile computing and comms
 
+### IBM Simon Personal Communicator (1994)
+- Claim: First commercially available smartphone in the US; on sale Aug 16, 1994 (BellSouth).  
+- Sources: 
+  - Wikipedia summary with release date. citeturn0search0
+  - Mobile Phone Museum device entry. citeturn0search15
+- scan: 19940816_bellsouth_ibm_simon_press.png  (TBD)
 
-Citation:
-- Authors: IBM Personal Communicator Team
-- Title: Simon Says “Here’s How!” — User’s Manual
-- Publisher: IBM Corporation
-- Year: 1994
-- Link: TBD
-- Scan: /research/refs/scans/ibm-simon-1994-users-manual.pdf
-- Date check: Within 1994. No conflict.
-## Primary Source 2
-Title: Apple Newton MessagePad 110 — User’s Manual  
-Publisher: Apple Computer, Inc.  
-Year: 1994  
-Relevance: Stylus UI, handwriting recognition workflows, and PDA interaction patterns contemporaneous with 1994 setting.  
-Added: 2025-08-17
+### Apple Newton MessagePad / MessagePad 110 (1993–1994)
+- Claim: Newton platform launched 1993; MP110 shipped in 1994.  
+- Sources:
+  - Wikipedia Newton/MessagePad overview with 1993 intro and 1994 models. citeturn0search6turn0search1
+  - Computing History summary for original MessagePad specs and 1993–1994 sales window. citeturn0search16
+- scan: 199403xx_apple_newton_mp110_brochure.pdf  (TBD)
 
+## Locations and industry
 
-Citation:
-- Authors: Apple Newton Group
-- Title: Apple Newton MessagePad 110 — User’s Manual
-- Publisher: Apple Computer, Inc.
-- Year: 1994
-- Link: TBD
-- Scan: /research/refs/scans/apple-newton-messagepad-110-users-manual-1994.pdf
-- Date check: Within 1994. No conflict.
-## Primary Source 3
-Title: AT&T EO Personal Communicator — Owner’s Manual
-Publisher: AT&T
-Year: 1993
-Relevance: Early pen-based PDA precedents for gestures, notepad UI, and mobile workflows immediately preceding 1994.
-Added: 2025-08-17
+### Savannah River Site (DOE)
+- Claim: US DOE complex in South Carolina; Cold War nuclear materials production, later cleanup and R&D; site scale ~310 sq miles.  
+- Sources:
+  - DOE Office of Environmental Management page. citeturn0search12
+  - SRS official site “Where We Are” facts. citeturn0search17
+- scan: 1994xx_srs_map_fact_sheet.pdf  (TBD)
 
+## Law and policy
 
-Citation:
-- Authors: AT&T EO Team
-- Title: AT&T EO Personal Communicator — Owner’s Manual
-- Publisher: AT&T
-- Year: 1993
-- Link: TBD
-- Scan: /research/refs/scans/att-eo-personal-communicator-owners-manual-1993.pdf
-- Date check: Pre-1994. Accept as immediate precedent; flag if used for 1994-only claims.
-## Primary Source 4
-Title: FIPS PUB 185 — Escrowed Encryption Standard (EES)
-Publisher: NIST
-Year: 1994
-Relevance: Defines 1994 U.S. crypto policy context (Clipper/LEAF) affecting communications, devices, and law-enforcement procedures in-setting.
-Added: 2025-08-17
+### DOJ Use of Deadly Force Policy (1995, context for 1994 practices)
+- Claim: Attorney General policy memo issued Oct 17, 1995 established uniform DOJ deadly force standard; use only when necessary with imminent danger. Contextual for 1994 federal practice.  
+- Sources:
+  - DOJ archives policy statement. citeturn0search8
+  - OJP/BJS materials on police use of force data collection in 1993–1994. citeturn0search18
+- scan: 19951017_doj_deadly_force_policy.pdf  (TBD)
 
+## Literature and IP
 
-Citation:
-- Authors: U.S. Department of Commerce, NIST
-- Title: FIPS PUB 185 — Escrowed Encryption Standard (EES)
-- Publisher: NIST
-- Year: 1994
-- Link: TBD
-- Scan: /research/refs/scans/fips-185-ees-1994.pdf
-- Date check: Within 1994. No conflict.
-## Primary Source 5
-Title: Radio Shack 1994 Annual Catalog
-Publisher: Tandy Corporation
-Year: 1994
-Relevance: Consumer electronics specs and pricing for PDAs, modems, phones, and peripherals used in 1994 worldbuilding.
-Added: 2025-08-17
+### H. P. Lovecraft works — public domain status (US)
+- Claim: Many individual Lovecraft texts are public domain in the US; verify per work.  
+- Sources:
+  - Cornell/Library chart on US public domain rules. citeturn1search0
+  - Project Gutenberg editions indicating PD-in-USA for specific works: *The Call of Cthulhu*, *At the Mountains of Madness*, *The Shadow over Innsmouth*. citeturn1search4turn1search7turn1search13
+  - Note: Some analyses vary; check renewals for 1923–1963 publications via Stanford DB if needed. citeturn1search17
+- scan: 1930s_magazine_clippings_lovecraft.pdf  (TBD)
 
-Citation:
-- Authors: Tandy Publications
-- Title: Radio Shack 1994 Annual Catalog
-- Publisher: Tandy Corporation
-- Year: 1994
-- Link: TBD
-- Scan: /research/refs/scans/radioshack-annual-catalog-1994.pdf
-- Date check: Within 1994. No conflict.
+## Cross-reference
+- Period terminology checks: `research/checks/period_check_core_terms_1994.md` (separate).
+
+# Sign-off
+Owner (Archivist): ___  Postmaster: ___  Date: ___
