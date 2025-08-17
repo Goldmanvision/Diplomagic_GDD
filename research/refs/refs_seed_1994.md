@@ -1,53 +1,39 @@
 ---
+Title: Seeded References — 1994 Core
 Department: Authenticity & Research
 Codename: Archivist
+Owner: Archivist
+Reviewer: Postmaster
 Date: 2025-08-17
-Type: References
-Status: Seed
+Status: Needs URLs & scans
 ---
 
-# Seed References — 1994
-Add authoritative sources only. Prefer primary sources and contemporaneous publications.
+> Replace all TBD with working URLs. Place scans in `/research/refs/scans/` and link `scan:` fields.
 
-Placeholders
-- DOJ/FBI procedural manuals (1993–1995)
-- Consumer electronics catalogs (1993–1994)
-- Newspaper archives for relevant events
+# Seed list (5)
+1) IBM Simon (first smartphone) — **URL_TBD**  
+   scan: /research/refs/scans/ibm-simon.jpg  
+   notes: US release 1994; confirm commercial availability dates by region.
 
-## Primary Source 1
-Title: Simon Says “Here’s How!” — User’s Manual  
-Publisher: IBM Corp.  
-Year: 1994  
-Relevance: Baseline for PDA/phone UI and interactions used in DIPLOMAGIC.  
-Added: 2025-08-17
+2) Apple Newton MessagePad — **URL_TBD**  
+   scan: /research/refs/scans/newton-messagepad.jpg  
+   notes: OS capabilities in 1993–1996; handwriting accuracy claims.
 
-## Primary Source 2
-Title: Apple Newton MessagePad 110 — User’s Manual  
-Publisher: Apple Computer, Inc.  
-Year: 1994  
-Relevance: Stylus UI, handwriting recognition workflows, and PDA interaction patterns contemporaneous with 1994 setting.  
-Added: 2025-08-17
+3) Savannah River Site (SRS) — **URL_TBD**  
+   scan: /research/refs/scans/srs-facility.jpg  
+   notes: Public reactor status in early 1990s; site layout public-domain maps.
 
+4) FBI procedures (arrest vs. shoot policies, early 1990s) — **URL_TBD**  
+   scan: /research/refs/scans/fbi-use-of-force-1990s.pdf  
+   notes: Cite official manuals or GAO/DOJ reports; date-bound.
 
-## Primary Source 3
-Title: AT&T EO Personal Communicator — Owner’s Manual
-Publisher: AT&T
-Year: 1993
-Relevance: Early pen-based PDA precedents for gestures, notepad UI, and mobile workflows immediately preceding 1994.
-Added: 2025-08-17
+5) Lovecraft public-domain status and derivative works — **URL_TBD**  
+   scan: /research/refs/scans/lovecraft-public-domain.pdf  
+   notes: Scope of PD use by 1994; trademarks vs. copyright.
 
+# Validation
+- Each entry requires: URL, scan path, date verified, and a one-line verdict.
+- Log conflicts with dates in `/research/checks/period_check_core_terms_1994.md`.
 
-## Primary Source 4
-Title: FIPS PUB 185 — Escrowed Encryption Standard (EES)
-Publisher: NIST
-Year: 1994
-Relevance: Defines 1994 U.S. crypto policy context (Clipper/LEAF) affecting communications, devices, and law-enforcement procedures in-setting.
-Added: 2025-08-17
-
-
-## Primary Source 5
-Title: Radio Shack 1994 Annual Catalog
-Publisher: Tandy Corporation
-Year: 1994
-Relevance: Consumer electronics specs and pricing for PDAs, modems, phones, and peripherals used in 1994 worldbuilding.
-Added: 2025-08-17
+# Next step
+Archivist to fill URLs and upload scans, then set `Status: Complete`.
