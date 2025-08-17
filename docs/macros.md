@@ -151,3 +151,4 @@ Assets checklist:
 ## Change Control
 - Version this file in Git at `docs/macros.md` or similar.
 - When macros change, add a `changelog-entry` and a `decision-entry` explaining the rationale.
+Sun Aug 17 20:51:04 UTC 2025 test
