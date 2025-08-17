@@ -1,31 +1,7 @@
-## 2025-08-17 — Decision
-Context:
-Adopt a standardized macro pack to accelerate inter-department communication and enforce consistent exports and formats.
+# DECISIONS
 
-Options:
-1) Adopt Macro Pack v0.1 now.
-2) Defer for wider review.
-3) Reject and proceed ad hoc.
-
-Decision:
-Adopt Macro Pack v0.1.
-
-Rationale:
-- Reduces typing and inconsistency across departments.
-- Aligns with 1994/1989 constraints and export rules.
-- Low implementation cost.
-
-Impact:
-- New macros available workspace-wide.
-- Single source of truth at docs/macros.md.
-- Requires periodic refresh if chat resets.
-
-Owner:
-Macro Manager (subcontractor for Goldmanvision)
-
-Links:
-- docs/macros.md
-- /CHANGELOG.md
-- GitHub source-of-truth: https://github.com/Goldmanvision/Diplomagic_GDD/tree/main
-
-
+## 2025-08-17
+- Approved: Spectral Gating Rule **SG-20250817**.
+- Approved: OS Targets **Plan A** — Windows 10/11 x64 + Steam Deck via Proton; Linux/macOS post‑freeze.
+- Canonical scene IDs registry to live at `/narrative/scenes/scene_ids_prologue_ch1.md` (rename from root copy on commit).
+- Postmaster to route handoffs; Double‑Confirm on multi‑file batches remains in effect.
