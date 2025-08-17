@@ -1,0 +1,22 @@
+site_name: DIPLOMAGIC Workspace
+repo_url: https://github.com/Goldmanvision/Diplomagic_GDD
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Narrative:
+      - Scene IDs: narrative/scenes/scene_ids_prologue_ch1.md
+      - CH1 Pacing vs Spawns: narrative/reports/ch1_pacing_vs_spawns_20250819.md
+  - Adversary:
+      - Spawn Tables: data/spawn/spawn_tables_prologue_ch1.md
+  - QA & UX:
+      - Dashboard: departments/qa-ux/qa-ux-dashboard.md
+      - Continuity Plan: departments/qa-ux/reports/continuity_audit_plan_20250819.md
+  - Steam Ops:
+      - Depot Map: ops/steam/depot_branch_map_20250819.md
+      - Store Assets: ops/steam/store_asset_checklist_20250819.md
+  - Research:
+      - Refs 1994: research/refs/refs_seed_1994.md
+  - Logs:
+      - Decisions: DECISIONS.md
+      - Changelog: CHANGELOG.md
