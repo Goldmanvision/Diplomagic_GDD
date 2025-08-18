@@ -26,3 +26,5 @@
 
 2025-08-17  Retire automated new-commits + handoff validation task. Rationale: unstable auth, UI resets, inconsistent local envs. Validation now on-demand by Mail.
 
+
+2025-08-17 — Archive Mail office; active thread: “Postmaster — Ops Thread 2.”
