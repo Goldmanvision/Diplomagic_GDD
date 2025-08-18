@@ -1,10 +1,12 @@
 # DIPLOMAGIC — Macro Pack v0.1
 
-- **Maintainer:** Macro Manager (subcontractor for Goldmanvision)
+- **Maintainer:** Macro Manager (McMa, subcontractor for Goldmanvision)
 - **Installed:** 2025-08-17 09:00 ET
 - **Scope:** Workspace-local tokens that expand to exact text blocks. No background work.
 - **Exports:** `.md` by default.
 - **Risk:** Chat resets or app updates can drop macro context. Keep this file under version control.
+
+**Aliases:** The Macro Manager may be addressed as **McMa** in this workspace.
 
 ## Invocation
 - Zero-arg macros: type the token.
@@ -151,4 +153,3 @@ Assets checklist:
 ## Change Control
 - Version this file in Git at `docs/macros.md` or similar.
 - When macros change, add a `changelog-entry` and a `decision-entry` explaining the rationale.
-Sun Aug 17 20:51:04 UTC 2025 test
