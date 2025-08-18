@@ -1,10 +1,12 @@
 # DIPLOMAGIC — Macro Pack v0.1
 
-- **Maintainer:** Macro Manager (subcontractor for Goldmanvision)
+- **Maintainer:** Macro Manager (McMa, subcontractor for Goldmanvision)
 - **Installed:** 2025-08-17 09:00 ET
 - **Scope:** Workspace-local tokens that expand to exact text blocks. No background work.
 - **Exports:** `.md` by default.
 - **Risk:** Chat resets or app updates can drop macro context. Keep this file under version control.
+
+**Aliases:** The Macro Manager may be addressed as **McMa** in this workspace.
 
 ## Invocation
 - Zero-arg macros: type the token.
@@ -28,6 +30,7 @@
 | `spawn-row` | Spawn table row | plain text | Paste into spawn tables |
 | `bug-card` | QA report card | fenced block | For QA & UX |
 | `store-copy` | Steam store copy shell | markdown snippet | Steam Ops use |
+| `quiet-mail` | Preview-safe mail header + fenced body | fenced block | Uses 'Msg received' first line |
 
 ## Templates
 
@@ -151,4 +154,27 @@ Assets checklist:
 ## Change Control
 - Version this file in Git at `docs/macros.md` or similar.
 - When macros change, add a `changelog-entry` and a `decision-entry` explaining the rationale.
-Sun Aug 17 20:51:04 UTC 2025 test
+
+
+### `quiet-mail`
+Invocation:
+```
+quiet-mail: <From> | <To> | <Subj> | <Body>
+```
+
+Expands to:
+```
+Msg received
+
+From: <From>
+To: <To>
+Subj: <Subj>
+
+<Body>
+
+Constraints: 1994/1989 accuracy; exports .md; no background work.
+```
+
+Notes:
+- First line stays exactly `Msg received` to suppress previews.
+- Keep 72-char wrap. ASCII-safe.
