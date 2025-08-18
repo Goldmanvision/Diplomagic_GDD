@@ -15,3 +15,6 @@ Updated
 
 Created
 - research/refs/scans/README.md — scans directory guide and naming rules.
+
+2025-08-17  ci: disable handoff validator automation; manual-only going forward.
+

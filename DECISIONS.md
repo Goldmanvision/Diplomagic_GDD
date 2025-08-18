@@ -19,3 +19,6 @@
 - Warning: Lovecraft PD varies by work; verify renewals per-title before inclusion.
 
 
+
+2025-08-17  Retire automated new-commits + handoff validation task. Rationale: unstable auth, UI resets, inconsistent local envs. Validation now on-demand by Mail.
+
