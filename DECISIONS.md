@@ -1,5 +1,9 @@
 # DECISIONS
 
+## 2025-08-17 — Archive Mail office  
+- “ARCHIVE PACK" - Mail - GDD Rebuild 2025-08-17 0107 ET”; active thread: “Postmaster — Ops Thread 2.”
+
+
 ## 2025-08-17 — Retire automated 
 - “new-commits + handoff validation” task. 
 

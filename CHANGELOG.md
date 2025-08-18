@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 2025-08-17 — ops: archive mail chat; establish new active thread.
+
+
 ## 2025-08-17 — ci: disable handoff validator 
 - automation; manual-only going forward.
 
