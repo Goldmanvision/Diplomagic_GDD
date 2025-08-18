@@ -1,4 +1,8 @@
 # CHANGELOG
+
+## 2025-08-17 — ci: disable handoff validator 
+- automation; manual-only going forward.
+
 ## 2025-08-17
 Updated
 - data/spawn/spawn_tables_prologue_ch1.md — remove Prologue spectral-full; add branch coverage and failstates; SG notes.
