@@ -1,30 +1,81 @@
-# DECISIONS
+### 2025-08-17 standby_quiet_period_ack_A_R
+decision: A&R acknowledged Stand-by order.
+context: Quiet Period active; pins require lead UI action.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: A&R
+files:
+  - ops/reports/standby_ack_Authenticity___Research_2025-08-17.md
 
-## 2025-08-17 — Archive Mail office  
-- “ARCHIVE PACK" - Mail - GDD Rebuild 2025-08-17 0107 ET”; active thread: “Postmaster — Ops Thread 2.”
+### 2025-08-17 standby_quiet_period_ack_QA___UX
+decision: QA & UX acknowledged Stand-by order.
+context: Quiet Period active; notice pinned; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: QA & UX
+files:
+  - ops/reports/standby_ack_QA___UX_2025-08-17.md
 
+### 2025-08-17 standby_quiet_period_ack_Mail
+decision: Mail acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Mail
+files:
+  - ops/reports/standby_ack_Mail_2025-08-17.md
 
-## 2025-08-17 — Retire automated 
-- “new-commits + handoff validation” task. 
+### 2025-08-17 standby_quiet_period_ack_Steam_Operations
+decision: Steam Operations acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Steam_Operations
+files:
+  - ops/reports/standby_ack_Steam_Operations_2025-08-17.md
 
-- **Rationale: unstable auth, UI resets, inconsistent local envs.
-- Validation now on-demand by Mail.
+### 2025-08-17 standby_quiet_period_ack_Narrative___Canon
+decision: Narrative   Canon acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Narrative & Canon
+files:
+  - ops/reports/standby_ack_Narrative___Canon_2025-08-17.md
 
+### 2025-08-17 standby_quiet_period_ack_Adversary___NPC_Systems
+decision: Adversary   NPC Systems acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Adversary & NPC_Systems
+files:
+  - ops/reports/standby_ack_Adversary___NPC_Systems_2025-08-17.md
 
-## 2025-08-17
-- Adopt Gate Map (G1–G6) per Suit for all deliverables.
-- Clarify SG-20250817: Spectral Exposure math; **no** spectral-full in Prologue; Ch1 cap = 1; Ch6 cap = 2; Ch3 Reddy tutorial exempt.
-- Correct Prologue spawns: convert PRO-02 basement full → flicker; keep chapter caps.
-- Narrative report to include SE tallies, seeds→payoffs, branch coverage, failstates, UI strings/controls, links to Playbook/Outline.
-- Taxonomist to maintain spawn↔scene bindings notes with cap tracking.
-## 2025-08-17
-- Archivist Batch D: citations added to `research/refs/refs_seed_1994.md`; `research/refs/scans/` established for artifacts.
-- Policy: refs with `TBD` scans must attach or be waived before 08/24 freeze.
-- Warning: Lovecraft PD varies by work; verify renewals per-title before inclusion.
+### 2025-08-17 standby_quiet_period_ack_Combat___Systems
+decision: Combat   Systems acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Combat & Systems
+files:
+  - ops/reports/standby_ack_Combat___Systems_2025-08-17.md
 
+### 2025-08-17 standby_quiet_period_ack_Publishing_Studio
+decision: Publishing Studio acknowledged Stand-by order.
+context: Quiet Period active; notice pinned per lead; hotfix protocol ready.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: Publishing_Studio
+files:
+  - ops/reports/standby_ack_Publishing_Studio_2025-08-17.md
 
+### 2025-08-17 standby_quiet_period_all_ack
+decision: All departments acknowledged Stand-by order.
+context: Quiet Period active across all offices.
+owners: Stationmaster
+logged_by: Postmaster (Mail)
+scope: all offices
+files:
+  - ops/reports/standby_ack_status_2025-08-17.md
 
-2025-08-17  Retire automated new-commits + handoff validation task. Rationale: unstable auth, UI resets, inconsistent local envs. Validation now on-demand by Mail.
-
-
-2025-08-17 — Archive Mail office; active thread: “Postmaster — Ops Thread 2.”
