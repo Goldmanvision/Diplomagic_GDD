@@ -1,0 +1,13 @@
+
+### 2025-08-17 09:25 ET
+Changed:
+- docs/macros.md — Added `quiet-mail` macro docs.
+
+Added:
+- DECISIONS entry for `quiet-mail` adoption.
+
+Removed:
+- none
+
+Notes:
+- Macro outputs a leading sentinel line and fenced content.
