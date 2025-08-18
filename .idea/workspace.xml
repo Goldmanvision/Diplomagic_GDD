@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76c25f00-9313-4e97-8c26-6164701778c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/commit_message_quiet_mail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/DECISIONS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pr_title_quiet_mail.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DECISIONS.md" beforeDir="false" afterPath="$PROJECT_DIR$/DECISIONS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/macros.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/macros.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Goldmanvision/Diplomagic_GDD.git",
+    "accountId": "491f50c2-8863-4017-9b7f-70c7851248af"
   }
-}</component>
+}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "Merging main",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
 </project>
