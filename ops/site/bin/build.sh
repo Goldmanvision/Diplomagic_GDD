@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(git rev-parse --show-toplevel)/ops/site"
-# use venv if present
-[ -f .venv/bin/activate ] && source .venv/bin/activate || true
-mkdocs build --strict --site-dir site
-echo "Site built at ops/site/site"
+ROOT="$(git rev-parse --show-toplevel)"
+SITE="$ROOT/ops/site"
+cd "$SITE"
+if [ -x ".venv/Scripts/python.exe" ]; then PY=".venv/Scripts/python.exe"
+elif command -v python3 >/dev/null 2>&1; then PY=python3
+elif command -v python >/dev/null 2>&1; then PY=python
+elif [ -x /c/Windows/py.exe ]; then PY="/c/Windows/py.exe -3"
+else echo "Python not found"; exit 1; fi
+"$PY" -m mkdocs build --strict --config-file mkdocs.yml --site-dir site
+echo "Built site at $SITE/site"
