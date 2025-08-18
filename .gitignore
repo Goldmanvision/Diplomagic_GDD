@@ -5,3 +5,6 @@ __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+ops/site/.venv/
+ops/site/site/
+.gh-pages/
