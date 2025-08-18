@@ -11,3 +11,6 @@ ops/site/site/
 ops/site/.venv/
 ops/site/site/
 .gh-pages/
+ops/site/.venv/
+ops/site/site/
+.gh-pages/
