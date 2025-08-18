@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DEPARTMENTS Project Workspace prompt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    :root{
+      --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --border:#1f2937; --primary:#3b82f6; --success:#10b981; --accent:#f59e0b; --focus:#60a5fa; --neutral:#374151;
+    }
+    *{box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;margin:24px;display:flex;justify-content:center}
+    .wrap{width:100%;max-width:960px}
+    h1{font-size:20px;margin:0 0 4px}
+    .sub{margin:0 0 12px;font-size:13px;color:var(--muted)}
+    .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 12px}
+    .btn,button{display:inline-block;padding:10px 14px;border-radius:8px;border:1px solid transparent;text-decoration:none;color:#fff;cursor:pointer;font-size:14px;line-height:1}
+    #selectAll{background:var(--neutral)}
+    #copy{background:var(--primary)}
+    .open{background:var(--success)}
+    .dl{background:var(--accent)}
+    .btn:focus,button:focus{outline:2px solid var(--focus);outline-offset:2px}
+    textarea{width:100%;height:60vh;background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,Monaco,monospace;font-size:13px;line-height:1.45;white-space:pre;resize:vertical}
+    .hint{font-size:12px;color:var(--muted);margin-top:8px}
+    #status{font-size:12px;color:var(--muted);margin-left:8px;min-height:1em}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>DEPARTMENTS Project Workspace prompt</h1>
+    <p class="sub">current project - diplomagic</p>
+
+    <div class="row">
+      <button id="selectAll" class="btn" type="button">Select all</button>
+      <button id="copy" class="btn" type="button">Copy to clipboard</button>
+      <a class="btn open" href="https://chat.openai.com/" target="_blank" rel="noopener">Open ChatGPT</a>
+      <a class="btn dl" href="https://github.com/Goldmanvision/Diplomagic_GDD/archive/refs/heads/main.zip" target="_blank" rel="noopener">Download DIPLOMAGIC Dept Setup Source</a>
+      <span id="status" role="status" aria-live="polite"></span>
+    </div>
+
+    <div class="panel">
+      <textarea id="prompt" readonly></textarea>
+      <p class="hint">If Copy fails, click Select all then copy manually.</p>
+    </div>
+
+    <!-- Raw prompt payload -->
+    <script id="data" type="text/plain">
+# DIPLOMAGIC — Pre-Restore Bootstrap (for a fresh, untrained GPT)
+
+Objective
+- Reproduce Nick’s snapshot/restore guide and rebuild kit from zero.
+- Minimize ambiguity. Force deterministic outputs.
+- Deliver all artifacts as fenced code blocks if file I/O is unavailable.
+
+Scope of reproduction
+- Rebuild kit: `workspace_bootstrap/` (instructions, memory seed, macros, naming, automations, thread seeds, runbook, dad guide).
+- Backup kit: `diplomagic_backup_kit/` (snapshot.sh, verify.sh, restore.sh + README).
+- Combined guide: “DIPLOMAGIC Workspace Rebuild Guide” in Markdown. PDF optional.
+
+Authoritative constants (must match exactly)
+- Project name: **DIPLOMAGIC GDD**
+- Office title pattern: `GDD Rebuild <YYYY-MM-DD HHmm ET>` (America/New_York)
+- Quiet period: Stand-by freezes non-critical work. Critical hotfix requires Double Confirm (`y` then token `HOTFIX`).
+- ASCII-safe paths. 72-char wrap for mail templates.
+- Codenames:
+  - Mail: Postmaster
+  - Steam Operations: Stationmaster
+  - QA & UX: Exterminator
+  - Combat & Systems: Armorer
+  - Authenticity & Research: Archivist
+  - Narrative & Canon: Storymaster
+  - Publishing Studio: The Suit
+  - Adversary & NPC Systems: Taxonomist
+  - Macro Managers — Tech Support: McMa
+- Macro tokens:
+  - `ptstamp` ⇒ `GDD Rebuild <YYYY-MM-DD HHmm ET>` using America/New_York
+  - `deptcode` ⇒ exactly:
+    Department: Mail
+    Codename: Postmaster.
+  - `mydept` ⇒ `<Department> : <Codename>`; if unset: `Unknown : Unknown.`
+
+Super-prompt to give a fresh GPT
+> Act as a deterministic build system. No chit-chat. Output only files as fenced code blocks with a header line `# FILE: <relative/path>`. Create the following directory trees and files with the exact content described. If you cannot attach files, emit each file in its own block. After emitting all files, emit a final index listing every path created.
+
+1) Create `workspace_bootstrap/` with these files and content:
+- `INSTRUCTIONS.md` — concise workspace rules including: dual-protagonist canon; PS1-era + modern VFX aesthetic; 1994/1989 accuracy; codenames list; quiet-period protocol; naming rule; macro expectation to prefer compact, single-answer outputs.
+- `MEMORY.md` — long-lived facts: structure (prologue + 6 chapters + epilogue), Clara vs Avery tones, UI motif (IBM Simon, Palm Pilot, Newton), constraints (ASCII/72-wrap/1994/1989), full codename map, Stand-by protocol, naming rule, “messages to Postmaster in fenced blocks.”
+- `MACROS.md` — define `ptstamp`, `deptcode`, `mydept` and macro templates: `mail-template`, `handoff-checklist`, `decision-entry`, `changelog-entry`, `scene-spec`, `dialogue-page`, `enemy-statblock`, `spawn-row`, `bug-card`, `store-copy`. Note: ASCII-safe and 72-wrap.
+- `NAMING.md` — thread topology and office chat title conventions; include Macro Managers nickname McMa.
+- `AUTOMATIONS.md` — sample schedules with prompt texts: daily Stand-by audit, weekly snapshot reminder, release-day handoff ping.
+- `REBUILD.md` — 10-step runbook: create project, paste Instructions, restore files, create department chats, paste and pin seeds, seed Admin MEMORY, recreate automations, upload canvas exports, run Stand-by→ACK→Resume, commit and tag `bootstrap-<date>`.
+- `GUIDE_FOR_DAD.md` — 15-minute reproduction path; department creation order; Stand-by smoke test; optional snapshot.
+- `CHECKLISTS/VALIDATION.md` — checklist for pins, ACK cycle, macros, snapshot, repo link.
+- `TEMPLATES/office_packet_template.md` and `TEMPLATES/status_snapshot.md`.
+- `THREAD_SEEDS/*.md` — one per department. Each seed includes: “Office Packet — <Dept> — Bootstrap”, scope, codename, rules, pin instruction, ACK template, and deliverables. Mail seed must include Stand-by and Resume notice templates verbatim in fenced blocks.
+
+2) Create `diplomagic_backup_kit/` with:
+- `snapshot.sh` — Bash, `set -euo pipefail`. Inputs: `-s/--src`, `-n/--name`, `-o/--out` (default `~/backups`), `-k/--keep` retention (default 10), optional `--encrypt <recipient>` or `--passphrase-file <file>`. Use `rsync -a --delete` to `.../<name>/<UTC timestamp>/data/`; build `MANIFEST.sha256` via `sha256sum`; write `METADATA.json` (name, timestamp_utc, source, host, os, count_files, bytes, and optional git branch/commit/status_clean); archive `data`, manifest, metadata to `archive.tar.gz`; optional GPG encrypt; apply retention by deleting oldest snapshot dirs.
+- `verify.sh` — Bash. Accepts path to snapshot dir or `archive.tar.gz`. Extract if needed, run `sha256sum -c MANIFEST.sha256`. Output “Verification OK” on success.
+- `restore.sh` — Bash. Accept `archive|snapshot_dir` and `target_dir`. Handle optional `*.gpg` with `--decrypt [--passphrase-file <file>]`. Extract if needed, `rsync -a --delete` to target. Output “Restored to <target>”.
+- `README.md` — quick start, encryption options, scheduling, limits.
+
+3) Create a combined Markdown guide:
+- `GUIDES/DIPLOMAGIC_Workspace_Rebuild_Guide.md` — purpose, inputs, folder map, 10-step TL;DR, codename list, quiet-period rules, naming policy, macro sanity check, backup usage examples, troubleshooting, validation checklist, versioning notes.
+
+Optional:
+- Also emit a print-friendly PDF of the same guide as text-only. If file export is unsupported, skip PDF.
+
+Acceptance criteria
+- Every file emitted uses Unix line endings and UTF-8.
+- Shell scripts are POSIX-compatible and executable once saved (`chmod +x`).
+- `snapshot.sh` includes: rsync snapshot, manifest, metadata, archive+gzip, optional GPG, retention.
+- Mail seed contains both Stand-by and Resume templates exactly once, in fenced code blocks.
+- The guide names the departments in this exact order for seeding: Mail, Steam Ops, QA/UX, Combat & Systems, Authenticity & Research, Narrative & Canon, Publishing, Adversary & NPC Systems, Macro Managers (optional).
+
+Operator checklist (you)
+- Paste the Super-prompt into a fresh GPT session.
+- Save all emitted files to disk mirroring the paths.
+- Commit `workspace_bootstrap/` and `diplomagic_backup_kit/` to your repo.
+- Optionally package a bundle zip with both folders and an index file.
+- Store locally and push to GitHub.
+
+Notes
+- This bootstrap does not import historical chats. The seeds and instructions recreate behavior going forward.
+- Use UTC for timestamps inside archives. Use ET only for `ptstamp` rendering.
+    </script>
+
+    <script>
+      const t = document.getElementById('prompt');
+      const raw = document.getElementById('data').textContent.replace(/^\n/, '');
+      t.value = raw;
+
+      const status = document.getElementById('status');
+
+      document.getElementById('copy').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(t.value);
+          status.textContent = 'Copied to clipboard.';
+        } catch {
+          t.focus(); t.select(); document.execCommand('copy');
+          status.textContent = 'Copied (fallback).';
+        }
+      });
+
+      document.getElementById('selectAll').addEventListener('click', () => {
+        t.focus(); t.select();
+        status.textContent = 'All text selected.';
+      });
+    </script>
+  </div>
+</body>
+</html>
