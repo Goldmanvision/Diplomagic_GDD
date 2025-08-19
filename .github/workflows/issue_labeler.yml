@@ -9,10 +9,27 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: github/issue-labeler@v3
+      - name: Apply regex labels
+        uses: actions/github-script@v7
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/issue_labeler.yml
-          include-title: true
-          include-body: true
-          dry-run: false
+          script: |
+            const owner = context.repo.owner, repo = context.repo.repo;
+            const num = context.payload.issue.number;
+            const txt = (context.payload.issue.title + "\n" + (context.payload.issue.body || "")).toLowerCase();
+
+            const rules = [
+              {label: "Narrative", re: /\b(scene|dialog|story|narrative|script)\b/},
+              {label: "QA & UX",   re: /\b(qa|regression|usability|ux|accessibility)\b/},
+              {label: "A&R",       re: /\b(authenticity|citation|source|verify|research)\b/},
+              {label: "Steam Ops", re: /\b(steam|depot|branch|app id|store page)\b/},
+              {label: "Builds",    re: /\b(build|ci|unity|unreal|packaging|artifact)\b/},
+              {label: "Mail",      re: /\b(stand-?by|handoff|postmaster|decision)\b/},
+              {label: "Docs",      re: /\b(readme|docs?|documentation|mkdocs)\b/}
+            ];
+            const wanted = rules.filter(r => r.re.test(txt)).map(r => r.label);
+            if (wanted.length) {
+              await github.rest.issues.addLabels({owner, repo, issue_number: num, labels: [...new Set(wanted)]});
+              core.info("Applied: " + wanted.join(", "));
+            } else {
+              core.info("No matching labels");
+            }
