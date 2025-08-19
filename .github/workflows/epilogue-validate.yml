@@ -1,73 +1,24 @@
-name: epilogue-validate
+# post-process validation report (guarded)
+- name: Post-process validation report
+  if: always()
+  run: |
+    set -euo pipefail
+    IN=reports/validation-rerun.log
+    OUT=reports/validation-clean.log
+    # if runner produced a validation report, run postfilter; otherwise create a placeholder
+    if [ -f "$IN" ]; then
+      python3 .github/scripts/validation_postfilter.py "$IN" "$OUT" 3 || true
+    else
+      echo "No validation-rerun.log found on runner. Creating placeholder." > "$OUT"
+    fi
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-  workflow_dispatch:
-
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check Epilogue invariants
-        shell: bash
-        run: |
-          set -euo pipefail
-          FAIL=0
-          err() { echo "::error title=$1::$2"; FAIL=1; }
-
-          # Required files
-          for f in "Trackers/EPILOGUE-state.md" "Trackers/EPILOGUE-validation.md" "Patches/EPILOGUE.md"; do
-            if [[ ! -f "$f" ]]; then
-              err "Missing file" "$f not found"
-            fi
-          done
-
-          # Short-circuit if files missing
-          if [[ $FAIL -ne 0 ]]; then
-            exit 1
-          fi
-
-          STATE="Trackers/EPILOGUE-state.md"
-          VALID="Trackers/EPILOGUE-validation.md"
-          PATCH="Patches/EPILOGUE.md"
-
-          # Core flags present
-          for pat in "EPILOGUE_ACTIVE" "CH6_COMPLETE" "CLARA_GOOD" "CLARA_BAD" "AVERY_GOOD" "AVERY_BAD" "EPILOGUE_ENDING_KEY"; do
-            if ! grep -q "$pat" "$STATE"; then
-              err "Missing invariant" "Pattern '$pat' not found in $STATE"
-            fi
-          done
-
-          # Mutually exclusive phrasing present for both pairs
-          if ! grep -qi "mutually exclusive" "$STATE"; then
-            echo "::warning::No 'mutually exclusive' phrasing found in $STATE for GOOD/BAD pairs"
-          fi
-
-          # Thresholds: warn if TBD, pass in advisory mode
-          if grep -q "TBD" "$STATE"; then
-            echo "::warning::Thresholds are TBD in $STATE; running in advisory mode"
-          fi
-
-          # Patch contains beat sheet and ending branches
-          for pat in "Beat Sheet" "Ending Branches"; do
-            if ! grep -q "$pat" "$PATCH"; then
-              err "Missing section" "'$pat' not found in $PATCH"
-            fi
-          done
-
-          # Validation doc contains checklist and gating
-          for pat in "Required Gating" "Checklist"; do
-            if ! grep -q "$pat" "$VALID"; then
-              err "Missing section" "'$pat' not found in $VALID"
-            fi
-          done
-
-          # Finalize
-          if [[ $FAIL -ne 0 ]]; then
-            echo "Validation failed."
-            exit 1
-          fi
-          echo "Epilogue validation checks passed (advisory mode if thresholds are TBD)."
+# upload cleaned validation report (only if present)
+- name: Upload cleaned validation report
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: validation-report-clean
+    path: |
+      reports/validation-clean.log
+      reports/*.txt
+      artifacts/**

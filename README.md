@@ -12,5 +12,9 @@ Commit message:
 ```
 chore(ch7): add packaging-only placeholder and state tracker
 ```
+<<<<<<< HEAD
+# trigger CI run
+=======
 
 PR assistant test
+>>>>>>> origin/main
