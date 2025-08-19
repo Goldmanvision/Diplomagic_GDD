@@ -54,3 +54,5 @@ tools/local-ui/frontend/node_modules/
 
 .idea/
 tools/local-ui/.venv*/
+
+e create --draft --title Local UI Wizard pack --notes FastAPI+Vite scaffold zip.
