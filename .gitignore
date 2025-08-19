@@ -22,3 +22,6 @@ ops/site/site/
 /backup_before_hygiene_*.zip
 /wizards/*.zip
 /_wiz/*.zip
+
+# MkDocs (retired)
+ops/site/
