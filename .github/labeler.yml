@@ -1,14 +1,21 @@
-﻿Narrative:
-  - changed-files: { any-glob-to-any-file: ['departments/narrative/**'] }
-QA & UX:
-  - changed-files: { any-glob-to-any-file: ['departments/qa_ux/**','qa/**'] }
-A&R:
-  - changed-files: { any-glob-to-any-file: ['departments/authenticity_research/**','research/**'] }
-Steam Ops:
-  - changed-files: { any-glob-to-any-file: ['departments/steam_ops/**','ops/steam/**'] }
-Builds:
-  - changed-files: { any-glob-to-any-file: ['build/**','Engine/**','ops/builds/**'] }
-Mail:
-  - changed-files: { any-glob-to-any-file: ['departments/mail/**','ops/mail/**','DECISIONS.md','CHANGELOG.md'] }
-Docs:
-  - changed-files: { any-glob-to-any-file: ['**/*.md','docs/**'] }
+"Narrative":
+  - changed-files:
+      - any-glob-to-any-file: ["departments/narrative/**"]
+"QA & UX":
+  - changed-files:
+      - any-glob-to-any-file: ["departments/qa_ux/**","qa/**"]
+"A&R":
+  - changed-files:
+      - any-glob-to-any-file: ["departments/authenticity_research/**","research/**"]
+"Steam Ops":
+  - changed-files:
+      - any-glob-to-any-file: ["departments/steam_ops/**","ops/steam/**"]
+"Builds":
+  - changed-files:
+      - any-glob-to-any-file: ["build/**","Engine/**","ops/builds/**"]
+"Mail":
+  - changed-files:
+      - any-glob-to-any-file: ["departments/mail/**","ops/mail/**","DECISIONS.md","CHANGELOG.md"]
+"Docs":
+  - changed-files:
+      - any-glob-to-any-file: ["**/*.md","docs/**"]
