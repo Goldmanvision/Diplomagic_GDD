@@ -29,3 +29,7 @@ ops/site/
 /tools/local-ui/backend/.venv/
 /tools/local-ui/frontend/node_modules/
 /tools/local-ui/frontend/dist/
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
