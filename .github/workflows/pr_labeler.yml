@@ -1,15 +1,18 @@
-﻿name: PR Labeler
+name: Issue Labeler
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened, edited, ready_for_review]
+  issues:
+    types: [opened, edited]
 permissions:
+  issues: write
   contents: read
-  pull-requests: write
 jobs:
-  label:
+  triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5
+      - uses: github/issue-labeler@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          sync-labels: true
+          configuration-path: .github/issue_labeler.yml
+          include-title: true
+          include-body: true
+          enable-versioned-regex: true
