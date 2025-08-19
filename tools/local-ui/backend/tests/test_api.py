@@ -21,9 +21,12 @@ def test_schemas_and_export(tmp_path: Path, monkeypatch):
 
     # list schemas
     r = client.get("/schemas"); assert r.status_code == 200
-    assert "spawn_row" in r.json()
+data = r.json()
+names = [ (x["name"] if isinstance(x, dict) and "name" in x else x) for x in data ]
+assert "spawn_row" in names
 
     # export minimal CSV
     r = client.post("/export/csv", json={"schema":"spawn_row","rows":[{"Name":"X"}]})
     assert r.status_code == 200
     assert "Name" in r.text and "X" in r.text
+
