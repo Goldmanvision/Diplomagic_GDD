@@ -1,4 +1,4 @@
-# Dashboards
+﻿# Dashboards
 - [Narrative](./departments/narrative/Dashboard.md)
 - [Combat & Systems](./departments/combat_systems/Dashboard.md)
 - [Statblocks & Enemies](./departments/statblocks_enemies/Dashboard.md)
