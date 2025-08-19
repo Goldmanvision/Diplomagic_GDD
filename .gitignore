@@ -51,3 +51,6 @@ tools/local-ui/.venv*/
 tools/local-ui/frontend/dist/
 
 tools/local-ui/frontend/node_modules/
+
+.idea/
+tools/local-ui/.venv*/
