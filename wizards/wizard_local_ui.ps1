@@ -1,4 +1,10 @@
 ﻿Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+Set-Location -LiteralPath $PSScriptRoot
+$root = (git rev-parse --show-toplevel).Trim(); if (-not $root) { throw "Not in a git repo." }
+. (Join-Path $root 'tools\guard.ps1')
+Enter-RepoRoot
+# --- original script follows ---Set-StrictMode -Version Latest
 \Continue = 'Stop'
 Set-Location -LiteralPath \
 . ..\tools\guard.ps1
@@ -206,4 +212,5 @@ Notes
 "@ | Set-Content "$AppDir/README.md" -Encoding utf8
 
 Write-Host "Scaffold created at $AppDir"
+
 

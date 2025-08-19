@@ -25,5 +25,6 @@ def test_schemas_and_export(tmp_path: Path, monkeypatch):
 
     # export minimal CSV
     r = client.post("/export/csv", json={"schema":"spawn_row","rows":[{"Name":"X"}]})
+
     assert r.status_code == 200
     assert "Name" in r.text and "X" in r.text
