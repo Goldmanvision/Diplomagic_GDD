@@ -1,4 +1,9 @@
-# wizard_local_ui.ps1 — DIPLOMAGIC Local UI scaffold
+﻿Set-StrictMode -Version Latest
+\Continue = 'Stop'
+Set-Location -LiteralPath \
+. ..\tools\guard.ps1
+Enter-RepoRoot
+# --- original script below ---# wizard_local_ui.ps1 — DIPLOMAGIC Local UI scaffold
 param([string]$AppDir="tools/local-ui")
 $ErrorActionPreference="Stop"
 
@@ -201,3 +206,4 @@ Notes
 "@ | Set-Content "$AppDir/README.md" -Encoding utf8
 
 Write-Host "Scaffold created at $AppDir"
+
