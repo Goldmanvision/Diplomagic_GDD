@@ -37,3 +37,7 @@ ops/site/
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
+# dev envs
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
