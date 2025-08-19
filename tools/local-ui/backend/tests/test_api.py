@@ -30,3 +30,4 @@ assert "spawn_row" in names
     assert r.status_code == 200
     assert "Name" in r.text and "X" in r.text
 
+
