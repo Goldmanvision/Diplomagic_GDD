@@ -15,3 +15,16 @@ cd tools\local-ui
 # Health: http://127.0.0.1:5174/health  -> {"status":"ok"}
 ### Quick launch
 Run \	ools\\local-ui\\dsdk-dev.cmd\ to start backend, frontend, and open browser tabs.
+## Local UI Quickstart (Windows)
+
+### Backend (Python 3.12)
+    py -3.12 -m venv tools\local-ui\.venv312
+    tools\local-ui\.venv312\Scripts\python -m pip install -r tools\local-ui\backend\requirements.txt
+    tools\local-ui\.venv312\Scripts\python -m uvicorn main:app --reload --port 5174 --app-dir tools\local-ui\backend
+
+### Frontend (Node LTS)
+    cd tools\local-ui\frontend
+    npm ci
+    npx vite --port 5173
+
+Health: http://127.0.0.1:5174/docs and http://127.0.0.1:5173
