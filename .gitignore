@@ -33,3 +33,7 @@ ops/site/
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/

@@ -7,4 +7,4 @@ if not exist .venv\Scripts\python.exe (
 call .venv\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r backend\requirements.txt
-uvicorn backend.main:app --reload --port 5174
+python -m uvicorn backend.main:app --reload --reload-exclude ".venv/*" --port 5174
