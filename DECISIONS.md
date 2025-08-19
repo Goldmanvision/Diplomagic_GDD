@@ -46,3 +46,4 @@ Macro Manager (McMa)
 Links:
 - docs/macros.md
 
+decision-entry: 2025-08-18 | Quiet Period | ACK | Owner=Postmaster | Scope=all
