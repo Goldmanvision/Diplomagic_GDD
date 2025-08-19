@@ -1,0 +1,49 @@
+﻿name: changelog-distiller
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+permissions:
+  contents: read
+  actions: read
+  pull-requests: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Distill merged PRs since previous tag
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const cp = require('child_process');
+            function sh(cmd){ return cp.execSync(cmd).toString().trim(); }
+            let prevTag = ""; try { prevTag = sh("git describe --tags --abbrev=0 --always --match 'v*' HEAD^ 2>/dev/null"); } catch {}
+            core.info("prevTag="+prevTag);
+            const base = "main";
+            const since = prevTag ? (sh(`git log -1 --format=%aI ${prevTag}`)) : (new Date(Date.now()-30*24*3600*1000).toISOString());
+            const until = new Date().toISOString();
+            let prs = await github.paginate(github.rest.pulls.list, {owner, repo, state: "closed", base, per_page: 100});
+            prs = prs.filter(p => p.merged_at && p.merged_at >= since && p.merged_at <= until);
+            function bucket(t){ const m = t.match(/^(feat|fix|docs|ci|chore|refactor|perf|test|build|style|revert)(?:\(.+\))?:/i); return m? m[1].toLowerCase() : "other"; }
+            const groups = {};
+            for (const p of prs) {
+              const b = bucket(p.title); (groups[b] ||= []).push(p);
+            }
+            let out = `# Changelog ${new Date().toISOString().slice(0,10)}\n`;
+            if (prevTag) out += `Since **${prevTag}**\n\n`;
+            const order = ["feat","fix","docs","ci","chore","refactor","perf","test","build","style","revert","other"];
+            for (const k of order) {
+              if (!groups[k]) continue;
+              out += `## ${k.toUpperCase()}\n`;
+              for (const p of groups[k]) out += `- ${p.title} (#${p.number}) by @${p.user.login}\n`;
+              out += `\n`;
+            }
+            require('fs').writeFileSync("CHANGELOG_DISTILLED.md", out);
+      - uses: actions/upload-artifact@v4
+        with:
+          name: changelog
+          path: CHANGELOG_DISTILLED.md

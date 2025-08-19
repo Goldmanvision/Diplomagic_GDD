@@ -11,10 +11,9 @@ Suggested branch: `feat/ch7-packaging-placeholder`
 Commit message:
 ```
 chore(ch7): add packaging-only placeholder and state tracker
-```
-<<<<<<< HEAD
-# trigger CI run
-=======
 
 PR assistant test
->>>>>>> origin/main
+
+
+PR assistant test
+
