@@ -41,3 +41,13 @@ ops/site/
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
+
+.idea/
+
+.idea/
+
+tools/local-ui/.venv*/
+
+tools/local-ui/frontend/dist/
+
+tools/local-ui/frontend/node_modules/
