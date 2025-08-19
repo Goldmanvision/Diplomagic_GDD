@@ -41,3 +41,5 @@ ops/site/
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
+
+.idea/
