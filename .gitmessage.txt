@@ -1,0 +1,4 @@
+﻿type(scope)!: summary
+
+# Body: what/why.
+# Footer: BREAKING CHANGE: <details> or refs (e.g., Closes #123)
