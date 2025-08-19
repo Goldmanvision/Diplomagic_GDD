@@ -1,16 +1,36 @@
-name: PR Labeler
+﻿name: PR Labeler
 on:
   pull_request:
     types: [opened, synchronize, reopened, edited, ready_for_review]
 permissions:
-  contents: read
   pull-requests: write
+  contents: read
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5
+      - name: Apply path-based labels
+        uses: actions/github-script@v7
         with:
-          configuration-path: .github/labeler.yml
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          sync-labels: true
+          script: |
+            const owner = context.repo.owner, repo = context.repo.repo;
+            const pr = context.payload.pull_request.number;
+            const { data: files } = await github.rest.pulls.listFiles({owner, repo, pull_number: pr, per_page: 300});
+            const paths = files.map(f => f.filename);
+            const rules = [
+              {label: "Narrative",    test: p => /^(departments\/narrative\/)/.test(p)},
+              {label: "QA & UX",      test: p => /^(departments\/qa_ux\/|qa\/)/.test(p)},
+              {label: "A&R",          test: p => /^(departments\/authenticity_research\/|research\/)/.test(p)},
+              {label: "Steam Ops",    test: p => /^(departments\/steam_ops\/|ops\/steam\/)/.test(p)},
+              {label: "Builds",       test: p => /^(build\/|Engine\/|ops\/builds\/)/.test(p)},
+              {label: "Mail",         test: p => /^(departments\/mail\/|ops\/mail\/)/.test(p) || /^(DECISIONS\.md|CHANGELOG\.md)$/.test(p)},
+              {label: "Docs",         test: p => /\.md$/.test(p) || /^docs\//.test(p)}
+            ];
+            const wanted = new Set();
+            for (const p of paths) for (const r of rules) if (r.test(p)) wanted.add(r.label);
+            if (wanted.size) {
+              await github.rest.issues.addLabels({owner, repo, issue_number: pr, labels: [...wanted]});
+              core.info("Applied: " + [...wanted].join(", "));
+            } else {
+              core.info("No matching labels");
+            }
