@@ -27,3 +27,5 @@ Removed:
 Notes:
 - Macro outputs a leading sentinel line and fenced content.
 
+changelog-entry: 2025-08-18 | mail/global | Quiet Period | start | Scope=all
+changelog-entry: 2025-08-18 | mail/global | Quiet Period | end | Scope=all
