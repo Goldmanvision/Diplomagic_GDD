@@ -1,6 +1,6 @@
 ﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from jsonschema import validate, ValidationError
 from pathlib import Path
 import re, json, csv, io, datetime
@@ -97,12 +97,12 @@ def schemas():
     return res
 
 class ExportReq(BaseModel):
-    schema:str
+    schema_id: str = Field(alias="schema")
     rows:list
 
 @app.post("/export/csv")
 def export_csv(req:ExportReq):
-    schema_file=repo_path(f"data/schemas/{req.schema}.json")
+    schema_file=repo_path(f"data/schemas/{req.schema_id}.json")
     if schema_file.exists():
         try:
             for r in req.rows: validate(instance=r, schema=json.loads(schema_file.read_text()))
@@ -114,3 +114,4 @@ def export_csv(req:ExportReq):
     w.writeheader()
     for r in req.rows: w.writerow(r)
     return buf.getvalue()
+

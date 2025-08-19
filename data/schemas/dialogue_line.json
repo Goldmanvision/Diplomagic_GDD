@@ -1,0 +1,13 @@
+﻿{
+  "$id": "dialogue_line.json",
+  "type": "object",
+  "required": ["Name","Speaker","Text"],
+  "properties": {
+    "Name":    {"type":"string"},
+    "Speaker": {"type":"string"},
+    "Text":    {"type":"string"},
+    "SceneId": {"type":"string"},
+    "NextId":  {"type":"string"}
+  },
+  "additionalProperties": false
+}
