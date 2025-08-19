@@ -30,3 +30,4 @@ Notes:
 changelog-entry: 2025-08-18 | mail/global | Quiet Period | start | Scope=all
 changelog-entry: 2025-08-18 | mail/global | Quiet Period | end | Scope=all
 2025-08-19 | ops/threads | ROLLOVERNC | Macro Manager Tech Support -> Ops Thread 6 | Stand-by=ACTIVE | Link=<paste new-chat link>
+2025-08-19 | mail/global | Resume | Quiet Period lifted | Scope=all
