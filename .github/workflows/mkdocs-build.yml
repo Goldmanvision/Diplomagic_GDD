@@ -1,0 +1,7 @@
+﻿name: mkdocs-build
+on: [pull_request]
+jobs:
+  skip:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "MkDocs disabled for now — skipping build"

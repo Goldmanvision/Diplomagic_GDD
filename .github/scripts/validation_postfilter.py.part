@@ -1,0 +1,9 @@
+def neg_within_n_tokens(line, keyword_span_start, n=5):
+    # return True if a negation token appears within n tokens before OR after the keyword
+    prefix = line[:keyword_span_start]
+    suffix = line[keyword_span_start:]
+    tokens_pre = re.findall(r"\w+|[-']", prefix)
+    tokens_post = re.findall(r"\w+|[-']", suffix)
+    window_pre = ' '.join(tokens_pre[-n:]) if tokens_pre else ''
+    window_post = ' '.join(tokens_post[:n]) if tokens_post else ''
+    return bool(NEG_TOKENS.search(window_pre) or NEG_TOKENS.search(window_post))

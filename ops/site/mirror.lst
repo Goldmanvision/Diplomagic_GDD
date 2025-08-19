@@ -1,0 +1,11 @@
+# One path per line, relative to repo root. Blank lines and lines starting with # are ignored.
+narrative/scenes/narrative_scene_ids_prologue_ch1.md
+narrative/reports/ch1_pacing_vs_spawns_20250819.md
+data/spawn/spawn_tables_prologue_ch1.md
+departments/qa-ux/qa-ux-dashboard.md
+departments/qa-ux/reports/continuity_audit_plan_20250819.md
+ops/steam/depot_branch_map_20250819.md
+ops/steam/store_asset_checklist_20250819.md
+research/refs/refs_seed_1994.md
+DECISIONS.md
+CHANGELOG.md

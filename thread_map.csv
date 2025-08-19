@@ -1,0 +1,5 @@
+thread_id,thread_name,scenes,owning_dept,status,notes
+T-001,Spectral Mystery,PRO-02;CH1-02;CH1-03,Narrative,open,Flicker->full gate; evidence residues
+T-002,Cultist Cell,PRO-01;PRO-02;CH1-01;CH1-03,Narrative,open,"Pamphlets, insignia, meetings"
+T-003,Mind-Swap Incidents,PRO-01;PRO-02;CH1-02;CH1-03,Narrative,open,Non-lethal branch opportunities
+T-004,Early Investigations,PRO-01;CH1-01;CH1-02,Narrative,open,Clue discovery pacing

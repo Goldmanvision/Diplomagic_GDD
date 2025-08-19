@@ -1,0 +1,8 @@
+File|G1|G2|G3|G4|G5|G6|Actions
+.github/workflows/DEPARTMENT_MACROS_GUIDE.md|FAIL|PASS|FAIL|PASS|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 6) Sign-offs.
+.github/workflows/corkboard_department_ack_macro.md|FAIL|PASS|FAIL|PASS|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 6) Sign-offs.
+.github/workflows/mail_department_dashboard.md|FAIL|PASS|FAIL|FAIL|PASS|PASS|1) Add metadata. 3) Scope/Deps. 4) Blockers.
+.github/workflows/optimization_macro_departments_subcontractors.md|FAIL|PASS|FAIL|FAIL|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 4) Blockers. 6) Sign-offs.
+.github/workflows/org_notice_department_leads.md|FAIL|PASS|FAIL|FAIL|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 4) Blockers. 6) Sign-offs.
+AUTO_MERGE_REPORT.md|FAIL|PASS|FAIL|FAIL|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 4) Blockers. 6) Sign-offs.
+CHANGELOG.md|FAIL|PASS|FAIL|FAIL|PASS|FAIL|1) Add metadata. 3) Scope/Deps. 4) Blockers. 6) Sign-offs.

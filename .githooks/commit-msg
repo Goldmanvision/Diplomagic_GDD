@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+types="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test"
+file="$1"; first_line="$(head -n1 "$file" | tr -d '\r')"
+if echo "$first_line" | grep -Eq '^(Merge|Revert) '; then exit 0; fi
+first_line="$(echo "$first_line" | sed -E 's/^[[:space:]]+|[[:space:]]+$//g')"
+if ! echo "$first_line" | grep -Eq "^(${types})(\([a-z0-9._-]+\))?(!)?: [^ ].+"; then
+  echo "? Expected: type(scope)!: summary"; echo "Types: ${types//|/, }"; exit 1; fi
+[ ${#first_line} -le 72 ] || { echo "? Subject too long (>72)"; exit 1; }
+! echo "$first_line" | grep -Eq '[\.\!\?]$' || { echo "? Drop trailing punctuation"; exit 1; }
+exit 0

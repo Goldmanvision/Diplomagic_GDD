@@ -1,0 +1,242 @@
+# ASCII Zip Audit — 2025-08-17 15:29
+ZIP: `Diplomagic_GDD_20250817_110248.zip`
+
+- Total entries: **793**
+- Non‑ASCII filenames: **8**
+- Filenames with spaces: **191**
+- Filenames with Unicode punctuation (en/em dash or curly quotes): **8**
+- Filenames with disallowed chars (allowed `[A-Za-z0-9._/-]`): **191**
+- Very long names (>120 chars): **0**
+- Potential normalized duplicates: **0**
+
+## Non‑ASCII filenames
+- Archive/adversary_npc_systems/Enemy Systems Department — notes (ARCHIVED 2025-08-17).md
+- Archive/adversary_npc_systems/Statblocks & Enemies Department — Charter (ARCHIVED 2025-08-17).md
+- Corkboard — 2025-08-17 — Canvas Audit and Chat Alignment.md
+- Departments — Roster.md
+- Mail — Dashboard.md
+- departments/adversary_npc_systems/Adversary & NPC Systems — Dashboard.md
+- departments/adversary_npc_systems/stubs/Enemy Systems Department — notes.stub.md
+- departments/adversary_npc_systems/stubs/Statblocks & Enemies Department — Charter.stub.md
+
+## Filenames with spaces
+- Archive/adversary_npc_systems/Enemy Systems Department — notes (ARCHIVED 2025-08-17).md
+- Archive/adversary_npc_systems/Statblocks & Enemies Department — Charter (ARCHIVED 2025-08-17).md
+- Backups/AUTO-20250816-080534Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-080534Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-080534Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-080534Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-080534Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-080534Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-080534Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-080534Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-080534Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-080534Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-080534Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-080534Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-080534Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-080534Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-085119Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-085119Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-085119Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-085119Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-085119Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-085119Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-085119Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-085119Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-085119Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-085119Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-085119Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-085119Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-085119Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-102334Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-102334Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-102334Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-102334Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-102334Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-102334Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-102334Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-102334Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-102334Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-102334Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-102334Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-102334Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-102334Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-122003Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-122003Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-122003Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-122003Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-122003Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-122003Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-122003Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-122003Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-122003Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-122003Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-122003Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-122003Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-122003Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-122003Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-123609Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-123609Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-123609Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-123609Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-123609Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-123609Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-123609Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-123609Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-123609Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-123609Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-123609Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-123609Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-123609Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-123609Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-125900Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-125900Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-125900Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-125900Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-125900Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-125900Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-125900Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-125900Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-125900Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-125900Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-125900Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-125900Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-125900Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-125900Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-143120Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-143120Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-143120Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-143120Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-143120Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-143120Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-143120Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-143120Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-143120Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-143120Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-143120Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-143120Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-143120Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-143120Z/SEC-14-QA - Quality Assurance Test Plan.md
+- ... and 91 more
+
+## Unicode punctuation in names
+- Archive/adversary_npc_systems/Enemy Systems Department — notes (ARCHIVED 2025-08-17).md
+- Archive/adversary_npc_systems/Statblocks & Enemies Department — Charter (ARCHIVED 2025-08-17).md
+- Corkboard — 2025-08-17 — Canvas Audit and Chat Alignment.md
+- Departments — Roster.md
+- Mail — Dashboard.md
+- departments/adversary_npc_systems/Adversary & NPC Systems — Dashboard.md
+- departments/adversary_npc_systems/stubs/Enemy Systems Department — notes.stub.md
+- departments/adversary_npc_systems/stubs/Statblocks & Enemies Department — Charter.stub.md
+
+## Disallowed characters
+- Archive/adversary_npc_systems/Enemy Systems Department — notes (ARCHIVED 2025-08-17).md
+- Archive/adversary_npc_systems/Statblocks & Enemies Department — Charter (ARCHIVED 2025-08-17).md
+- Backups/AUTO-20250816-080534Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-080534Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-080534Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-080534Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-080534Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-080534Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-080534Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-080534Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-080534Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-080534Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-080534Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-080534Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-080534Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-080534Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-085119Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-085119Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-085119Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-085119Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-085119Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-085119Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-085119Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-085119Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-085119Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-085119Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-085119Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-085119Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-085119Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-085119Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-102334Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-102334Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-102334Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-102334Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-102334Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-102334Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-102334Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-102334Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-102334Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-102334Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-102334Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-102334Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-102334Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-102334Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-122003Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-122003Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-122003Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-122003Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-122003Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-122003Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-122003Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-122003Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-122003Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-122003Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-122003Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-122003Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-122003Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-122003Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-123609Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-123609Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-123609Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-123609Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-123609Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-123609Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-123609Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-123609Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-123609Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-123609Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-123609Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-123609Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-123609Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-123609Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-125900Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-125900Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-125900Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-125900Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-125900Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-125900Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-125900Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-125900Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-125900Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-125900Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-125900Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-125900Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-125900Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-125900Z/SEC-14-QA - Quality Assurance Test Plan.md
+- Backups/AUTO-20250816-143120Z/SEC-01-FRONT - Front Matter & Executive Summary.md
+- Backups/AUTO-20250816-143120Z/SEC-02-PILLARS - Pillars & Audience.md
+- Backups/AUTO-20250816-143120Z/SEC-03-NARRATIVE - Narrative.md
+- Backups/AUTO-20250816-143120Z/SEC-04-LOOPS - Core Gameplay Loops.md
+- Backups/AUTO-20250816-143120Z/SEC-05-SYSTEMS - Systems & Mechanics.md
+- Backups/AUTO-20250816-143120Z/SEC-06-WORLD - World, Levels, & Content.md
+- Backups/AUTO-20250816-143120Z/SEC-07-UI - UI-UX (Devices, HUD, Menus).md
+- Backups/AUTO-20250816-143120Z/SEC-08-ARTAUDIO - Art Direction & Audio.md
+- Backups/AUTO-20250816-143120Z/SEC-09-TECH - Technology & Performance Targets.md
+- Backups/AUTO-20250816-143120Z/SEC-10-PRODUCTION - Production Plan & Milestones.md
+- Backups/AUTO-20250816-143120Z/SEC-11-QA - QA, Localization, Accessibility.md
+- Backups/AUTO-20250816-143120Z/SEC-12-RISKS - Risks, Legal, Ratings.md
+- Backups/AUTO-20250816-143120Z/SEC-13-APPENDICES - Appendices.md
+- Backups/AUTO-20250816-143120Z/SEC-14-QA - Quality Assurance Test Plan.md
+- ... and 91 more
+
+## Guidance
+- Allowed charset: A–Z a–z 0–9 `_ - . /`.
+- Prefer kebab‑case. No spaces. Use ASCII hyphen `-` not en/em dash.
+- Keep paths under 120 chars.
+- Mirror final repo layout from `/ascii-safe/ascii/` tree if present.

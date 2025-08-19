@@ -1,0 +1,12 @@
+site_name: DIPLOMAGIC GDD
+site_url: https://diplomagic.goldmanvision.com
+theme:
+  name: material
+nav:
+  - Home: index.md
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - tables
+use_directory_urls: true

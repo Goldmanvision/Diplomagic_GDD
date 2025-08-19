@@ -1,5 +1,6 @@
 
 ---
+<<<<<<< HEAD
 PR CH5-CH6 validation re-run (2025-08-17 00:13 ET)
 
 Hits (>=1 expected):
@@ -7,13 +8,30 @@ Hits (>=1 expected):
 - BlueOnBlue = 1834
 - CH6 = raid = 457
 - Blue-on-Blue = 882
+=======
+PR CH5-CH6 validation re-run (2025-08-17 00:55 ET)
+
+Hits (>=1 expected):
+- Evidence 0/3 = 472
+- BlueOnBlue = 1836
+- CH6 = raid = 457
+- Blue-on-Blue = 884
+>>>>>>> origin/main
 - No CCTV in Vault = 321
 - K-9 reroute = 321
 
 Zero-hits check (0 expected):
+<<<<<<< HEAD
 - smartphone = 1213
 - Wi-Fi = 5
 - Bluetooth = 1121
 - GPS = 1351
 - SMS = 1124
+=======
+- smartphone = 1215
+- Wi-Fi = 5
+- Bluetooth = 1123
+- GPS = 1353
+- SMS = 1126
+>>>>>>> origin/main
 

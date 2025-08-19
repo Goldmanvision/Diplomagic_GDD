@@ -1,0 +1,5 @@
+issue_id,severity,description,source_file,line_or_section,proposed_fix,owner,status
+CI-001,S2,Scene IDs not finalized,narrative/playbook.md,N/A,Publish canonical scene_id list,Storymaster,open
+CI-002,S2,Spectral gating undefined,data/spawn/spawn_tables_prologue_ch1.md,Rules,Define clue threshold + darkness rule,Storymaster,open
+CI-003,S3,Per‑scene prop validation pending,research/checks/period_check_core_terms_1994.md,N/A,Add prop lists per scene,Archivist,open
+CI-004,S3,Telemetry for pacing not set,departments/qa-ux/qa-ux-dashboard.md,Metrics,Add encounter/time metrics,Exterminator,open

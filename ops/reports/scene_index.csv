@@ -1,0 +1,6 @@
+scene_id,chapter,location,type,expected_encounters,non_combat_beats,spectral_gate,notes
+PRO-01,Prologue,Street,intro,0–1,witness setup,no,avoid hard fail; clue drop
+PRO-02,Prologue,Basement,investigation,0–1,"search, clue, decision",yes,darkness + ≥2 clues
+CH1-01,Ch1,Alley,patrol,1,lead pickup,no,light combat only
+CH1-02,Ch1,Alley,followup,0–1,interview/observation,yes:flicker,tease; no direct damage
+CH1-03,Ch1,Warehouse,set-piece,1,evidence cache,yes:full,cap spectral full ≤1

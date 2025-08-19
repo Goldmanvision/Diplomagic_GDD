@@ -1,0 +1,626 @@
+review	Set up job	﻿2025-08-17T01:12:05.6340005Z Current runner version: '2.327.1'
+review	Set up job	2025-08-17T01:12:05.6372931Z ##[group]Runner Image Provisioner
+review	Set up job	2025-08-17T01:12:05.6374165Z Hosted Compute Agent
+review	Set up job	2025-08-17T01:12:05.6375018Z Version: 20250812.370
+review	Set up job	2025-08-17T01:12:05.6376307Z Commit: 4a2b2bf7520004e3e907c2150c8cabe342a3da32
+review	Set up job	2025-08-17T01:12:05.6377453Z Build Date: 2025-08-12T16:08:14Z
+review	Set up job	2025-08-17T01:12:05.6378405Z ##[endgroup]
+review	Set up job	2025-08-17T01:12:05.6379315Z ##[group]Operating System
+review	Set up job	2025-08-17T01:12:05.6380341Z Ubuntu
+review	Set up job	2025-08-17T01:12:05.6381086Z 24.04.2
+review	Set up job	2025-08-17T01:12:05.6381735Z LTS
+review	Set up job	2025-08-17T01:12:05.6382615Z ##[endgroup]
+review	Set up job	2025-08-17T01:12:05.6383445Z ##[group]Runner Image
+review	Set up job	2025-08-17T01:12:05.6384243Z Image: ubuntu-24.04
+review	Set up job	2025-08-17T01:12:05.6385150Z Version: 20250810.1.0
+review	Set up job	2025-08-17T01:12:05.6387092Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250810.1/images/ubuntu/Ubuntu2404-Readme.md
+review	Set up job	2025-08-17T01:12:05.6389377Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250810.1
+review	Set up job	2025-08-17T01:12:05.6391331Z ##[endgroup]
+review	Set up job	2025-08-17T01:12:05.6393373Z ##[group]GITHUB_TOKEN Permissions
+review	Set up job	2025-08-17T01:12:05.6396099Z Contents: read
+review	Set up job	2025-08-17T01:12:05.6396928Z Metadata: read
+review	Set up job	2025-08-17T01:12:05.6397864Z PullRequests: write
+review	Set up job	2025-08-17T01:12:05.6398662Z ##[endgroup]
+review	Set up job	2025-08-17T01:12:05.6401428Z Secret source: Actions
+review	Set up job	2025-08-17T01:12:05.6402587Z Prepare workflow directory
+review	Set up job	2025-08-17T01:12:05.6861432Z Prepare all required actions
+review	Set up job	2025-08-17T01:12:05.6916590Z Getting action download info
+review	Set up job	2025-08-17T01:12:05.9540965Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+review	Set up job	2025-08-17T01:12:06.2121713Z Download action repository 'actions/github-script@v7' (SHA:60a0d83039c74a4aee543508d2ffcb1c3799cdea)
+review	Set up job	2025-08-17T01:12:06.4943743Z Complete job name: review
+review	Run actions/checkout@v4	﻿2025-08-17T01:12:06.5650647Z ##[group]Run actions/checkout@v4
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5651536Z with:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5651995Z   repository: Goldmanvision/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5652736Z   token: ***
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5653163Z   ssh-strict: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5653572Z   ssh-user: git
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5653982Z   persist-credentials: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5654444Z   clean: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5654864Z   sparse-checkout-cone-mode: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5655519Z   fetch-depth: 1
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5655921Z   fetch-tags: false
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5656325Z   show-progress: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5656743Z   lfs: false
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5657124Z   submodules: false
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5657536Z   set-safe-directory: true
+review	Run actions/checkout@v4	2025-08-17T01:12:06.5658336Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6776906Z Syncing repository: Goldmanvision/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6778791Z ##[group]Getting Git version info
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6779579Z Working directory is '/home/runner/work/Diplomagic_GDD/Diplomagic_GDD'
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6780701Z [command]/usr/bin/git version
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6836868Z git version 2.50.1
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6863696Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6877990Z Temporarily overriding HOME='/home/runner/work/_temp/626ae6b8-87e3-4714-b472-5711849f66a5' before making global git config changes
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6879780Z Adding repository directory to the temporary git global config as a safe directory
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6884961Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Diplomagic_GDD/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6921158Z Deleting the contents of '/home/runner/work/Diplomagic_GDD/Diplomagic_GDD'
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6925085Z ##[group]Initializing the repository
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6930225Z [command]/usr/bin/git init /home/runner/work/Diplomagic_GDD/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6996204Z hint: Using 'master' as the name for the initial branch. This default branch name
+review	Run actions/checkout@v4	2025-08-17T01:12:06.6998112Z hint: is subject to change. To configure the initial branch name to use in all
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7000178Z hint: of your new repositories, which will suppress this warning, call:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7001503Z hint:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7002460Z hint: 	git config --global init.defaultBranch <name>
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7003815Z hint:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7004693Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7006355Z hint: 'development'. The just-created branch can be renamed via this command:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7007368Z hint:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7007772Z hint: 	git branch -m <name>
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7008224Z hint:
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7008825Z hint: Disable this message with "git config set advice.defaultBranchName false"
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7009831Z Initialized empty Git repository in /home/runner/work/Diplomagic_GDD/Diplomagic_GDD/.git/
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7013602Z [command]/usr/bin/git remote add origin https://github.com/Goldmanvision/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7055587Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7056879Z ##[group]Disabling automatic garbage collection
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7060449Z [command]/usr/bin/git config --local gc.auto 0
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7090004Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7091279Z ##[group]Setting up auth
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7098138Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7129015Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7412104Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7443454Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7669431Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7717748Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7718925Z ##[group]Fetching the repository
+review	Run actions/checkout@v4	2025-08-17T01:12:06.7726520Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e3c253dbdeeab71751916dd73cf27c7c26d0c0e2:refs/remotes/pull/32/merge
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4308924Z From https://github.com/Goldmanvision/Diplomagic_GDD
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4310816Z  * [new ref]         e3c253dbdeeab71751916dd73cf27c7c26d0c0e2 -> pull/32/merge
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4331917Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4333111Z ##[group]Determining the checkout info
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4334536Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4338663Z [command]/usr/bin/git sparse-checkout disable
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4376104Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4403520Z ##[group]Checking out the ref
+review	Run actions/checkout@v4	2025-08-17T01:12:07.4406750Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/32/merge
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5217159Z Note: switching to 'refs/remotes/pull/32/merge'.
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5218378Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5219173Z You are in 'detached HEAD' state. You can look around, make experimental
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5221066Z changes and commit them, and you can discard any commits you make in this
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5222940Z state without impacting any branches by switching back to a branch.
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5224101Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5224941Z If you want to create a new branch to retain commits you create, you may
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5226891Z do so (now or later) by using -c with the switch command. Example:
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5227879Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5228375Z   git switch -c <new-branch-name>
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5229101Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5229582Z Or undo this operation with:
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5230277Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5230722Z   git switch -
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5231301Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5232123Z Turn off this advice by setting config variable advice.detachedHead to false
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5233368Z 
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5234750Z HEAD is now at e3c253d Merge 1d19739ddbd16264fc106f5a66a1199795ce6eeb into d4400b7e94dfbc0758228afde5b1ee7f3a3bbf86
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5245027Z ##[endgroup]
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5281375Z [command]/usr/bin/git log -1 --format=%H
+review	Run actions/checkout@v4	2025-08-17T01:12:07.5303860Z e3c253dbdeeab71751916dd73cf27c7c26d0c0e2
+review	Collect changed files and patches	﻿2025-08-17T01:12:07.5564045Z ##[group]Run actions/github-script@v7
+review	Collect changed files and patches	2025-08-17T01:12:07.5565020Z with:
+review	Collect changed files and patches	2025-08-17T01:12:07.5568491Z   script: const number = context.payload.pull_request.number;
+review	Collect changed files and patches	const files = await github.paginate(
+review	Collect changed files and patches	  github.rest.pulls.listFiles, { owner: context.repo.owner, repo: context.repo.repo, pull_number: number, per_page: 100 }
+review	Collect changed files and patches	);
+review	Collect changed files and patches	const lines = files.map(f => {
+review	Collect changed files and patches	  const patch = (f.patch || '').slice(0, 4000);
+review	Collect changed files and patches	  return [
+review	Collect changed files and patches	    `# ${f.filename}`,
+review	Collect changed files and patches	    `status: ${f.status} (+${f.additions}/-${f.deletions})`,
+review	Collect changed files and patches	    patch ? '--- PATCH START ---\n' + patch + '\n--- PATCH END ---' : '(no patch provided)'
+review	Collect changed files and patches	  ].join('\n');
+review	Collect changed files and patches	});
+review	Collect changed files and patches	core.setOutput('summary', lines.join('\n\n'));
+review	Collect changed files and patches	
+review	Collect changed files and patches	2025-08-17T01:12:07.5572207Z   github-token: ***
+review	Collect changed files and patches	2025-08-17T01:12:07.5572988Z   debug: false
+review	Collect changed files and patches	2025-08-17T01:12:07.5573743Z   user-agent: actions/github-script
+review	Collect changed files and patches	2025-08-17T01:12:07.5574633Z   result-encoding: json
+review	Collect changed files and patches	2025-08-17T01:12:07.5575729Z   retries: 0
+review	Collect changed files and patches	2025-08-17T01:12:07.5576535Z   retry-exempt-status-codes: 400,401,403,404,422
+review	Collect changed files and patches	2025-08-17T01:12:07.5577454Z ##[endgroup]
+review	Summarize with OpenAI	﻿2025-08-17T01:12:08.0341185Z ##[group]Run python - <<'PY'
+review	Summarize with OpenAI	2025-08-17T01:12:08.0341925Z [36;1mpython - <<'PY'[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0342559Z [36;1mimport os, json, sys, urllib.request[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0343703Z [36;1mapi_key = os.environ.get("OPENAI_API_KEY","").strip()[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0344752Z [36;1mif not api_key:[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0345887Z [36;1m    print("Missing OPENAI_API_KEY", file=sys.stderr); sys.exit(1)[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0347163Z [36;1mtitle = os.environ.get("PR_TITLE","")[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0348112Z [36;1murl = os.environ.get("PR_URL","")[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0349118Z [36;1mdiff = os.environ.get("DIFF_SUMMARY","")[:120000][0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0350079Z [36;1mreq = {[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0350591Z [36;1m  "model":"gpt-4o-mini",[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0351341Z [36;1m  "temperature":0.2,[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0351990Z [36;1m  "messages":[[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0358031Z [36;1m    {"role":"system","content":"Summarize a GDD pull request. Check: 1994 period (no smartphone/Wi-Fi/Bluetooth/GPS/SMS), prompts <=14 chars, CH6 raid rules (lethal ok; Blue-on-Blue hard fail with exceptions; evidence cap 3; HUD Evidence 0/3 + BlueOnBlue), CH7 city rules (evidence cap 2; non-lethal; friendly/civilian hits fail). Respond as short markdown with PASS/FAIL bullets plus a brief note per item."},[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0364960Z [36;1m    {"role":"user","content":f"PR: {title} ({url})\n\nChanged files and patches (truncated):\n\n{diff}"}[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0366582Z [36;1m  ][0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0367004Z [36;1m}[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0367531Z [36;1mdata = json.dumps(req).encode("utf-8")[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0369115Z [36;1mr = urllib.request.Request("https://api.openai.com/v1/chat/completions", data=data,[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0371185Z [36;1m                           headers={"Authorization":"Bearer "+api_key,"Content-Type":"application/json"})[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0372748Z [36;1mwith urllib.request.urlopen(r) as resp:[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0373798Z [36;1m    out = json.loads(resp.read().decode("utf-8"))[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0374879Z [36;1mtext = out["choices"][0]["message"]["content"][0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0376200Z [36;1mopen("comment.md","w",encoding="utf-8").write(text)[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0377224Z [36;1mprint("Wrote comment.md")[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0377894Z [36;1mPY[0m
+review	Summarize with OpenAI	2025-08-17T01:12:08.0466484Z shell: /usr/bin/bash -e {0}
+review	Summarize with OpenAI	2025-08-17T01:12:08.0467120Z env:
+review	Summarize with OpenAI	2025-08-17T01:12:08.0471153Z   OPENAI_API_KEY: ***
+review	Summarize with OpenAI	2025-08-17T01:12:08.0471768Z   PR_TITLE: Ci/add validation filter
+review	Summarize with OpenAI	2025-08-17T01:12:08.0472849Z   PR_URL: https://github.com/Goldmanvision/Diplomagic_GDD/pull/32
+review	Summarize with OpenAI	2025-08-17T01:12:08.0603103Z   DIFF_SUMMARY: # .github/scripts/validation_postfilter.py
+review	Summarize with OpenAI	status: added (+59/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -0,0 +1,59 @@
+review	Summarize with OpenAI	+#!/usr/bin/env python3
+review	Summarize with OpenAI	+\"\"\"validation_postfilter.py
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Usage:
+review	Summarize with OpenAI	+  python3 .github/scripts/validation_postfilter.py <input_report> <output_report> [--window N]
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Reads input_report line by line. Writes only lines that contain a configured keyword
+review	Summarize with OpenAI	+and are not negated within a window of N tokens before the keyword (default N=5).
+review	Summarize with OpenAI	+\"\"\"
+review	Summarize with OpenAI	+import sys
+review	Summarize with OpenAI	+import re
+review	Summarize with OpenAI	+from pathlib import Path
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+NEG_TOKENS = re.compile(r\"\\b(no|none|without|don't|do not|remove|removed|absent|not|never|exclude|excluded)\\b\", re.I)
+review	Summarize with OpenAI	+KEYWORDS = re.compile(r\"\\b(Evidence|BlueOnBlue|CH6|Blue-on-Blue|CCTV|K-9|K9|K-9|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|raid)\\b\", re.I)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def neg_within_n_tokens(line, keyword_span_start, n=5):
+review	Summarize with OpenAI	+    prefix = line[:keyword_span_start]
+review	Summarize with OpenAI	+    tokens = re.findall(r\"\\w+|[-']\", prefix)
+review	Summarize with OpenAI	+    window = ' '.join(tokens[-n:]) if tokens else ''
+review	Summarize with OpenAI	+    return bool(NEG_TOKENS.search(window))
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def process(inpath, outpath, window=5):
+review	Summarize with OpenAI	+    inpath = Path(inpath)
+review	Summarize with OpenAI	+    outpath = Path(outpath)
+review	Summarize with OpenAI	+    if not inpath.exists():
+review	Summarize with OpenAI	+        print(f\"Input report not found: {inpath}\", file=sys.stderr)
+review	Summarize with OpenAI	+        return 2
+review	Summarize with OpenAI	+    outpath.parent.mkdir(parents=True, exist_ok=True)
+review	Summarize with OpenAI	+    kept = 0
+review	Summarize with OpenAI	+    total = 0
+review	Summarize with OpenAI	+    with inpath.open('r', encoding='utf-8', errors='ignore') as inf, outpath.open('w', encoding='utf-8') as outf:
+review	Summarize with OpenAI	+        for line in inf:
+review	Summarize with OpenAI	+            total += 1
+review	Summarize with OpenAI	+            m = KEYWORDS.search(line)
+review	Summarize with OpenAI	+            if not m:
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            if neg_within_n_tokens(line, m.start(), n=window):
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            outf.write(line)
+review	Summarize with OpenAI	+            kept += 1
+review	Summarize with OpenAI	+    print(f\"Processed {total} lines. Kept {kept} matching lines (window={window}).\")
+review	Summarize with OpenAI	+    return 0
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+if __name__ == '__main__':
+review	Summarize with OpenAI	+    if len(sys.argv) < 3:
+review	Summarize with OpenAI	+        print(\"Usage: validation_postfilter.py <input> <output> [--window N]\", file=sys.stderr)
+review	Summarize with OpenAI	+        sys.exit(2)
+review	Summarize with OpenAI	+    inrep = sys.argv[1]
+review	Summarize with OpenAI	+    outre = sys.argv[2]
+review	Summarize with OpenAI	+    window = 5
+review	Summarize with OpenAI	+    if len(sys.argv) >= 4:
+review	Summarize with OpenAI	+        try:
+review	Summarize with OpenAI	+            window = int(sys.argv[3])
+review	Summarize with OpenAI	+        except:
+review	Summarize with OpenAI	+            pass
+review	Summarize with OpenAI	+    rc = process(inrep, outre, window=window)
+review	Summarize with OpenAI	+    sys.exit(rc)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# .github/workflows/epilogue-validate.yml
+review	Summarize with OpenAI	status: modified (+18/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -71,3 +71,21 @@ jobs:
+review	Summarize with OpenAI	             exit 1
+review	Summarize with OpenAI	           fi
+review	Summarize with OpenAI	           echo "Epilogue validation checks passed (advisory mode if thresholds are TBD)."
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+# --- inserted by ci/add-validation-filter (post-process + upload) ---
+review	Summarize with OpenAI	+- name: Post-process validation report
+review	Summarize with OpenAI	+  if: always()
+review	Summarize with OpenAI	+  run: |
+review	Summarize with OpenAI	+    python3 .github/scripts/validation_postfilter.py reports/validation-rerun.log reports/validation-clean.log 5 || true
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+- name: Upload cleaned validation report
+review	Summarize with OpenAI	+  if: always()
+review	Summarize with OpenAI	+  uses: actions/upload-artifact@v4
+review	Summarize with OpenAI	+  with:
+review	Summarize with OpenAI	+    name: validation-report-clean
+review	Summarize with OpenAI	+    path: |
+review	Summarize with OpenAI	+      reports/validation-clean.log
+review	Summarize with OpenAI	+      reports/*.txt
+review	Summarize with OpenAI	+      artifacts/**
+review	Summarize with OpenAI	+# --- end insert ---
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# .github/workflows/epilogue-validate.yml.bak-1755389920
+review	Summarize with OpenAI	status: added (+73/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -0,0 +1,73 @@
+review	Summarize with OpenAI	+name: epilogue-validate
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+on:
+review	Summarize with OpenAI	+  pull_request:
+review	Summarize with OpenAI	+    types: [opened, synchronize, reopened, ready_for_review]
+review	Summarize with OpenAI	+  workflow_dispatch:
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+jobs:
+review	Summarize with OpenAI	+  validate:
+review	Summarize with OpenAI	+    runs-on: ubuntu-latest
+review	Summarize with OpenAI	+    steps:
+review	Summarize with OpenAI	+      - uses: actions/checkout@v4
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+      - name: Check Epilogue invariants
+review	Summarize with OpenAI	+        shell: bash
+review	Summarize with OpenAI	+        run: |
+review	Summarize with OpenAI	+          set -euo pipefail
+review	Summarize with OpenAI	+          FAIL=0
+review	Summarize with OpenAI	+          err() { echo "::error title=$1::$2"; FAIL=1; }
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Required files
+review	Summarize with OpenAI	+          for f in "Trackers/EPILOGUE-state.md" "Trackers/EPILOGUE-validation.md" "Patches/EPILOGUE.md"; do
+review	Summarize with OpenAI	+            if [[ ! -f "$f" ]]; then
+review	Summarize with OpenAI	+              err "Missing file" "$f not found"
+review	Summarize with OpenAI	+            fi
+review	Summarize with OpenAI	+          done
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Short-circuit if files missing
+review	Summarize with OpenAI	+          if [[ $FAIL -ne 0 ]]; then
+review	Summarize with OpenAI	+            exit 1
+review	Summarize with OpenAI	+          fi
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          STATE="Trackers/EPILOGUE-state.md"
+review	Summarize with OpenAI	+          VALID="Trackers/EPILOGUE-validation.md"
+review	Summarize with OpenAI	+          PATCH="Patches/EPILOGUE.md"
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Core flags present
+review	Summarize with OpenAI	+          for pat in "EPILOGUE_ACTIVE" "CH6_COMPLETE" "CLARA_GOOD" "CLARA_BAD" "AVERY_GOOD" "AVERY_BAD" "EPILOGUE_ENDING_KEY"; do
+review	Summarize with OpenAI	+            if ! grep -q "$pat" "$STATE"; then
+review	Summarize with OpenAI	+              err "Missing invariant" "Pattern '$pat' not found in $STATE"
+review	Summarize with OpenAI	+            fi
+review	Summarize with OpenAI	+          done
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Mutually exclusive phrasing present for both pairs
+review	Summarize with OpenAI	+          if ! grep -qi "mutually exclusive" "$STATE"; then
+review	Summarize with OpenAI	+            echo "::warning::No 'mutually exclusive' phrasing found in $STATE for GOOD/BAD pairs"
+review	Summarize with OpenAI	+          fi
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Thresholds: warn if TBD, pass in advisory mode
+review	Summarize with OpenAI	+          if grep -q "TBD" "$STATE"; then
+review	Summarize with OpenAI	+            echo "::warning::Thresholds are TBD in $STATE; running in advisory mode"
+review	Summarize with OpenAI	+          fi
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Patch contains beat sheet and ending branches
+review	Summarize with OpenAI	+          for pat in "Beat Sheet" "Ending Branches"; do
+review	Summarize with OpenAI	+            if ! grep -q "$pat" "$PATCH"; then
+review	Summarize with OpenAI	+              err "Missing section" "'$pat' not found in $PATCH"
+review	Summarize with OpenAI	+            fi
+review	Summarize with OpenAI	+          done
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Validation doc contains checklist and gating
+review	Summarize with OpenAI	+          for pat in "Required Gating" "Checklist"; do
+review	Summarize with OpenAI	+            if ! grep -q "$pat" "$VALID"; then
+review	Summarize with OpenAI	+              err "Missing section" "'$pat' not found in $VALID"
+review	Summarize with OpenAI	+            fi
+review	Summarize with OpenAI	+          done
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+          # Finalize
+review	Summarize with OpenAI	+          if [[ $FAIL -ne 0 ]]; then
+review	Summarize with OpenAI	+            echo "Validation failed."
+review	Summarize with OpenAI	+            exit 1
+review	Summarize with OpenAI	+          fi
+review	Summarize with OpenAI	+          echo "Epilogue validation checks passed (advisory mode if thresholds are TBD)."
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# Trackers/PR_Validation_Results_Summary_CH5-CH6.md
+review	Summarize with OpenAI	status: modified (+19/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -47,3 +47,22 @@ Feature commit (branch): <hash>
+review	Summarize with OpenAI	 ## Sign-offs
+review	Summarize with OpenAI	 - Owner: <name>  —  ✅/❌
+review	Summarize with OpenAI	 - Reviewer: <name>  —  ✅/❌
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+---
+review	Summarize with OpenAI	+PR CH5-CH6 validation re-run (2025-08-17 00:13 ET)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Hits (>=1 expected):
+review	Summarize with OpenAI	+- Evidence 0/3 = 472
+review	Summarize with OpenAI	+- BlueOnBlue = 1834
+review	Summarize with OpenAI	+- CH6 = raid = 457
+review	Summarize with OpenAI	+- Blue-on-Blue = 882
+review	Summarize with OpenAI	+- No CCTV in Vault = 321
+review	Summarize with OpenAI	+- K-9 reroute = 321
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Zero-hits check (0 expected):
+review	Summarize with OpenAI	+- smartphone = 1213
+review	Summarize with OpenAI	+- Wi-Fi = 5
+review	Summarize with OpenAI	+- Bluetooth = 1121
+review	Summarize with OpenAI	+- GPS = 1351
+review	Summarize with OpenAI	+- SMS = 1124
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# ci_add_validation_filter.sh
+review	Summarize with OpenAI	status: added (+135/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -0,0 +1,135 @@
+review	Summarize with OpenAI	+#!/usr/bin/env bash
+review	Summarize with OpenAI	+set -euo pipefail
+review	Summarize with OpenAI	+# ci_add_validation_filter.sh
+review	Summarize with OpenAI	+# Run from repo root. Creates branch, adds post-filter script, inserts workflow snippet,
+review	Summarize with OpenAI	+# commits, pushes, and creates a PR.
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+BRANCH="ci/add-validation-filter"
+review	Summarize with OpenAI	+WORKFLOW=".github/workflows/epilogue-validate.yml"
+review	Summarize with OpenAI	+SCRIPT=".github/scripts/validation_postfilter.py"
+review	Summarize with OpenAI	+BACKUP_SUFFIX=".bak-$(date +%s)"
+review	Summarize with OpenAI	+PR_TITLE="ci: add validation post-filter and upload cleaned report"
+review	Summarize with OpenAI	+PR_BODY="Add a validation post-processing filter to remove negated false-positive hits and upload the cleaned report as an artifact. This helps QA and reduces noise."
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+if [ ! -f "${WORKFLOW}" ]; then
+review	Summarize with OpenAI	+  echo "ERROR: workflow not found: ${WORKFLOW}"
+review	Summarize with OpenAI	+  exit 1
+review	Summarize with OpenAI	+fi
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+echo "Backing up ${WORKFLOW} -> ${WORKFLOW}${BACKUP_SUFFIX}"
+review	Summarize with OpenAI	+cp -v "${WORKFLOW}" "${WORKFLOW}${BACKUP_SUFFIX}"
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+# write the postfilter script
+review	Summarize with OpenAI	+mkdir -p "$(dirname "${SCRIPT}")"
+review	Summarize with OpenAI	+cat > "${SCRIPT}" <<'PY'
+review	Summarize with OpenAI	+#!/usr/bin/env python3
+review	Summarize with OpenAI	+\"\"\"validation_postfilter.py
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Usage:
+review	Summarize with OpenAI	+  python3 .github/scripts/validation_postfilter.py <input_report> <output_report> [--window N]
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Reads input_report line by line. Writes only lines that contain a configured keyword
+review	Summarize with OpenAI	+and are not negated within a window of N tokens before the keyword (default N=5).
+review	Summarize with OpenAI	+\"\"\"
+review	Summarize with OpenAI	+import sys
+review	Summarize with OpenAI	+import re
+review	Summarize with OpenAI	+from pathlib import Path
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+NEG_TOKENS = re.compile(r\"\\b(no|none|without|don't|do not|remove|removed|absent|not|never|exclude|excluded)\\b\", re.I)
+review	Summarize with OpenAI	+KEYWORDS = re.compile(r\"\\b(Evidence|BlueOnBlue|CH6|Blue-on-Blue|CCTV|K-9|K9|K-9|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|raid)\\b\", re.I)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def neg_within_n_tokens(line, keyword_span_start, n=5):
+review	Summarize with OpenAI	+    prefix = line[:keyword_span_start]
+review	Summarize with OpenAI	+    tokens = re.findall(r\"\\w+|[-']\", prefix)
+review	Summarize with OpenAI	+    window = ' '.join(tokens[-n:]) if tokens else ''
+review	Summarize with OpenAI	+    return bool(NEG_TOKENS.search(window))
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def process(inpath, outpath, window=5):
+review	Summarize with OpenAI	+    inpath = Path(inpath)
+review	Summarize with OpenAI	+    outpath = Path(outpath)
+review	Summarize with OpenAI	+    if not inpath.exists():
+review	Summarize with OpenAI	+        print(f\"Input report not found: {inpath}\", file=sys.stderr)
+review	Summarize with OpenAI	+        return 2
+review	Summarize with OpenAI	+    outpath.parent.mkdir(parents=True, exist_ok=True)
+review	Summarize with OpenAI	+    kept = 0
+review	Summarize with OpenAI	+    total = 0
+review	Summarize with OpenAI	+    with inpath.open('r', encoding='utf-8', errors='ignore') as inf, outpath.open('w', encoding='utf-8') as outf:
+review	Summarize with OpenAI	+        for line in inf:
+review	Summarize with OpenAI	+            total += 1
+review	Summarize with OpenAI	+            m = KEYWORDS.search(line)
+review	Summarize with OpenAI	+            if not m:
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            if neg_within_n_tokens(line, m.start(), n=window):
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            outf.write(line)
+review	Summarize with OpenAI	+            kept += 1
+review	Summarize with OpenAI	+    print(f\"Processed {total} lines. Kept {kept} matching lines (window={window}).\")
+review	Summarize with OpenAI	+    return 0
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+if __name__ == '__main__':
+review	Summarize with OpenAI	+    if len(sys.argv) < 3:
+review	Summarize with OpenAI	+        print(\"Usage: validation_postfilter.py <input> <output> [--window N]\", file=sys.stderr)
+review	Summarize with OpenAI	+        sys.exit(2)
+review	Summarize with OpenAI	+    inrep = sys.argv[1]
+review	Summarize with OpenAI	+    outre = sys.argv[2]
+review	Summarize with OpenAI	+    window = 5
+review	Summarize with OpenAI	+    if len(sys.argv) >= 4:
+review	Summarize with OpenAI	+        try:
+review	Summarize with OpenAI	+            window = int(sys.argv[3])
+review	Summarize with OpenAI	+        except:
+review	Summarize with OpenAI	+            pass
+review	Summarize with OpenAI	+    rc = process(inrep, outre, window=window)
+review	Summarize with OpenAI	+    sys.exit(rc)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+PY
+review	Summarize with OpenAI	+chmod +x "${SCRIPT}"
+review	Summarize with OpenAI	+git add "${SCRIPT}"
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+# Prepare YAML snippet to append if not already present
+review	Summarize with OpenAI	+SNIPPET=$(cat <<'YAML'
+review	Summarize with OpenAI	+# --- inserted by ci/add-validation-filter (post-process + upload) ---
+review	Summarize with OpenAI	+- name: Post-process validation report
+review	Summarize with OpenAI	+  if: always()
+review	Summarize with OpenAI	+  run: |
+review	Summarize with OpenAI	+    python3 .github/scripts/validation_postfilter.py reports/validation-rerun.log reports/validation-clean.log 5 || true
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+- name: Upload cleaned validation report
+review	Summarize with OpenAI	+  if: always()
+review	Summarize with OpenAI	+  uses: actions/upload-artifact@v4
+review	Summarize with OpenAI	+  with:
+review	Summarize with OpenAI	+    name: validation-report-clean
+review	Summarize with OpenAI	+    path: |
+review	Summarize with OpenAI	+      reports/validation-clean.log
+review	Summarize with OpenAI	+      reports/*.txt
+review	Summarize with OpenAI	+      artifacts/**
+review	Summarize with OpenAI	+# --- end insert ---
+review	Summarize with OpenAI	+YAML
+review	Summarize with OpenAI	+)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+# Check for existing insertion marker
+review	Summarize with OpenAI	+if grep -q "validation_postfilter.py" "${WORKFLOW}" || grep -q "validation-report-clean" "${WORKFLOW}"; then
+review	Summarize with OpenAI	+  echo "Workflow already references validation_postfilter or upload step. Skipping append."
+review	Summarize with OpenAI	+else
+review	Summarize with OpenAI	+  echo "Appending post-process snippet t
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# python-3.13.7-amd64.exe
+review	Summarize with OpenAI	status: added (+0/-0)
+review	Summarize with OpenAI	(no patch provided)
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# reports/validation-filtered.log
+review	Summarize with OpenAI	status: added (+11/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -0,0 +1,11 @@
+review	Summarize with OpenAI	+3:PR CH5-CH6 validation re-run (2025-08-17 00:13 ET)
+review	Summarize with OpenAI	+6:- Evidence 0/3 = 472
+review	Summarize with OpenAI	+7:- BlueOnBlue = 1834
+review	Summarize with OpenAI	+8:- CH6 = raid = 457
+review	Summarize with OpenAI	+9:- Blue-on-Blue = 882
+review	Summarize with OpenAI	+11:- K-9 reroute = 321
+review	Summarize with OpenAI	+14:- smartphone = 1213
+review	Summarize with OpenAI	+15:- Wi-Fi = 5
+review	Summarize with OpenAI	+16:- Bluetooth = 1121
+review	Summarize with OpenAI	+17:- GPS = 1351
+review	Summarize with OpenAI	+18:- SMS = 1124
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# reports/validation-main.log
+review	Summarize with OpenAI	status: modified (+19/-1)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -1 +1,19 @@
+review	Summarize with OpenAI	-bash: ./scripts/validation-rerun.sh: No such file or directory
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+---
+review	Summarize with OpenAI	+PR CH5-CH6 validation re-run (2025-08-17 00:13 ET)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Hits (>=1 expected):
+review	Summarize with OpenAI	+- Evidence 0/3 = 472
+review	Summarize with OpenAI	+- BlueOnBlue = 1834
+review	Summarize with OpenAI	+- CH6 = raid = 457
+review	Summarize with OpenAI	+- Blue-on-Blue = 882
+review	Summarize with OpenAI	+- No CCTV in Vault = 321
+review	Summarize with OpenAI	+- K-9 reroute = 321
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Zero-hits check (0 expected):
+review	Summarize with OpenAI	+- smartphone = 1213
+review	Summarize with OpenAI	+- Wi-Fi = 5
+review	Summarize with OpenAI	+- Bluetooth = 1121
+review	Summarize with OpenAI	+- GPS = 1351
+review	Summarize with OpenAI	+- SMS = 1124
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	
+review	Summarize with OpenAI	# validation_postfilter.py
+review	Summarize with OpenAI	status: added (+58/-0)
+review	Summarize with OpenAI	--- PATCH START ---
+review	Summarize with OpenAI	@@ -0,0 +1,58 @@
+review	Summarize with OpenAI	+#!/usr/bin/env python3
+review	Summarize with OpenAI	+"""validation_postfilter.py
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Usage:
+review	Summarize with OpenAI	+  python3 validation_postfilter.py <input_report> <output_report> [window]
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+Reads input_report line by line. Writes only lines that contain configured keywords
+review	Summarize with OpenAI	+and are not negated within a window of N tokens before the keyword (default N=5).
+review	Summarize with OpenAI	+"""
+review	Summarize with OpenAI	+import sys
+review	Summarize with OpenAI	+import re
+review	Summarize with OpenAI	+from pathlib import Path
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+NEG_TOKENS = re.compile(r"\b(no|none|without|don't|do not|remove|removed|absent|not|never|exclude|excluded)\b", re.I)
+review	Summarize with OpenAI	+KEYWORDS = re.compile(r"\b(Evidence|BlueOnBlue|CH6|Blue-on-Blue|CCTV|K-9|K9|smartphone|Wi-?Fi|Bluetooth|GPS|SMS|raid)\b", re.I)
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def neg_within_n_tokens(line, keyword_span_start, n=5):
+review	Summarize with OpenAI	+    prefix = line[:keyword_span_start]
+review	Summarize with OpenAI	+    tokens = re.findall(r"\w+|[-']", prefix)
+review	Summarize with OpenAI	+    window = ' '.join(tokens[-n:]) if tokens else ''
+review	Summarize with OpenAI	+    return bool(NEG_TOKENS.search(window))
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+def process(inpath, outpath, window=5):
+review	Summarize with OpenAI	+    inpath = Path(inpath)
+review	Summarize with OpenAI	+    outpath = Path(outpath)
+review	Summarize with OpenAI	+    if not inpath.exists():
+review	Summarize with OpenAI	+        print(f"Input report not found: {inpath}", file=sys.stderr)
+review	Summarize with OpenAI	+        return 2
+review	Summarize with OpenAI	+    outpath.parent.mkdir(parents=True, exist_ok=True)
+review	Summarize with OpenAI	+    kept = 0
+review	Summarize with OpenAI	+    total = 0
+review	Summarize with OpenAI	+    with inpath.open('r', encoding='utf-8', errors='ignore') as inf, outpath.open('w', encoding='utf-8') as outf:
+review	Summarize with OpenAI	+        for line in inf:
+review	Summarize with OpenAI	+            total += 1
+review	Summarize with OpenAI	+            m = KEYWORDS.search(line)
+review	Summarize with OpenAI	+            if not m:
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            if neg_within_n_tokens(line, m.start(), n=window):
+review	Summarize with OpenAI	+                continue
+review	Summarize with OpenAI	+            outf.write(line)
+review	Summarize with OpenAI	+            kept += 1
+review	Summarize with OpenAI	+    print(f"Processed {total} lines. Kept {kept} matching lines (window={window}).")
+review	Summarize with OpenAI	+    return 0
+review	Summarize with OpenAI	+
+review	Summarize with OpenAI	+if __name__ == '__main__':
+review	Summarize with OpenAI	+    if len(sys.argv) < 3:
+review	Summarize with OpenAI	+        print("Usage: validation_postfilter.py <input> <output> [window]", file=sys.stderr)
+review	Summarize with OpenAI	+        sys.exit(2)
+review	Summarize with OpenAI	+    inrep = sys.argv[1]
+review	Summarize with OpenAI	+    outre = sys.argv[2]
+review	Summarize with OpenAI	+    window = 5
+review	Summarize with OpenAI	+    if len(sys.argv) >= 4:
+review	Summarize with OpenAI	+        try:
+review	Summarize with OpenAI	+            window = int(sys.argv[3])
+review	Summarize with OpenAI	+        except:
+review	Summarize with OpenAI	+            pass
+review	Summarize with OpenAI	+    rc = process(inrep, outre, window=window)
+review	Summarize with OpenAI	+    sys.exit(rc)
+review	Summarize with OpenAI	--- PATCH END ---
+review	Summarize with OpenAI	2025-08-17T01:12:08.0731300Z ##[endgroup]
+review	Summarize with OpenAI	2025-08-17T01:12:11.3770436Z Wrote comment.md
+review	Post PR comment	﻿2025-08-17T01:12:11.3937512Z ##[group]Run actions/github-script@v7
+review	Post PR comment	2025-08-17T01:12:11.3937801Z with:
+review	Post PR comment	2025-08-17T01:12:11.3938621Z   script: const fs = require('fs');
+review	Post PR comment	const body = fs.readFileSync('comment.md','utf8');
+review	Post PR comment	const number = context.payload.pull_request.number;
+review	Post PR comment	await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: number, body });
+review	Post PR comment	
+review	Post PR comment	2025-08-17T01:12:11.3939655Z   github-token: ***
+review	Post PR comment	2025-08-17T01:12:11.3939851Z   debug: false
+review	Post PR comment	2025-08-17T01:12:11.3940038Z   user-agent: actions/github-script
+review	Post PR comment	2025-08-17T01:12:11.3940290Z   result-encoding: json
+review	Post PR comment	2025-08-17T01:12:11.3940480Z   retries: 0
+review	Post PR comment	2025-08-17T01:12:11.3940689Z   retry-exempt-status-codes: 400,401,403,404,422
+review	Post PR comment	2025-08-17T01:12:11.3940953Z ##[endgroup]
+review	Post Run actions/checkout@v4	﻿2025-08-17T01:12:12.0580189Z Post job cleanup.
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1517569Z [command]/usr/bin/git version
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1554178Z git version 2.50.1
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1605799Z Temporarily overriding HOME='/home/runner/work/_temp/41089110-af1c-482f-b880-4190e32d93b5' before making global git config changes
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1607171Z Adding repository directory to the temporary git global config as a safe directory
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1611863Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Diplomagic_GDD/Diplomagic_GDD
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1647502Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1680077Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1910279Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1932055Z http.https://github.com/.extraheader
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1945508Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+review	Post Run actions/checkout@v4	2025-08-17T01:12:12.1976420Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+review	Complete job	﻿2025-08-17T01:12:12.2300186Z Cleaning up orphan processes
