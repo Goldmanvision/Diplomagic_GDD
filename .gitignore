@@ -14,3 +14,11 @@ ops/site/site/
 ops/site/.venv/
 ops/site/site/
 .gh-pages/
+# local artifacts
+/backup_before_hygiene_*.zip
+/wizards/*.zip
+/_wiz/*.zip
+# local artifacts
+/backup_before_hygiene_*.zip
+/wizards/*.zip
+/_wiz/*.zip
