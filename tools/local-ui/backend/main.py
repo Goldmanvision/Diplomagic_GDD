@@ -115,3 +115,21 @@ def export_csv(req:ExportReq):
     for r in req.rows: w.writerow(r)
     return buf.getvalue()
 
+
+from fastapi import HTTPException
+from pathlib import Path
+import io, csv, json
+
+class ExportReq(BaseModel):
+    schema_id: str = Field(alias="schema")
+    rows: list
+
+def _load_schema(repo_root: str, name: str) -> dict:
+    p = Path(repo_root) / "data" / "schemas" / f"{name}.json"
+    if not p.exists() or not p.is_file() or p.stat().st_size == 0:
+        raise HTTPException(400, f"Schema missing or empty: {p}")
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        raise HTTPException(400, f"Invalid JSON in {p.name}: {e}")
+
