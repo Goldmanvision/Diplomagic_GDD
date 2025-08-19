@@ -25,3 +25,7 @@ ops/site/site/
 
 # MkDocs (retired)
 ops/site/
+# local-ui dev artifacts
+/tools/local-ui/backend/.venv/
+/tools/local-ui/frontend/node_modules/
+/tools/local-ui/frontend/dist/
