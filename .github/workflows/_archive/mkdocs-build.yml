@@ -1,0 +1,21 @@
+name: mkdocs-build
+on:
+  push: { branches: [ main ] }
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.x' }
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('ops/site/requirements.txt') }}
+      - name: Install deps
+        run: |
+          python -m pip install -U pip
+          pip install -r ops/site/requirements.txt
+      - name: Build MkDocs (strict)
+        run: python -m mkdocs build --strict -f ops/site/mkdocs.yml -d ops/site/site
