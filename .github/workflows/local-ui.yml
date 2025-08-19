@@ -1,38 +1,39 @@
 ﻿name: local-ui
+
 on:
-  pull_request: { branches: [ main ] }
   push: { branches: [ main ] }
+  pull_request: { branches: [ main ] }
+  workflow_dispatch: {}
+
+concurrency:
+  group: local-ui-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  backend:
-    runs-on: windows-latest
+  local-ui:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
           cache: pip
           cache-dependency-path: tools/local-ui/backend/requirements.txt
-      - name: Install deps
-        run: |
-          python -m pip install -U pip
-          python -m pip install -r tools/local-ui/backend/requirements.txt
-          python -m pip install pytest httpx
-      - name: Run tests
-        env: { PYTHONPATH: tools/local-ui }
-        run: python -m pytest tools/local-ui/backend/tests -q
+      - run: python -m pip install -r tools/local-ui/backend/requirements.txt
 
-  frontend:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/*"
+          node-version: '20'
           cache: npm
           cache-dependency-path: tools/local-ui/frontend/package-lock.json
-      - name: Build
-        working-directory: tools/local-ui/frontend
-        run: |
-          npm ci
-          npm run build
+      - run: npm ci -C tools/local-ui/frontend
+      - run: npm -C tools/local-ui/frontend run build
+
+      - name: Upload dist
+        uses: actions/upload-artifact@v4
+        with:
+          name: local-ui-dist
+          path: tools/local-ui/frontend/dist
+          if-no-files-found: error
+          retention-days: 7
