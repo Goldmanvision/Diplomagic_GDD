@@ -1,21 +1,7 @@
-﻿"Narrative":
-  - changed-files:
-      - any-glob-to-any-file: ["departments/narrative/**"]
-"QA & UX":
-  - changed-files:
-      - any-glob-to-any-file: ["departments/qa_ux/**","qa/**"]
-"A&R":
-  - changed-files:
-      - any-glob-to-any-file: ["departments/authenticity_research/**","research/**"]
-"Steam Ops":
-  - changed-files:
-      - any-glob-to-any-file: ["departments/steam_ops/**","ops/steam/**"]
-"Builds":
-  - changed-files:
-      - any-glob-to-any-file: ["build/**","Engine/**","ops/builds/**"]
-"Mail":
-  - changed-files:
-      - any-glob-to-any-file: ["departments/mail/**","ops/mail/**","DECISIONS.md","CHANGELOG.md"]
-"Docs":
-  - changed-files:
-      - any-glob-to-any-file: ["**/*.md","docs/**"]
+"Narrative":   ["(?i)\\b(scene|dialog|story|narrative|script)\\b"]
+"QA & UX":     ["(?i)\\b(qa|regression|usability|ux|accessibility)\\b"]
+"A&R":         ["(?i)\\b(authenticity|citation|source|verify|research)\\b"]
+"Steam Ops":   ["(?i)\\b(steam|depot|branch|app id|store page)\\b"]
+"Builds":      ["(?i)\\b(build|ci|unity|unreal|packaging|artifact)\\b"]
+"Mail":        ["(?i)\\b(stand-?by|handoff|postmaster|decision)\\b"]
+"Docs":        ["(?i)\\b(readme|docs?|documentation|mkdocs)\\b"]
