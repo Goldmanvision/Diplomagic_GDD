@@ -12,3 +12,5 @@ Commit message:
 ```
 chore(ch7): add packaging-only placeholder and state tracker
 ```
+
+PR assistant test
