@@ -17,7 +17,6 @@ jobs:
             const pr = context.payload.pull_request.number;
             const { data: files } = await github.rest.pulls.listFiles({owner, repo, pull_number: pr, per_page: 300});
             const paths = files.map(f => f.filename);
-
             const rules = [
               {label: "Narrative",    test: p => /^(departments\/narrative\/)/.test(p)},
               {label: "QA & UX",      test: p => /^(departments\/qa_ux\/|qa\/)/.test(p)},

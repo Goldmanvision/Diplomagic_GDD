@@ -16,7 +16,6 @@ jobs:
             const owner = context.repo.owner, repo = context.repo.repo;
             const num = context.payload.issue.number;
             const txt = (context.payload.issue.title + "\n" + (context.payload.issue.body || "")).toLowerCase();
-
             const rules = [
               {label: "Narrative", re: /\b(scene|dialog|story|narrative|script)\b/},
               {label: "QA & UX",   re: /\b(qa|regression|usability|ux|accessibility)\b/},
