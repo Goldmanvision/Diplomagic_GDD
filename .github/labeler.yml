@@ -1,3 +1,4 @@
+
 ﻿Narrative:
   - changed-files: { any-glob-to-any-file: ['departments/narrative/**'] }
 QA & UX:
