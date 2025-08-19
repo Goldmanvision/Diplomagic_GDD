@@ -1,19 +1,17 @@
-# DIPLOMAGIC — CH7 Packaging Placeholder
+## Local UI (FastAPI + Vite)
 
-This folder contains files to stage a packaging-only Chapter 7. Use when narrative sources omit CH7.
+A small local tool to parse dashboards, view department mail, and export CSVs for UE DataTables.
 
-- Place `Patches/CH7-placeholder.md` into repo `/Patches/`.
-- Place `Trackers/CH7-state.md` into repo `/Trackers/`.
-- Use `PR_BODY.md` for the pull request description.
+### Prerequisites
+- Windows 10/11, PowerShell 5+.
+- Python 3.11+.
+- Node.js LTS (`winget install OpenJS.NodeJS.LTS`).
 
-Suggested branch: `feat/ch7-packaging-placeholder`
-
-Commit message:
-```
-chore(ch7): add packaging-only placeholder and state tracker
-
-PR assistant test
-
-
-PR assistant test
-
+### Start services
+Backend:
+```powershell
+cd tools\local-ui
+.\run_backend.bat
+# Health: http://127.0.0.1:5174/health  -> {"status":"ok"}
+### Quick launch
+Run \	ools\\local-ui\\dsdk-dev.cmd\ to start backend, frontend, and open browser tabs.
