@@ -2,7 +2,7 @@ name: dependency-review
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
     paths:
       - "tools/local-ui/frontend/**"
       - "tools/local-ui/backend/**"
@@ -13,11 +13,13 @@ permissions:
 
 jobs:
   review:
+    # Skip on private repos without GitHub Advanced Security
+    if: ${{ github.repository_visibility == 'public' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/dependency-review-action@v4
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: high
           allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, Apache-2.0, ISC
-          deny-licenses: GPL-3.0, AGPL-3.0, LGPL-3.0
