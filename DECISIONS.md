@@ -51,3 +51,4 @@ decision-entry: 2025-08-19 | Ops Thread Rollover | Approved | Owner=Macro Manage
 decision-entry: 2025-08-19 | Resume Quiet Period | Approved | Owner=Stationmaster | Logged=Postmaster
 decision-entry: 2025-08-19 | Ops Thread Rollover | Approved | Owner=Macro Manager | Logged=Postmaster | From=<old thread name> | To=<new thread name> | Stand-by=ACTIVE | Link=<paste new-chat link>
 decision-entry: 2025-08-19 | Ops Thread Rollover | Approved | Owner=Macro Manager | Logged=Postmaster | From=Macro Manager :: Tech Support - Ops Thread 6 | To=Macro Manager :: Tech Support - Ops Thread 7 | Stand-by=ACTIVE | Link=<paste new-chat link>
+decision-entry: 2025-08-19 | Merge PR 101 | Approved | Owner=Stationmaster | Logged=Postmaster
