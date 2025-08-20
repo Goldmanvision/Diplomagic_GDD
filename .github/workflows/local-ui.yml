@@ -4,6 +4,8 @@ on:
   push: { branches: [ main ] }
   pull_request: { branches: [ main ] }
   workflow_dispatch: {}
+  schedule:
+    - cron: "0 13 * * 1"  # Mondays 13:00 UTC
 
 concurrency:
   group: local-ui-${{ github.ref }}
