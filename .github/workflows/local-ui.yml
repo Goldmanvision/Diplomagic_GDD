@@ -34,6 +34,15 @@ jobs:
         run: npm -C tools/local-ui/frontend audit --audit-level=high
       - run: npm -C tools/local-ui/frontend run build
 
+      - name: Smoke test dist (HTTP 200 + non-empty HTML)
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 -d tools/local-ui/frontend/dist &
+          S=$!
+          sleep 1
+          curl -sSf http://127.0.0.1:4173/ >/tmp/index.html
+          grep -qi "<html" /tmp/index.html
+          kill $S
+
       - name: Upload dist
         uses: actions/upload-artifact@v4
         with:
