@@ -17,17 +17,21 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.12.11'
           cache: pip
           cache-dependency-path: tools/local-ui/backend/requirements.txt
       - run: python -m pip install -r tools/local-ui/backend/requirements.txt
+      - name: pip check
+        run: python -m pip check
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20.19.4'
           cache: npm
           cache-dependency-path: tools/local-ui/frontend/package-lock.json
       - run: npm ci -C tools/local-ui/frontend
+      - name: npm audit (fail on high+)
+        run: npm -C tools/local-ui/frontend audit --audit-level=high
       - run: npm -C tools/local-ui/frontend run build
 
       - name: Upload dist
