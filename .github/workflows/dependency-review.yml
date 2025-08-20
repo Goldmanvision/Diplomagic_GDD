@@ -13,6 +13,8 @@ permissions:
 
 jobs:
   review:
+    # Skip on private repos without GitHub Advanced Security
+    if: ${{ github.repository_visibility == 'public' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,5 +22,4 @@ jobs:
         uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: high
-          # lists must be comma-separated when inlined
           allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, Apache-2.0, ISC
