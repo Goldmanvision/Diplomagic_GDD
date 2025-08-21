@@ -1,6 +1,7 @@
 ﻿name: PR Labeler
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [ main ]
 
