@@ -1,24 +1,43 @@
-# post-process validation report (guarded)
-- name: Post-process validation report
-  if: always()
-  run: |
-    set -euo pipefail
-    IN=reports/validation-rerun.log
-    OUT=reports/validation-clean.log
-    # if runner produced a validation report, run postfilter; otherwise create a placeholder
-    if [ -f "$IN" ]; then
-      python3 .github/scripts/validation_postfilter.py "$IN" "$OUT" 3 || true
-    else
-      echo "No validation-rerun.log found on runner. Creating placeholder." > "$OUT"
-    fi
+name: epilogue-validate
 
-# upload cleaned validation report (only if present)
-- name: Upload cleaned validation report
-  if: always()
-  uses: actions/upload-artifact@v4
-  with:
-    name: validation-report-clean
-    path: |
-      reports/validation-clean.log
-      reports/*.txt
-      artifacts/**
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Epilogue invariants
+        shell: bash
+        run: |
+          set -euo pipefail
+          FAIL=0
+          err() { echo "::error title=$1::$2"; FAIL=1; }
+
+          for f in "Trackers/EPILOGUE-state.md" "Trackers/EPILOGUE-validation.md" "Patches/EPILOGUE.md"; do
+            [[ -f "$f" ]] || err "Missing file" "$f not found"
+          done
+
+          [[ $FAIL -eq 0 ]] || { echo "Validation failed."; exit 1; }
+          STATE="Trackers/EPILOGUE-state.md"
+          VALID="Trackers/EPILOGUE-validation.md"
+          PATCH="Patches/EPILOGUE.md"
+
+          for pat in EPILOGUE_ACTIVE CH6_COMPLETE CLARA_GOOD CLARA_BAD AVERY_GOOD AVERY_BAD EPILOGUE_ENDING_KEY; do
+            grep -q "$pat" "$STATE" || err "Missing invariant" "Pattern '$pat' not found in $STATE"
+          done
+
+          for pat in "Beat Sheet" "Ending Branches"; do
+            grep -q "$pat" "$PATCH" || err "Missing section" "'$pat' not found in $PATCH"
+          done
+
+          for pat in "Required Gating" "Checklist"; do
+            grep -q "$pat" "$VALID" || err "Missing section" "'$pat' not found in $VALID"
+          done
+
+          [[ $FAIL -eq 0 ]] || { echo "Validation failed."; exit 1; }
+          echo "Epilogue validation checks passed."
