@@ -1,0 +1,21 @@
+# .github/workflows/ops-runner.yml
+name: ops-runner
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref to run daps-ci against
+        type: string
+        required: true
+        default: main
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    uses: ${{ github.repository }}/.github/workflows/daps-ci.yml@main
+    with:
+      ref: ${{ inputs.ref }}
+    secrets: inherit
