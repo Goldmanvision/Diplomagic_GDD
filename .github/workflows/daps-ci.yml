@@ -1,0 +1,23 @@
+name: daps-ci
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daps-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke-routes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Smoke route tests
+        run: node ops/tests/smoke-routes.mjs

@@ -1,0 +1,1 @@
+{ "name":"diplomagic_gdd_branch","private":true,"scripts":{"test":"bash scripts/test.sh"} }
