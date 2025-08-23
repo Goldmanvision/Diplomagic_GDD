@@ -1,0 +1,55 @@
+name: local-ui
+
+on:
+  push: { branches: [ main ] }
+  pull_request: {}
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 13 * * 1"  # Mondays 13:00 UTC
+
+concurrency:
+  group: local-ui-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  local-ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.11'
+          cache: pip
+          cache-dependency-path: tools/local-ui/backend/requirements.txt
+      - run: python -m pip install -r tools/local-ui/backend/requirements.txt
+      - name: pip check
+        run: python -m pip check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.19.4'
+          cache: npm
+          cache-dependency-path: tools/local-ui/frontend/package-lock.json
+      - run: npm ci -C tools/local-ui/frontend
+      - name: npm audit (fail on high+)
+        run: npm -C tools/local-ui/frontend audit --audit-level=high
+      - run: npm -C tools/local-ui/frontend run build
+
+      - name: Smoke test dist (HTTP 200 + non-empty HTML)
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 -d tools/local-ui/frontend/dist &
+          S=$!
+          sleep 1
+          curl -sSf http://127.0.0.1:4173/ >/tmp/index.html
+          grep -qi "<html" /tmp/index.html
+          kill $S
+
+      - name: Upload dist (PR or manual only)
+        if: ${{ github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: local-ui-dist
+          path: tools/local-ui/frontend/dist
+          if-no-files-found: error
+          retention-days: 7

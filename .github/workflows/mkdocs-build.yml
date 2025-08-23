@@ -1,7 +1,15 @@
 ﻿name: mkdocs-build
-on: [pull_request]
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
 jobs:
   skip:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "MkDocs disabled for now — skipping build"
+      - run: echo "No mkdocs build configured; passing stub job."
