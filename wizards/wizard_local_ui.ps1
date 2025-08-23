@@ -1,17 +1,12 @@
-﻿Set-StrictMode -Version Latest
+Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
 $root = (git rev-parse --show-toplevel).Trim(); if (-not $root) { throw "Not in a git repo." }
 . (Join-Path $root 'tools\guard.ps1')
 Enter-RepoRoot
-# --- original script follows ---Set-StrictMode -Version Latest
-\Continue = 'Stop'
-Set-Location -LiteralPath \
-. ..\tools\guard.ps1
-Enter-RepoRoot
-# --- original script below ---# wizard_local_ui.ps1 — DIPLOMAGIC Local UI scaffold
+
+# wizard_local_ui.ps1 — DIPLOMAGIC Local UI scaffold
 param([string]$AppDir="tools/local-ui")
-$ErrorActionPreference="Stop"
 
 # Guard
 if(Test-Path $AppDir){ Write-Host "Exists: $AppDir"; exit 1 }
@@ -95,7 +90,7 @@ def mail(dept:str="", since:str=""):
         except: pass
     for p,txt in _scan_md():
         if dept and dept.lower() not in str(p).lower(): continue
-        for block in re.split(r"```(?:\w+)?\s*|\n{2,}", txt):
+        for block in re.split(r"`(?:\w+)?\s*|\n{2,}", txt):
             m=MAIL_RE.search(block) or QUIET_RE.search(block)
             if not m: continue
             body=m.groupdict().get("body","").strip()
@@ -129,12 +124,12 @@ def schemas():
     return res
 
 class ExportReq(BaseModel):
-    schema:str
-    rows:list
+    schema_id: str = Field(alias="schema")
+    rows: list
 
 @app.post("/export/csv")
 def export_csv(req:ExportReq):
-    schema_file=repo_path(f"data/schemas/{req.schema}.json")
+    schema_file=repo_path(f"data/schemas/{req.schema_id}.json")
     if schema_file.exists():
         try:
             for r in req.rows: validate(instance=r, schema=json.loads(schema_file.read_text()))
@@ -150,7 +145,7 @@ def export_csv(req:ExportReq):
 
 @"
 @echo off
-python -m venv .venv && call .venv\\Scripts\\activate && pip install -r backend\\requirements.txt && uvicorn backend.main:app --reload --port 5174
+python -m venv .venv && call .venv\Scripts\activate && pip install -r backend\requirements.txt && uvicorn backend.main:app --reload --port 5174
 "@ | Set-Content "$AppDir/run_backend.bat" -Encoding ascii
 
 # Frontend
@@ -167,7 +162,8 @@ Set-Content "$AppDir/frontend/package.json" @"
 New-Item -ItemType Directory "$AppDir/frontend/public","$AppDir/frontend/src" | Out-Null
 Set-Content "$AppDir/frontend/index.html" @"
 <!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width'><title>DIPLOMAGIC Local UI</title></head>
-<body><div id="app"></div><script type="module" src="/src/main.js"></script></body></html>
+<body><div id="app"></div><script type="module" src="/src/main.js"></script></body>
+</html>
 "@ -Encoding utf8
 
 Set-Content "$AppDir/frontend/src/main.js" @"
@@ -198,19 +194,7 @@ document.getElementById('mail').onclick=async ()=>{
 @"
 DIPLOMAGIC Local UI Wizard
 ==========================
-
-Usage
-1) `.\wizard_local_ui.ps1`
-2) Start backend: `.\tools\local-ui\run_backend.bat`
-3) Frontend: `cd tools\local-ui\frontend && npm i && npm run dev -- --port 5173`
-4) Open http://localhost:5173
-
-Notes
-- Set repo root in the UI.
-- CSV export returns text; client should download.
-- Place JSON schemas in `data/schemas`.
+...
 "@ | Set-Content "$AppDir/README.md" -Encoding utf8
 
 Write-Host "Scaffold created at $AppDir"
-
-
