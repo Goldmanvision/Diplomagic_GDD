@@ -1,0 +1,5 @@
+version: 0.1.0
+events:
+  - name: JobSpecPublished.v1
+    payload:
+      spec_version: "string"

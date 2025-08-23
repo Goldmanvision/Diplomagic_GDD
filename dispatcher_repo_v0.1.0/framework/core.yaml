@@ -1,0 +1,5 @@
+version: 0.1.0
+spec:
+  created_utc_format: "YYYYMMDDTHHMMSSZ"
+  result_enum: ["SUCCESS", "FAIL", "PARTIAL"]
+  shell_preamble: "set -euo pipefail"
