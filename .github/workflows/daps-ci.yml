@@ -1,12 +1,16 @@
 name: daps-ci
-permissions:
-  contents: read
+
 on:
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: read
+
 concurrency:
   group: daps-ci-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   smoke-routes:
     runs-on: ubuntu-latest
