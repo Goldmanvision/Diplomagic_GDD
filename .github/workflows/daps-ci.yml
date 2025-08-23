@@ -1,8 +1,15 @@
+# .github/workflows/daps-ci.yml
 name: daps-ci
 
 on:
   pull_request:
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Git ref to test when called
+        type: string
+        required: false
 
 permissions:
   contents: read
@@ -16,7 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # When called/dispatch, use provided ref; otherwise use the current commit
+          ref: ${{ inputs.ref || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
