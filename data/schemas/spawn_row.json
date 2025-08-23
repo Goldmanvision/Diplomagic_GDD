@@ -1,0 +1,16 @@
+﻿{
+  "$id": "spawn_row.json",
+  "type": "object",
+  "required": ["Name","SceneId","EnemyId","Level"],
+  "properties": {
+    "Name":   {"type":"string"},
+    "SceneId":{"type":"string"},
+    "EnemyId":{"type":"string"},
+    "Level":  {"type":"integer","minimum":1},
+    "PosX":   {"type":"number"},
+    "PosY":   {"type":"number"},
+    "PosZ":   {"type":"number"},
+    "Notes":  {"type":"string"}
+  },
+  "additionalProperties": false
+}

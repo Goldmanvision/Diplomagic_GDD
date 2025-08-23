@@ -14,3 +14,45 @@ ops/site/site/
 ops/site/.venv/
 ops/site/site/
 .gh-pages/
+# local artifacts
+/backup_before_hygiene_*.zip
+/wizards/*.zip
+/_wiz/*.zip
+# local artifacts
+/backup_before_hygiene_*.zip
+/wizards/*.zip
+/_wiz/*.zip
+
+# MkDocs (retired)
+ops/site/
+# local-ui dev artifacts
+/tools/local-ui/backend/.venv/
+/tools/local-ui/frontend/node_modules/
+/tools/local-ui/frontend/dist/
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
+# dev envs
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
+
+.idea/
+
+.idea/
+
+tools/local-ui/.venv*/
+
+tools/local-ui/frontend/dist/
+
+tools/local-ui/frontend/node_modules/
+
+.idea/
+tools/local-ui/.venv*/
+
+e create --draft --title Local UI Wizard pack --notes FastAPI+Vite scaffold zip.

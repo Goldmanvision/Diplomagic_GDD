@@ -1,18 +1,15 @@
-﻿name: PR Labeler
-on:
+name: PR Labeler
 
-  pull_request_target:
-    types: [opened, synchronize, reopened, edited, ready_for_review]
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [ main ]
+
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-
-      - uses: actions/labeler@v5
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          sync-labels: true
+      - run: echo "PR labeler stub; passing."

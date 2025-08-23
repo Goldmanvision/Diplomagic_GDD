@@ -1,0 +1,17 @@
+name: Rollover Stamp
+on:
+  schedule:
+    - cron: "7 7 * * *"   # 07:07 UTC daily
+  workflow_dispatch: {}
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate stamp
+        run: |
+          date -u +%Y-%m-%dT%H:%M:%SZ > stamp.txt
+          echo "repo=Goldmanvision/Diplomagic_GDD" >> stamp.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rollover-stamp
+          path: stamp.txt
