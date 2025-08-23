@@ -1,5 +1,4 @@
-
-﻿name: ops-runner-dispatch
+name: ops-runner-dispatch
 run-name: ops-runner: ${{ inputs.op }} on ${{ inputs.target_ref }}
 
 on:
@@ -55,4 +54,3 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 print("Timestamp:", datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H%M ET"))
 PY
-
