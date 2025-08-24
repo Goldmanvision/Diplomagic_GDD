@@ -70,3 +70,18 @@ tools/local-ui/.venv*/
 tools/local-ui/frontend/dist/
 tools/local-ui/frontend/node_modules/
 
+# --- local-ui artifacts ---
+tools/local-ui/_outbox/
+tools/local-ui/.env
+tools/local-ui/agent-brain-context-stubs.zip
+tools/local-ui/prompt-hub-*.zip
+tools/local-ui/tools/
+
+# --- node ---
+node_modules/
+**/.vite/
+
+# --- misc ---
+*.zip
+*.docx
+=
