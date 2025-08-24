@@ -1,11 +1,64 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-  <body><div id="app"></div><script type="module" src="/src/main.jsx"></script></body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DAPS — DIPLOMAGIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-theme="foimsx">
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <h1 id="app-title">DAPS — DIPLOMAGIC</h1>
+    </div>
+    <nav class="tabs">
+      <button class="tab red" data-link="#dash">DASHBOARDS</button>
+      <button class="tab blue" data-link="#mail">Mail</button>
+      <button class="tab green" data-link="#schemas">Schemas</button>
+      <button class="tab purple" data-link="#wiki">GDD Wiki</button>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <aside class="left">
+      <div class="brand small">Agents</div>
+      <div id="agent-strip" class="agent-strip"></div>
+    </aside>
+
+    <section class="right">
+      <div class="toolbar">
+        <div>Agent: <strong id="agent-name"></strong></div>
+        <div class="spacer"></div>
+        <button id="btn-yes" class="quick yes">Yes</button>
+        <button id="btn-no" class="quick no">No</button>
+        <button id="btn-retry" class="quick retry">Retry</button>
+      </div>
+
+      <div class="io-card input">
+        <label for="prompt">Prompt Input</label>
+        <textarea id="prompt" placeholder="Type a prompt…"></textarea>
+        <div class="row">
+          <button id="btn-send" class="primary">Send prompt</button>
+          <label class="chk"><input id="chain-coc" type="checkbox" checked> chain-of-custody</label>
+          <div id="rate-note" class="muted">≤6 req/min/agent. 1 inflight/agent.</div>
+        </div>
+      </div>
+
+      <div class="io-card output">
+        <div class="output-head">
+          <span>Prompt Output</span>
+        </div>
+        <div id="feed" class="console" aria-live="polite"></div>
+      </div>
+
+      <footer class="statusbar" id="status">
+        Ready. Theme = <code data-bind="theme">foimsx</code>. Deep link and unread active.
+      </footer>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
 </html>
-
-
-
-
-
-

@@ -1,135 +1,84 @@
-﻿from fastapi import FastAPI
+from __future__ import annotations
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from jsonschema import validate, ValidationError
 from pathlib import Path
-import re, json, csv, io, datetime
+from datetime import datetime, timezone
+from collections import deque
+from typing import List, Optional
+from uuid import uuid4
+import json
 
-app=FastAPI()
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
-_state={"repoRoot":"."}
+app = FastAPI(title="Local Sidecar Stub", version="0.1.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "*"],
+    allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
+)
 
-class Cfg(BaseModel): repoRoot:str
+OUTBOX = Path("tools/local-ui/_outbox/outbox.jsonl")
+
+def ensure_outbox():
+    OUTBOX.parent.mkdir(parents=True, exist_ok=True)
+    if not OUTBOX.exists():
+        OUTBOX.write_text("", encoding="utf-8")
+
+class PacketIn(BaseModel):
+    agent: str = Field(..., min_length=1, max_length=80)
+    kind: str = Field(..., regex="^(prompt|action)$")
+    action: Optional[str] = Field(None, regex="^(yes|no|retry)$")
+    text: Optional[str] = Field(None, max_length=20000)
+    ref: Optional[str] = Field(None, max_length=120)
+
+class PacketOut(BaseModel):
+    id: str
+    ts: str
+    agent: str
+    kind: str
+    action: Optional[str] = None
+    text: Optional[str] = None
+    ref: Optional[str] = None
+    source: str = "ui:prompt-hub-mvp"
+    client: str = "local-ui"
 
 @app.get("/health")
-def health(): return {"status":"ok"}
+def health():
+    return {"ok": True, "ts": datetime.now(timezone.utc).isoformat()}
 
-@app.post("/config")
-def set_cfg(cfg:Cfg):
-    _state["repoRoot"]=cfg.repoRoot
-    return {"ok":True}
+@app.post("/outbox", response_model=PacketOut)
+def outbox_write(pkt: PacketIn):
+    ensure_outbox()
+    if pkt.kind == "prompt" and not (pkt.text or "").strip():
+        raise HTTPException(400, "prompt requires text")
+    if pkt.kind == "action" and not pkt.action:
+        raise HTTPException(400, "action requires action field")
+    rec = PacketOut(
+        id=str(uuid4()),
+        ts=datetime.now(timezone.utc).isoformat(),
+        agent=pkt.agent, kind=pkt.kind, action=pkt.action,
+        text=(pkt.text or None), ref=pkt.ref,
+    )
+    with OUTBOX.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(rec.dict(), ensure_ascii=False) + "\n")
+    return rec
 
-def repo_path(p:str)->Path: return Path(_state["repoRoot"]).joinpath(p)
-
-MAIL_RE=re.compile(r"(?ms)^From:\s*(?P<from>.+?)\nTo:\s*(?P<to>.+?)\nSubj:\s*(?P<subj>.+?)\n(?P<body>.*)")
-QUIET_RE=re.compile(r"(?ms)^quiet-mail:\s*(?P<from>[^|]+)\|\s*(?P<to>[^|]+)\|\s*(?P<subj>[^|]+)\|\s*(?P<body>.+)$")
-
-def _scan_md():
-    root=Path(_state["repoRoot"])
-    for p in root.rglob("*.md"):
+@app.get("/outbox/tail", response_model=List[PacketOut])
+def outbox_tail(limit: int = 200):
+    ensure_outbox()
+    if limit < 1 or limit > 1000:
+        raise HTTPException(400, "limit 1..1000")
+    dq: deque[str] = deque(maxlen=limit)
+    with OUTBOX.open("r", encoding="utf-8") as f:
+        for line in f:
+            dq.append(line)
+    out: List[PacketOut] = []
+    for line in dq:
         try:
-            text=p.read_text(encoding="utf-8", errors="ignore")
-            yield p, text
-        except: pass
-
-@app.get("/dashboards")
-def dashboards():
-    items=[]
-    for p,txt in _scan_md():
-        if "Dashboard" in p.name:
-            import os
-            title=re.search(r"^#\s*(.+)", txt, re.M)
-            links=re.findall(r"\[([^\]]+)\]\(([^)]+)\)", txt)
-            dept="unknown"
-            parts=p.parts
-            if "departments" in parts:
-                try: dept=parts[parts.index("departments")+1]
-                except: pass
-            items.append({
-                "dept": dept,
-                "title": title.group(1) if title else p.stem,
-                "path": str(p),
-                "links":[u for _,u in links],
-                "meta":{}
-            })
-    return items
-
-@app.get("/mail")
-def mail(dept:str="", since:str=""):
-    out=[]
-    since_dt=None
-    if since:
-        try: since_dt=datetime.datetime.fromisoformat(since)
-        except: pass
-    for p,txt in _scan_md():
-        if dept and dept.lower() not in str(p).lower(): continue
-        for block in re.split(r"`(?:\w+)?\s*|\n{2,}", txt):
-            m=MAIL_RE.search(block) or QUIET_RE.search(block)
-            if not m: continue
-            body=m.groupdict().get("body","").strip()
-            ts=None
-            mdate=re.search(r"\b(20\d{2}-\d{2}-\d{2})\b", body)
-            if mdate: ts=mdate.group(1)
-            if ts and since_dt:
-                try:
-                    if datetime.datetime.fromisoformat(ts) < since_dt: continue
-                except: pass
-            out.append({
-                "from":m.group("from").strip(),
-                "to":m.group("to").strip(),
-                "subj":m.group("subj").strip(),
-                "ts":ts or "",
-                "body":body,
-                "path":str(p)
-            })
+            out.append(PacketOut(**json.loads(line)))
+        except Exception:
+            continue
     return out
 
-@app.get("/schemas")
-def schemas():
-    d=repo_path("data/schemas")
-    res=[]
-    if d.exists():
-        for f in d.glob("*.json"):
-            try:
-                j=json.loads(f.read_text())
-                res.append({"name":f.stem,"schema":j})
-            except: pass
-    return res
-
-class ExportReq(BaseModel):
-    schema_id: str = Field(alias="schema")
-    rows:list
-
-@app.post("/export/csv")
-def export_csv(req:ExportReq):
-    schema_file=repo_path(f"data/schemas/{req.schema_id}.json")
-    if schema_file.exists():
-        try:
-            for r in req.rows: validate(instance=r, schema=json.loads(schema_file.read_text()))
-        except ValidationError as e:
-            return {"ok":False, "error":str(e)}
-    buf=io.StringIO()
-    fieldnames=sorted({k for r in req.rows for k in r.keys()})
-    w=csv.DictWriter(buf, fieldnames=fieldnames)
-    w.writeheader()
-    for r in req.rows: w.writerow(r)
-    return buf.getvalue()
-
-
-from fastapi import HTTPException
-from pathlib import Path
-import io, csv, json
-
-class ExportReq(BaseModel):
-    schema_id: str = Field(alias="schema")
-    rows: list
-
-def _load_schema(repo_root: str, name: str) -> dict:
-    p = Path(repo_root) / "data" / "schemas" / f"{name}.json"
-    if not p.exists() or not p.is_file() or p.stat().st_size == 0:
-        raise HTTPException(400, f"Schema missing or empty: {p}")
-    try:
-        return json.loads(p.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as e:
-        raise HTTPException(400, f"Invalid JSON in {p.name}: {e}")
-
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=5174)

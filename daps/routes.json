@@ -1,3 +1,16 @@
-[
-  "/"
-]
+{
+  "routes": [
+    {
+      "id": "root",
+      "method": "GET",
+      "path": "/",
+      "expect": 200
+    },
+    {
+      "id": "health",
+      "method": "GET",
+      "path": "/health",
+      "expect": 200
+    }
+  ]
+}

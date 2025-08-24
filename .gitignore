@@ -1,10 +1,13 @@
 # mkdocs
 ops/site/.venv/
 ops/site/site/
+.gh-pages/
+
 __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+<<<<<<< Updated upstream
 ops/site/.venv/
 ops/site/site/
 .gh-pages/
@@ -18,6 +21,9 @@ ops/site/site/
 /backup_before_hygiene_*.zip
 /wizards/*.zip
 /_wiz/*.zip
+=======
+
+>>>>>>> Stashed changes
 # local artifacts
 /backup_before_hygiene_*.zip
 /wizards/*.zip
@@ -25,10 +31,15 @@ ops/site/site/
 
 # MkDocs (retired)
 ops/site/
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 # local-ui dev artifacts
 /tools/local-ui/backend/.venv/
 /tools/local-ui/frontend/node_modules/
 /tools/local-ui/frontend/dist/
+<<<<<<< Updated upstream
 # local-ui dev
 /.venv/
 /tools/local-ui/.venv/
@@ -38,11 +49,16 @@ ops/site/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
 # dev envs
+=======
+
+/# local-ui dev
+>>>>>>> Stashed changes
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
 
 .idea/
+<<<<<<< Updated upstream
 
 .idea/
 
@@ -56,3 +72,8 @@ tools/local-ui/frontend/node_modules/
 tools/local-ui/.venv*/
 
 e create --draft --title Local UI Wizard pack --notes FastAPI+Vite scaffold zip.
+=======
+tools/local-ui/.venv*/
+tools/local-ui/frontend/dist/
+tools/local-ui/frontend/node_modules/
+>>>>>>> Stashed changes
