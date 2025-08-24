@@ -1,8 +1,6 @@
-"""Watch handoff log files and update vector index.
+"""Watch handoff log files and update vector index."""
 
-Requires the optional watchdog package. If watchdog is not installed,
-this script will exit with a helpful message.
-"""
+from __future__ import annotations
 
 try:
     from watchdog.observers import Observer
@@ -13,26 +11,42 @@ except ModuleNotFoundError as exc:  # pragma: no cover - import guard
         "Install dependencies with 'pip install -r requirements.txt'."
     ) from exc
 
-import time
 from pathlib import Path
+import time
+
+from . import db
+from .embed_logs import DEFAULT_DB_DIR, DEFAULT_LOG_DIR, INDEX_FILE, DB_FILE, process_file
+
 
 class LogHandler(FileSystemEventHandler):
     """Append new log lines to the transcript and vector index."""
+
+    def __init__(self, conn, index, index_path: Path):
+        self.conn = conn
+        self.index = index
+        self.index_path = index_path
 
     def on_modified(self, event):  # pragma: no cover - callback
         if not event.is_directory:
             path = Path(event.src_path)
             print(f"Detected change in {path}")
+            self.index = process_file(path, self.conn, self.index, self.index_path)
+            db.save_index(self.index, self.index_path)
 
 
-def main(log_dir: str = "ops/handoffs/logs") -> None:
+def main(log_dir: str = str(DEFAULT_LOG_DIR), db_dir: str = str(DEFAULT_DB_DIR)) -> None:
     """Monitor *log_dir* for changes."""
     directory = Path(log_dir)
     if not directory.exists():
         print(f"Log directory {directory} does not exist")
         return
 
-    handler = LogHandler()
+    db_path = Path(db_dir) / DB_FILE
+    index_path = Path(db_dir) / INDEX_FILE
+    conn = db.connect(db_path)
+    index = db.load_index(index_path, 8)
+
+    handler = LogHandler(conn, index, index_path)
     observer = Observer()
     observer.schedule(handler, str(directory), recursive=False)
     observer.start()
