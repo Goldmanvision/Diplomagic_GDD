@@ -4,3 +4,4 @@ pydantic
 python-multipart
 jsonschema
 pathspec
+httpx
