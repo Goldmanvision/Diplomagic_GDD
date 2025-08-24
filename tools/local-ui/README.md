@@ -1,13 +1,29 @@
-﻿DIPLOMAGIC Local UI Wizard
-==========================
+# Prompt Hub MVP (stubbed)
 
-Usage
-1) .\wizard_local_ui.ps1
-2) Start backend: .\tools\local-ui\run_backend.bat
-3) Frontend: cd tools\local-ui\frontend && npm i && npm run dev -- --port 5173
-4) Open http://localhost:5173
+**Extract this zip into `tools/local-ui\\`.** It will create:
+```
+tools/local-ui/
+  backend/main.py
+  frontend/index.html
+  frontend/app.js
+  frontend/styles.css
+  run_backend.bat
+  README.md
+```
 
-Notes
-- Set repo root in the UI.
-- CSV export returns text; client should download.
-- Place JSON schemas in data/schemas.
+## Run
+```powershell
+# from repo root or tools\local-ui
+tools\local-ui\run_backend.bat    # starts 127.0.0.1:5174
+# frontend: open tools\local-ui\frontend\index.html
+# optional dev server:
+#   cd tools\local-ui\frontend; npx vite  (http://127.0.0.1:5173)
+```
+
+## Behavior
+- Single input, output feed, quick actions (Yes/No/Retry).
+- Agent strip, unread counts, deep link `?agent=<name>`.
+- Per-agent drafts in localStorage.
+- Rate guard ≤6 req/min/agent and 1 inflight/agent.
+- Outbox JSONL at `tools/local-ui/_outbox/outbox.jsonl` via `/outbox` and `/outbox/tail`.
+- Feed keeps last 200 entries.

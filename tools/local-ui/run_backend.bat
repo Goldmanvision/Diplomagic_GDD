@@ -1,10 +1,5 @@
 @echo off
 setlocal
-cd /d "%~dp0"
-if not exist .venv\Scripts\python.exe (
-  py -3 -m venv .venv 2>nul || python -m venv .venv
-)
-call .venv\Scripts\activate
-python -m pip install --upgrade pip
-pip install -r backend\requirements.txt
-python -m uvicorn backend.main:app --reload --reload-exclude ".venv/*" --port 5174
+where pip >nul 2>nul || (echo Python not found & exit /b 1)
+pip show fastapi >nul 2>nul || python -m pip install fastapi uvicorn >nul
+python backend\main.py
