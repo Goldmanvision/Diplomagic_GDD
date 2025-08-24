@@ -13,9 +13,16 @@ except ModuleNotFoundError as exc:  # pragma: no cover - import guard
 
 from pathlib import Path
 import time
+import sqlite3
 
 from . import db
-from .embed_logs import DEFAULT_DB_DIR, DEFAULT_LOG_DIR, INDEX_FILE, DB_FILE, process_file
+from .embed_logs import (
+    DEFAULT_DB_DIR,
+    DEFAULT_LOG_DIR,
+    INDEX_FILE,
+    DB_FILE,
+    process_file,
+)
 
 
 class LogHandler(FileSystemEventHandler):
@@ -30,8 +37,24 @@ class LogHandler(FileSystemEventHandler):
         if not event.is_directory:
             path = Path(event.src_path)
             print(f"Detected change in {path}")
-            self.index = process_file(path, self.conn, self.index, self.index_path)
-            db.save_index(self.index, self.index_path)
+            try:
+                self.index = process_file(
+                    path, self.conn, self.index, self.index_path
+                )
+                db.save_index(self.index, self.index_path)
+            except FileNotFoundError as exc:
+                print(f"Log file not found {path}: {exc}")
+            except sqlite3.DatabaseError as exc:
+                print(
+                    f"Database write failed for {path}: {exc}. Retrying once..."
+                )
+                try:
+                    self.index = process_file(
+                        path, self.conn, self.index, self.index_path
+                    )
+                    db.save_index(self.index, self.index_path)
+                except Exception as retry_exc:
+                    print(f"Retry failed for {path}: {retry_exc}")
 
 
 def main(log_dir: str = str(DEFAULT_LOG_DIR), db_dir: str = str(DEFAULT_DB_DIR)) -> None:
