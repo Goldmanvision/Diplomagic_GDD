@@ -1,13 +1,17 @@
 name: local-ui-pack
 on:
-  pull_request: {}
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [ main ]
   workflow_dispatch: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.x" }
+        with:
+          python-version: "3.x"
       - name: Install backend deps
         run: python -m pip install -U -r tools/local-ui/backend/requirements.txt
