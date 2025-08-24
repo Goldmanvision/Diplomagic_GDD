@@ -15,6 +15,10 @@ except ModuleNotFoundError as exc:  # pragma: no cover - import guard
 
 import time
 from pathlib import Path
+import subprocess
+import sqlite3
+
+from .embed_logs import embed_file
 
 class LogHandler(FileSystemEventHandler):
     """Append new log lines to the transcript and vector index."""
@@ -23,6 +27,18 @@ class LogHandler(FileSystemEventHandler):
         if not event.is_directory:
             path = Path(event.src_path)
             print(f"Detected change in {path}")
+            try:
+                embed_file(path)
+            except FileNotFoundError as exc:
+                print(f"Log file not found {path}: {exc}")
+            except subprocess.CalledProcessError as exc:
+                print(f"Embedding failed for {path}: {exc}")
+            except sqlite3.DatabaseError as exc:
+                print(f"Database write failed for {path}: {exc}. Retrying once...")
+                try:
+                    embed_file(path)
+                except Exception as retry_exc:
+                    print(f"Retry failed for {path}: {retry_exc}")
 
 
 def main(log_dir: str = "ops/handoffs/logs") -> None:
