@@ -1,0 +1,28 @@
+name: local-ui-pack
+
+on:
+  push: { branches: [ main ] }
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.11'
+          cache: pip
+          cache-dependency-path: tools/local-ui/backend/requirements.txt
+      - run: python -m pip install -r tools/local-ui/backend/requirements.txt
+
+      - name: OpenAI health check
+        env:
+          PYTHONPATH: tools/local-ui
+        run: |
+          python - <<'PY'
+          from backend.main import app
+          print(app)
+          PY
