@@ -1,11 +1,11 @@
-from pathlib import Path
 import sys
 import array
 import sqlite3
+from pathlib import Path
 
 # Ensure repository root on path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
-from clients.windows.rag import embed_logs
+from clients.windows.rag import embed_logs, retrieve
 
 
 def test_embeddings_written_and_retrievable(tmp_path):
@@ -36,3 +36,7 @@ def test_embeddings_written_and_retrievable(tmp_path):
     rows = conn.execute("SELECT text FROM embeddings ORDER BY id").fetchall()
     conn.close()
     assert [row[0] for row in rows] == ["First line", "Second line", "Third line"]
+
+    # simple retrieval
+    results = retrieve.query("Second line", top_k=1, db_dir=db_dir)
+    assert results[0][3] == "Second line"
