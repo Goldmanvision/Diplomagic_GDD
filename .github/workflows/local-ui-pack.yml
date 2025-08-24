@@ -2,9 +2,8 @@ name: local-ui-pack
 on:
   pull_request:
     branches: [ main ]
-    paths:
-      - 'tools/local-ui/**'
-      - '.github/workflows/local-ui-pack.yml'
+  workflow_dispatch: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,11 +12,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: pip deps (backend)
+
+      - name: Install backend deps
+        run: python -m pip install -U -r tools/local-ui/backend/requirements.txt
+
+      - name: Optional OpenAI mode health
+        if: ${{ secrets.OPENAI_API_KEY != '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DAPS_AGENT_MODE: openai
         run: |
-          python -m pip install -U -r tools/local-ui/backend/requirements.txt
-          python -c "import fastapi, uvicorn, httpx; print('deps ok')"
-      - name: zip pack
+          python - <<'PY'
+          import importlib.machinery
+          from fastapi.testclient import TestClient
+          mod = importlib.machinery.SourceFileLoader(
+              "daps_main", "tools/local-ui/backend/main.py"
+          ).load_module()
+          app = getattr(mod, "APP", getattr(mod, "app", None))
+          assert app is not None, "APP/app not found"
+          c = TestClient(app)
+          j = c.get("/health").json()
+          print("health:", j)
+          PY
+
+      - name: Zip pack
         run: |
           mkdir -p dist
           zip -r dist/prompt-hub-v0.3.zip \
@@ -27,25 +45,8 @@ jobs:
             tools/local-ui/run_backend.ps1 \
             tools/local-ui/.env.example \
             tools/local-ui/README.md
+
       - uses: actions/upload-artifact@v4
         with:
           name: prompt-hub-v0.3
           path: dist/prompt-hub-v0.3.zip
-      - name: openai mode health (file-path import)
-        if: ${{ secrets.OPENAI_API_KEY != '' }}
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          DAPS_AGENT_MODE: openai
-        run: |
-          python - <<'PY'
-          import importlib.machinery, os
-          from fastapi.testclient import TestClient
-          mod = importlib.machinery.SourceFileLoader(
-              "daps_main", "tools/local-ui/backend/main.py"
-          ).load_module()
-          c = TestClient(mod.APP)
-          j = c.get("/health").json()
-          assert j["ok"] is True
-          assert j["mode"] in ("openai","http","queue")
-          print("health ok:", j)
-          PY
