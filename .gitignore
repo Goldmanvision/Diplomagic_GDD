@@ -7,7 +7,19 @@ __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
-
+ops/site/.venv/
+ops/site/site/
+.gh-pages/
+ops/site/.venv/
+ops/site/site/
+.gh-pages/
+ops/site/.venv/
+ops/site/site/
+.gh-pages/
+# local artifacts
+/backup_before_hygiene_*.zip
+/wizards/*.zip
+/_wiz/*.zip
 # local artifacts
 /backup_before_hygiene_*.zip
 /wizards/*.zip
@@ -15,18 +27,61 @@ Thumbs.db
 
 # MkDocs (retired)
 ops/site/
-
 # local-ui dev artifacts
 /tools/local-ui/backend/.venv/
 /tools/local-ui/frontend/node_modules/
 /tools/local-ui/frontend/dist/
 
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
+# local-ui dev
+/.venv/
+/tools/local-ui/.venv/
+/_wiz/_unpack/
+# dev envs
+
+
 /# local-ui dev
+
+
+/# local-ui dev
+
 /.venv/
 /tools/local-ui/.venv/
 /_wiz/_unpack/
 
 .idea/
+
+.idea/
+
+
 tools/local-ui/.venv*/
 tools/local-ui/frontend/dist/
 tools/local-ui/frontend/node_modules/
+
+.idea/
+tools/local-ui/.venv*/
+
+e create --draft --title Local UI Wizard pack --notes FastAPI+Vite scaffold zip.
+
+tools/local-ui/.venv*/
+tools/local-ui/frontend/dist/
+tools/local-ui/frontend/node_modules/
+
+# --- local-ui artifacts ---
+tools/local-ui/_outbox/
+tools/local-ui/.env
+tools/local-ui/agent-brain-context-stubs.zip
+tools/local-ui/prompt-hub-*.zip
+tools/local-ui/tools/
+
+# --- node ---
+node_modules/
+**/.vite/
+
+# --- misc ---
+*.zip
+*.docx
+=

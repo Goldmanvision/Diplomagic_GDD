@@ -12,7 +12,11 @@ start "DIPLOMAGIC Backend" cmd /k call "%~dp0run_backend.bat"
 
 rem Pick npm
 set "NPM=npm"
+<<<<<<< Updated upstream
 if exist "%ProgramFiles%\nodejs\npm.cmd" set "NPM=%ProgramFiles%\nodejs\npm.cmd"
+=======
+if exist "%ProgramFiles%\\nodejs\\npm.cmd" set "NPM=%ProgramFiles%\\nodejs\\npm.cmd"
+>>>>>>> Stashed changes
 
 rem Start frontend in its own window
 start "DIPLOMAGIC Frontend" cmd /k pushd "%~dp0frontend" ^& "%NPM%" i ^& "%NPM%" run dev -- --port %DMG_FE_PORT%

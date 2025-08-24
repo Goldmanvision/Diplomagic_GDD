@@ -1,27 +1,17 @@
-# .github/workflows/local-ui-pack.yml
 name: local-ui-pack
 on:
-  pull_request:            # remove the paths filter
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
     branches: [ main ]
-  workflow_dispatch: {}    # enable manual trigger
+  workflow_dispatch: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: '3.x' }
-      - name: pip deps (backend)
+        with:
+          python-version: "3.x"
+      - name: Install backend deps
         run: python -m pip install -U -r tools/local-ui/backend/requirements.txt
-      - name: zip pack
-        run: |
-          mkdir -p dist
-          zip -r dist/prompt-hub-v0.3.zip \
-            tools/local-ui/backend \
-            tools/local-ui/frontend \
-            tools/local-ui/run_backend.bat \
-            tools/local-ui/run_backend.ps1 \
-            tools/local-ui/.env.example \
-            tools/local-ui/README.md
-      - uses: actions/upload-artifact@v4
-        with: { name: prompt-hub-v0.3, path: dist/prompt-hub-v0.3.zip }

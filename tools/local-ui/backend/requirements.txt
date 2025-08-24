@@ -1,6 +1,7 @@
-fastapi
-uvicorn[standard]
-pydantic
+fastapi>=0.112,<1
+uvicorn>=0.30,<1
+httpx>=0.27,<1
+pydantic>=2.8
 python-multipart
 jsonschema
 pathspec

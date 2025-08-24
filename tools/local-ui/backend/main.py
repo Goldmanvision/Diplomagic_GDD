@@ -1,31 +1,139 @@
-from fastapi import FastAPI, HTTPException
+from __future__ import annotations
+
+import io
+import csv
+import json
+import re
+from pathlib import Path
+from datetime import datetime, timezone
+from collections import deque
+from typing import List, Optional
+from uuid import uuid4
+
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from jsonschema import validate, ValidationError
-from pathlib import Path
-import re, json, csv, io, datetime
 
-app = FastAPI()
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
-_state = {"repoRoot": "."}
+# ------------------------------------------------------------------------------
+# App + CORS
+# ------------------------------------------------------------------------------
+APP = FastAPI(title="DAPS Sidecar", version="0.3.2")
+APP.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
+# ------------------------------------------------------------------------------
+# Paths and minimal state
+# ------------------------------------------------------------------------------
+OUTBOX = Path("tools/local-ui/_outbox/outbox.jsonl")
+CFG_DIR = Path(__file__).resolve().parent
+
+_state = {"repoRoot": "."}  # for repo-scoped scanners (dashboards/mail/schemas)
+
+def ensure_outbox():
+    OUTBOX.parent.mkdir(parents=True, exist_ok=True)
+    if not OUTBOX.exists():
+        OUTBOX.write_text("", encoding="utf-8")
+
+def write_outbox_line(obj: dict):
+    OUTBOX.parent.mkdir(parents=True, exist_ok=True)
+    with OUTBOX.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+# ------------------------------------------------------------------------------
+# Models (Pydantic v2: use `pattern` not `regex`)
+# ------------------------------------------------------------------------------
+class PacketIn(BaseModel):
+    agent: str = Field(..., min_length=1, max_length=80)
+    kind: str = Field(..., pattern="^(prompt|action)$")
+    action: Optional[str] = Field(None, pattern="^(yes|no|retry)$")
+    text: Optional[str] = Field(None, max_length=20000)
+    ref: Optional[str] = Field(None, max_length=120)
+
+class PacketOut(BaseModel):
+    id: str
+    ts: str
+    agent: str
+    kind: str
+    action: Optional[str] = None
+    text: Optional[str] = None
+    ref: Optional[str] = None
+    source: str = "ui:prompt-hub"
+    client: str = "local-ui"
+
+# ------------------------------------------------------------------------------
+# Health
+# ------------------------------------------------------------------------------
+@APP.get("/health")
+def health():
+    return {
+        "ok": True,
+        "ts": datetime.now(timezone.utc).isoformat(),
+        "mode": (Path("tools/local-ui/.env").exists() and "env") or "queue",
+    }
+
+# ------------------------------------------------------------------------------
+# Outbox queue (JSONL)
+# ------------------------------------------------------------------------------
+@APP.post("/outbox", response_model=PacketOut)
+def enqueue(pkt: PacketIn, bg: BackgroundTasks):
+    ensure_outbox()
+    if pkt.kind == "prompt" and not (pkt.text or "").strip():
+        raise HTTPException(400, "prompt requires text")
+    if pkt.kind == "action" and not pkt.action:
+        raise HTTPException(400, "action requires action field")
+
+    rec = PacketOut(
+        id=str(uuid4()),
+        ts=datetime.now(timezone.utc).isoformat(),
+        agent=pkt.agent,
+        kind=pkt.kind,
+        action=pkt.action,
+        text=(pkt.text or None),
+        ref=pkt.ref,
+    )
+    write_outbox_line(rec.model_dump())
+
+    # Background forwarding can be added here later:
+    # bg.add_task(forward_and_record_reply, rec)
+
+    return rec
+
+@APP.get("/outbox/tail", response_model=List[PacketOut])
+def tail(limit: int = 200):
+    ensure_outbox()
+    if limit < 1 or limit > 1000:
+        raise HTTPException(400, "limit 1..1000")
+    dq: deque[str] = deque(maxlen=limit)
+    with OUTBOX.open("r", encoding="utf-8") as f:
+        for line in f:
+            dq.append(line)
+    out: List[PacketOut] = []
+    for line in dq:
+        try:
+            out.append(PacketOut(**json.loads(line)))
+        except Exception:
+            continue
+    return out
+
+# ------------------------------------------------------------------------------
+# Repo-scoped utilities and endpoints (dashboards, mail, schemas, export)
+# ------------------------------------------------------------------------------
 class Cfg(BaseModel):
     repoRoot: str
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
-
-@app.post("/config")
+@APP.post("/config")
 def set_cfg(cfg: Cfg):
     _state["repoRoot"] = cfg.repoRoot
-    return {"ok": True}
+    return {"ok": True, "repoRoot": _state["repoRoot"]}
 
 def repo_path(p: str) -> Path:
     return Path(_state["repoRoot"]).joinpath(p)
-
-MAIL_RE = re.compile(r"(?ms)^From:\s*(?P<from>.+?)\nTo:\s*(?P<to>.+?)\nSubj:\s*(?P<subj>.+?)\n(?P<body>.*)")
-QUIET_RE = re.compile(r"(?ms)^quiet-mail:\s*(?P<from>[^|]+)\|\s*(?P<to>[^|]+)\|\s*(?P<subj>[^|]+)\|\s*(?P<body>.+)$")
 
 def _scan_md():
     root = Path(_state["repoRoot"])
@@ -33,45 +141,48 @@ def _scan_md():
         try:
             text = p.read_text(encoding="utf-8", errors="ignore")
             yield p, text
-        except:
-            pass
+        except Exception:
+            continue
 
-@app.get("/dashboards")
+MAIL_RE = re.compile(r"(?ms)^From:\s*(?P<from>.+?)\nTo:\s*(?P<to>.+?)\nSubj:\s*(?P<subj>.+?)\n(?P<body>.*)")
+QUIET_RE = re.compile(r"(?ms)^quiet-mail:\s*(?P<from>[^|]+)\|\s*(?P<to>[^|]+)\|\s*(?P<subj>[^|]+)\|\s*(?P<body>.+)$")
+
+@APP.get("/dashboards")
 def dashboards():
     items = []
     for p, txt in _scan_md():
         if "Dashboard" in p.name:
-            import os
-            title = re.search(r"^#\s*(.+)", txt, re.M)
+            title_m = re.search(r"^#\s*(.+)", txt, re.M)
             links = re.findall(r"\[([^\]]+)\]\(([^)]+)\)", txt)
             dept = "unknown"
             parts = p.parts
             if "departments" in parts:
                 try:
                     dept = parts[parts.index("departments") + 1]
-                except:
+                except Exception:
                     pass
             items.append({
                 "dept": dept,
-                "title": title.group(1) if title else p.stem,
+                "title": title_m.group(1) if title_m else p.stem,
                 "path": str(p),
                 "links": [u for _, u in links],
-                "meta": {}
+                "meta": {},
             })
     return items
 
-@app.get("/mail")
+@APP.get("/mail")
 def mail(dept: str = "", since: str = ""):
     out = []
     since_dt = None
     if since:
         try:
-            since_dt = datetime.datetime.fromisoformat(since)
-        except:
-            pass
+            since_dt = datetime.fromisoformat(since)
+        except Exception:
+            since_dt = None
     for p, txt in _scan_md():
         if dept and dept.lower() not in str(p).lower():
             continue
+        # crude block splitting over code fences or blank lines
         for block in re.split(r"`(?:\w+)?\s*|\n{2,}", txt):
             m = MAIL_RE.search(block) or QUIET_RE.search(block)
             if not m:
@@ -83,9 +194,9 @@ def mail(dept: str = "", since: str = ""):
                 ts = mdate.group(1)
             if ts and since_dt:
                 try:
-                    if datetime.datetime.fromisoformat(ts) < since_dt:
+                    if datetime.fromisoformat(ts) < since_dt:
                         continue
-                except:
+                except Exception:
                     pass
             out.append({
                 "from": m.group("from").strip(),
@@ -93,36 +204,42 @@ def mail(dept: str = "", since: str = ""):
                 "subj": m.group("subj").strip(),
                 "ts": ts or "",
                 "body": body,
-                "path": str(p)
+                "path": str(p),
             })
     return out
 
-@app.get("/schemas")
+@APP.get("/schemas")
 def schemas():
     d = repo_path("data/schemas")
     res = []
     if d.exists():
         for f in d.glob("*.json"):
             try:
-                j = json.loads(f.read_text())
+                j = json.loads(f.read_text(encoding="utf-8"))
                 res.append({"name": f.stem, "schema": j})
-            except:
-                pass
+            except Exception:
+                continue
     return res
 
 class ExportReq(BaseModel):
     schema_id: str = Field(alias="schema")
     rows: list
+    model_config = {"populate_by_name": True}
 
-@app.post("/export/csv")
+@APP.post("/export/csv")
 def export_csv(req: ExportReq):
+    # optional schema validation
     schema_file = repo_path(f"data/schemas/{req.schema_id}.json")
     if schema_file.exists():
         try:
+            schema = json.loads(schema_file.read_text(encoding="utf-8"))
             for r in req.rows:
-                validate(instance=r, schema=json.loads(schema_file.read_text()))
+                validate(instance=r, schema=schema)
         except ValidationError as e:
-            return {"ok": False, "error": str(e)}
+            raise HTTPException(400, f"Schema validation failed: {e.message}")
+        except json.JSONDecodeError as e:
+            raise HTTPException(400, f"Invalid schema JSON: {e}")
+
     buf = io.StringIO()
     fieldnames = sorted({k for r in req.rows for k in r.keys()})
     w = csv.DictWriter(buf, fieldnames=fieldnames)
@@ -131,11 +248,10 @@ def export_csv(req: ExportReq):
         w.writerow(r)
     return buf.getvalue()
 
-def _load_schema(repo_root: str, name: str) -> dict:
-    p = Path(repo_root) / "data" / "schemas" / f"{name}.json"
-    if not p.exists() or not p.is_file() or p.stat().st_size == 0:
-        raise HTTPException(400, f"Schema missing or empty: {p}")
-    try:
-        return json.loads(p.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as e:
-        raise HTTPException(400, f"Invalid JSON in {p.name}: {e}")
+# ------------------------------------------------------------------------------
+# Entrypoint
+# ------------------------------------------------------------------------------
+if __name__ == "__main__":
+    import uvicorn
+    ensure_outbox()
+    uvicorn.run(APP, host="127.0.0.1", port=5174)
