@@ -27,3 +27,5 @@ tools\local-ui\run_backend.bat    # starts 127.0.0.1:5174
 - Rate guard ≤6 req/min/agent and 1 inflight/agent.
 - Outbox JSONL at `tools/local-ui/_outbox/outbox.jsonl` via `/outbox` and `/outbox/tail`.
 - Feed keeps last 200 entries.
+
+CI tick: 2025-08-24T15:54:35
