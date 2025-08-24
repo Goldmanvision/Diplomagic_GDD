@@ -1,5 +1,5 @@
 name: ops-runner-dispatch
-run-name: ops-runner: ${{ inputs.op }} on ${{ inputs.target_ref }}
+run-name: "ops-runner: ${{ inputs.op }} on ${{ inputs.target_ref }}"
 
 on:
   workflow_dispatch:
