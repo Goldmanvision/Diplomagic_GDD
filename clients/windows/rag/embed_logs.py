@@ -2,16 +2,49 @@
 
 from __future__ import annotations
 
+
 import hashlib
+
+import subprocess
+import sqlite3
+
 from pathlib import Path
 from typing import Optional
 
+
 from . import db
+
+LOG_DIR = Path("ops/handoffs/logs")
+DB_PATH = LOG_DIR / "embeddings.db"
+
+
+def write_embedding_to_db(path: Path) -> None:
+    """Persist embedding metadata for *path* in a SQLite database."""
+    with sqlite3.connect(DB_PATH) as conn:
+        conn.execute(
+            "CREATE TABLE IF NOT EXISTS embeddings (file TEXT UNIQUE)"
+        )
+        conn.execute("INSERT OR REPLACE INTO embeddings(file) VALUES (?)", (str(path),))
+
 
 DEFAULT_LOG_DIR = Path("ops/handoffs/logs")
 DEFAULT_DB_DIR = Path("ops/handoffs")
 DB_FILE = "embeddings.db"
 INDEX_FILE = "embeddings.faiss"
+
+
+def embed_file(path: Path) -> None:
+    """Run ``ollama embed`` on ``path`` if available."""
+    try:
+        subprocess.run(["ollama", "embed", str(path)], check=True)
+    except (FileNotFoundError, subprocess.CalledProcessError) as exc:
+        print(f"Embedding failed for {path}: {exc}")
+        return
+
+    try:
+        write_embedding_to_db(path)
+    except sqlite3.DatabaseError as exc:
+        print(f"Failed to write embedding for {path}: {exc}")
 
 
 def compute_embedding(text: str, dim: int = 8) -> list[float]:

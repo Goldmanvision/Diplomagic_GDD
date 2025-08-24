@@ -12,6 +12,7 @@ except ModuleNotFoundError as exc:  # pragma: no cover - import guard
     ) from exc
 
 from pathlib import Path
+
 import time
 import sqlite3
 
@@ -23,7 +24,6 @@ from .embed_logs import (
     DB_FILE,
     process_file,
 )
-
 
 class LogHandler(FileSystemEventHandler):
     """Append new log lines to the transcript and vector index."""
@@ -38,6 +38,7 @@ class LogHandler(FileSystemEventHandler):
             path = Path(event.src_path)
             print(f"Detected change in {path}")
             try:
+
                 self.index = process_file(
                     path, self.conn, self.index, self.index_path
                 )
@@ -53,6 +54,7 @@ class LogHandler(FileSystemEventHandler):
                         path, self.conn, self.index, self.index_path
                     )
                     db.save_index(self.index, self.index_path)
+
                 except Exception as retry_exc:
                     print(f"Retry failed for {path}: {retry_exc}")
 
