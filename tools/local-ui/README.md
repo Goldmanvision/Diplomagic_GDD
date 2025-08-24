@@ -28,4 +28,12 @@ tools\local-ui\run_backend.bat    # starts 127.0.0.1:5174
 - Outbox JSONL at `tools/local-ui/_outbox/outbox.jsonl` via `/outbox` and `/outbox/tail`.
 - Feed keeps last 200 entries.
 
+## Tests
+```bash
+# from repo root
+python -m pip install -r tools/local-ui/backend/requirements-dev.txt
+python -m pytest tools/local-ui/backend/tests
+```
+The API tests require `fastapi` and will be skipped automatically if it is not installed.
+
 CI tick: 2025-08-24T15:54:35
