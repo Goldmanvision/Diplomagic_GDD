@@ -39,3 +39,4 @@ def test_embeddings_written_and_retrievable(tmp_path):
 
     results = retrieve.query("Third line", top_k=1, db_dir=db_dir)
     assert results[0][3] == "Third line"
+
