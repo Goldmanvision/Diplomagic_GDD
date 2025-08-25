@@ -3,9 +3,9 @@ from pathlib import Path
 from fastapi.testclient import TestClient
 
 sys.path.append(str(Path(__file__).resolve().parents[1] / "tools" / "local-ui"))
-from backend.main import APP  # noqa: E402
+from backend.main import app  # noqa: E402
 
-client = TestClient(APP)
+client = TestClient(app)
 
 def test_health():
     r = client.get("/health")
