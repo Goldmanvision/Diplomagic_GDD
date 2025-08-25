@@ -5,8 +5,8 @@ from fastapi.testclient import TestClient
 from pathlib import Path
 import json
 
-from backend.main import APP
-client = TestClient(APP)
+from tools.local_ui.backend.main import app
+client = TestClient(app)
 
 def test_health():
     r = client.get("/health")

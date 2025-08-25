@@ -26,6 +26,7 @@ APP.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app = APP
 
 # ------------------------------------------------------------------------------
 # Paths and minimal state

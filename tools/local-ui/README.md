@@ -66,7 +66,7 @@ Replace `<PASSWORD>` with the certificate password.
 ## Tests
 ```bash
 # from repo root
-python -m pip install -r tools/local-ui/backend/requirements-dev.txt
+python -m pip install -r tools/local-ui/backend/requirements.dev.txt
 python -m pytest tools/local-ui/backend/tests
 ```
 The API tests require `fastapi` and will be skipped automatically if it is not installed.
