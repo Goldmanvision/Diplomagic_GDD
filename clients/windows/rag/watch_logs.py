@@ -28,20 +28,26 @@ from .embed_logs import (
 
 MAX_RETRIES = 5
 MAX_BACKOFF = 30
+COOLDOWN = 60
 
 
 def _request_with_retry(method: str, url: str) -> None:
     delay = 1.0
+    timeout = httpx.Timeout(10.0, connect=10.0)
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            r = httpx.request(method, url, timeout=10)
+            r = httpx.request(method, url, timeout=timeout)
             r.raise_for_status()
             return
-        except (httpx.ConnectError, httpx.HTTPStatusError) as exc:
+        except (
+            httpx.ConnectError,
+            httpx.HTTPStatusError,
+            httpx.TimeoutException,
+        ) as exc:
             print(f"request failed (attempt {attempt}): {exc}")
             if attempt == MAX_RETRIES:
-                print("circuit breaker: sleeping 60s")
-                time.sleep(60)
+                print(f"circuit breaker: sleeping {COOLDOWN}s")
+                time.sleep(COOLDOWN)
                 break
             time.sleep(min(delay, MAX_BACKOFF))
             delay *= 2
