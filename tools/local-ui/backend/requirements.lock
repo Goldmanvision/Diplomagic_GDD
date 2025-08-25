@@ -6,3 +6,4 @@ pydantic==2.7.0
 orjson==3.10.3
 python-dotenv==1.0.1
 jsonschema==4.21.1
+
