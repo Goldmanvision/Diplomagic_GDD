@@ -76,6 +76,7 @@ tools/local-ui/.env
 tools/local-ui/agent-brain-context-stubs.zip
 tools/local-ui/prompt-hub-*.zip
 tools/local-ui/tools/
+tools/local-ui/dist/
 
 # --- node ---
 node_modules/
