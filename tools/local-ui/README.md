@@ -74,5 +74,8 @@ The API tests require `fastapi` and will be skipped automatically if it is not i
 CI tick: 2025-08-24T15:54:35
 
 ## CI bypass
-- Manual: Run the local-ui-pack workflow with `skip_checks=true`.
-- Label: Add `skip-local-ui-checks` to the PR to trigger a skip run.
+The `local-ui-pack` workflow runs backend tests and packages the UI. To skip packaging while keeping the backend tests:
+
+- Commit: include `[skip local-ui-pack]` in a commit message.
+- PR: add a `skip-local-ui-pack` label.
+- Manual: run the local-ui-pack workflow with `skip_checks=true`.

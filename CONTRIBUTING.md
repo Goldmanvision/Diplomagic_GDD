@@ -16,7 +16,7 @@ This repo favors small, reviewable PRs. Even if `main` is temporarily unprotecte
 - Include a short rationale and validation notes.
 - CI must be green before merge (when enabled).
 - Squash or merge-commit; stay consistent per release cycle.
-- To skip the local UI pack workflow, include `[skip local-ui]` in a commit message or add a `skip-local-ui` label to the PR.
+- To skip packaging while still running backend tests, include `[skip local-ui-pack]` in a commit message or add a `skip-local-ui-pack` label to the PR.
 
 ## Line Endings
 On Windows, Git may warn about CRLF. This repo enforces LF via `.gitattributes`. Do **not** change editor defaults; Git will normalize on commit.

@@ -39,6 +39,6 @@ Run them from PowerShell using `./install-deps.ps1` and `./run-pipeline.ps1`.
 
 ## Troubleshooting
 
-- Include `[skip local-ui]` in a commit message to bypass the local UI workflow.
+- Include `[skip local-ui-pack]` in a commit message or add a `skip-local-ui-pack` label to skip packaging while backend tests still run.
 - Ensure `watchdog` is installed if the watcher fails to start.
 - Delete the database in `ops/handoffs` if embeddings become inconsistent.
