@@ -4,8 +4,8 @@ on:
     branches: [ main ]
   workflow_dispatch:
     inputs:
-      skip_checks:
-        description: "Skip tests and build for local-ui"
+      allow_bypass:
+        description: "Allow ci-bypass-localui label to skip UI pack"
         required: false
         default: "false"
         type: choice
@@ -13,7 +13,6 @@ on:
 
 jobs:
   backend-tests:
-    if: ${{ inputs.skip_checks != 'true' }}
     runs-on: windows-latest
     defaults:
       run:
@@ -31,9 +30,15 @@ jobs:
       - name: Run backend tests
         working-directory: tools/local-ui
         run: pytest -q backend/tests
+      - name: Record bypass
+        if: ${{ github.event_name == 'pull_request' && inputs.allow_bypass == 'true' && contains(github.event.pull_request.labels.*.name, 'ci-bypass-localui') && (contains(github.event.pull_request.labels.*.name, 'Docs') || contains(github.event.pull_request.labels.*.name, 'docs-only') || contains(github.event.pull_request.labels.*.name, 'Hotfix') || contains(github.event.pull_request.labels.*.name, 'hotfix')) }}
+        run: |
+          echo "local-ui-pack bypassed by ${{ github.actor }}" >> $env:GITHUB_STEP_SUMMARY
+          echo "labels: ${{ join(github.event.pull_request.labels.*.name, ', ') }}" >> $env:GITHUB_STEP_SUMMARY
+          echo "::warning::local-ui-pack bypassed by ${{ github.actor }}"
 
   local-ui-build:
-    if: ${{ inputs.skip_checks != 'true' }}
+    if: ${{ !(github.event_name == 'pull_request' && inputs.allow_bypass == 'true' && contains(github.event.pull_request.labels.*.name, 'ci-bypass-localui') && (contains(github.event.pull_request.labels.*.name, 'Docs') || contains(github.event.pull_request.labels.*.name, 'docs-only') || contains(github.event.pull_request.labels.*.name, 'Hotfix') || contains(github.event.pull_request.labels.*.name, 'hotfix'))) }}
     runs-on: windows-latest
     needs: backend-tests
     defaults:
