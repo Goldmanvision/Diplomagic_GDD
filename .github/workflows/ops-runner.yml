@@ -2,6 +2,9 @@
 name: ops-runner
 
 on:
+  pull_request:
+    paths-ignore:
+      - 'tools/local-ui/**'
   workflow_dispatch:
     inputs:
       ref:
