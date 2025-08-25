@@ -35,6 +35,7 @@ The archive will be created at `tools/local-ui/dist/daps_bundle.zip`. Extract it
 Windows and run `daps.exe` to start the API (127.0.0.1:5174); open
 `frontend/index.html` to use the UI.
 
+
 ### Windows installer (optional)
 After building the bundle you can create a traditional Windows installer using [Inno Setup](https://jrsoftware.org/isinfo.php).
 Install Inno Setup and then run:
@@ -44,6 +45,7 @@ iscc tools\\local-ui\windows_installer.iss
 ```
 
 This produces `tools/local-ui/dist/daps-installer.exe` that installs the bundle.
+
 
 ## Behavior
 - Single input, output feed, quick actions (Yes/No/Retry).
