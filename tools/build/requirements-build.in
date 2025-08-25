@@ -1,1 +1,3 @@
+# Build-time requirements (pinned). Lock with hashes before CI.
+# PyInstaller selected for Windows pack step.
 pyinstaller==6.6.0
