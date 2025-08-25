@@ -93,3 +93,7 @@ node_modules/
 .venv311/
 
 .ci311/
+# handoffs artifacts
+ops/handoffs/*.db
+ops/handoffs/logs/
+ops/handoffs/scratch/
