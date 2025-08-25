@@ -1,4 +1,4 @@
-name: local-ui-pack
+name: build-windows
 
 on:
   pull_request:
@@ -23,11 +23,11 @@ jobs:
           python-version: '3.11'
       - name: Install backend requirements (hashed)
         run: |
-          python -V
           pip install --upgrade pip
           pip install --require-hashes -r backend/requirements.lock
       - name: Run pytest
-        run: python -m pytest -q backend/tests
+        run: |
+          python -m pytest -q backend/tests
 
   smoke:
     name: smoke-check
@@ -55,6 +55,9 @@ jobs:
     runs-on: windows-latest
     needs: [tests, smoke]
     if: ${{ needs.tests.result == 'success' && needs.smoke.result == 'success' }}
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -64,13 +67,11 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install --require-hashes -r tools/build/requirements-build.lock
-      - name: Prepare dist folder
-        shell: pwsh
+      - name: Package app (placeholder)
         run: |
-          New-Item -ItemType Directory -Force -Path tools/local-ui/dist/windows | Out-Null
-          Set-Content -Path tools/local-ui/dist/windows/placeholder.txt -Value "replace with packaged build"
+          echo "TODO: invoke pack script here"
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: local-ui-pack
+          name: local-ui-windows
           path: tools/local-ui/dist/windows/**
