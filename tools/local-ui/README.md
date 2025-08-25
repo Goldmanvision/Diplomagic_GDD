@@ -20,6 +20,21 @@ tools\local-ui\run_backend.bat    # starts 127.0.0.1:5174
 #   cd tools\local-ui\frontend; npx vite  (http://127.0.0.1:5173)
 ```
 
+## Windows bundle
+System requirements: Windows 10 or later, 64-bit.
+
+The build script compiles the backend into a standalone `daps.exe` and assembles all
+runtime assets into a single zip file. Build locally with:
+
+```bash
+python -m pip install -r tools/local-ui/backend/requirements.txt pyinstaller
+python tools/local-ui/build_bundle.py
+```
+
+The archive will be created at `tools/local-ui/dist/daps_bundle.zip`. Extract it on
+Windows and run `daps.exe` to start the API (127.0.0.1:5174); open
+`frontend/index.html` to use the UI.
+
 ## Behavior
 - Single input, output feed, quick actions (Yes/No/Retry).
 - Agent strip, unread counts, deep link `?agent=<name>`.
