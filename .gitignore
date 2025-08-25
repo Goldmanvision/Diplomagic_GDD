@@ -78,6 +78,9 @@ tools/local-ui/prompt-hub-*.zip
 tools/local-ui/tools/
 tools/local-ui/dist/
 
+# Windows build artifacts
+dist/windows/
+
 # --- node ---
 node_modules/
 **/.vite/

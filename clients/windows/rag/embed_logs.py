@@ -7,12 +7,19 @@ import subprocess
 import sqlite3
 from pathlib import Path
 from typing import Optional
+import time
+
+import httpx
 
 from . import db
 
 LOG_DIR = Path("ops/handoffs/logs")
 DB_PATH = LOG_DIR / "embeddings.db"
 VECTOR_DIM = 8
+
+EMBED_URL = "http://localhost:8000/embed"
+MAX_RETRIES = 5
+MAX_BACKOFF = 30
 
 
 def write_embedding_to_db(path: Path) -> None:
@@ -44,6 +51,25 @@ def embed_file(path: Path) -> None:
         print(f"Failed to write embedding for {path}: {exc}")
 
 
+def _post_with_retry(data: dict) -> Optional[dict]:
+    """POST *data* to the embed endpoint with retries."""
+    delay = 1.0
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            r = httpx.post(EMBED_URL, json=data, timeout=10)
+            r.raise_for_status()
+            return r.json()
+        except (httpx.ConnectError, httpx.HTTPStatusError) as exc:
+            print(f"embed request failed (attempt {attempt}): {exc}")
+            if attempt == MAX_RETRIES:
+                print("circuit breaker: sleeping 60s")
+                time.sleep(60)
+                break
+            time.sleep(min(delay, MAX_BACKOFF))
+            delay *= 2
+    return None
+
+
 def compute_embedding(text: str, dim: int = VECTOR_DIM) -> list[float]:
     """Return a deterministic embedding vector for *text*."""
     digest = hashlib.sha256(text.encode("utf-8")).digest()
@@ -69,6 +95,7 @@ def process_file(
             if not text:
                 continue
             vector = compute_embedding(text)
+            _post_with_retry({"text": text})
             if index is None:
                 index = db.load_index(index_path, VECTOR_DIM)
             db.add_embedding(conn, index, str(path), lineno, text, vector)
