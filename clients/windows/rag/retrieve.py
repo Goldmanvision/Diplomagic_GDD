@@ -1,28 +1,18 @@
-"""Simple retrieval helpers for embedded log lines."""
-
+"""Simple retrieval of embedded log lines."""
 from __future__ import annotations
 
 from pathlib import Path
+import sqlite3
+import array
 from typing import List, Tuple
 
-from . import db
-from .embed_logs import (
-    DEFAULT_DB_DIR,
-    DB_FILE,
-    INDEX_FILE,
-    compute_embedding,
-)
+from . import embed_logs
 
 
-def query(
-    text: str,
-    top_k: int = 5,
-    db_dir: Path = DEFAULT_DB_DIR,
-) -> List[Tuple[int, str, int, str, float]]:
-    """Return the *top_k* most similar log entries to *text*.
+def _l2(a: List[float], b: array.array) -> float:
+    """Return the squared L2 distance between two vectors."""
+    return sum((x - y) * (x - y) for x, y in zip(a, b))
 
-    Each result is ``(id, source, line, text, distance)``.
-    """
 
     db_path = Path(db_dir) / DB_FILE
     index_path = Path(db_dir) / INDEX_FILE
