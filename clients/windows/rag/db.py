@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import array
-import math
 import sqlite3
 from pathlib import Path
 from typing import Iterable, Iterator, Sequence
@@ -95,12 +94,20 @@ def fetch_all(conn: sqlite3.Connection) -> Iterator[tuple[int, str, int, str, by
 def search(
     conn: sqlite3.Connection,
     index,
-    query: Sequence[float],
-    top_k: int = 5,
+    vector: Sequence[float],
+    top_k: int,
 ) -> list[tuple[int, str, int, str, float]]:
-    """Return the closest *top_k* rows for *query*."""
-    q_list = list(query)
+    """Return the closest *top_k* rows for *vector*.
+
+    Results are ordered by increasing squared L2 distance. If a FAISS ``index``
+    is provided and the library is available, it is queried directly. Otherwise
+    all rows are loaded via :func:`fetch_all` and distances computed in pure
+    Python.
+    """
+
+    q_list = list(vector)
     results: list[tuple[int, str, int, str, float]] = []
+
     if index is not None and faiss is not None and np is not None:  # pragma: no cover
         q_np = np.asarray(q_list, dtype="float32").reshape(1, -1)
         distances, ids = index.search(q_np, top_k)
@@ -115,23 +122,12 @@ def search(
                 results.append((*row, float(dist)))
         return results
 
-    if pgvector is not None:  # pragma: no cover - optional branch
-        q_val = pgvector.to_db(q_list)
-        rows = conn.execute(
-            "SELECT id, source, line, text, vec <-> ? AS dist "
-            "FROM embeddings WHERE vec NOT NULL "
-            "ORDER BY dist LIMIT ?",
-            (q_val, top_k),
-        ).fetchall()
-        return [(row[0], row[1], row[2], row[3], float(row[4])) for row in rows]
-
     # Fallback: compute distance in Python
-    cursor = conn.execute("SELECT id, source, line, text, vector FROM embeddings")
-    for row in cursor:
+    for row_id, source, line, text, blob in fetch_all(conn):
         vec = array.array("f")
-        vec.frombytes(row[4])
-        dist = math.sqrt(sum((a - b) ** 2 for a, b in zip(q_list, vec)))
-        results.append((row[0], row[1], row[2], row[3], float(dist)))
+        vec.frombytes(blob)
+        dist = sum((a - b) ** 2 for a, b in zip(q_list, vec))
+        results.append((row_id, source, line, text, float(dist)))
     results.sort(key=lambda x: x[4])
     return results[:top_k]
 
