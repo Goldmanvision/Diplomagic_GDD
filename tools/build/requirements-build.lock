@@ -1,0 +1,2 @@
+# Placeholder lockfile; regenerate with pip-compile --generate-hashes
+pyinstaller==6.6.0

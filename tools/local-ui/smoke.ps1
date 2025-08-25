@@ -1,3 +1,4 @@
+
 param(
     [string]$ExePath = "dist/windows/daps.exe",
     [string]$Url = "http://127.0.0.1:5174/health"
@@ -32,3 +33,4 @@ catch {
 
 Stop-Process -Id $proc.Id -Force
 exit 0
+

@@ -1,8 +1,12 @@
+
 # tools/local-ui backend base requirements (unpinned; lock with pip-tools)
+
 fastapi
 uvicorn[standard]
 httpx
 pydantic
 orjson
 python-dotenv
+
 jsonschema
+
