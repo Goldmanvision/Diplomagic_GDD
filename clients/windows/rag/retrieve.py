@@ -1,4 +1,3 @@
-
 """Simple retrieval of embedded log lines."""
 from __future__ import annotations
 
@@ -15,24 +14,13 @@ def _l2(a: List[float], b: array.array) -> float:
     return sum((x - y) * (x - y) for x, y in zip(a, b))
 
 
-def query(text: str, db_dir: Path = embed_logs.DEFAULT_DB_DIR, top_k: int = 5) -> List[Tuple[str, float]]:
-    """Return the *top_k* closest log lines to *text*.
-
-    If the embeddings database does not exist an empty list is returned.
-    """
-    db_path = Path(db_dir) / embed_logs.DB_FILE
-    if not db_path.exists():
-        return []
-
-    vec = embed_logs.compute_embedding(text)
-    with sqlite3.connect(db_path) as conn:
-        rows = conn.execute("SELECT text, vector FROM embeddings").fetchall()
-
-    scored: List[Tuple[str, float]] = []
-    for row_text, blob in rows:
-        arr = array.array("f")
-        arr.frombytes(blob)
-        scored.append((row_text, _l2(vec, arr)))
-    scored.sort(key=lambda r: r[1])
-    return scored[:top_k]
+    db_path = Path(db_dir) / DB_FILE
+    index_path = Path(db_dir) / INDEX_FILE
+    vector = compute_embedding(text)
+    conn = db.connect(db_path)
+    index = db.load_index(index_path, len(vector))
+    try:
+        return db.search(conn, index, vector, top_k)
+    finally:
+        conn.close()
 
