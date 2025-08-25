@@ -91,3 +91,5 @@ node_modules/
 =
 
 .venv311/
+
+.ci311/
