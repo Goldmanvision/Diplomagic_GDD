@@ -1,21 +1,18 @@
-"""Embed existing log files and persist vectors."""
+"""Embed log files and persist vectors for retrieval."""
 
 from __future__ import annotations
 
-
 import hashlib
-
 import subprocess
 import sqlite3
-
 from pathlib import Path
 from typing import Optional
-
 
 from . import db
 
 LOG_DIR = Path("ops/handoffs/logs")
 DB_PATH = LOG_DIR / "embeddings.db"
+VECTOR_DIM = 8
 
 
 def write_embedding_to_db(path: Path) -> None:
@@ -47,7 +44,7 @@ def embed_file(path: Path) -> None:
         print(f"Failed to write embedding for {path}: {exc}")
 
 
-def compute_embedding(text: str, dim: int = 8) -> list[float]:
+def compute_embedding(text: str, dim: int = VECTOR_DIM) -> list[float]:
     """Return a deterministic embedding vector for *text*."""
     digest = hashlib.sha256(text.encode("utf-8")).digest()
     return [int.from_bytes(digest[i : i + 4], "little") / 2 ** 32 for i in range(0, dim * 4, 4)]
@@ -73,7 +70,7 @@ def process_file(
                 continue
             vector = compute_embedding(text)
             if index is None:
-                index = db.load_index(index_path, len(vector))
+                index = db.load_index(index_path, VECTOR_DIM)
             db.add_embedding(conn, index, str(path), lineno, text, vector)
     return index
 

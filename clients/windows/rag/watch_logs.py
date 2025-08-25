@@ -28,10 +28,10 @@ from .embed_logs import (
 class LogHandler(FileSystemEventHandler):
     """Append new log lines to the transcript and vector index."""
 
-    def __init__(self, conn, index, index_path: Path):
+    def __init__(self, conn=None, index=None, index_path: Path | None = None):
         self.conn = conn
         self.index = index
-        self.index_path = index_path
+        self.index_path = index_path or Path(INDEX_FILE)
 
     def on_modified(self, event):  # pragma: no cover - callback
         if not event.is_directory:

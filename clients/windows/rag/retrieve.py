@@ -1,3 +1,4 @@
+
 """Simple retrieval of embedded log lines."""
 from __future__ import annotations
 
@@ -34,3 +35,4 @@ def query(text: str, db_dir: Path = embed_logs.DEFAULT_DB_DIR, top_k: int = 5) -
         scored.append((row_text, _l2(vec, arr)))
     scored.sort(key=lambda r: r[1])
     return scored[:top_k]
+
