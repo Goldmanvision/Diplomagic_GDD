@@ -15,6 +15,7 @@ from pathlib import Path
 
 import time
 import sqlite3
+import httpx
 
 from . import db
 from .embed_logs import (
@@ -24,6 +25,43 @@ from .embed_logs import (
     DB_FILE,
     process_file,
 )
+
+MAX_RETRIES = 5
+MAX_BACKOFF = 30
+
+
+def _request_with_retry(method: str, url: str) -> None:
+    delay = 1.0
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            r = httpx.request(method, url, timeout=10)
+            r.raise_for_status()
+            return
+        except (httpx.ConnectError, httpx.HTTPStatusError) as exc:
+            print(f"request failed (attempt {attempt}): {exc}")
+            if attempt == MAX_RETRIES:
+                print("circuit breaker: sleeping 60s")
+                time.sleep(60)
+                break
+            time.sleep(min(delay, MAX_BACKOFF))
+            delay *= 2
+
+
+def _wait_for_stable(path: Path, intervals: int = 3, delay: float = 1.0) -> bool:
+    prev = -1
+    stable = 0
+    start = time.time()
+    while time.time() - start < 60:
+        size = path.stat().st_size if path.exists() else -1
+        if size == prev:
+            stable += 1
+            if stable >= intervals:
+                return True
+        else:
+            stable = 0
+            prev = size
+        time.sleep(delay)
+    return False
 
 class LogHandler(FileSystemEventHandler):
     """Append new log lines to the transcript and vector index."""
@@ -37,8 +75,10 @@ class LogHandler(FileSystemEventHandler):
         if not event.is_directory:
             path = Path(event.src_path)
             print(f"Detected change in {path}")
+            if not _wait_for_stable(path):
+                return
+            _request_with_retry("get", "http://localhost:8000/health")
             try:
-
                 self.index = process_file(
                     path, self.conn, self.index, self.index_path
                 )

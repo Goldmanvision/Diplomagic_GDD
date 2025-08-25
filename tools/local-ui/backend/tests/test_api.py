@@ -1,16 +1,17 @@
 import pytest
 pytest.importorskip("fastapi")
+pytest.importorskip("jsonschema")
 from fastapi.testclient import TestClient
 from pathlib import Path
 import json
 
-from backend.main import app  # uses in-proc app
-client = TestClient(app)
+from backend.main import APP
+client = TestClient(APP)
 
 def test_health():
     r = client.get("/health")
     assert r.status_code == 200
-    assert r.json()["status"] == "ok"
+    assert r.json()["ok"] is True
 
 def test_schemas_and_export(tmp_path: Path, monkeypatch):
     # temp repo with schemas
