@@ -19,9 +19,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r tools/local-ui/backend/requirements.txt
           pip install pyinstaller
+          pip install -r tools/local-ui/backend/requirements-dev.txt
       - name: Build bundle
         run: |
           python tools/local-ui/build_bundle.py
+      - name: Smoke test bundle
+        run: |
+          python -m pytest tools/local-ui/tests/test_bundle_smoke.py
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
