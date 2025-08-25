@@ -35,6 +35,7 @@ The archive will be created at `tools/local-ui/dist/daps_bundle.zip`. Extract it
 Windows and run `daps.exe` to start the API (127.0.0.1:5174); open
 `frontend/index.html` to use the UI.
 
+
 ## Windows installer
 After building the bundle you can package it into an installer
 (`daps-installer.exe`) with a tool such as Inno Setup or NSIS. Sign the installer
@@ -52,6 +53,7 @@ signtool verify /pa tools\\local-ui\\dist\\daps-installer.exe
 ```
 
 Replace `<PASSWORD>` with the certificate password.
+
 
 ## Behavior
 - Single input, output feed, quick actions (Yes/No/Retry).
