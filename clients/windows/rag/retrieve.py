@@ -26,8 +26,8 @@ def query(
 
     db_path = Path(db_dir) / DB_FILE
     index_path = Path(db_dir) / INDEX_FILE
-    conn = db.connect(db_path)
     vector = compute_embedding(text)
+    conn = db.connect(db_path)
     index = db.load_index(index_path, len(vector))
     try:
         return db.search(conn, index, vector, top_k)
