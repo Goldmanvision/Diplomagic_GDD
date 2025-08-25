@@ -1,77 +1,69 @@
 name: build-windows
-
 on:
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch: {}
 
-env:
-  PYTHONPATH: ${{ github.workspace }}/tools/local-ui
+concurrency:
+  group: build-windows-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   tests:
-    name: backend-tests
     runs-on: windows-latest
     defaults:
       run:
         working-directory: tools/local-ui
-        shell: pwsh
+    env:
+      PYTHONPATH: ${{ github.workspace }}/tools/local-ui
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - name: Install backend requirements (hashed)
-        run: |
-          pip install --upgrade pip
-          pip install --require-hashes -r backend/requirements.lock
-      - name: Run pytest
-        run: |
-          python -m pytest -q backend/tests
-
-  smoke:
-    name: smoke-check
-    runs-on: windows-latest
-    needs: [tests]
-    if: ${{ needs.tests.result == 'success' }}
-    defaults:
-      run:
-        working-directory: tools/local-ui
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install deps (locked, hash-enforced)
         shell: pwsh
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install backend requirements (hashed)
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install --require-hashes -r backend/requirements.lock
-      - name: Run smoke
-        run: ./smoke.ps1
+      - name: Run backend tests
+        shell: pwsh
+        run: python -m pytest -q backend/tests
 
   build:
-    name: local-ui-build
     runs-on: windows-latest
-    needs: [tests, smoke]
-    if: ${{ needs.tests.result == 'success' && needs.smoke.result == 'success' }}
-    defaults:
-      run:
-        shell: pwsh
+    needs: tests
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - name: Install build requirements (hashed)
+          python-version: "3.11"
+      - name: Install build deps (locked, hash-enforced)
+        shell: pwsh
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
+          pip install --require-hashes -r tools/local-ui/backend/requirements.lock
           pip install --require-hashes -r tools/build/requirements-build.lock
-      - name: Package app (placeholder)
+      - name: Build daps.exe (PyInstaller)
+        shell: pwsh
+        working-directory: tools/local-ui
         run: |
-          echo "TODO: invoke pack script here"
+          pyinstaller --onefile --name daps backend/__main__.py
+          New-Item -ItemType Directory dist/windows/bundle/backend -Force | Out-Null
+          Copy-Item dist/daps.exe dist/windows/bundle/backend/daps.exe -Force
+      - name: Smoke test exe
+        shell: pwsh
+        working-directory: tools/local-ui
+        run: .\smoke.ps1
+      - name: Package bundle
+        shell: pwsh
+        working-directory: tools/local-ui/dist/windows
+        run: Compress-Archive -Force -Path bundle -DestinationPath daps_windows_bundle.zip
       - name: Upload artifact
+        if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with:
-          name: local-ui-windows
-          path: tools/local-ui/dist/windows/**
+          name: daps-windows-bundle
+          path: tools/local-ui/dist/windows/daps_windows_bundle.zip
