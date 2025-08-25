@@ -4,7 +4,8 @@ const BACKEND = 'http://127.0.0.1:5174';
 const FEED_MAX = 200;
 const RATE_MAX = 6;
 const RATE_WIN_MS = 60_000;
-const AGENTS = ['Macro Manager','Ms. Mac-man','Postmaster','Storymaster','Stationmaster','Archivist'];
+const FALLBACK_AGENTS = ['Macro Manager','Ms. Mac-man'];
+let AGENTS = [];
 
 // Title and theme indicator
 document.getElementById('app-title').textContent = APP_TITLE;
@@ -24,21 +25,22 @@ const sk = (a) => `daps:seen:${a}`;
 const lk = (a) => `daps:last:${a}`;
 
 // State
-let current = getStartAgent();
+let current = 'Macro Manager';
 let inflight = new Set(); // agent set
 const rateBuckets = new Map(); // agent -> [timestamps]
-let unread = Object.fromEntries(AGENTS.map(a => [a, 0]));
+let unread = {};
 
-// Build agent strip
-AGENTS.forEach(a => {
-  const btn = document.createElement('button');
-  btn.className = 'agent';
-  btn.dataset.agent = a;
-  btn.innerHTML = `<span class="dot-mini"></span><span>${a}</span><span class="badge" data-badge="${a}">0</span>`;
-  btn.onclick = () => switchAgent(a);
-  strip.appendChild(btn);
-});
-switchAgent(current);
+function buildAgentStrip(){
+  strip.textContent = '';
+  AGENTS.forEach(a => {
+    const btn = document.createElement('button');
+    btn.className = 'agent';
+    btn.dataset.agent = a;
+    btn.innerHTML = `<span class="dot-mini"></span><span>${a}</span><span class="badge" data-badge="${a}">0</span>`;
+    btn.onclick = () => switchAgent(a);
+    strip.appendChild(btn);
+  });
+}
 
 // Wire buttons
 document.getElementById('btn-send').onclick = sendPrompt;
@@ -57,7 +59,6 @@ window.addEventListener('keydown', (e)=>{
 
 // Poll feed
 let pollId = null;
-startPoll();
 
 function getStartAgent(){
   const u = new URL(window.location.href);
@@ -163,3 +164,21 @@ async function quick(action){
 }
 // Persist draft per agent
 ta.addEventListener('input', ()=> localStorage.setItem(dk(current), ta.value));
+
+async function init(){
+  try{
+    const r = await fetch(`${BACKEND}/agents`);
+    if(!r.ok) throw new Error('status '+r.status);
+    const m = await r.json();
+    AGENTS = Object.keys(m);
+  }catch(_){
+    AGENTS = FALLBACK_AGENTS;
+  }
+  unread = Object.fromEntries(AGENTS.map(a => [a, 0]));
+  buildAgentStrip();
+  current = getStartAgent();
+  switchAgent(current);
+  startPoll();
+}
+
+init().catch(e => setStatus(`Init error ${e}`));
