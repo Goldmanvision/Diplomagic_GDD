@@ -1,36 +1,38 @@
-"""Simple retrieval helpers for embedded log lines."""
 
+"""Simple retrieval of embedded log lines."""
 from __future__ import annotations
 
 from pathlib import Path
+import sqlite3
+import array
 from typing import List, Tuple
 
-from . import db
-from .embed_logs import (
-    DEFAULT_DB_DIR,
-    DB_FILE,
-    INDEX_FILE,
-    compute_embedding,
-)
+from . import embed_logs
 
 
-def query(
-    text: str,
-    top_k: int = 5,
-    db_dir: Path = DEFAULT_DB_DIR,
-) -> List[Tuple[int, str, int, str, float]]:
-    """Return the *top_k* most similar log entries to *text*.
+def _l2(a: List[float], b: array.array) -> float:
+    """Return the squared L2 distance between two vectors."""
+    return sum((x - y) * (x - y) for x, y in zip(a, b))
 
-    Each result is ``(id, source, line, text, distance)``.
+
+def query(text: str, db_dir: Path = embed_logs.DEFAULT_DB_DIR, top_k: int = 5) -> List[Tuple[str, float]]:
+    """Return the *top_k* closest log lines to *text*.
+
+    If the embeddings database does not exist an empty list is returned.
     """
+    db_path = Path(db_dir) / embed_logs.DB_FILE
+    if not db_path.exists():
+        return []
 
-    db_path = Path(db_dir) / DB_FILE
-    index_path = Path(db_dir) / INDEX_FILE
-    conn = db.connect(db_path)
-    vector = compute_embedding(text)
-    index = db.load_index(index_path, len(vector))
-    try:
-        return db.search(conn, index, vector, top_k)
-    finally:
-        conn.close()
+    vec = embed_logs.compute_embedding(text)
+    with sqlite3.connect(db_path) as conn:
+        rows = conn.execute("SELECT text, vector FROM embeddings").fetchall()
+
+    scored: List[Tuple[str, float]] = []
+    for row_text, blob in rows:
+        arr = array.array("f")
+        arr.frombytes(blob)
+        scored.append((row_text, _l2(vec, arr)))
+    scored.sort(key=lambda r: r[1])
+    return scored[:top_k]
 

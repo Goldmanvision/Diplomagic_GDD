@@ -37,6 +37,7 @@ def test_embeddings_written_and_retrievable(tmp_path):
     conn.close()
     assert [row[0] for row in rows] == ["First line", "Second line", "Third line"]
 
-    # simple retrieval
-    results = retrieve.query("Second line", top_k=1, db_dir=db_dir)
-    assert results[0][3] == "Second line"
+    # Query retrieval returns the matching line
+    results = retrieve.query("Third line", db_dir=db_dir, top_k=1)
+    assert results and results[0][0] == "Third line"
+
