@@ -35,6 +35,24 @@ The archive will be created at `tools/local-ui/dist/daps_bundle.zip`. Extract it
 Windows and run `daps.exe` to start the API (127.0.0.1:5174); open
 `frontend/index.html` to use the UI.
 
+## Windows installer
+After building the bundle you can package it into an installer
+(`daps-installer.exe`) with a tool such as Inno Setup or NSIS. Sign the installer
+to reduce Windows SmartScreen warnings.
+
+1. Create `tools/local-ui/certs/` and place your code-signing certificate
+   (`daps.pfx`) and any intermediate `.cer` files there. Keep this directory out
+   of version control.
+2. Use SignTool (from the Windows SDK) to sign and verify the installer:
+
+```powershell
+signtool sign /fd sha256 /tr http://timestamp.digicert.com /td sha256 \
+  /f tools\\local-ui\\certs\\daps.pfx /p <PASSWORD> tools\\local-ui\\dist\\daps-installer.exe
+signtool verify /pa tools\\local-ui\\dist\\daps-installer.exe
+```
+
+Replace `<PASSWORD>` with the certificate password.
+
 ## Behavior
 - Single input, output feed, quick actions (Yes/No/Retry).
 - Agent strip, unread counts, deep link `?agent=<name>`.
