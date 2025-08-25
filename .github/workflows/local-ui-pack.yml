@@ -19,11 +19,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - name: Install dev deps
+
+      - name: Run backend tests
+        working-directory: tools/local-ui
+        env:
+          PYTHONPATH: ${{ github.workspace }}\tools\local-ui
         run: |
-          pip install -r tools/local-ui/backend/requirements.dev.txt
-      - name: Pytest
-        run: pytest -q
+          python -m pip install -r backend/requirements.lock --require-hashes
+          python -m pytest -q backend/tests
+
 
   local-ui-build:
     if: ${{ inputs.skip_checks != 'true' }}
