@@ -85,3 +85,5 @@ node_modules/
 *.zip
 *.docx
 =
+
+.venv311/
