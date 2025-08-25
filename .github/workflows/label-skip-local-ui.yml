@@ -7,12 +7,12 @@ permissions:
   contents: read
 jobs:
   set-skip:
-    if: contains(github.event.pull_request.labels.*.name, 'skip-local-ui-checks')
+    if: contains(github.event.pull_request.labels.*.name, 'skip-local-ui-pack')
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch local-ui workflow with skip
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: local-ui-pack.yml
-          inputs: '{"skip_checks":"true"}'
+          inputs: '{"skip_pack":"true"}'
           token: ${{ secrets.GITHUB_TOKEN }}
