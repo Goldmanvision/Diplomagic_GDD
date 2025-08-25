@@ -26,12 +26,14 @@ APP.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app = APP
 
 # ------------------------------------------------------------------------------
 # Paths and minimal state
 # ------------------------------------------------------------------------------
-OUTBOX = Path("tools/local-ui/_outbox/outbox.jsonl")
+OUTBOX = Path(__file__).resolve().parent.parent / "_outbox/outbox.jsonl"
 CFG_DIR = Path(__file__).resolve().parent
+DEFAULT_MODE = "http"
 
 _state = {"repoRoot": "."}  # for repo-scoped scanners (dashboards/mail/schemas)
 
@@ -74,8 +76,19 @@ def health():
     return {
         "ok": True,
         "ts": datetime.now(timezone.utc).isoformat(),
-        "mode": (Path("tools/local-ui/.env").exists() and "env") or "queue",
+        "mode": DEFAULT_MODE,
     }
+
+
+# ------------------------------------------------------------------------------
+# Agents
+# ------------------------------------------------------------------------------
+@APP.get("/agents")
+def agents():
+    p = Path(__file__).parent / "agents.http.json"
+    if not p.exists():
+        raise HTTPException(404, "agents.http.json missing")
+    return json.loads(p.read_text(encoding="utf-8"))
 
 # ------------------------------------------------------------------------------
 # Outbox queue (JSONL)

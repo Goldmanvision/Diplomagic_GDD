@@ -1,5 +1,6 @@
 name: build-windows
 
+
 on:
   pull_request:
     branches: [ main ]
@@ -11,15 +12,19 @@ env:
 jobs:
   tests:
     name: backend-tests
+
     runs-on: windows-latest
     defaults:
       run:
         working-directory: tools/local-ui
+
         shell: pwsh
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
+
           python-version: '3.11'
       - name: Install backend requirements (hashed)
         run: |
@@ -58,10 +63,12 @@ jobs:
     defaults:
       run:
         shell: pwsh
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
+
           python-version: '3.11'
       - name: Install build requirements (hashed)
         run: |
@@ -75,3 +82,4 @@ jobs:
         with:
           name: local-ui-windows
           path: tools/local-ui/dist/windows/**
+

@@ -76,6 +76,10 @@ tools/local-ui/.env
 tools/local-ui/agent-brain-context-stubs.zip
 tools/local-ui/prompt-hub-*.zip
 tools/local-ui/tools/
+tools/local-ui/dist/
+
+# Windows build artifacts
+dist/windows/
 
 # --- node ---
 node_modules/
