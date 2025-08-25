@@ -11,7 +11,16 @@ client = TestClient(app)
 def test_health():
     r = client.get("/health")
     assert r.status_code == 200
-    assert r.json()["ok"] is True
+    data = r.json()
+    assert data["ok"] is True
+    assert data.get("mode") == "http"
+
+
+def test_agents():
+    r = client.get("/agents")
+    assert r.status_code == 200
+    data = json.dumps(r.json())
+    assert "6001" in data and "6002" in data and "6003" in data
 
 def test_schemas_and_export(tmp_path: Path, monkeypatch):
     # temp repo with schemas
