@@ -3,9 +3,18 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+    # Inputs allow selectively skipping backend tests or packaging.
+    # - skip_checks: Skip backend tests
+    # - skip_pack: Skip packaging the local-ui artifact
     inputs:
       skip_checks:
-        description: "Skip tests and build for local-ui"
+        description: "Skip backend tests for local-ui"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      skip_pack:
+        description: "Skip packaging the local-ui artifact"
         required: false
         default: "false"
         type: choice
@@ -33,7 +42,8 @@ jobs:
         run: pytest -q backend/tests
 
   local-ui-build:
-    if: ${{ inputs.skip_checks != 'true' }}
+    # Run build unless skip_pack is explicitly true
+    if: ${{ inputs.skip_pack != 'true' }}
     runs-on: windows-latest
     needs: backend-tests
     defaults:
