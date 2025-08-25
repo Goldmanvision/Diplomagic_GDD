@@ -36,15 +36,23 @@ Windows and run `daps.exe` to start the API (127.0.0.1:5174); open
 `frontend/index.html` to use the UI.
 
 
-### Windows installer (optional)
-After building the bundle you can create a traditional Windows installer using [Inno Setup](https://jrsoftware.org/isinfo.php).
-Install Inno Setup and then run:
+## Windows installer
+After building the bundle you can package it into an installer
+(`daps-installer.exe`) with a tool such as Inno Setup or NSIS. Sign the installer
+to reduce Windows SmartScreen warnings.
+
+1. Create `tools/local-ui/certs/` and place your code-signing certificate
+   (`daps.pfx`) and any intermediate `.cer` files there. Keep this directory out
+   of version control.
+2. Use SignTool (from the Windows SDK) to sign and verify the installer:
 
 ```powershell
-iscc tools\\local-ui\windows_installer.iss
+signtool sign /fd sha256 /tr http://timestamp.digicert.com /td sha256 \
+  /f tools\\local-ui\\certs\\daps.pfx /p <PASSWORD> tools\\local-ui\\dist\\daps-installer.exe
+signtool verify /pa tools\\local-ui\\dist\\daps-installer.exe
 ```
 
-This produces `tools/local-ui/dist/daps-installer.exe` that installs the bundle.
+Replace `<PASSWORD>` with the certificate password.
 
 
 ## Behavior
